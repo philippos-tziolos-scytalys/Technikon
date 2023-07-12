@@ -15,20 +15,22 @@ import java.util.Date;
 @AllArgsConstructor
 @Entity
 @Table(name = "Repairs")
-public class Repair extends BaseModel{
+public class Repair extends BaseModel {
     @Enumerated(EnumType.STRING)
     @Column(length = 15, nullable = false)
     private RepairType repairType;
+
     @Enumerated(EnumType.STRING)
     @Column(length = 11, nullable = false)
-    private RepairStatus repairStatus;
+    private RepairStatus repairStatus = RepairStatus.PENDING;
+
     @NotNull
     @Column(length = 100, nullable = false)
     private String description;
-    @NotNull
+
     @Column(nullable = false)
     private Date repairDate;
-    @NotNull
+    
     @Column(nullable = false)
     private BigDecimal cost;
 }
