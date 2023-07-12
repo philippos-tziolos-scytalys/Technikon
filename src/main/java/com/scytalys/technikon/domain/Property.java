@@ -10,7 +10,11 @@ import lombok.*;
 @Setter
 @ToString
 @Table(name = "\"property\"")
+@SequenceGenerator(name = "idGenerator", sequenceName = "property_seq", initialValue = 1, allocationSize = 1)
 public class Property extends BaseModel {
+
+    @Column(name = "pin")
+    private Long pinNumber;
 
     @Column(name = "address")
     private String address;
@@ -20,7 +24,7 @@ public class Property extends BaseModel {
 
     @Enumerated(EnumType.STRING)
     @Column(name = "property_type")
-    private Property_type propertyType;
+    private PropertyType propertyType;
 
     //private Account ownerId;
 
