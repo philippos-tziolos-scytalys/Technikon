@@ -1,7 +1,8 @@
-package com.scytalys.technikon.service;
+package com.scytalys.technikon.service.impl;
 
 import com.scytalys.technikon.domain.Repair;
 import com.scytalys.technikon.repository.RepairRepository;
+import com.scytalys.technikon.service.RepairService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

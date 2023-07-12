@@ -3,6 +3,7 @@ package com.scytalys.technikon.repository;
 import com.scytalys.technikon.domain.Repair;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 
 import java.util.Date;
 import java.util.List;
@@ -18,11 +19,8 @@ public interface RepairRepository extends JpaRepository<Repair, Long> {
 //            """)
 //    Optional<List<Repair>> findRepairsByUserId;
 
-    @Query("""
-            select r from Repair r
-                    where r.repairDate = :repairDate
-            """)
-    Optional<List<Repair>> findByRepairDate(Date repairDate);
+    @Query("select r from Repair r where r.repairDate = :repairDate")
+    Optional<List<Repair>> findByRepairDate(@Param("repairDate") Date repairDate);
 
 
 //    Optional<List<Repair>> findByRangeOfRepairDates(Date startRepairDate, Date endRepairDate);

@@ -1,5 +1,6 @@
 package com.scytalys.technikon.domain;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
@@ -15,6 +16,7 @@ import java.util.Date;
 @AllArgsConstructor
 @Entity
 @Table(name = "Repairs")
+@SequenceGenerator(name = "idGenerator", sequenceName = "repair_seq", initialValue = 1, allocationSize = 1)
 public class Repair extends BaseModel{
     @Enumerated(EnumType.STRING)
     @Column(length = 15, nullable = false)
@@ -26,6 +28,7 @@ public class Repair extends BaseModel{
     @Column(length = 100, nullable = false)
     private String description;
     @NotNull
+    @JsonFormat(pattern="yyyy-MM-dd")
     @Column(nullable = false)
     private Date repairDate;
     @NotNull
