@@ -1,20 +1,23 @@
 package com.scytalys.technikon.service;
 
-import com.scytalys.technikon.domain.User;
 import com.scytalys.technikon.dto.UserDto;
 import com.scytalys.technikon.exception.ExistingUserException;
+import com.scytalys.technikon.mapper.UserMapper;
 import com.scytalys.technikon.repository.UserRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 @Service
-public class UserImpl implements UserService{
+@RequiredArgsConstructor
+public class UserImpl implements UserService {
 
-    @Autowired
-    private UserRepository userRepository;
+
+    private final UserRepository userRepository;
+
+    private final UserMapper userMapper;
 
     @Override
-    public String addUser(UserDto userDto) {
+    public UserDto addUser(UserDto userDto) {
         boolean isUsernameExists = userRepository.existsByUsername(userDto.getUsername());
         boolean isEmailExists = userRepository.existsByEmail(userDto.getEmail());
         boolean isTinNumberExists = userRepository.existsByTinNumber(userDto.getTinNumber());
@@ -29,17 +32,7 @@ public class UserImpl implements UserService{
             throw new ExistingUserException("Tin number already exists");
         }
 
-        User user = new User(
-                userDto.getTinNumber(),
-                userDto.getName(),
-                userDto.getLastname(),
-                userDto.getAddress(),
-                userDto.getNumber(),
-                userDto.getUsername(),
-                userDto.getEmail(),
-                userDto.getPassword()
-        );
-        userRepository.save(user);
-        return user.toString();
+        return userMapper.userToUserDto(userRepository.save(userMapper.userDtoToUser(userDto)));
+
     }
 }
