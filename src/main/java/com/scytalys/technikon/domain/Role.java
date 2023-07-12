@@ -14,7 +14,7 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@SequenceGenerator(name = "idGenerator", sequenceName = "users_seq", initialValue = 1, allocationSize = 1)
+@SequenceGenerator(name = "idGenerator", sequenceName = "roles_seq", initialValue = 1, allocationSize = 1)
 @Table(name = "roles")
 public class Role extends BaseModel {
 
