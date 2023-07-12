@@ -1,6 +1,7 @@
 package com.scytalys.technikon.dto;
 
 
+import com.scytalys.technikon.domain.BaseModel;
 import lombok.*;
 
 @AllArgsConstructor
@@ -8,7 +9,7 @@ import lombok.*;
 @Getter
 @Setter
 @ToString
-public class UserDto {
+public class UserDto extends BaseModel {
     private Long id;
     private Long tinNumber;
     private String name;

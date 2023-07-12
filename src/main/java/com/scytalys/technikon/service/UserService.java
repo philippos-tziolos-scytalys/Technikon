@@ -1,7 +1,14 @@
 package com.scytalys.technikon.service;
 
+import com.scytalys.technikon.domain.User;
 import com.scytalys.technikon.dto.UserDto;
 
-public interface UserService {
+import java.util.List;
+
+public interface UserService extends BaseService<User, Long> {
     UserDto createUser(UserDto userDto);
+    User updateUser(UserDto userDto, Long id);
+    String deleteUser(Long id);
+    List<User> getAllUsers();
+    User getUserById(Long id);
 }
