@@ -3,6 +3,9 @@ package com.scytalys.technikon.domain;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.HashSet;
+import java.util.Set;
+
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
@@ -10,7 +13,7 @@ import lombok.*;
 @Setter
 @ToString
 @Table(name = "\"user\"")
-public class User extends BaseModel{
+public class User extends BaseModel {
 
     @Column(name = "tin_number", length = 20)
     private Long tinNumber;
@@ -29,4 +32,9 @@ public class User extends BaseModel{
     @Column(name = "password", length = 255)
     private String password;
 
+    @ManyToMany
+    @JoinTable(name = "user_roles", joinColumns = @JoinColumn(name = "user_id"),
+            inverseJoinColumns = @JoinColumn(name = "role_id")
+    )
+    private Set<Role> roles = new HashSet<>();
 }
