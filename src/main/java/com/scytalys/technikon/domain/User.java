@@ -10,11 +10,8 @@ import lombok.*;
 @Setter
 @ToString
 @Table(name = "\"user\"")
-public class User {
+public class User extends BaseModel{
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
     @Column(name = "tin_number", length = 20)
     private Long tinNumber;
     @Column(name = "first_name", length = 255)
