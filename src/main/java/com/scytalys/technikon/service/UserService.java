@@ -10,5 +10,5 @@ public interface UserService extends BaseService<User, Long> {
     User updateUser(UserDto userDto, Long id);
     String deleteUser(Long id);
     List<User> getAllUsers();
-    User getUserById(Long id);
+    UserDto getUserById(Long id);
 }

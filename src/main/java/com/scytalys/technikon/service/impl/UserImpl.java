@@ -74,8 +74,8 @@ public class UserImpl extends BaseServiceImpl<User> implements UserService {
     }
 
     /** Get user by ID **/
-    public User getUserById(Long id){
-        return userRepository.findById(id)
-                .orElseThrow(()->new UserNotFoundException(id));
+    public UserDto getUserById(Long id){
+        return userMapper.userToUserDto(userRepository.findById(id)
+                .orElseThrow(()->new UserNotFoundException(id)));
     }
 }
