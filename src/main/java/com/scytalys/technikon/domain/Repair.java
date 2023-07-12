@@ -15,6 +15,7 @@ import java.util.Date;
 @AllArgsConstructor
 @Entity
 @Table(name = "Repairs")
+@SequenceGenerator(name = "idGenerator", sequenceName = "repair_seq", initialValue = 1, allocationSize = 1)
 public class Repair extends BaseModel {
     @Enumerated(EnumType.STRING)
     @Column(length = 15, nullable = false)
@@ -30,7 +31,7 @@ public class Repair extends BaseModel {
 
     @Column(nullable = false)
     private Date repairDate;
-    
+
     @Column(nullable = false)
     private BigDecimal cost;
 }

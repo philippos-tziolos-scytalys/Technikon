@@ -24,7 +24,6 @@ public class RepairServiceImpl implements RepairService {
         existingRepair.setDescription(repair.getDescription());
         existingRepair.setRepairDate(repair.getRepairDate());
         existingRepair.setCost(repair.getCost());
-
         repairRepository.save(existingRepair);
     }
 
@@ -35,7 +34,12 @@ public class RepairServiceImpl implements RepairService {
 
     @Override
     public List<Repair> findRepairByDate(final Date repairDate) {
-        return repairRepository.findByRepairDate(repairDate).orElse(null);
+        return repairRepository.findByRepairDate(repairDate);
+    }
+
+    @Override
+    public List<Repair> findByRepairDateBetween(Date fromRepairDate, Date toRepairDate) {
+        return repairRepository.findByRepairDateBetween(fromRepairDate, toRepairDate);
     }
 
     @Override
