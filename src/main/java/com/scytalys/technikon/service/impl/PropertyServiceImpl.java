@@ -15,7 +15,7 @@ public class PropertyServiceImpl implements PropertyService {
     private PropertyRepository propertyRepository;
 
     @Override
-    public Property saveProperty(Property property) {
+    public Property createProperty(Property property) {
         return propertyRepository.save(property);
     }
 
@@ -70,7 +70,7 @@ public class PropertyServiceImpl implements PropertyService {
     }
 
     @Override
-    public void deactivatePropertyById(Property property, Long propertyId) {
+    public void deactivatePropertyById(Long propertyId) {
         Property proDB = propertyRepository.findById(propertyId).get();
         proDB.setActiveState(false);
 
