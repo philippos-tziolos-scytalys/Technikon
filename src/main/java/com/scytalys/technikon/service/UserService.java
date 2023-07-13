@@ -11,4 +11,6 @@ public interface UserService extends BaseService<User, Long> {
     void deleteUser(Long id);
     List<User> getAllUsers();
     UserDto getUserById(Long id);
+    UserDto getUserByTinNumber(Long tinNumber);
+    UserDto getUserByEmail(String email);
 }

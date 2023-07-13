@@ -97,4 +97,14 @@ public class UserServiceImpl extends BaseServiceImpl<User> implements UserServic
         return userMapper.userToUserDto(userRepository.findById(id)
                 .orElseThrow(()->new UserNotFoundException(id)));
     }
+
+    public UserDto getUserByTinNumber(Long tinNumber){
+        return userMapper.userToUserDto(userRepository.findByTinNumber(tinNumber));
+//                .orElseThrow(()->new UserNotFoundException(tinNumber)));
+    }
+
+    public UserDto getUserByEmail(String email){
+        return userMapper.userToUserDto(userRepository.findByEmail(email));
+//                .orElseThrow(()->new UserNotFoundException(id)));
+    }
 }
