@@ -33,6 +33,6 @@ public class Property extends BaseModel {
     private String propertyCoordinates;
 
     @ManyToOne
-    @JoinColumn(name = "tin_number")
-    private User propertyUser;
+    @JoinColumn(name = "user_id")
+    private User user;
 }

@@ -33,4 +33,5 @@ public class User extends BaseModel {
     @Column(name = "password", length = 255)
     private String password;
 
+
 }

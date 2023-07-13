@@ -6,11 +6,11 @@ import java.util.Date;
 import java.util.List;
 
 public interface RepairService {
-    void update(Repair repair, Long repairId);
+    void update(Repair repair);
 
     Repair create(Repair repair);
 
-    List<Repair> findRepairByDate(Date repairDate);
+    List<Repair> findByRepairDate(Date repairDate);
 
     List<Repair> findByRepairDateBetween(Date fromRepairDate, Date toRepairDate);
 

@@ -18,6 +18,11 @@ public class RepairController {
 
     private final RepairService repairService;
 
+    @PutMapping("/update")
+    public void updateRepair(@RequestBody Repair repair) {
+        repairService.update(repair);
+    }
+
     @PostMapping("/create")
     public ResponseEntity<Repair> createRepair(@RequestBody Repair repair) {
         Repair newRepair = repairService.create(repair);
@@ -25,8 +30,10 @@ public class RepairController {
     }
 
     @GetMapping
-    public ResponseEntity<List<Repair>> findRepairByDate(@RequestParam("repairDate") @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) Date repairDate) {
-        return ResponseEntity.ok(repairService.findRepairByDate(repairDate));
+    public ResponseEntity<List<Repair>> findByRepairDate(@RequestParam("repairDate")
+                                                         @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
+                                                         Date repairDate) {
+        return ResponseEntity.ok(repairService.findByRepairDate(repairDate));
     }
 
     //    @GetMapping

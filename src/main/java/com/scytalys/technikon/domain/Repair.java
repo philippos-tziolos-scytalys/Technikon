@@ -34,4 +34,7 @@ public class Repair extends BaseModel {
 
     @Column(nullable = false)
     private BigDecimal cost;
+
+    @ManyToOne
+    private Property property;
 }
