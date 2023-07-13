@@ -10,7 +10,6 @@ import lombok.*;
 @Setter
 @ToString
 @Table(name = "\"property\"")
-@SequenceGenerator(name = "idGenerator", sequenceName = "property_seq", initialValue = 1, allocationSize = 1)
 public class Property extends BaseModel {
 
     @Column(name = "pin")
@@ -29,9 +28,16 @@ public class Property extends BaseModel {
     @Column(name = "property_picture")
     private String propertyPictureUrl;
 
-    @Column(name = "map_location")
-    private String propertyCoordinates;
+    @Column(name = "map_location_long")
+    private Long propertyCoordinatesLong;
+
+    @Column(name = "map_location_lat")
+    private Long propertyCoordinatesLat;
+
+    @Column(name = "active_state")
+    private boolean activeState = true;
 
     @ManyToOne
+    @JoinColumn(name = "owner")
     private User user;
 }

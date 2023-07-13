@@ -2,7 +2,6 @@ package com.scytalys.technikon.service;
 
 import com.scytalys.technikon.domain.Property;
 
-import java.util.Date;
 import java.util.List;
 
 public interface PropertyService {
@@ -10,7 +9,7 @@ public interface PropertyService {
 
     List<Property> fetchPropertyList();
 
-    Property updateProperty(Property property, Long propertyId);
+    void updateProperty(Property property, Long propertyId);
 
     Property searchByPIN(Long pin);
 
@@ -18,11 +17,11 @@ public interface PropertyService {
 
     List<Property> searchByPropertyType(String propertyType);
 
-    List<Property> searchByMapLocationRadius(String coordinates);
+    List<Property> searchByMapLocationRadius(Long longitude, Long latitude);
 
-    List<Property> searchByConstructionDateRange(Date dateFrom, Date dateTo);
+    List<Property> searchByConstructionYearRange(int yearFrom, int yearTo);
 
-    void deactivatePropertyById(Long propertyId);
+    void deactivatePropertyById(Property property, Long propertyId);
 
     void deletePropertyById(Long propertyId);
 }
