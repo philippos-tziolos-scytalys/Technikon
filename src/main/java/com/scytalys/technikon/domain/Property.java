@@ -22,17 +22,19 @@ public class Property extends BaseModel {
     private String address;
 
     @Column(name = "year_of_construction")
-    private int yearOfConstruction;
+    private Integer yearOfConstruction;
 
     @Enumerated(EnumType.STRING)
     @Column(name = "property_type")
     private PropertyType propertyType;
-
-    //private Account ownerId;
 
     @Column(name = "property_picture")
     private String propertyPictureUrl;
 
     @Column(name = "map_location")
     private String propertyCoordinates;
+
+    @ManyToOne
+    @JoinColumn(name = "tin_number")
+    private User propertyUser;
 }
