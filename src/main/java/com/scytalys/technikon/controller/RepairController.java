@@ -30,7 +30,7 @@ public class RepairController {
         return new ResponseEntity<>(repairMapper.repairToRepairDto(repairService.create(repairMapper.repairDtoToRepair(repairDto))), HttpStatus.CREATED);
     }
 
-    @GetMapping("/user/{id}/repairs")
+    @GetMapping("/users/{id}/repairs")
     public ResponseEntity<List<RepairDto>> findRepairByUserId(@PathVariable("id") Long Id) {
         return ResponseEntity.ok(repairMapper.repairListToRepairDtoList(repairService.findRepairByUserId(Id)));
     }
