@@ -10,13 +10,13 @@ import com.scytalys.technikon.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
-public class UserImpl extends BaseServiceImpl<User> implements UserService {
+public class UserServiceImpl extends BaseServiceImpl<User> implements UserService {
     @Override
     public JpaRepository<User, Long> getRepository() {
         return userRepository;
@@ -59,14 +59,18 @@ public class UserImpl extends BaseServiceImpl<User> implements UserService {
                 }).orElseThrow(()->new UserNotFoundException(id));
     }
 
-    /** Delete user **/
-    public String deleteUser(Long id){
-        if(!userRepository.existsById(id)){
+    /**
+     * Delete user
+     **/
+    public void deleteUser(Long id) {
+        Optional<User> userOptional = userRepository.findById(id);
+        if (userOptional.isEmpty()) {
             throw new UserNotFoundException(id);
         }
+
         userRepository.deleteById(id);
-        return "User with id "+ id + " has been deleted successfully";
     }
+
 
     /** Get all user **/
     public List<User> getAllUsers(){
@@ -74,8 +78,8 @@ public class UserImpl extends BaseServiceImpl<User> implements UserService {
     }
 
     /** Get user by ID **/
-    public User getUserById(Long id){
-        return userRepository.findById(id)
-                .orElseThrow(()->new UserNotFoundException(id));
+    public UserDto getUserById(Long id){
+        return userMapper.userToUserDto(userRepository.findById(id)
+                .orElseThrow(()->new UserNotFoundException(id)));
     }
 }
