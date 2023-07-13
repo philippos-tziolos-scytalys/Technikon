@@ -30,19 +30,19 @@ public class RepairController {
         return new ResponseEntity<>(repairMapper.repairToRepairDto(repairService.create(repairMapper.repairDtoToRepair(repairDto))), HttpStatus.CREATED);
     }
 
-    @GetMapping
+    @GetMapping("/find-by/user-id")
     public ResponseEntity<List<RepairDto>> findRepairByUserId(@RequestParam("userId") Long userId) {
         return ResponseEntity.ok(repairMapper.repairListToRepairDtoList(repairService.findRepairByUserId(userId)));
     }
 
-    //    @GetMapping
+    @GetMapping("/find-by/repair-date")
     public ResponseEntity<List<RepairDto>> findByRepairDate(@RequestParam("repairDate")
                                                             @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
                                                             Date repairDate) {
         return ResponseEntity.ok(repairMapper.repairListToRepairDtoList(repairService.findByRepairDate(repairDate)));
     }
 
-    //    @GetMapping
+    @GetMapping("/find-by/repair-date-range")
     public ResponseEntity<List<RepairDto>> findByRepairDateBetween(
             @RequestParam("fromRepairDate") Date fromRepairDate,
             @RequestParam("toRepairDate") Date toRepairDate) {
