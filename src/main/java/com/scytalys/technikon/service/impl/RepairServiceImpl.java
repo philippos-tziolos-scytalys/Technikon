@@ -16,16 +16,15 @@ public class RepairServiceImpl implements RepairService {
 
 
     @Override
-    public void update(final Repair repair, final Long repairId) {
-        Repair existingRepair = repairRepository.findById(repairId).orElseThrow(
-                () -> new RuntimeException("Repair with id -> %s not found".formatted(repairId))
+    public void update(final Repair repair) {
+        Repair existingRepair = repairRepository.findById(repair.getId()).orElseThrow(
+                () -> new RuntimeException("Repair with id -> %s not found".formatted(repair.getId()))
         );
         existingRepair.setRepairType(repair.getRepairType());
         existingRepair.setRepairStatus(repair.getRepairStatus());
         existingRepair.setDescription(repair.getDescription());
         existingRepair.setRepairDate(repair.getRepairDate());
         existingRepair.setCost(repair.getCost());
-
         repairRepository.save(existingRepair);
     }
 
@@ -35,8 +34,13 @@ public class RepairServiceImpl implements RepairService {
     }
 
     @Override
-    public List<Repair> findRepairByDate(final Date repairDate) {
-        return repairRepository.findByRepairDate(repairDate).orElse(null);
+    public List<Repair> findByRepairDate(final Date repairDate) {
+        return repairRepository.findByRepairDate(repairDate);
+    }
+
+    @Override
+    public List<Repair> findByRepairDateBetween(Date fromRepairDate, Date toRepairDate) {
+        return repairRepository.findByRepairDateBetween(fromRepairDate, toRepairDate);
     }
 
     @Override
