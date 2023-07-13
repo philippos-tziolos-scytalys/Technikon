@@ -39,4 +39,7 @@ public class User extends BaseModel {
             inverseJoinColumns = @JoinColumn(name = "role_id")
     )
     private Set<Role> roles = new HashSet<>();
+
+    public void setUsername(String username) {
+    }
 }
