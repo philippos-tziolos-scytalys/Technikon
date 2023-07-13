@@ -18,7 +18,7 @@ public interface PropertyRepository extends CrudRepository<Property, Long> {
 
     @Query("""
             select p from Property p
-                    where p.ownerTin = :tin
+                    where p.owner.tinNumber = :tin
             """)
     Optional<List<Property>> findByTin(Long tin);
 

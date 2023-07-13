@@ -12,6 +12,9 @@ import lombok.*;
 @Table(name = "\"property\"")
 public class Property extends BaseModel {
 
+    @Column(name = "pin")
+    private Long pinNumber;
+
     @Column(name = "address")
     private String address;
 
@@ -35,6 +38,6 @@ public class Property extends BaseModel {
     private boolean activeState = true;
 
     @ManyToOne
-    @JoinColumn(name = "user_id")
-    private User user;
+    @JoinColumn(name = "owner")
+    private User owner;
 }

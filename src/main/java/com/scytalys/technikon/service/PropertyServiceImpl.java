@@ -32,7 +32,7 @@ public class PropertyServiceImpl implements PropertyService {
         proDB.setAddress(property.getAddress());
         proDB.setYearOfConstruction(property.getYearOfConstruction());
         proDB.setPropertyType(property.getPropertyType());
-        proDB.setOwnerTin(property.getOwnerTin());
+        proDB.setOwner(property.getOwner());
         proDB.setPropertyPictureUrl(property.getPropertyPictureUrl());
         proDB.setPropertyCoordinatesLong(property.getPropertyCoordinatesLong());
         proDB.setPropertyCoordinatesLat(property.getPropertyCoordinatesLat());

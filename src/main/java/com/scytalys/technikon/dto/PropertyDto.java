@@ -1,6 +1,8 @@
 package com.scytalys.technikon.dto;
 
-import com.scytalys.technikon.domain.Property_type;
+import com.scytalys.technikon.domain.PropertyType;
+import com.scytalys.technikon.domain.User;
+import jakarta.persistence.Column;
 import lombok.*;
 
 @AllArgsConstructor
@@ -9,14 +11,14 @@ import lombok.*;
 @Setter
 @ToString
 public class PropertyDto {
-
+    @Column(name = "pin")
     private Long pinNumber;
     private String address;
-    private int yearOfConstruction;
-    private Property_type propertyType;
-    private Long ownerTin;
+    private Integer yearOfConstruction;
+    private PropertyType propertyType;
     private String propertyPictureUrl;
     private Long propertyCoordinatesLong;
     private Long propertyCoordinatesLat;
     private boolean activeState = true;
+    private User owner;
 }
