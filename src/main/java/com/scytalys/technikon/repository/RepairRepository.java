@@ -9,13 +9,6 @@ import java.util.List;
 import java.util.Optional;
 
 public interface RepairRepository extends JpaRepository<Repair, Long> {
-    //    @Query("""
-//            select r from Repair r
-//            join r.property p
-//            join fetch p.user u
-//            where u.id = :userId
-//            order by r.repairDate
-//            """)
     @Query("""
             select r from Repair r
             join r.property p
