@@ -45,19 +45,24 @@ public class UserServiceImpl extends BaseServiceImpl<User> implements UserServic
         return userMapper.userToUserDto(userRepository.save(userMapper.userDtoToUser(userDto)));
     }
 
-    /** Update user **/
-    public User updateUser(UserDto userDto, Long id){
-        return userRepository.findById(id)
-                .map(user -> {
-                    user.setUsername(userDto.getUsername());
-                    user.setName(userDto.getName());
-                    user.setLastname(userDto.getLastname());
-                    user.setAddress(userDto.getAddress());
-                    user.setNumber(userDto.getNumber());
-                    user.setEmail(userDto.getEmail());
-                    return userRepository.save(user);
-                }).orElseThrow(()->new UserNotFoundException(id));
+    /**
+     * Update user
+     **/
+    public UserDto updateUser(UserDto userDto, Long id) {
+        User user = userRepository.findById(id)
+                .orElseThrow(() -> new UserNotFoundException(id));
+
+        user.setUsername(userDto.getUsername());
+        user.setName(userDto.getName());
+        user.setLastname(userDto.getLastname());
+        user.setAddress(userDto.getAddress());
+        user.setNumber(userDto.getNumber());
+        user.setEmail(userDto.getEmail());
+
+        User updatedUser = userRepository.save(user);
+        return userMapper.userToUserDto(updatedUser);
     }
+
 
     /**
      * Delete user
