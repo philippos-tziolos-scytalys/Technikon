@@ -14,6 +14,10 @@ import java.util.List;
 public class RepairServiceImpl implements RepairService {
     private final RepairRepository repairRepository;
 
+    @Override
+    public Repair create(final Repair repair) {
+        return repairRepository.save(repair);
+    }
 
     @Override
     public void update(final Repair repair) {
@@ -25,12 +29,13 @@ public class RepairServiceImpl implements RepairService {
         existingRepair.setDescription(repair.getDescription());
         existingRepair.setRepairDate(repair.getRepairDate());
         existingRepair.setCost(repair.getCost());
+        existingRepair.setProperty(repair.getProperty());
         repairRepository.save(existingRepair);
     }
 
     @Override
-    public Repair create(final Repair repair) {
-        return repairRepository.save(repair);
+    public List<Repair> findRepairByUserId(Long userId) {
+        return repairRepository.findRepairByUserId(userId);
     }
 
     @Override
