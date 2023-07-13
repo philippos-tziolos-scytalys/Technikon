@@ -25,30 +25,22 @@ public class UserServiceImpl extends BaseServiceImpl<User> implements UserServic
     private final UserRepository userRepository;
     private final UserMapper userMapper;
 
-   /** Create user with validation **/
+    /** Create user with validation **/
     @Override
     public UserDto createUser(UserDto userDto) {
-        boolean isUsernameExists = userRepository.existsByUsername(userDto.getUsername());
-        boolean isEmailExists = userRepository.existsByEmail(userDto.getEmail());
-        boolean isTinNumberExists = userRepository.existsByTinNumber(userDto.getTinNumber());
+        validateUniqueFields(userDto);
 
-        if (isUsernameExists) {
-            throw new ExistingUserException("Username already exists");
-        }
-        if (isEmailExists) {
-            throw new ExistingUserException("Email already exists");
-        }
-        if (isTinNumberExists) {
-            throw new ExistingUserException("Tin number already exists");
-        }
-
-        return userMapper.userToUserDto(userRepository.save(userMapper.userDtoToUser(userDto)));
+        User user = userMapper.userDtoToUser(userDto);
+        User savedUser = userRepository.save(user);
+        return userMapper.userToUserDto(savedUser);
     }
 
     /**
      * Update user
      **/
     public UserDto updateUser(UserDto userDto, Long id) {
+        validateUniqueFields(userDto);
+
         User user = userRepository.findById(id)
                 .orElseThrow(() -> new UserNotFoundException(id));
 
@@ -62,6 +54,24 @@ public class UserServiceImpl extends BaseServiceImpl<User> implements UserServic
         User updatedUser = userRepository.save(user);
         return userMapper.userToUserDto(updatedUser);
     }
+
+    private void validateUniqueFields(UserDto userDto) {
+        boolean isUsernameExists = userRepository.existsByUsername(userDto.getUsername());
+        if (isUsernameExists) {
+            throw new ExistingUserException("Username already exists");
+        }
+
+        boolean isEmailExists = userRepository.existsByEmail(userDto.getEmail());
+        if (isEmailExists) {
+            throw new ExistingUserException("Email already exists");
+        }
+
+//        boolean isTinNumberExists = userRepository.existsByTinNumber(userDto.getTinNumber());
+//        if (isTinNumberExists) {
+//            throw new ExistingUserException("Tin number already exists");
+//        }
+    }
+
 
 
     /**

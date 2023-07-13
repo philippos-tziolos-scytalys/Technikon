@@ -49,7 +49,7 @@ public class UserController extends BaseController<User, UserResource> {
     @DeleteMapping("delete/{id}")
     public ResponseEntity<String> deleteUser(@PathVariable("id") final Long id) {
         userService.deleteUser(id);
-        return ResponseEntity.ok("Repair deleted successfully");
+        return ResponseEntity.ok("User deleted successfully");
     }
 
     @PutMapping("/update/{id}")
