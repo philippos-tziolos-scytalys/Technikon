@@ -25,39 +25,54 @@ public class UserServiceImpl extends BaseServiceImpl<User> implements UserServic
     private final UserRepository userRepository;
     private final UserMapper userMapper;
 
-   /** Create user with validation **/
+    /** Create user with validation **/
     @Override
     public UserDto createUser(UserDto userDto) {
-        boolean isUsernameExists = userRepository.existsByUsername(userDto.getUsername());
-        boolean isEmailExists = userRepository.existsByEmail(userDto.getEmail());
-        boolean isTinNumberExists = userRepository.existsByTinNumber(userDto.getTinNumber());
+        validateUniqueFields(userDto);
 
+        User user = userMapper.userDtoToUser(userDto);
+        User savedUser = userRepository.save(user);
+        return userMapper.userToUserDto(savedUser);
+    }
+
+    /**
+     * Update user
+     **/
+    public UserDto updateUser(UserDto userDto, Long id) {
+        validateUniqueFields(userDto);
+
+        User user = userRepository.findById(id)
+                .orElseThrow(() -> new UserNotFoundException(id));
+
+        user.setUsername(userDto.getUsername());
+        user.setName(userDto.getName());
+        user.setLastname(userDto.getLastname());
+        user.setAddress(userDto.getAddress());
+        user.setNumber(userDto.getNumber());
+        user.setEmail(userDto.getEmail());
+
+        User updatedUser = userRepository.save(user);
+        return userMapper.userToUserDto(updatedUser);
+    }
+
+    private void validateUniqueFields(UserDto userDto) {
+        boolean isUsernameExists = userRepository.existsByUsername(userDto.getUsername());
         if (isUsernameExists) {
             throw new ExistingUserException("Username already exists");
         }
+
+        boolean isEmailExists = userRepository.existsByEmail(userDto.getEmail());
         if (isEmailExists) {
             throw new ExistingUserException("Email already exists");
         }
-        if (isTinNumberExists) {
-            throw new ExistingUserException("Tin number already exists");
-        }
 
-        return userMapper.userToUserDto(userRepository.save(userMapper.userDtoToUser(userDto)));
+//        boolean isTinNumberExists = userRepository.existsByTinNumber(userDto.getTinNumber());
+//        if (isTinNumberExists) {
+//            throw new ExistingUserException("Tin number already exists");
+//        }
     }
 
-    /** Update user **/
-    public User updateUser(UserDto userDto, Long id){
-        return userRepository.findById(id)
-                .map(user -> {
-                    user.setUsername(userDto.getUsername());
-                    user.setName(userDto.getName());
-                    user.setLastname(userDto.getLastname());
-                    user.setAddress(userDto.getAddress());
-                    user.setNumber(userDto.getNumber());
-                    user.setEmail(userDto.getEmail());
-                    return userRepository.save(user);
-                }).orElseThrow(()->new UserNotFoundException(id));
-    }
+
 
     /**
      * Delete user
@@ -81,5 +96,15 @@ public class UserServiceImpl extends BaseServiceImpl<User> implements UserServic
     public UserDto getUserById(Long id){
         return userMapper.userToUserDto(userRepository.findById(id)
                 .orElseThrow(()->new UserNotFoundException(id)));
+    }
+
+    public UserDto getUserByTinNumber(Long tinNumber){
+        return userMapper.userToUserDto(userRepository.findByTinNumber(tinNumber));
+//                .orElseThrow(()->new UserNotFoundException(tinNumber)));
+    }
+
+    public UserDto getUserByEmail(String email){
+        return userMapper.userToUserDto(userRepository.findByEmail(email));
+//                .orElseThrow(()->new UserNotFoundException(id)));
     }
 }
