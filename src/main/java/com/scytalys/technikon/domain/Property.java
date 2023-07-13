@@ -38,5 +38,5 @@ public class Property extends BaseModel {
     private Long propertyCoordinatesLat;
 
     @Column(name = "active_state")
-    private boolean activeState;
+    private boolean activeState = true;
 }
