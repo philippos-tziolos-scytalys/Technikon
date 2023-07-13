@@ -30,6 +30,11 @@ public class RepairController {
     }
 
     @GetMapping
+    public ResponseEntity<List<Repair>> findRepairByUserId(@RequestParam("userId") Long userId) {
+        return ResponseEntity.ok(repairService.findRepairByUserId(userId));
+    }
+
+    //    @GetMapping
     public ResponseEntity<List<Repair>> findByRepairDate(@RequestParam("repairDate")
                                                          @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
                                                          Date repairDate) {
