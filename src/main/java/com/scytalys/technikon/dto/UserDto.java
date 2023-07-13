@@ -9,8 +9,7 @@ import lombok.*;
 @Getter
 @Setter
 @ToString
-public class UserDto extends BaseModel {
-    private Long id;
+public class UserDto {
     private Long tinNumber;
     private String name;
     private String lastname;

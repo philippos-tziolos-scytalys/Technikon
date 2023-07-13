@@ -5,7 +5,7 @@ import com.scytalys.technikon.dto.UserDto;
 import org.mapstruct.Mapper;
 
 @Mapper
-public interface UserMapper {
+public interface UserMapper{
 
     User userDtoToUser(UserDto userDto);
 
