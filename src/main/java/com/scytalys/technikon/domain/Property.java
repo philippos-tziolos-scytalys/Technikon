@@ -10,23 +10,17 @@ import lombok.*;
 @Setter
 @ToString
 @Table(name = "\"property\"")
-@SequenceGenerator(name = "idGenerator", sequenceName = "property_seq", initialValue = 1, allocationSize = 1)
 public class Property extends BaseModel {
-
-    @Column(name = "pin")
-    private Long pinNumber;
 
     @Column(name = "address")
     private String address;
 
     @Column(name = "year_of_construction")
-    private int yearOfConstruction;
+    private Integer yearOfConstruction;
 
     @Enumerated(EnumType.STRING)
     @Column(name = "property_type")
-    private Property_type propertyType;
-
-    private Long ownerTin;
+    private PropertyType propertyType;
 
     @Column(name = "property_picture")
     private String propertyPictureUrl;
@@ -39,4 +33,8 @@ public class Property extends BaseModel {
 
     @Column(name = "active_state")
     private boolean activeState = true;
+
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User user;
 }

@@ -15,20 +15,26 @@ import java.util.Date;
 @AllArgsConstructor
 @Entity
 @Table(name = "Repairs")
-public class Repair extends BaseModel{
+@SequenceGenerator(name = "idGenerator", sequenceName = "repair_seq", initialValue = 1, allocationSize = 1)
+public class Repair extends BaseModel {
     @Enumerated(EnumType.STRING)
     @Column(length = 15, nullable = false)
     private RepairType repairType;
+
     @Enumerated(EnumType.STRING)
     @Column(length = 11, nullable = false)
-    private RepairStatus repairStatus;
+    private RepairStatus repairStatus = RepairStatus.PENDING;
+
     @NotNull
-    @Column(length = 100, nullable = false)
+    @Column(length = 1000, nullable = false)
     private String description;
-    @NotNull
+
     @Column(nullable = false)
     private Date repairDate;
-    @NotNull
+
     @Column(nullable = false)
     private BigDecimal cost;
+
+    @ManyToOne
+    private Property property;
 }
