@@ -1,12 +1,10 @@
 package com.scytalys.technikon.domain;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -14,9 +12,9 @@ import java.util.Set;
 @NoArgsConstructor
 @Getter
 @Setter
+@Builder
 @Table(name = "\"user\"")
 @SequenceGenerator(name = "idGenerator", sequenceName = "user_seq", initialValue = 1, allocationSize = 1)
-
 public class User extends BaseModel {
 
     @Column(name = "tin_number", length = 20)
@@ -35,6 +33,10 @@ public class User extends BaseModel {
     private String email;
     @Column(name = "password", length = 255)
     private String password;
+
+
+    @OneToMany(cascade = CascadeType.ALL)
+    private List<Property> properties;
 
     @ManyToMany
     @JoinTable(name = "user_roles", joinColumns = @JoinColumn(name = "user_id"),

@@ -25,5 +25,5 @@ public interface PropertyService {
 
     void deletePropertyById(Long propertyId);
 
-    List<Property> findByUserId(Long id);
+    List<Property> findPropertyByUser(Long userId);
 }

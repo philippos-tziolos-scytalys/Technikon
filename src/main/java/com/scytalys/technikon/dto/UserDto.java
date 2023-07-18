@@ -1,10 +1,13 @@
 package com.scytalys.technikon.dto;
 
 
+import lombok.Builder;
 import lombok.Data;
 
 @Data
+@Builder
 public class UserDto {
+    private Long id;
     private Long tinNumber;
     private String name;
     private String lastname;

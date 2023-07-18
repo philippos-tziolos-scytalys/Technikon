@@ -17,6 +17,8 @@ import java.util.Date;
 @Table(name = "Repairs")
 @SequenceGenerator(name = "idGenerator", sequenceName = "repair_seq", initialValue = 1, allocationSize = 1)
 public class Repair extends BaseModel {
+
+
     @Enumerated(EnumType.STRING)
     @Column(length = 15, nullable = false)
     private RepairType repairType;
