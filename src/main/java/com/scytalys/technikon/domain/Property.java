@@ -39,6 +39,6 @@ public class Property extends BaseModel {
     private boolean activeState = true;
 
     @ManyToOne
-    @JoinColumn(name = "owner")
+    @JoinColumn(name = "id")
     private User user;
 }

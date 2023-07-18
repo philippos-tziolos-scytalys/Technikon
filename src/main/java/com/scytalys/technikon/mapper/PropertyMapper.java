@@ -9,11 +9,11 @@ import java.util.List;
 @Mapper
 public interface PropertyMapper {
 
-    Property repairDtoToRepair(PropertyDto propertyDto);
+    Property propertyDtoToProperty(PropertyDto propertyDto);
 
-    PropertyDto repairToRepairDto(Property property);
+    PropertyDto propertyToPropertyDto(Property property);
 
-    List<Property> repairDtoListToRepairList(List<PropertyDto> propertyDtoList);
+    List<Property> propertyDtoListToPropertyList(List<PropertyDto> propertyDtoList);
 
-    List<PropertyDto> repairListToRepairDtoList(List<Property> propertyList);
+    List<PropertyDto> propertyListToPropertyDtoList(List<Property> propertyList);
 }

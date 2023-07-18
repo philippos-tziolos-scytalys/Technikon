@@ -20,4 +20,6 @@ public class PropertyDto {
     private Long propertyCoordinatesLat;
 
     private boolean activeState = true;
+
+
 }

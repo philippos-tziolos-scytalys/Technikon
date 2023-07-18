@@ -1,14 +1,11 @@
 package com.scytalys.technikon.service.impl;
 
 import com.scytalys.technikon.domain.User;
-import com.scytalys.technikon.dto.UserDto;
 import com.scytalys.technikon.exception.ExistingUserException;
 import com.scytalys.technikon.exception.UserNotFoundException;
-import com.scytalys.technikon.mapper.UserMapper;
 import com.scytalys.technikon.repository.UserRepository;
 import com.scytalys.technikon.service.UserService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -16,52 +13,47 @@ import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
-public class UserServiceImpl extends BaseServiceImpl<User> implements UserService {
-    @Override
-    public JpaRepository<User, Long> getRepository() {
-        return userRepository;
-    }
+public class UserServiceImpl implements UserService {
 
     private final UserRepository userRepository;
-    private final UserMapper userMapper;
 
-    /** Create user with validation **/
+    /**
+     * Create user with validation
+     **/
     @Override
-    public UserDto createUser(UserDto userDto) {
-        validateUniqueFields(userDto);
+    public User createUser(User user) {
+        validateUniqueFields(user);
 
-        User user = userMapper.userDtoToUser(userDto);
-        User savedUser = userRepository.save(user);
-        return userMapper.userToUserDto(savedUser);
+        return userRepository.save(user);
     }
 
     /**
      * Update user
      **/
-    public UserDto updateUser(UserDto userDto, Long id) {
-        validateUniqueFields(userDto);
+    @Override
+    public void updateUser(User user) {
+        validateUniqueFields(user);
 
-        User user = userRepository.findById(id)
-                .orElseThrow(() -> new UserNotFoundException(id));
+        User existingUser = userRepository.findById(user.getId())
+                .orElseThrow(() -> new UserNotFoundException(user.getId()));
 
-        user.setUsername(userDto.getUsername());
-        user.setName(userDto.getName());
-        user.setLastname(userDto.getLastname());
-        user.setAddress(userDto.getAddress());
-        user.setNumber(userDto.getNumber());
-        user.setEmail(userDto.getEmail());
+        existingUser.setUsername(user.getUsername());
+        existingUser.setName(user.getName());
+        existingUser.setLastname(user.getLastname());
+        existingUser.setAddress(user.getAddress());
+        existingUser.setPhoneNumber(user.getPhoneNumber());
+        existingUser.setEmail(user.getEmail());
 
-        User updatedUser = userRepository.save(user);
-        return userMapper.userToUserDto(updatedUser);
+        userRepository.save(existingUser);
     }
 
-    private void validateUniqueFields(UserDto userDto) {
-        boolean isUsernameExists = userRepository.existsByUsername(userDto.getUsername());
+    private void validateUniqueFields(User user) {
+        boolean isUsernameExists = userRepository.existsByUsername(user.getUsername());
         if (isUsernameExists) {
             throw new ExistingUserException("Username already exists");
         }
 
-        boolean isEmailExists = userRepository.existsByEmail(userDto.getEmail());
+        boolean isEmailExists = userRepository.existsByEmail(user.getEmail());
         if (isEmailExists) {
             throw new ExistingUserException("Email already exists");
         }
@@ -71,7 +63,6 @@ public class UserServiceImpl extends BaseServiceImpl<User> implements UserServic
 //            throw new ExistingUserException("Tin number already exists");
 //        }
     }
-
 
 
     /**
@@ -87,24 +78,28 @@ public class UserServiceImpl extends BaseServiceImpl<User> implements UserServic
     }
 
 
-    /** Get all user **/
-    public List<User> getAllUsers(){
+    /**
+     * Get all user
+     **/
+    public List<User> getAllUsers() {
         return userRepository.findAll();
     }
 
-    /** Get user by ID **/
-    public UserDto getUserById(Long id){
-        return userMapper.userToUserDto(userRepository.findById(id)
-                .orElseThrow(()->new UserNotFoundException(id)));
+    /**
+     * Get user by ID
+     **/
+    public User getUserById(Long id) {
+        return (userRepository.findById(id)
+                .orElseThrow(() -> new UserNotFoundException(id)));
     }
 
-    public UserDto getUserByTinNumber(Long tinNumber){
-        return userMapper.userToUserDto(userRepository.findByTinNumber(tinNumber));
+    public User getUserByTinNumber(Long tinNumber) {
+        return (userRepository.findByTinNumber(tinNumber));
 //                .orElseThrow(()->new UserNotFoundException(tinNumber)));
     }
 
-    public UserDto getUserByEmail(String email){
-        return userMapper.userToUserDto(userRepository.findByEmail(email));
+    public User getUserByEmail(String email) {
+        return (userRepository.findByEmail(email));
 //                .orElseThrow(()->new UserNotFoundException(id)));
     }
 }

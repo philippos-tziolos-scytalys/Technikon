@@ -27,7 +27,8 @@ public class RepairController {
 
     @PostMapping("/create")
     public ResponseEntity<RepairDto> createRepair(@RequestBody RepairDto repairDto) {
-        return new ResponseEntity<>(repairMapper.repairToRepairDto(repairService.create(repairMapper.repairDtoToRepair(repairDto))), HttpStatus.CREATED);
+        return new ResponseEntity<>(repairMapper.repairToRepairDto
+                (repairService.create(repairMapper.repairDtoToRepair(repairDto))), HttpStatus.CREATED);
     }
 
     @GetMapping("/user/{id}/repairs")

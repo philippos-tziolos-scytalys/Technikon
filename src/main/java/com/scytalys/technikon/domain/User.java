@@ -1,7 +1,10 @@
 package com.scytalys.technikon.domain;
 
 import jakarta.persistence.*;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -11,7 +14,6 @@ import java.util.Set;
 @NoArgsConstructor
 @Getter
 @Setter
-@ToString
 @Table(name = "\"user\"")
 @SequenceGenerator(name = "idGenerator", sequenceName = "user_seq", initialValue = 1, allocationSize = 1)
 
@@ -26,7 +28,7 @@ public class User extends BaseModel {
     @Column(name = "address", length = 255)
     private String address;
     @Column(name = "number", length = 12)
-    private Long number;
+    private Long phoneNumber;
     @Column(name = "user_name", length = 50)
     private String username;
     @Column(name = "email", length = 50)
@@ -40,6 +42,5 @@ public class User extends BaseModel {
     )
     private Set<Role> roles = new HashSet<>();
 
-    public void setUsername(String username) {
-    }
+
 }
