@@ -34,7 +34,7 @@ public class PropertyServiceImpl implements PropertyService {
         proDB.setAddress(property.getAddress());
         proDB.setYearOfConstruction(property.getYearOfConstruction());
         proDB.setPropertyType(property.getPropertyType());
-        proDB.setUser(property.getUser());
+//        proDB.setUser(property.getUser());
         proDB.setPropertyPictureUrl(property.getPropertyPictureUrl());
         proDB.setPropertyCoordinatesLong(property.getPropertyCoordinatesLong());
         proDB.setPropertyCoordinatesLat(property.getPropertyCoordinatesLat());
@@ -84,7 +84,7 @@ public class PropertyServiceImpl implements PropertyService {
     }
 
     @Override
-    public List<Property> findByUserId(Long id) {
-        return propertyRepository.findByUserId(id).orElse(null);
+    public List<Property> findPropertyByUser(Long userId) {
+        return propertyRepository.findPropertyByUser(userId).orElse(null);
     }
 }

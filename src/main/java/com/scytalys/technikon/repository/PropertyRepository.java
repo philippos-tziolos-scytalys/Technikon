@@ -20,7 +20,12 @@ public interface PropertyRepository extends JpaRepository<Property, Long> {
 //            """)
 //    Optional<List<Property>> findByTin(Long tin);
 
-    Optional<List<Property>> findByUserId(Long userId);
+    @Query("""
+                select p from Property p
+                join fetch User u
+                where u.id = :userId
+            """)
+    Optional<List<Property>> findPropertyByUser(Long userId);
 
 
     @Query("""

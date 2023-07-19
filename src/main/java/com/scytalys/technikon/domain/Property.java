@@ -3,12 +3,14 @@ package com.scytalys.technikon.domain;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.List;
+
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
-@ToString
+@Builder
 @Table(name = "property")
 @SequenceGenerator(name = "idGenerator", sequenceName = "property_seq", initialValue = 1, allocationSize = 1)
 public class Property extends BaseModel {
@@ -38,7 +40,10 @@ public class Property extends BaseModel {
     @Column(name = "active_state")
     private boolean activeState = true;
 
-    @ManyToOne
-    @JoinColumn(name = "id")
+    @OneToMany(cascade = CascadeType.ALL)
+    private List<Repair> repairs;
+
+    @ManyToOne()
+    @JoinColumn(name = "user_id")
     private User user;
 }

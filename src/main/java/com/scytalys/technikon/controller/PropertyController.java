@@ -74,9 +74,9 @@ public class PropertyController {
         return ResponseEntity.ok("Repair deleted successfully");
     }
 
-    @GetMapping("/findUser/{id}")
-    public ResponseEntity<List<PropertyDto>> findById(@PathVariable("id") Long userId) {
-        return ResponseEntity.ok(propertyMapper.propertyListToPropertyDtoList(propertyService.findByUserId(userId)));
+    @GetMapping(headers = "action=findPropertyByUser")
+    public ResponseEntity<List<PropertyDto>> findPropertyByUser(Long userId) {
+        return ResponseEntity.ok(propertyMapper.propertyListToPropertyDtoList(propertyService.findPropertyByUser(userId)));
     }
 
 }
