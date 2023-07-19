@@ -1395,3 +1395,315 @@
 2023-07-18 12:43:09.584 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@26b39ce0: (connection evicted)
 2023-07-18 12:43:09.584 DEBUG SCY-LP-032 - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
 2023-07-18 12:43:09.584  INFO SCY-LP-032 - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Shutdown completed.
+2023-07-19 13:17:21.724  INFO SCY-LP-032 - [           main] [r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-19 13:17:21.795  INFO SCY-LP-032 - [           main] [r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 63 ms. Found 4 JPA repository interfaces.
+2023-07-19 13:17:22.387 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : Driver class org.postgresql.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@1d44bcfa
+2023-07-19 13:17:22.587 DEBUG SCY-LP-032 - [           main] [o.h.c.i.RegionFactoryInitiator     ] : Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2023-07-19 13:17:22.588 DEBUG SCY-LP-032 - [           main] [o.h.c.i.RegionFactoryInitiator     ] : Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2023-07-19 13:17:22.836 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : HikariPool-1 - configuration:
+2023-07-19 13:17:22.837 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : allowPoolSuspension.............false
+2023-07-19 13:17:22.837 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : autoCommit......................true
+2023-07-19 13:17:22.837 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : catalog.........................none
+2023-07-19 13:17:22.837 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : connectionInitSql...............none
+2023-07-19 13:17:22.837 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : connectionTestQuery.............none
+2023-07-19 13:17:22.837 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : connectionTimeout...............30000
+2023-07-19 13:17:22.838 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : dataSource......................none
+2023-07-19 13:17:22.838 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : dataSourceClassName.............none
+2023-07-19 13:17:22.838 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : dataSourceJNDI..................none
+2023-07-19 13:17:22.838 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : dataSourceProperties............{password=<masked>}
+2023-07-19 13:17:22.838 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : driverClassName................."org.postgresql.Driver"
+2023-07-19 13:17:22.838 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : exceptionOverrideClassName......none
+2023-07-19 13:17:22.838 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : healthCheckProperties...........{}
+2023-07-19 13:17:22.838 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : healthCheckRegistry.............none
+2023-07-19 13:17:22.838 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : idleTimeout.....................600000
+2023-07-19 13:17:22.838 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : initializationFailTimeout.......1
+2023-07-19 13:17:22.838 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : isolateInternalQueries..........false
+2023-07-19 13:17:22.838 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : jdbcUrl.........................jdbc:postgresql://192.168.56.10:5432/bootcamp
+2023-07-19 13:17:22.838 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : keepaliveTime...................0
+2023-07-19 13:17:22.838 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : leakDetectionThreshold..........0
+2023-07-19 13:17:22.838 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : maxLifetime.....................1800000
+2023-07-19 13:17:22.838 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : maximumPoolSize.................10
+2023-07-19 13:17:22.838 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : metricRegistry..................none
+2023-07-19 13:17:22.838 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : metricsTrackerFactory...........none
+2023-07-19 13:17:22.838 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : minimumIdle.....................10
+2023-07-19 13:17:22.838 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : password........................<masked>
+2023-07-19 13:17:22.838 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : poolName........................"HikariPool-1"
+2023-07-19 13:17:22.838 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : readOnly........................false
+2023-07-19 13:17:22.838 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : registerMbeans..................false
+2023-07-19 13:17:22.838 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : scheduledExecutor...............none
+2023-07-19 13:17:22.838 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : schema..........................none
+2023-07-19 13:17:22.839 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : threadFactory...................internal
+2023-07-19 13:17:22.839 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : transactionIsolation............default
+2023-07-19 13:17:22.839 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : username........................"scytalys"
+2023-07-19 13:17:22.839 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : validationTimeout...............5000
+2023-07-19 13:17:22.839  INFO SCY-LP-032 - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Starting...
+2023-07-19 13:17:22.934  INFO SCY-LP-032 - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6caeba36
+2023-07-19 13:17:22.935  INFO SCY-LP-032 - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Start completed.
+2023-07-19 13:17:23.037 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2023-07-19 13:17:23.047 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1acc43f2
+2023-07-19 13:17:23.066 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@140bbedb
+2023-07-19 13:17:23.084 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@10342882
+2023-07-19 13:17:23.105 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5536b4e0
+2023-07-19 13:17:23.125 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2d9dae67
+2023-07-19 13:17:23.146 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@64a92069
+2023-07-19 13:17:23.169 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@55e86446
+2023-07-19 13:17:23.192 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@35194baf
+2023-07-19 13:17:23.215 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@75b735fd
+2023-07-19 13:17:23.227 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2023-07-19 13:17:23.937  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-19 13:17:23.937  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : constraint "fkn9cdajshrebcritph05nuxxlv" of relation "property" does not exist, skipping
+2023-07-19 13:17:23.938  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-19 13:17:23.939  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "property_repairs" does not exist, skipping
+2023-07-19 13:17:23.939  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-19 13:17:23.939  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "property_repairs" does not exist, skipping
+2023-07-19 13:17:23.943  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-19 13:17:23.943  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "user_properties" does not exist, skipping
+2023-07-19 13:17:23.945  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-19 13:17:23.945  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "user_properties" does not exist, skipping
+2023-07-19 13:17:23.955  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-19 13:17:23.955  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "property_repairs" does not exist, skipping
+2023-07-19 13:17:23.964  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-19 13:17:23.964  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "user_properties" does not exist, skipping
+2023-07-19 13:17:24.417  INFO SCY-LP-032 - [           main] [o.s.d.j.r.q.QueryEnhancerFactory   ] : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-07-19 13:17:53.038 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-07-19 13:17:53.038 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2023-07-19 13:18:23.040 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-07-19 13:18:23.040 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2023-07-19 13:18:53.041 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-07-19 13:18:53.041 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2023-07-19 13:19:18.733  INFO SCY-LP-032 - [ionShutdownHook] [c.z.h.HikariDataSource             ] : HikariPool-1 - Shutdown initiated...
+2023-07-19 13:19:18.733 DEBUG SCY-LP-032 - [ionShutdownHook] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+2023-07-19 13:19:18.734 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@6caeba36: (connection evicted)
+2023-07-19 13:19:18.734 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@1acc43f2: (connection evicted)
+2023-07-19 13:19:18.734 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@140bbedb: (connection evicted)
+2023-07-19 13:19:18.734 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@10342882: (connection evicted)
+2023-07-19 13:19:18.734 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@5536b4e0: (connection evicted)
+2023-07-19 13:19:18.735 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@2d9dae67: (connection evicted)
+2023-07-19 13:19:18.735 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@64a92069: (connection evicted)
+2023-07-19 13:19:18.735 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@55e86446: (connection evicted)
+2023-07-19 13:19:18.735 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@35194baf: (connection evicted)
+2023-07-19 13:19:18.735 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@75b735fd: (connection evicted)
+2023-07-19 13:19:18.735 DEBUG SCY-LP-032 - [ionShutdownHook] [c.z.h.p.HikariPool                 ] : HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2023-07-19 13:19:18.735  INFO SCY-LP-032 - [ionShutdownHook] [c.z.h.HikariDataSource             ] : HikariPool-1 - Shutdown completed.
+2023-07-19 13:19:57.808  INFO SCY-LP-032 - [           main] [r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-19 13:19:57.864  INFO SCY-LP-032 - [           main] [r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 49 ms. Found 4 JPA repository interfaces.
+2023-07-19 13:19:58.368 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : Driver class org.postgresql.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@1d44bcfa
+2023-07-19 13:19:58.511 DEBUG SCY-LP-032 - [           main] [o.h.c.i.RegionFactoryInitiator     ] : Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2023-07-19 13:19:58.511 DEBUG SCY-LP-032 - [           main] [o.h.c.i.RegionFactoryInitiator     ] : Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2023-07-19 13:19:58.713 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : HikariPool-1 - configuration:
+2023-07-19 13:19:58.715 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : allowPoolSuspension.............false
+2023-07-19 13:19:58.715 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : autoCommit......................true
+2023-07-19 13:19:58.715 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : catalog.........................none
+2023-07-19 13:19:58.715 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : connectionInitSql...............none
+2023-07-19 13:19:58.715 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : connectionTestQuery.............none
+2023-07-19 13:19:58.715 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : connectionTimeout...............30000
+2023-07-19 13:19:58.715 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : dataSource......................none
+2023-07-19 13:19:58.715 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : dataSourceClassName.............none
+2023-07-19 13:19:58.715 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : dataSourceJNDI..................none
+2023-07-19 13:19:58.715 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : dataSourceProperties............{password=<masked>}
+2023-07-19 13:19:58.716 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : driverClassName................."org.postgresql.Driver"
+2023-07-19 13:19:58.716 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : exceptionOverrideClassName......none
+2023-07-19 13:19:58.716 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : healthCheckProperties...........{}
+2023-07-19 13:19:58.716 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : healthCheckRegistry.............none
+2023-07-19 13:19:58.716 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : idleTimeout.....................600000
+2023-07-19 13:19:58.716 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : initializationFailTimeout.......1
+2023-07-19 13:19:58.716 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : isolateInternalQueries..........false
+2023-07-19 13:19:58.716 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : jdbcUrl.........................jdbc:postgresql://192.168.56.10:5432/bootcamp
+2023-07-19 13:19:58.716 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : keepaliveTime...................0
+2023-07-19 13:19:58.716 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : leakDetectionThreshold..........0
+2023-07-19 13:19:58.716 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : maxLifetime.....................1800000
+2023-07-19 13:19:58.716 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : maximumPoolSize.................10
+2023-07-19 13:19:58.716 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : metricRegistry..................none
+2023-07-19 13:19:58.716 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : metricsTrackerFactory...........none
+2023-07-19 13:19:58.716 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : minimumIdle.....................10
+2023-07-19 13:19:58.716 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : password........................<masked>
+2023-07-19 13:19:58.716 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : poolName........................"HikariPool-1"
+2023-07-19 13:19:58.716 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : readOnly........................false
+2023-07-19 13:19:58.716 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : registerMbeans..................false
+2023-07-19 13:19:58.716 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : scheduledExecutor...............none
+2023-07-19 13:19:58.716 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : schema..........................none
+2023-07-19 13:19:58.717 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : threadFactory...................internal
+2023-07-19 13:19:58.717 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : transactionIsolation............default
+2023-07-19 13:19:58.717 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : username........................"scytalys"
+2023-07-19 13:19:58.717 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : validationTimeout...............5000
+2023-07-19 13:19:58.717  INFO SCY-LP-032 - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Starting...
+2023-07-19 13:19:58.793  INFO SCY-LP-032 - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4dd1d2bb
+2023-07-19 13:19:58.794  INFO SCY-LP-032 - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Start completed.
+2023-07-19 13:19:58.896 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2023-07-19 13:19:58.905 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2bdf6293
+2023-07-19 13:19:58.928 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@25188998
+2023-07-19 13:19:58.951 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@212709e3
+2023-07-19 13:19:58.975 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@642583a3
+2023-07-19 13:19:58.996 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@34bebe4e
+2023-07-19 13:19:59.017 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@550ba508
+2023-07-19 13:19:59.038 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4587eeed
+2023-07-19 13:19:59.056 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4d2c20b0
+2023-07-19 13:19:59.078 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@577e6f50
+2023-07-19 13:19:59.090 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2023-07-19 13:19:59.687  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-19 13:19:59.687  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "property" does not exist, skipping
+2023-07-19 13:19:59.688  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-19 13:19:59.688  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "property_repairs" does not exist, skipping
+2023-07-19 13:19:59.689  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-19 13:19:59.689  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "property_repairs" does not exist, skipping
+2023-07-19 13:19:59.690  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-19 13:19:59.690  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "repairs" does not exist, skipping
+2023-07-19 13:19:59.691  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-19 13:19:59.691  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "user_properties" does not exist, skipping
+2023-07-19 13:19:59.692  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-19 13:19:59.692  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "user_properties" does not exist, skipping
+2023-07-19 13:19:59.693  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-19 13:19:59.693  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "user_roles" does not exist, skipping
+2023-07-19 13:19:59.693  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-19 13:19:59.693  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "user_roles" does not exist, skipping
+2023-07-19 13:19:59.694  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-19 13:19:59.694  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "property" does not exist, skipping
+2023-07-19 13:19:59.695  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-19 13:19:59.695  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "property_repairs" does not exist, skipping
+2023-07-19 13:19:59.696  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-19 13:19:59.696  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "repairs" does not exist, skipping
+2023-07-19 13:19:59.697  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-19 13:19:59.697  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "roles" does not exist, skipping
+2023-07-19 13:19:59.698  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-19 13:19:59.698  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "user" does not exist, skipping
+2023-07-19 13:19:59.699  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-19 13:19:59.699  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "user_properties" does not exist, skipping
+2023-07-19 13:19:59.700  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-19 13:19:59.700  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "user_roles" does not exist, skipping
+2023-07-19 13:19:59.701  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-19 13:19:59.701  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : sequence "property_seq" does not exist, skipping
+2023-07-19 13:19:59.701  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-19 13:19:59.701  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : sequence "repair_seq" does not exist, skipping
+2023-07-19 13:19:59.703  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-19 13:19:59.703  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : sequence "roles_seq" does not exist, skipping
+2023-07-19 13:19:59.703  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-19 13:19:59.703  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : sequence "user_seq" does not exist, skipping
+2023-07-19 13:20:00.106  INFO SCY-LP-032 - [           main] [o.s.d.j.r.q.QueryEnhancerFactory   ] : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-07-19 13:20:28.897 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-07-19 13:20:28.897 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2023-07-19 13:20:36.943  INFO SCY-LP-032 - [ionShutdownHook] [c.z.h.HikariDataSource             ] : HikariPool-1 - Shutdown initiated...
+2023-07-19 13:20:36.943 DEBUG SCY-LP-032 - [ionShutdownHook] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+2023-07-19 13:20:36.944 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@4dd1d2bb: (connection evicted)
+2023-07-19 13:20:36.945 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@2bdf6293: (connection evicted)
+2023-07-19 13:20:36.945 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@25188998: (connection evicted)
+2023-07-19 13:20:36.945 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@212709e3: (connection evicted)
+2023-07-19 13:20:36.945 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@642583a3: (connection evicted)
+2023-07-19 13:20:36.945 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@34bebe4e: (connection evicted)
+2023-07-19 13:20:36.945 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@550ba508: (connection evicted)
+2023-07-19 13:20:36.946 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@4587eeed: (connection evicted)
+2023-07-19 13:20:36.946 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@4d2c20b0: (connection evicted)
+2023-07-19 13:20:36.946 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@577e6f50: (connection evicted)
+2023-07-19 13:20:36.946 DEBUG SCY-LP-032 - [ionShutdownHook] [c.z.h.p.HikariPool                 ] : HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2023-07-19 13:20:36.946  INFO SCY-LP-032 - [ionShutdownHook] [c.z.h.HikariDataSource             ] : HikariPool-1 - Shutdown completed.
+2023-07-19 13:20:39.871  INFO SCY-LP-032 - [           main] [r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-19 13:20:39.924  INFO SCY-LP-032 - [           main] [r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 47 ms. Found 4 JPA repository interfaces.
+2023-07-19 13:20:40.396 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : Driver class org.postgresql.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@1d44bcfa
+2023-07-19 13:20:40.545 DEBUG SCY-LP-032 - [           main] [o.h.c.i.RegionFactoryInitiator     ] : Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2023-07-19 13:20:40.545 DEBUG SCY-LP-032 - [           main] [o.h.c.i.RegionFactoryInitiator     ] : Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2023-07-19 13:20:40.737 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : HikariPool-1 - configuration:
+2023-07-19 13:20:40.739 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : allowPoolSuspension.............false
+2023-07-19 13:20:40.739 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : autoCommit......................true
+2023-07-19 13:20:40.739 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : catalog.........................none
+2023-07-19 13:20:40.739 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : connectionInitSql...............none
+2023-07-19 13:20:40.739 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : connectionTestQuery.............none
+2023-07-19 13:20:40.739 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : connectionTimeout...............30000
+2023-07-19 13:20:40.739 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : dataSource......................none
+2023-07-19 13:20:40.739 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : dataSourceClassName.............none
+2023-07-19 13:20:40.740 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : dataSourceJNDI..................none
+2023-07-19 13:20:40.740 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : dataSourceProperties............{password=<masked>}
+2023-07-19 13:20:40.740 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : driverClassName................."org.postgresql.Driver"
+2023-07-19 13:20:40.740 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : exceptionOverrideClassName......none
+2023-07-19 13:20:40.740 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : healthCheckProperties...........{}
+2023-07-19 13:20:40.740 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : healthCheckRegistry.............none
+2023-07-19 13:20:40.740 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : idleTimeout.....................600000
+2023-07-19 13:20:40.740 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : initializationFailTimeout.......1
+2023-07-19 13:20:40.740 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : isolateInternalQueries..........false
+2023-07-19 13:20:40.741 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : jdbcUrl.........................jdbc:postgresql://192.168.56.10:5432/bootcamp
+2023-07-19 13:20:40.741 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : keepaliveTime...................0
+2023-07-19 13:20:40.741 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : leakDetectionThreshold..........0
+2023-07-19 13:20:40.741 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : maxLifetime.....................1800000
+2023-07-19 13:20:40.741 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : maximumPoolSize.................10
+2023-07-19 13:20:40.741 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : metricRegistry..................none
+2023-07-19 13:20:40.741 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : metricsTrackerFactory...........none
+2023-07-19 13:20:40.741 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : minimumIdle.....................10
+2023-07-19 13:20:40.741 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : password........................<masked>
+2023-07-19 13:20:40.741 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : poolName........................"HikariPool-1"
+2023-07-19 13:20:40.741 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : readOnly........................false
+2023-07-19 13:20:40.741 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : registerMbeans..................false
+2023-07-19 13:20:40.741 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : scheduledExecutor...............none
+2023-07-19 13:20:40.741 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : schema..........................none
+2023-07-19 13:20:40.741 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : threadFactory...................internal
+2023-07-19 13:20:40.741 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : transactionIsolation............default
+2023-07-19 13:20:40.741 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : username........................"scytalys"
+2023-07-19 13:20:40.741 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : validationTimeout...............5000
+2023-07-19 13:20:40.741  INFO SCY-LP-032 - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Starting...
+2023-07-19 13:20:40.819  INFO SCY-LP-032 - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6caeba36
+2023-07-19 13:20:40.820  INFO SCY-LP-032 - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Start completed.
+2023-07-19 13:20:40.921 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2023-07-19 13:20:40.930 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@63d4aef7
+2023-07-19 13:20:40.952 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6d135cfd
+2023-07-19 13:20:40.973 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@692cc587
+2023-07-19 13:20:40.995 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2c2e56c6
+2023-07-19 13:20:41.016 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6a4bf6a2
+2023-07-19 13:20:41.038 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1dc8bba2
+2023-07-19 13:20:41.057 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@79cab84d
+2023-07-19 13:20:41.078 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2187097d
+2023-07-19 13:20:41.097 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@9432c61
+2023-07-19 13:20:41.108 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2023-07-19 13:20:41.748  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-19 13:20:41.748  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : constraint "uk_8e2ix86k39vjp3bfn89y79k6i" of relation "property_repairs" does not exist, skipping
+2023-07-19 13:20:41.755  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-19 13:20:41.755  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : constraint "uk_e9ick15bllfl2on11bufyh48k" of relation "user_properties" does not exist, skipping
+2023-07-19 13:20:42.089  INFO SCY-LP-032 - [           main] [o.s.d.j.r.q.QueryEnhancerFactory   ] : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-07-19 13:21:10.922 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-07-19 13:21:10.922 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2023-07-19 13:21:40.925 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-07-19 13:21:40.925 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2023-07-19 13:22:10.926 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-07-19 13:22:10.926 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2023-07-19 13:22:40.927 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-07-19 13:22:40.927 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2023-07-19 13:23:10.928 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-07-19 13:23:10.928 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2023-07-19 13:23:40.929 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-07-19 13:23:40.929 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2023-07-19 13:24:10.930 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-07-19 13:24:10.930 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2023-07-19 13:24:40.931 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-07-19 13:24:40.931 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2023-07-19 13:25:10.933 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-07-19 13:25:10.933 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2023-07-19 13:25:40.933 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-07-19 13:25:40.933 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2023-07-19 13:26:10.934 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-07-19 13:26:10.934 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2023-07-19 13:26:40.935 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-07-19 13:26:40.935 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2023-07-19 13:27:10.937 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-07-19 13:27:10.937 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2023-07-19 13:27:40.939 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-07-19 13:27:40.939 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2023-07-19 13:28:10.940 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-07-19 13:28:10.940 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2023-07-19 13:28:40.941 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-07-19 13:28:40.941 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2023-07-19 13:29:10.942 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-07-19 13:29:10.942 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2023-07-19 13:29:40.943 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-07-19 13:29:40.943 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2023-07-19 13:30:10.945 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-07-19 13:30:10.945 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2023-07-19 13:30:25.965  INFO SCY-LP-032 - [ionShutdownHook] [c.z.h.HikariDataSource             ] : HikariPool-1 - Shutdown initiated...
+2023-07-19 13:30:25.965 DEBUG SCY-LP-032 - [ionShutdownHook] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+2023-07-19 13:30:25.966 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@6caeba36: (connection evicted)
+2023-07-19 13:30:25.966 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@63d4aef7: (connection evicted)
+2023-07-19 13:30:25.966 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@6d135cfd: (connection evicted)
+2023-07-19 13:30:25.966 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@692cc587: (connection evicted)
+2023-07-19 13:30:25.966 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@2c2e56c6: (connection evicted)
+2023-07-19 13:30:25.966 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@6a4bf6a2: (connection evicted)
+2023-07-19 13:30:25.967 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@1dc8bba2: (connection evicted)
+2023-07-19 13:30:25.967 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@79cab84d: (connection evicted)
+2023-07-19 13:30:25.967 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@2187097d: (connection evicted)
+2023-07-19 13:30:25.967 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@9432c61: (connection evicted)
+2023-07-19 13:30:25.967 DEBUG SCY-LP-032 - [ionShutdownHook] [c.z.h.p.HikariPool                 ] : HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2023-07-19 13:30:25.967  INFO SCY-LP-032 - [ionShutdownHook] [c.z.h.HikariDataSource             ] : HikariPool-1 - Shutdown completed.

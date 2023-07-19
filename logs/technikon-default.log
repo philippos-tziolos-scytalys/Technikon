@@ -1426,3 +1426,144 @@ Caused by: org.hibernate.MappingException: Column 'id' is duplicated in mapping 
 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
 	... 20 more
+2023-07-19 13:17:21.105  INFO SCY-LP-032 - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 8.0.0.Final
+2023-07-19 13:17:21.145  INFO SCY-LP-032 - [           main] [c.s.t.TechnikonApplication         ] : Starting TechnikonApplication using Java 17.0.7 with PID 13216 (C:\Users\alexandrosg\Desktop\Technikon\target\classes started by alexandrosg in C:\Users\alexandrosg\Desktop\Technikon)
+2023-07-19 13:17:21.149 DEBUG SCY-LP-032 - [           main] [c.s.t.TechnikonApplication         ] : Running with Spring Boot v3.1.1, Spring v6.0.10
+2023-07-19 13:17:21.150  INFO SCY-LP-032 - [           main] [c.s.t.TechnikonApplication         ] : No active profile set, falling back to 1 default profile: "default"
+2023-07-19 13:17:22.221  INFO SCY-LP-032 - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2023-07-19 13:17:22.229  INFO SCY-LP-032 - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-19 13:17:22.231  INFO SCY-LP-032 - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2023-07-19 13:17:22.231  INFO SCY-LP-032 - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-19 13:17:22.319  INFO SCY-LP-032 - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2023-07-19 13:17:22.319  INFO SCY-LP-032 - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1117 ms
+2023-07-19 13:17:22.477  INFO SCY-LP-032 - [           main] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-19 13:17:22.552  INFO SCY-LP-032 - [           main] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-19 13:17:22.554  INFO SCY-LP-032 - [           main] [o.h.c.Environment                  ] : HHH000406: Using bytecode reflection optimizer
+2023-07-19 13:17:22.686  INFO SCY-LP-032 - [           main] [o.h.b.i.BytecodeProviderInitiator  ] : HHH000021: Bytecode provider name : bytebuddy
+2023-07-19 13:17:22.820  INFO SCY-LP-032 - [           main] [o.s.o.j.p.SpringPersistenceUnitInfo] : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-19 13:17:23.173  WARN SCY-LP-032 - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-19 13:17:23.177  WARN SCY-LP-032 - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-19 13:17:23.178  WARN SCY-LP-032 - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-19 13:17:23.241  INFO SCY-LP-032 - [           main] [o.h.b.i.BytecodeProviderInitiator  ] : HHH000021: Bytecode provider name : bytebuddy
+2023-07-19 13:17:24.062  INFO SCY-LP-032 - [           main] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-19 13:17:24.710  WARN SCY-LP-032 - [           main] [seConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-19 13:17:24.788 DEBUG SCY-LP-032 - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-19 13:17:24.859 DEBUG SCY-LP-032 - [           main] [.m.m.a.RequestMappingHandlerMapping] : 26 mappings in 'requestMappingHandlerMapping'
+2023-07-19 13:17:24.874 DEBUG SCY-LP-032 - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-07-19 13:17:24.880 DEBUG SCY-LP-032 - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-19 13:17:24.953  INFO SCY-LP-032 - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2023-07-19 13:17:24.972  INFO SCY-LP-032 - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-19 13:17:24.978  INFO SCY-LP-032 - [           main] [c.s.t.TechnikonApplication         ] : Started TechnikonApplication in 4.214 seconds (process running for 5.322)
+2023-07-19 13:17:52.457  INFO SCY-LP-032 - [nio-8080-exec-1] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-19 13:17:52.457  INFO SCY-LP-032 - [nio-8080-exec-1] [o.s.w.s.DispatcherServlet          ] : Initializing Servlet 'dispatcherServlet'
+2023-07-19 13:17:52.457 DEBUG SCY-LP-032 - [nio-8080-exec-1] [o.s.w.s.DispatcherServlet          ] : Detected StandardServletMultipartResolver
+2023-07-19 13:17:52.457 DEBUG SCY-LP-032 - [nio-8080-exec-1] [o.s.w.s.DispatcherServlet          ] : Detected AcceptHeaderLocaleResolver
+2023-07-19 13:17:52.457 DEBUG SCY-LP-032 - [nio-8080-exec-1] [o.s.w.s.DispatcherServlet          ] : Detected FixedThemeResolver
+2023-07-19 13:17:52.458 DEBUG SCY-LP-032 - [nio-8080-exec-1] [o.s.w.s.DispatcherServlet          ] : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3bf31f3e
+2023-07-19 13:17:52.458 DEBUG SCY-LP-032 - [nio-8080-exec-1] [o.s.w.s.DispatcherServlet          ] : Detected org.springframework.web.servlet.support.SessionFlashMapManager@33a38f07
+2023-07-19 13:17:52.458 DEBUG SCY-LP-032 - [nio-8080-exec-1] [o.s.w.s.DispatcherServlet          ] : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-07-19 13:17:52.458  INFO SCY-LP-032 - [nio-8080-exec-1] [o.s.w.s.DispatcherServlet          ] : Completed initialization in 1 ms
+2023-07-19 13:17:52.465 DEBUG SCY-LP-032 - [nio-8080-exec-1] [o.s.w.s.DispatcherServlet          ] : POST "/api/auth/register", parameters={}
+2023-07-19 13:17:52.472 DEBUG SCY-LP-032 - [nio-8080-exec-1] [.m.m.a.RequestMappingHandlerMapping] : Mapped to com.scytalys.technikon.controller.AuthController#register(UserDto)
+2023-07-19 13:17:52.537 DEBUG SCY-LP-032 - [nio-8080-exec-1] [.RequestResponseBodyMethodProcessor] : Read "application/json;charset=UTF-8" to [UserDto(id=null, tinNumber=555555555, name=John, lastname=Doe, address=New ork Street, phoneNumber=2 (truncated)...]
+2023-07-19 13:17:52.581 DEBUG SCY-LP-032 - [nio-8080-exec-1] [w.s.m.m.a.HttpEntityMethodProcessor] : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2023-07-19 13:17:52.581 DEBUG SCY-LP-032 - [nio-8080-exec-1] [w.s.m.m.a.HttpEntityMethodProcessor] : Writing ["User Registered successfully"]
+2023-07-19 13:17:52.586 DEBUG SCY-LP-032 - [nio-8080-exec-1] [o.s.w.s.DispatcherServlet          ] : Completed 201 CREATED
+2023-07-19 13:18:44.318 DEBUG SCY-LP-032 - [nio-8080-exec-2] [o.s.w.s.DispatcherServlet          ] : POST "/api/auth/login", parameters={}
+2023-07-19 13:18:44.318 DEBUG SCY-LP-032 - [nio-8080-exec-2] [.m.m.a.RequestMappingHandlerMapping] : Mapped to com.scytalys.technikon.controller.AuthController#login(LoginDto)
+2023-07-19 13:18:44.319 DEBUG SCY-LP-032 - [nio-8080-exec-2] [.RequestResponseBodyMethodProcessor] : Read "application/json;charset=UTF-8" to [com.scytalys.technikon.dto.LoginDto@66aa21ab]
+2023-07-19 13:18:44.331 DEBUG SCY-LP-032 - [nio-8080-exec-2] [w.s.m.m.a.HttpEntityMethodProcessor] : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2023-07-19 13:18:44.331 DEBUG SCY-LP-032 - [nio-8080-exec-2] [w.s.m.m.a.HttpEntityMethodProcessor] : Writing ["Login successful"]
+2023-07-19 13:18:44.332 DEBUG SCY-LP-032 - [nio-8080-exec-2] [o.s.w.s.DispatcherServlet          ] : Completed 200 OK
+2023-07-19 13:18:54.139 DEBUG SCY-LP-032 - [nio-8080-exec-3] [o.s.w.s.DispatcherServlet          ] : POST "/api/auth/login", parameters={}
+2023-07-19 13:18:54.139 DEBUG SCY-LP-032 - [nio-8080-exec-3] [.m.m.a.RequestMappingHandlerMapping] : Mapped to com.scytalys.technikon.controller.AuthController#login(LoginDto)
+2023-07-19 13:18:54.140 DEBUG SCY-LP-032 - [nio-8080-exec-3] [.RequestResponseBodyMethodProcessor] : Read "application/json;charset=UTF-8" to [com.scytalys.technikon.dto.LoginDto@640a91]
+2023-07-19 13:18:54.144 DEBUG SCY-LP-032 - [nio-8080-exec-3] [w.s.m.m.a.HttpEntityMethodProcessor] : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2023-07-19 13:18:54.144 DEBUG SCY-LP-032 - [nio-8080-exec-3] [w.s.m.m.a.HttpEntityMethodProcessor] : Writing ["Invalid credentials"]
+2023-07-19 13:18:54.144 DEBUG SCY-LP-032 - [nio-8080-exec-3] [o.s.w.s.DispatcherServlet          ] : Completed 401 UNAUTHORIZED
+2023-07-19 13:19:18.688  INFO SCY-LP-032 - [ionShutdownHook] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-19 13:19:57.264  INFO SCY-LP-032 - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 8.0.0.Final
+2023-07-19 13:19:57.297  INFO SCY-LP-032 - [           main] [c.s.t.TechnikonApplication         ] : Starting TechnikonApplication using Java 17.0.7 with PID 4016 (C:\Users\alexandrosg\Desktop\Technikon\target\classes started by alexandrosg in C:\Users\alexandrosg\Desktop\Technikon)
+2023-07-19 13:19:57.302 DEBUG SCY-LP-032 - [           main] [c.s.t.TechnikonApplication         ] : Running with Spring Boot v3.1.1, Spring v6.0.10
+2023-07-19 13:19:57.303  INFO SCY-LP-032 - [           main] [c.s.t.TechnikonApplication         ] : No active profile set, falling back to 1 default profile: "default"
+2023-07-19 13:19:58.213  INFO SCY-LP-032 - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2023-07-19 13:19:58.222  INFO SCY-LP-032 - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-19 13:19:58.224  INFO SCY-LP-032 - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2023-07-19 13:19:58.224  INFO SCY-LP-032 - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-19 13:19:58.309  INFO SCY-LP-032 - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2023-07-19 13:19:58.310  INFO SCY-LP-032 - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 971 ms
+2023-07-19 13:19:58.428  INFO SCY-LP-032 - [           main] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-19 13:19:58.479  INFO SCY-LP-032 - [           main] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-19 13:19:58.482  INFO SCY-LP-032 - [           main] [o.h.c.Environment                  ] : HHH000406: Using bytecode reflection optimizer
+2023-07-19 13:19:58.598  INFO SCY-LP-032 - [           main] [o.h.b.i.BytecodeProviderInitiator  ] : HHH000021: Bytecode provider name : bytebuddy
+2023-07-19 13:19:58.701  INFO SCY-LP-032 - [           main] [o.s.o.j.p.SpringPersistenceUnitInfo] : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-19 13:19:58.993  WARN SCY-LP-032 - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-19 13:19:58.999  WARN SCY-LP-032 - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-19 13:19:59.001  WARN SCY-LP-032 - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-19 13:19:59.056  INFO SCY-LP-032 - [           main] [o.h.b.i.BytecodeProviderInitiator  ] : HHH000021: Bytecode provider name : bytebuddy
+2023-07-19 13:19:59.792  INFO SCY-LP-032 - [           main] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-19 13:20:00.395  WARN SCY-LP-032 - [           main] [seConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-19 13:20:00.473 DEBUG SCY-LP-032 - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-19 13:20:00.544 DEBUG SCY-LP-032 - [           main] [.m.m.a.RequestMappingHandlerMapping] : 26 mappings in 'requestMappingHandlerMapping'
+2023-07-19 13:20:00.558 DEBUG SCY-LP-032 - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-07-19 13:20:00.564 DEBUG SCY-LP-032 - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-19 13:20:00.636  INFO SCY-LP-032 - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2023-07-19 13:20:00.657  INFO SCY-LP-032 - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-19 13:20:00.663  INFO SCY-LP-032 - [           main] [c.s.t.TechnikonApplication         ] : Started TechnikonApplication in 3.692 seconds (process running for 4.681)
+2023-07-19 13:20:36.896  INFO SCY-LP-032 - [ionShutdownHook] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-19 13:20:39.350  INFO SCY-LP-032 - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 8.0.0.Final
+2023-07-19 13:20:39.382  INFO SCY-LP-032 - [           main] [c.s.t.TechnikonApplication         ] : Starting TechnikonApplication using Java 17.0.7 with PID 7924 (C:\Users\alexandrosg\Desktop\Technikon\target\classes started by alexandrosg in C:\Users\alexandrosg\Desktop\Technikon)
+2023-07-19 13:20:39.385 DEBUG SCY-LP-032 - [           main] [c.s.t.TechnikonApplication         ] : Running with Spring Boot v3.1.1, Spring v6.0.10
+2023-07-19 13:20:39.386  INFO SCY-LP-032 - [           main] [c.s.t.TechnikonApplication         ] : No active profile set, falling back to 1 default profile: "default"
+2023-07-19 13:20:40.266  INFO SCY-LP-032 - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2023-07-19 13:20:40.273  INFO SCY-LP-032 - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-19 13:20:40.274  INFO SCY-LP-032 - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2023-07-19 13:20:40.275  INFO SCY-LP-032 - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-19 13:20:40.343  INFO SCY-LP-032 - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2023-07-19 13:20:40.343  INFO SCY-LP-032 - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 927 ms
+2023-07-19 13:20:40.456  INFO SCY-LP-032 - [           main] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-19 13:20:40.512  INFO SCY-LP-032 - [           main] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-19 13:20:40.514  INFO SCY-LP-032 - [           main] [o.h.c.Environment                  ] : HHH000406: Using bytecode reflection optimizer
+2023-07-19 13:20:40.621  INFO SCY-LP-032 - [           main] [o.h.b.i.BytecodeProviderInitiator  ] : HHH000021: Bytecode provider name : bytebuddy
+2023-07-19 13:20:40.723  INFO SCY-LP-032 - [           main] [o.s.o.j.p.SpringPersistenceUnitInfo] : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-19 13:20:41.006  WARN SCY-LP-032 - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-19 13:20:41.011  WARN SCY-LP-032 - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-19 13:20:41.014  WARN SCY-LP-032 - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-19 13:20:41.073  INFO SCY-LP-032 - [           main] [o.h.b.i.BytecodeProviderInitiator  ] : HHH000021: Bytecode provider name : bytebuddy
+2023-07-19 13:20:41.788  INFO SCY-LP-032 - [           main] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-19 13:20:42.388  WARN SCY-LP-032 - [           main] [seConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-19 13:20:42.463 DEBUG SCY-LP-032 - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-19 13:20:42.547 DEBUG SCY-LP-032 - [           main] [.m.m.a.RequestMappingHandlerMapping] : 26 mappings in 'requestMappingHandlerMapping'
+2023-07-19 13:20:42.562 DEBUG SCY-LP-032 - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-07-19 13:20:42.569 DEBUG SCY-LP-032 - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-19 13:20:42.632  INFO SCY-LP-032 - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2023-07-19 13:20:42.648  INFO SCY-LP-032 - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-19 13:20:42.654  INFO SCY-LP-032 - [           main] [c.s.t.TechnikonApplication         ] : Started TechnikonApplication in 3.611 seconds (process running for 4.586)
+2023-07-19 13:20:50.676  INFO SCY-LP-032 - [nio-8080-exec-1] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-19 13:20:50.676  INFO SCY-LP-032 - [nio-8080-exec-1] [o.s.w.s.DispatcherServlet          ] : Initializing Servlet 'dispatcherServlet'
+2023-07-19 13:20:50.676 DEBUG SCY-LP-032 - [nio-8080-exec-1] [o.s.w.s.DispatcherServlet          ] : Detected StandardServletMultipartResolver
+2023-07-19 13:20:50.676 DEBUG SCY-LP-032 - [nio-8080-exec-1] [o.s.w.s.DispatcherServlet          ] : Detected AcceptHeaderLocaleResolver
+2023-07-19 13:20:50.676 DEBUG SCY-LP-032 - [nio-8080-exec-1] [o.s.w.s.DispatcherServlet          ] : Detected FixedThemeResolver
+2023-07-19 13:20:50.677 DEBUG SCY-LP-032 - [nio-8080-exec-1] [o.s.w.s.DispatcherServlet          ] : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@310db5c4
+2023-07-19 13:20:50.677 DEBUG SCY-LP-032 - [nio-8080-exec-1] [o.s.w.s.DispatcherServlet          ] : Detected org.springframework.web.servlet.support.SessionFlashMapManager@266b7d1
+2023-07-19 13:20:50.677 DEBUG SCY-LP-032 - [nio-8080-exec-1] [o.s.w.s.DispatcherServlet          ] : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-07-19 13:20:50.677  INFO SCY-LP-032 - [nio-8080-exec-1] [o.s.w.s.DispatcherServlet          ] : Completed initialization in 1 ms
+2023-07-19 13:20:50.682 DEBUG SCY-LP-032 - [nio-8080-exec-1] [o.s.w.s.DispatcherServlet          ] : POST "/api/auth/register", parameters={}
+2023-07-19 13:20:50.689 DEBUG SCY-LP-032 - [nio-8080-exec-1] [.m.m.a.RequestMappingHandlerMapping] : Mapped to com.scytalys.technikon.controller.AuthController#register(UserDto)
+2023-07-19 13:20:50.751 DEBUG SCY-LP-032 - [nio-8080-exec-1] [.RequestResponseBodyMethodProcessor] : Read "application/json;charset=UTF-8" to [UserDto(id=null, tinNumber=555555555, name=John, lastname=Doe, address=New ork Street, phoneNumber=2 (truncated)...]
+2023-07-19 13:20:50.787 DEBUG SCY-LP-032 - [nio-8080-exec-1] [w.s.m.m.a.HttpEntityMethodProcessor] : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2023-07-19 13:20:50.788 DEBUG SCY-LP-032 - [nio-8080-exec-1] [w.s.m.m.a.HttpEntityMethodProcessor] : Writing ["User Registered successfully"]
+2023-07-19 13:20:50.792 DEBUG SCY-LP-032 - [nio-8080-exec-1] [o.s.w.s.DispatcherServlet          ] : Completed 201 CREATED
+2023-07-19 13:20:52.964 DEBUG SCY-LP-032 - [nio-8080-exec-2] [o.s.w.s.DispatcherServlet          ] : POST "/api/auth/login", parameters={}
+2023-07-19 13:20:52.964 DEBUG SCY-LP-032 - [nio-8080-exec-2] [.m.m.a.RequestMappingHandlerMapping] : Mapped to com.scytalys.technikon.controller.AuthController#login(LoginDto)
+2023-07-19 13:20:52.966 DEBUG SCY-LP-032 - [nio-8080-exec-2] [.RequestResponseBodyMethodProcessor] : Read "application/json;charset=UTF-8" to [com.scytalys.technikon.dto.LoginDto@9138d20]
+2023-07-19 13:20:52.977 DEBUG SCY-LP-032 - [nio-8080-exec-2] [w.s.m.m.a.HttpEntityMethodProcessor] : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2023-07-19 13:20:52.977 DEBUG SCY-LP-032 - [nio-8080-exec-2] [w.s.m.m.a.HttpEntityMethodProcessor] : Writing ["Invalid credentials"]
+2023-07-19 13:20:52.978 DEBUG SCY-LP-032 - [nio-8080-exec-2] [o.s.w.s.DispatcherServlet          ] : Completed 401 UNAUTHORIZED
+2023-07-19 13:20:55.961 DEBUG SCY-LP-032 - [nio-8080-exec-3] [o.s.w.s.DispatcherServlet          ] : POST "/api/auth/login", parameters={}
+2023-07-19 13:20:55.961 DEBUG SCY-LP-032 - [nio-8080-exec-3] [.m.m.a.RequestMappingHandlerMapping] : Mapped to com.scytalys.technikon.controller.AuthController#login(LoginDto)
+2023-07-19 13:20:55.962 DEBUG SCY-LP-032 - [nio-8080-exec-3] [.RequestResponseBodyMethodProcessor] : Read "application/json;charset=UTF-8" to [com.scytalys.technikon.dto.LoginDto@20fae8a2]
+2023-07-19 13:20:55.966 DEBUG SCY-LP-032 - [nio-8080-exec-3] [w.s.m.m.a.HttpEntityMethodProcessor] : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2023-07-19 13:20:55.966 DEBUG SCY-LP-032 - [nio-8080-exec-3] [w.s.m.m.a.HttpEntityMethodProcessor] : Writing ["Login successful"]
+2023-07-19 13:20:55.967 DEBUG SCY-LP-032 - [nio-8080-exec-3] [o.s.w.s.DispatcherServlet          ] : Completed 200 OK
+2023-07-19 13:30:25.963  INFO SCY-LP-032 - [ionShutdownHook] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
