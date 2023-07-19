@@ -1,0 +1,328 @@
+2023-07-18 11:35:03.366 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create table property (id bigint not null, active_state boolean, address varchar(255), pin bigint, map_location_lat bigint, map_location_long bigint, property_picture varchar(255), property_type varchar(255) check (property_type in ('DETACHED_HOUSE','MAISONETTE','APARTMENT_BUILDING')), year_of_construction integer, owner bigint, primary key (id))
+2023-07-18 11:35:03.435 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create table repairs (id bigint not null, cost numeric(38,2) not null, description varchar(1000) not null, repair_date timestamp(6) not null, repair_status varchar(11) not null check (repair_status in ('PENDING','SCHEDULED','IN_PROGRESS','COMPLETED')), repair_type varchar(15) not null check (repair_type in ('PAINTING','INSULATION','FRAMES','PLUMBING','ELECTRICAL_WORK')), property_id bigint, primary key (id))
+2023-07-18 11:35:03.453 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create table roles (id bigint not null, name varchar(45) not null, primary key (id))
+2023-07-18 11:35:03.462 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create table "user" (id bigint not null, address varchar(255), email varchar(50), last_name varchar(50), first_name varchar(50), number bigint, password varchar(255), tin_number bigint, user_name varchar(50), primary key (id))
+2023-07-18 11:35:03.476 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create table user_roles (user_id bigint not null, role_id bigint not null, primary key (user_id, role_id))
+2023-07-18 11:35:03.488 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create sequence property_seq start with 1 increment by 1
+2023-07-18 11:35:03.493 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create sequence repair_seq start with 1 increment by 1
+2023-07-18 11:35:03.497 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create sequence roles_seq start with 1 increment by 1
+2023-07-18 11:35:03.500 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create sequence user_seq start with 1 increment by 1
+2023-07-18 11:35:03.504 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists property add constraint FK85jx6f9v41j9prosux26p5y70 foreign key (owner) references "user"
+2023-07-18 11:35:03.520 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists repairs add constraint FK6i88fgqlrt72jjuky9k3xnull foreign key (property_id) references property
+2023-07-18 11:35:03.529 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists user_roles add constraint FKh8ciramu9cc9q3qcqiv4ue8a6 foreign key (role_id) references roles
+2023-07-18 11:35:03.533 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists user_roles add constraint FK7ivp84f52aa3vd7ndq0oh0279 foreign key (user_id) references "user"
+2023-07-18 11:36:50.902 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists repairs alter column repair_date set data type timestamp(6)
+2023-07-18 11:36:50.906 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists "user" alter column number set data type bigint
+2023-07-18 11:36:50.910 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists "user" alter column tin_number set data type bigint
+2023-07-18 11:37:42.238 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists repairs alter column repair_date set data type timestamp(6)
+2023-07-18 11:37:42.242 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists "user" alter column number set data type bigint
+2023-07-18 11:37:42.245 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists "user" alter column tin_number set data type bigint
+2023-07-18 11:39:56.915 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists repairs alter column repair_date set data type timestamp(6)
+2023-07-18 11:39:56.920 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists "user" alter column number set data type bigint
+2023-07-18 11:39:56.922 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists "user" alter column tin_number set data type bigint
+2023-07-18 11:42:51.144 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists repairs alter column repair_date set data type timestamp(6)
+2023-07-18 11:42:51.149 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists "user" alter column number set data type bigint
+2023-07-18 11:42:51.152 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists "user" alter column tin_number set data type bigint
+2023-07-18 11:45:56.572 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists repairs alter column repair_date set data type timestamp(6)
+2023-07-18 11:45:56.577 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists "user" alter column number set data type bigint
+2023-07-18 11:45:56.580 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists "user" alter column tin_number set data type bigint
+2023-07-18 11:46:47.290 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists repairs alter column repair_date set data type timestamp(6)
+2023-07-18 11:46:47.294 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists "user" alter column number set data type bigint
+2023-07-18 11:46:47.297 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists "user" alter column tin_number set data type bigint
+2023-07-18 11:50:20.851 DEBUG SCY-LP-032 - [nio-8080-exec-1] [o.h.SQL                            ] : select nextval('property_seq')
+2023-07-18 11:50:20.883 DEBUG SCY-LP-032 - [nio-8080-exec-1] [o.h.SQL                            ] : insert into property (active_state,address,pin,map_location_lat,map_location_long,property_picture,property_type,owner,year_of_construction,id) values (?,?,?,?,?,?,?,?,?,?)
+2023-07-18 11:50:20.885 TRACE SCY-LP-032 - [nio-8080-exec-1] [o.h.o.j.bind                       ] : binding parameter [1] as [BOOLEAN] - [true]
+2023-07-18 11:50:20.885 TRACE SCY-LP-032 - [nio-8080-exec-1] [o.h.o.j.bind                       ] : binding parameter [2] as [VARCHAR] - [Omirou 6-8]
+2023-07-18 11:50:20.885 TRACE SCY-LP-032 - [nio-8080-exec-1] [o.h.o.j.bind                       ] : binding parameter [3] as [BIGINT] - [null]
+2023-07-18 11:50:20.885 TRACE SCY-LP-032 - [nio-8080-exec-1] [o.h.o.j.bind                       ] : binding parameter [4] as [BIGINT] - [23523]
+2023-07-18 11:50:20.890 TRACE SCY-LP-032 - [nio-8080-exec-1] [o.h.o.j.bind                       ] : binding parameter [5] as [BIGINT] - [75203]
+2023-07-18 11:50:20.891 TRACE SCY-LP-032 - [nio-8080-exec-1] [o.h.o.j.bind                       ] : binding parameter [6] as [VARCHAR] - [null]
+2023-07-18 11:50:20.891 TRACE SCY-LP-032 - [nio-8080-exec-1] [o.h.o.j.bind                       ] : binding parameter [7] as [VARCHAR] - [DETACHED_HOUSE]
+2023-07-18 11:50:20.891 TRACE SCY-LP-032 - [nio-8080-exec-1] [o.h.o.j.bind                       ] : binding parameter [8] as [BIGINT] - [null]
+2023-07-18 11:50:20.891 TRACE SCY-LP-032 - [nio-8080-exec-1] [o.h.o.j.bind                       ] : binding parameter [9] as [INTEGER] - [2015]
+2023-07-18 11:50:20.891 TRACE SCY-LP-032 - [nio-8080-exec-1] [o.h.o.j.bind                       ] : binding parameter [10] as [BIGINT] - [1]
+2023-07-18 11:50:59.510 DEBUG SCY-LP-032 - [nio-8080-exec-2] [o.h.SQL                            ] : select nextval('property_seq')
+2023-07-18 11:50:59.510 DEBUG SCY-LP-032 - [nio-8080-exec-2] [o.h.SQL                            ] : insert into property (active_state,address,pin,map_location_lat,map_location_long,property_picture,property_type,owner,year_of_construction,id) values (?,?,?,?,?,?,?,?,?,?)
+2023-07-18 11:50:59.510 TRACE SCY-LP-032 - [nio-8080-exec-2] [o.h.o.j.bind                       ] : binding parameter [1] as [BOOLEAN] - [true]
+2023-07-18 11:50:59.510 TRACE SCY-LP-032 - [nio-8080-exec-2] [o.h.o.j.bind                       ] : binding parameter [2] as [VARCHAR] - [Omirou 6-8]
+2023-07-18 11:50:59.511 TRACE SCY-LP-032 - [nio-8080-exec-2] [o.h.o.j.bind                       ] : binding parameter [3] as [BIGINT] - [12345634378]
+2023-07-18 11:50:59.511 TRACE SCY-LP-032 - [nio-8080-exec-2] [o.h.o.j.bind                       ] : binding parameter [4] as [BIGINT] - [23523]
+2023-07-18 11:50:59.511 TRACE SCY-LP-032 - [nio-8080-exec-2] [o.h.o.j.bind                       ] : binding parameter [5] as [BIGINT] - [75203]
+2023-07-18 11:50:59.511 TRACE SCY-LP-032 - [nio-8080-exec-2] [o.h.o.j.bind                       ] : binding parameter [6] as [VARCHAR] - [null]
+2023-07-18 11:50:59.511 TRACE SCY-LP-032 - [nio-8080-exec-2] [o.h.o.j.bind                       ] : binding parameter [7] as [VARCHAR] - [DETACHED_HOUSE]
+2023-07-18 11:50:59.511 TRACE SCY-LP-032 - [nio-8080-exec-2] [o.h.o.j.bind                       ] : binding parameter [8] as [BIGINT] - [null]
+2023-07-18 11:50:59.511 TRACE SCY-LP-032 - [nio-8080-exec-2] [o.h.o.j.bind                       ] : binding parameter [9] as [INTEGER] - [2015]
+2023-07-18 11:50:59.511 TRACE SCY-LP-032 - [nio-8080-exec-2] [o.h.o.j.bind                       ] : binding parameter [10] as [BIGINT] - [2]
+2023-07-18 11:55:51.687 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists repairs alter column repair_date set data type timestamp(6)
+2023-07-18 11:55:51.699 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists "user" alter column number set data type bigint
+2023-07-18 11:55:51.702 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists "user" alter column tin_number set data type bigint
+2023-07-18 11:57:57.705 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists repairs alter column repair_date set data type timestamp(6)
+2023-07-18 11:57:57.708 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists "user" alter column number set data type bigint
+2023-07-18 11:57:57.711 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists "user" alter column tin_number set data type bigint
+2023-07-18 12:03:47.334 DEBUG SCY-LP-032 - [nio-8080-exec-6] [o.h.SQL                            ] : select nextval('repair_seq')
+2023-07-18 12:03:47.371 DEBUG SCY-LP-032 - [nio-8080-exec-6] [o.h.SQL                            ] : insert into repairs (cost,description,property_id,repair_date,repair_status,repair_type,id) values (?,?,?,?,?,?,?)
+2023-07-18 12:03:47.372 TRACE SCY-LP-032 - [nio-8080-exec-6] [o.h.o.j.bind                       ] : binding parameter [1] as [NUMERIC] - [15000]
+2023-07-18 12:03:47.373 TRACE SCY-LP-032 - [nio-8080-exec-6] [o.h.o.j.bind                       ] : binding parameter [2] as [VARCHAR] - [test description]
+2023-07-18 12:03:47.373 TRACE SCY-LP-032 - [nio-8080-exec-6] [o.h.o.j.bind                       ] : binding parameter [3] as [BIGINT] - [null]
+2023-07-18 12:03:47.373 TRACE SCY-LP-032 - [nio-8080-exec-6] [o.h.o.j.bind                       ] : binding parameter [4] as [TIMESTAMP] - [2023-07-18 03:00:00.0]
+2023-07-18 12:03:47.373 TRACE SCY-LP-032 - [nio-8080-exec-6] [o.h.o.j.bind                       ] : binding parameter [5] as [VARCHAR] - [PENDING]
+2023-07-18 12:03:47.373 TRACE SCY-LP-032 - [nio-8080-exec-6] [o.h.o.j.bind                       ] : binding parameter [6] as [VARCHAR] - [PAINTING]
+2023-07-18 12:03:47.373 TRACE SCY-LP-032 - [nio-8080-exec-6] [o.h.o.j.bind                       ] : binding parameter [7] as [BIGINT] - [1]
+2023-07-18 12:04:18.349 DEBUG SCY-LP-032 - [nio-8080-exec-8] [o.h.SQL                            ] : select u1_0.id from "user" u1_0 where u1_0.user_name is null fetch first ? rows only
+2023-07-18 12:04:18.350 TRACE SCY-LP-032 - [nio-8080-exec-8] [o.h.o.j.bind                       ] : binding parameter [1] as [INTEGER] - [1]
+2023-07-18 12:04:18.361 DEBUG SCY-LP-032 - [nio-8080-exec-8] [o.h.SQL                            ] : select u1_0.id from "user" u1_0 where u1_0.email=? fetch first ? rows only
+2023-07-18 12:04:18.361 TRACE SCY-LP-032 - [nio-8080-exec-8] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [john@example.com]
+2023-07-18 12:04:18.361 TRACE SCY-LP-032 - [nio-8080-exec-8] [o.h.o.j.bind                       ] : binding parameter [2] as [INTEGER] - [1]
+2023-07-18 12:04:18.362 DEBUG SCY-LP-032 - [nio-8080-exec-8] [o.h.SQL                            ] : select nextval('user_seq')
+2023-07-18 12:04:18.371 DEBUG SCY-LP-032 - [nio-8080-exec-8] [o.h.SQL                            ] : insert into "user" (address,email,last_name,first_name,number,password,tin_number,user_name,id) values (?,?,?,?,?,?,?,?,?)
+2023-07-18 12:04:18.371 TRACE SCY-LP-032 - [nio-8080-exec-8] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [New York Street]
+2023-07-18 12:04:18.372 TRACE SCY-LP-032 - [nio-8080-exec-8] [o.h.o.j.bind                       ] : binding parameter [2] as [VARCHAR] - [john@example.com]
+2023-07-18 12:04:18.372 TRACE SCY-LP-032 - [nio-8080-exec-8] [o.h.o.j.bind                       ] : binding parameter [3] as [VARCHAR] - [Doe]
+2023-07-18 12:04:18.372 TRACE SCY-LP-032 - [nio-8080-exec-8] [o.h.o.j.bind                       ] : binding parameter [4] as [VARCHAR] - [John]
+2023-07-18 12:04:18.372 TRACE SCY-LP-032 - [nio-8080-exec-8] [o.h.o.j.bind                       ] : binding parameter [5] as [BIGINT] - [null]
+2023-07-18 12:04:18.372 TRACE SCY-LP-032 - [nio-8080-exec-8] [o.h.o.j.bind                       ] : binding parameter [6] as [VARCHAR] - [john123]
+2023-07-18 12:04:18.372 TRACE SCY-LP-032 - [nio-8080-exec-8] [o.h.o.j.bind                       ] : binding parameter [7] as [BIGINT] - [555555555]
+2023-07-18 12:04:18.372 TRACE SCY-LP-032 - [nio-8080-exec-8] [o.h.o.j.bind                       ] : binding parameter [8] as [VARCHAR] - [null]
+2023-07-18 12:04:18.372 TRACE SCY-LP-032 - [nio-8080-exec-8] [o.h.o.j.bind                       ] : binding parameter [9] as [BIGINT] - [1]
+2023-07-18 12:07:34.318 DEBUG SCY-LP-032 - [io-8080-exec-10] [o.h.SQL                            ] : select u1_0.id from "user" u1_0 where u1_0.user_name is null fetch first ? rows only
+2023-07-18 12:07:34.319 TRACE SCY-LP-032 - [io-8080-exec-10] [o.h.o.j.bind                       ] : binding parameter [1] as [INTEGER] - [1]
+2023-07-18 12:07:57.595 DEBUG SCY-LP-032 - [nio-8080-exec-1] [o.h.SQL                            ] : select u1_0.id from "user" u1_0 where u1_0.user_name is null fetch first ? rows only
+2023-07-18 12:07:57.596 TRACE SCY-LP-032 - [nio-8080-exec-1] [o.h.o.j.bind                       ] : binding parameter [1] as [INTEGER] - [1]
+2023-07-18 12:09:09.323 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists repairs alter column repair_date set data type timestamp(6)
+2023-07-18 12:09:09.328 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists "user" alter column number set data type bigint
+2023-07-18 12:09:09.331 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists "user" alter column tin_number set data type bigint
+2023-07-18 12:09:21.131 DEBUG SCY-LP-032 - [nio-8080-exec-1] [o.h.SQL                            ] : select u1_0.id from "user" u1_0 where u1_0.user_name is null fetch first ? rows only
+2023-07-18 12:09:21.133 TRACE SCY-LP-032 - [nio-8080-exec-1] [o.h.o.j.bind                       ] : binding parameter [1] as [INTEGER] - [1]
+2023-07-18 12:11:15.788 DEBUG SCY-LP-032 - [nio-8080-exec-3] [o.h.SQL                            ] : select u1_0.id from "user" u1_0 where u1_0.user_name is null fetch first ? rows only
+2023-07-18 12:11:15.790 TRACE SCY-LP-032 - [nio-8080-exec-3] [o.h.o.j.bind                       ] : binding parameter [1] as [INTEGER] - [1]
+2023-07-18 12:11:20.027 DEBUG SCY-LP-032 - [nio-8080-exec-5] [o.h.SQL                            ] : select u1_0.id from "user" u1_0 where u1_0.user_name is null fetch first ? rows only
+2023-07-18 12:11:20.028 TRACE SCY-LP-032 - [nio-8080-exec-5] [o.h.o.j.bind                       ] : binding parameter [1] as [INTEGER] - [1]
+2023-07-18 12:11:58.824 DEBUG SCY-LP-032 - [nio-8080-exec-4] [o.h.SQL                            ] : select u1_0.id from "user" u1_0 where u1_0.user_name is null fetch first ? rows only
+2023-07-18 12:11:58.826 TRACE SCY-LP-032 - [nio-8080-exec-4] [o.h.o.j.bind                       ] : binding parameter [1] as [INTEGER] - [1]
+2023-07-18 12:12:39.789 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists repairs alter column repair_date set data type timestamp(6)
+2023-07-18 12:12:39.792 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists "user" alter column number set data type bigint
+2023-07-18 12:12:39.795 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists "user" alter column tin_number set data type bigint
+2023-07-18 12:12:43.993 DEBUG SCY-LP-032 - [nio-8080-exec-1] [o.h.SQL                            ] : select u1_0.id from "user" u1_0 where u1_0.user_name is null fetch first ? rows only
+2023-07-18 12:12:43.995 TRACE SCY-LP-032 - [nio-8080-exec-1] [o.h.o.j.bind                       ] : binding parameter [1] as [INTEGER] - [1]
+2023-07-18 12:12:53.386 DEBUG SCY-LP-032 - [nio-8080-exec-2] [o.h.SQL                            ] : select u1_0.id from "user" u1_0 where u1_0.user_name is null fetch first ? rows only
+2023-07-18 12:12:53.387 TRACE SCY-LP-032 - [nio-8080-exec-2] [o.h.o.j.bind                       ] : binding parameter [1] as [INTEGER] - [1]
+2023-07-18 12:15:04.977 DEBUG SCY-LP-032 - [nio-8080-exec-4] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.number,u1_0.password,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.id=?
+2023-07-18 12:15:04.977 TRACE SCY-LP-032 - [nio-8080-exec-4] [o.h.o.j.bind                       ] : binding parameter [1] as [BIGINT] - [1]
+2023-07-18 12:15:05.015 DEBUG SCY-LP-032 - [nio-8080-exec-4] [o.h.SQL                            ] : delete from user_roles where user_id=?
+2023-07-18 12:15:05.016 TRACE SCY-LP-032 - [nio-8080-exec-4] [o.h.o.j.bind                       ] : binding parameter [1] as [BIGINT] - [1]
+2023-07-18 12:15:05.023 DEBUG SCY-LP-032 - [nio-8080-exec-4] [o.h.SQL                            ] : delete from "user" where id=?
+2023-07-18 12:15:05.023 TRACE SCY-LP-032 - [nio-8080-exec-4] [o.h.o.j.bind                       ] : binding parameter [1] as [BIGINT] - [1]
+2023-07-18 12:15:14.189 DEBUG SCY-LP-032 - [nio-8080-exec-5] [o.h.SQL                            ] : select u1_0.id from "user" u1_0 where u1_0.user_name is null fetch first ? rows only
+2023-07-18 12:15:14.190 TRACE SCY-LP-032 - [nio-8080-exec-5] [o.h.o.j.bind                       ] : binding parameter [1] as [INTEGER] - [1]
+2023-07-18 12:15:14.199 DEBUG SCY-LP-032 - [nio-8080-exec-5] [o.h.SQL                            ] : select u1_0.id from "user" u1_0 where u1_0.email=? fetch first ? rows only
+2023-07-18 12:15:14.199 TRACE SCY-LP-032 - [nio-8080-exec-5] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [john@example.com]
+2023-07-18 12:15:14.199 TRACE SCY-LP-032 - [nio-8080-exec-5] [o.h.o.j.bind                       ] : binding parameter [2] as [INTEGER] - [1]
+2023-07-18 12:15:14.204 DEBUG SCY-LP-032 - [nio-8080-exec-5] [o.h.SQL                            ] : select nextval('user_seq')
+2023-07-18 12:15:14.212 DEBUG SCY-LP-032 - [nio-8080-exec-5] [o.h.SQL                            ] : insert into "user" (address,email,last_name,first_name,number,password,tin_number,user_name,id) values (?,?,?,?,?,?,?,?,?)
+2023-07-18 12:15:14.213 TRACE SCY-LP-032 - [nio-8080-exec-5] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [New York Street]
+2023-07-18 12:15:14.213 TRACE SCY-LP-032 - [nio-8080-exec-5] [o.h.o.j.bind                       ] : binding parameter [2] as [VARCHAR] - [john@example.com]
+2023-07-18 12:15:14.213 TRACE SCY-LP-032 - [nio-8080-exec-5] [o.h.o.j.bind                       ] : binding parameter [3] as [VARCHAR] - [Doe]
+2023-07-18 12:15:14.213 TRACE SCY-LP-032 - [nio-8080-exec-5] [o.h.o.j.bind                       ] : binding parameter [4] as [VARCHAR] - [John]
+2023-07-18 12:15:14.213 TRACE SCY-LP-032 - [nio-8080-exec-5] [o.h.o.j.bind                       ] : binding parameter [5] as [BIGINT] - [null]
+2023-07-18 12:15:14.213 TRACE SCY-LP-032 - [nio-8080-exec-5] [o.h.o.j.bind                       ] : binding parameter [6] as [VARCHAR] - [john123]
+2023-07-18 12:15:14.213 TRACE SCY-LP-032 - [nio-8080-exec-5] [o.h.o.j.bind                       ] : binding parameter [7] as [BIGINT] - [555555555]
+2023-07-18 12:15:14.213 TRACE SCY-LP-032 - [nio-8080-exec-5] [o.h.o.j.bind                       ] : binding parameter [8] as [VARCHAR] - [null]
+2023-07-18 12:15:14.213 TRACE SCY-LP-032 - [nio-8080-exec-5] [o.h.o.j.bind                       ] : binding parameter [9] as [BIGINT] - [2]
+2023-07-18 12:15:30.510 DEBUG SCY-LP-032 - [nio-8080-exec-6] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.number,u1_0.password,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.id=?
+2023-07-18 12:15:30.510 TRACE SCY-LP-032 - [nio-8080-exec-6] [o.h.o.j.bind                       ] : binding parameter [1] as [BIGINT] - [1]
+2023-07-18 12:15:45.488 DEBUG SCY-LP-032 - [nio-8080-exec-7] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.number,u1_0.password,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.id=?
+2023-07-18 12:15:45.488 TRACE SCY-LP-032 - [nio-8080-exec-7] [o.h.o.j.bind                       ] : binding parameter [1] as [BIGINT] - [2]
+2023-07-18 12:15:45.491 DEBUG SCY-LP-032 - [nio-8080-exec-7] [o.h.SQL                            ] : delete from user_roles where user_id=?
+2023-07-18 12:15:45.491 TRACE SCY-LP-032 - [nio-8080-exec-7] [o.h.o.j.bind                       ] : binding parameter [1] as [BIGINT] - [2]
+2023-07-18 12:15:45.492 DEBUG SCY-LP-032 - [nio-8080-exec-7] [o.h.SQL                            ] : delete from "user" where id=?
+2023-07-18 12:15:45.492 TRACE SCY-LP-032 - [nio-8080-exec-7] [o.h.o.j.bind                       ] : binding parameter [1] as [BIGINT] - [2]
+2023-07-18 12:17:10.283 DEBUG SCY-LP-032 - [nio-8080-exec-9] [o.h.SQL                            ] : select u1_0.id from "user" u1_0 where u1_0.user_name is null fetch first ? rows only
+2023-07-18 12:17:10.285 TRACE SCY-LP-032 - [nio-8080-exec-9] [o.h.o.j.bind                       ] : binding parameter [1] as [INTEGER] - [1]
+2023-07-18 12:17:10.288 DEBUG SCY-LP-032 - [nio-8080-exec-9] [o.h.SQL                            ] : select u1_0.id from "user" u1_0 where u1_0.email=? fetch first ? rows only
+2023-07-18 12:17:10.288 TRACE SCY-LP-032 - [nio-8080-exec-9] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [john@example.com]
+2023-07-18 12:17:10.288 TRACE SCY-LP-032 - [nio-8080-exec-9] [o.h.o.j.bind                       ] : binding parameter [2] as [INTEGER] - [1]
+2023-07-18 12:17:10.290 DEBUG SCY-LP-032 - [nio-8080-exec-9] [o.h.SQL                            ] : select nextval('user_seq')
+2023-07-18 12:17:10.292 DEBUG SCY-LP-032 - [nio-8080-exec-9] [o.h.SQL                            ] : insert into "user" (address,email,last_name,first_name,number,password,tin_number,user_name,id) values (?,?,?,?,?,?,?,?,?)
+2023-07-18 12:17:10.292 TRACE SCY-LP-032 - [nio-8080-exec-9] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [New York Street]
+2023-07-18 12:17:10.292 TRACE SCY-LP-032 - [nio-8080-exec-9] [o.h.o.j.bind                       ] : binding parameter [2] as [VARCHAR] - [john@example.com]
+2023-07-18 12:17:10.292 TRACE SCY-LP-032 - [nio-8080-exec-9] [o.h.o.j.bind                       ] : binding parameter [3] as [VARCHAR] - [Doe]
+2023-07-18 12:17:10.292 TRACE SCY-LP-032 - [nio-8080-exec-9] [o.h.o.j.bind                       ] : binding parameter [4] as [VARCHAR] - [John]
+2023-07-18 12:17:10.292 TRACE SCY-LP-032 - [nio-8080-exec-9] [o.h.o.j.bind                       ] : binding parameter [5] as [BIGINT] - [null]
+2023-07-18 12:17:10.292 TRACE SCY-LP-032 - [nio-8080-exec-9] [o.h.o.j.bind                       ] : binding parameter [6] as [VARCHAR] - [john123]
+2023-07-18 12:17:10.292 TRACE SCY-LP-032 - [nio-8080-exec-9] [o.h.o.j.bind                       ] : binding parameter [7] as [BIGINT] - [555555555]
+2023-07-18 12:17:10.292 TRACE SCY-LP-032 - [nio-8080-exec-9] [o.h.o.j.bind                       ] : binding parameter [8] as [VARCHAR] - [null]
+2023-07-18 12:17:10.292 TRACE SCY-LP-032 - [nio-8080-exec-9] [o.h.o.j.bind                       ] : binding parameter [9] as [BIGINT] - [3]
+2023-07-18 12:17:21.077 DEBUG SCY-LP-032 - [io-8080-exec-10] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.number,u1_0.password,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.id=?
+2023-07-18 12:17:21.078 TRACE SCY-LP-032 - [io-8080-exec-10] [o.h.o.j.bind                       ] : binding parameter [1] as [BIGINT] - [3]
+2023-07-18 12:17:21.081 DEBUG SCY-LP-032 - [io-8080-exec-10] [o.h.SQL                            ] : delete from user_roles where user_id=?
+2023-07-18 12:17:21.081 TRACE SCY-LP-032 - [io-8080-exec-10] [o.h.o.j.bind                       ] : binding parameter [1] as [BIGINT] - [3]
+2023-07-18 12:17:21.082 DEBUG SCY-LP-032 - [io-8080-exec-10] [o.h.SQL                            ] : delete from "user" where id=?
+2023-07-18 12:17:21.082 TRACE SCY-LP-032 - [io-8080-exec-10] [o.h.o.j.bind                       ] : binding parameter [1] as [BIGINT] - [3]
+2023-07-18 12:17:31.868 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists repairs alter column repair_date set data type timestamp(6)
+2023-07-18 12:17:31.872 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists "user" alter column number set data type bigint
+2023-07-18 12:17:31.875 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists "user" alter column tin_number set data type bigint
+2023-07-18 12:17:43.763 DEBUG SCY-LP-032 - [nio-8080-exec-1] [o.h.SQL                            ] : select u1_0.id from "user" u1_0 where u1_0.user_name=? fetch first ? rows only
+2023-07-18 12:17:43.765 TRACE SCY-LP-032 - [nio-8080-exec-1] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [Mike]
+2023-07-18 12:17:43.765 TRACE SCY-LP-032 - [nio-8080-exec-1] [o.h.o.j.bind                       ] : binding parameter [2] as [INTEGER] - [1]
+2023-07-18 12:17:43.771 DEBUG SCY-LP-032 - [nio-8080-exec-1] [o.h.SQL                            ] : select u1_0.id from "user" u1_0 where u1_0.email=? fetch first ? rows only
+2023-07-18 12:17:43.771 TRACE SCY-LP-032 - [nio-8080-exec-1] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [john@example.com]
+2023-07-18 12:17:43.771 TRACE SCY-LP-032 - [nio-8080-exec-1] [o.h.o.j.bind                       ] : binding parameter [2] as [INTEGER] - [1]
+2023-07-18 12:17:43.783 DEBUG SCY-LP-032 - [nio-8080-exec-1] [o.h.SQL                            ] : select nextval('user_seq')
+2023-07-18 12:17:43.815 DEBUG SCY-LP-032 - [nio-8080-exec-1] [o.h.SQL                            ] : insert into "user" (address,email,last_name,first_name,number,password,tin_number,user_name,id) values (?,?,?,?,?,?,?,?,?)
+2023-07-18 12:17:43.815 TRACE SCY-LP-032 - [nio-8080-exec-1] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [New York Street]
+2023-07-18 12:17:43.815 TRACE SCY-LP-032 - [nio-8080-exec-1] [o.h.o.j.bind                       ] : binding parameter [2] as [VARCHAR] - [john@example.com]
+2023-07-18 12:17:43.815 TRACE SCY-LP-032 - [nio-8080-exec-1] [o.h.o.j.bind                       ] : binding parameter [3] as [VARCHAR] - [Doe]
+2023-07-18 12:17:43.815 TRACE SCY-LP-032 - [nio-8080-exec-1] [o.h.o.j.bind                       ] : binding parameter [4] as [VARCHAR] - [John]
+2023-07-18 12:17:43.815 TRACE SCY-LP-032 - [nio-8080-exec-1] [o.h.o.j.bind                       ] : binding parameter [5] as [BIGINT] - [null]
+2023-07-18 12:17:43.815 TRACE SCY-LP-032 - [nio-8080-exec-1] [o.h.o.j.bind                       ] : binding parameter [6] as [VARCHAR] - [john123]
+2023-07-18 12:17:43.815 TRACE SCY-LP-032 - [nio-8080-exec-1] [o.h.o.j.bind                       ] : binding parameter [7] as [BIGINT] - [555555555]
+2023-07-18 12:17:43.815 TRACE SCY-LP-032 - [nio-8080-exec-1] [o.h.o.j.bind                       ] : binding parameter [8] as [VARCHAR] - [Mike]
+2023-07-18 12:17:43.815 TRACE SCY-LP-032 - [nio-8080-exec-1] [o.h.o.j.bind                       ] : binding parameter [9] as [BIGINT] - [4]
+2023-07-18 12:18:57.620 DEBUG SCY-LP-032 - [nio-8080-exec-3] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.number,u1_0.password,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.id=?
+2023-07-18 12:18:57.620 TRACE SCY-LP-032 - [nio-8080-exec-3] [o.h.o.j.bind                       ] : binding parameter [1] as [BIGINT] - [4]
+2023-07-18 12:18:57.637 DEBUG SCY-LP-032 - [nio-8080-exec-3] [o.h.SQL                            ] : delete from user_roles where user_id=?
+2023-07-18 12:18:57.638 TRACE SCY-LP-032 - [nio-8080-exec-3] [o.h.o.j.bind                       ] : binding parameter [1] as [BIGINT] - [4]
+2023-07-18 12:18:57.641 DEBUG SCY-LP-032 - [nio-8080-exec-3] [o.h.SQL                            ] : delete from "user" where id=?
+2023-07-18 12:18:57.641 TRACE SCY-LP-032 - [nio-8080-exec-3] [o.h.o.j.bind                       ] : binding parameter [1] as [BIGINT] - [4]
+2023-07-18 12:19:10.374 DEBUG SCY-LP-032 - [nio-8080-exec-5] [o.h.SQL                            ] : select u1_0.id from "user" u1_0 where u1_0.user_name=? fetch first ? rows only
+2023-07-18 12:19:10.375 TRACE SCY-LP-032 - [nio-8080-exec-5] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [Mike]
+2023-07-18 12:19:10.375 TRACE SCY-LP-032 - [nio-8080-exec-5] [o.h.o.j.bind                       ] : binding parameter [2] as [INTEGER] - [1]
+2023-07-18 12:19:10.376 DEBUG SCY-LP-032 - [nio-8080-exec-5] [o.h.SQL                            ] : select u1_0.id from "user" u1_0 where u1_0.email=? fetch first ? rows only
+2023-07-18 12:19:10.376 TRACE SCY-LP-032 - [nio-8080-exec-5] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [john@example.com]
+2023-07-18 12:19:10.376 TRACE SCY-LP-032 - [nio-8080-exec-5] [o.h.o.j.bind                       ] : binding parameter [2] as [INTEGER] - [1]
+2023-07-18 12:19:10.378 DEBUG SCY-LP-032 - [nio-8080-exec-5] [o.h.SQL                            ] : select nextval('user_seq')
+2023-07-18 12:19:10.379 DEBUG SCY-LP-032 - [nio-8080-exec-5] [o.h.SQL                            ] : insert into "user" (address,email,last_name,first_name,number,password,tin_number,user_name,id) values (?,?,?,?,?,?,?,?,?)
+2023-07-18 12:19:10.379 TRACE SCY-LP-032 - [nio-8080-exec-5] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [New York Street]
+2023-07-18 12:19:10.379 TRACE SCY-LP-032 - [nio-8080-exec-5] [o.h.o.j.bind                       ] : binding parameter [2] as [VARCHAR] - [john@example.com]
+2023-07-18 12:19:10.379 TRACE SCY-LP-032 - [nio-8080-exec-5] [o.h.o.j.bind                       ] : binding parameter [3] as [VARCHAR] - [Doe]
+2023-07-18 12:19:10.379 TRACE SCY-LP-032 - [nio-8080-exec-5] [o.h.o.j.bind                       ] : binding parameter [4] as [VARCHAR] - [John]
+2023-07-18 12:19:10.379 TRACE SCY-LP-032 - [nio-8080-exec-5] [o.h.o.j.bind                       ] : binding parameter [5] as [BIGINT] - [null]
+2023-07-18 12:19:10.379 TRACE SCY-LP-032 - [nio-8080-exec-5] [o.h.o.j.bind                       ] : binding parameter [6] as [VARCHAR] - [john123]
+2023-07-18 12:19:10.379 TRACE SCY-LP-032 - [nio-8080-exec-5] [o.h.o.j.bind                       ] : binding parameter [7] as [BIGINT] - [555555555]
+2023-07-18 12:19:10.379 TRACE SCY-LP-032 - [nio-8080-exec-5] [o.h.o.j.bind                       ] : binding parameter [8] as [VARCHAR] - [Mike]
+2023-07-18 12:19:10.379 TRACE SCY-LP-032 - [nio-8080-exec-5] [o.h.o.j.bind                       ] : binding parameter [9] as [BIGINT] - [5]
+2023-07-18 12:20:24.955 DEBUG SCY-LP-032 - [nio-8080-exec-7] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.number,u1_0.password,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.id=?
+2023-07-18 12:20:24.955 TRACE SCY-LP-032 - [nio-8080-exec-7] [o.h.o.j.bind                       ] : binding parameter [1] as [BIGINT] - [5]
+2023-07-18 12:20:24.959 DEBUG SCY-LP-032 - [nio-8080-exec-7] [o.h.SQL                            ] : delete from user_roles where user_id=?
+2023-07-18 12:20:24.959 TRACE SCY-LP-032 - [nio-8080-exec-7] [o.h.o.j.bind                       ] : binding parameter [1] as [BIGINT] - [5]
+2023-07-18 12:20:24.960 DEBUG SCY-LP-032 - [nio-8080-exec-7] [o.h.SQL                            ] : delete from "user" where id=?
+2023-07-18 12:20:24.960 TRACE SCY-LP-032 - [nio-8080-exec-7] [o.h.o.j.bind                       ] : binding parameter [1] as [BIGINT] - [5]
+2023-07-18 12:20:37.701 DEBUG SCY-LP-032 - [nio-8080-exec-9] [o.h.SQL                            ] : select u1_0.id from "user" u1_0 where u1_0.user_name=? fetch first ? rows only
+2023-07-18 12:20:37.703 TRACE SCY-LP-032 - [nio-8080-exec-9] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [Mike]
+2023-07-18 12:20:37.703 TRACE SCY-LP-032 - [nio-8080-exec-9] [o.h.o.j.bind                       ] : binding parameter [2] as [INTEGER] - [1]
+2023-07-18 12:20:37.705 DEBUG SCY-LP-032 - [nio-8080-exec-9] [o.h.SQL                            ] : select u1_0.id from "user" u1_0 where u1_0.email=? fetch first ? rows only
+2023-07-18 12:20:37.706 TRACE SCY-LP-032 - [nio-8080-exec-9] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [john@example.com]
+2023-07-18 12:20:37.706 TRACE SCY-LP-032 - [nio-8080-exec-9] [o.h.o.j.bind                       ] : binding parameter [2] as [INTEGER] - [1]
+2023-07-18 12:20:37.707 DEBUG SCY-LP-032 - [nio-8080-exec-9] [o.h.SQL                            ] : select nextval('user_seq')
+2023-07-18 12:20:37.709 DEBUG SCY-LP-032 - [nio-8080-exec-9] [o.h.SQL                            ] : insert into "user" (address,email,last_name,first_name,number,password,tin_number,user_name,id) values (?,?,?,?,?,?,?,?,?)
+2023-07-18 12:20:37.709 TRACE SCY-LP-032 - [nio-8080-exec-9] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [New York Street]
+2023-07-18 12:20:37.709 TRACE SCY-LP-032 - [nio-8080-exec-9] [o.h.o.j.bind                       ] : binding parameter [2] as [VARCHAR] - [john@example.com]
+2023-07-18 12:20:37.709 TRACE SCY-LP-032 - [nio-8080-exec-9] [o.h.o.j.bind                       ] : binding parameter [3] as [VARCHAR] - [Doe]
+2023-07-18 12:20:37.709 TRACE SCY-LP-032 - [nio-8080-exec-9] [o.h.o.j.bind                       ] : binding parameter [4] as [VARCHAR] - [John]
+2023-07-18 12:20:37.709 TRACE SCY-LP-032 - [nio-8080-exec-9] [o.h.o.j.bind                       ] : binding parameter [5] as [BIGINT] - [null]
+2023-07-18 12:20:37.709 TRACE SCY-LP-032 - [nio-8080-exec-9] [o.h.o.j.bind                       ] : binding parameter [6] as [VARCHAR] - [john123]
+2023-07-18 12:20:37.709 TRACE SCY-LP-032 - [nio-8080-exec-9] [o.h.o.j.bind                       ] : binding parameter [7] as [BIGINT] - [555555555]
+2023-07-18 12:20:37.709 TRACE SCY-LP-032 - [nio-8080-exec-9] [o.h.o.j.bind                       ] : binding parameter [8] as [VARCHAR] - [Mike]
+2023-07-18 12:20:37.709 TRACE SCY-LP-032 - [nio-8080-exec-9] [o.h.o.j.bind                       ] : binding parameter [9] as [BIGINT] - [6]
+2023-07-18 12:21:19.054 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists repairs alter column repair_date set data type timestamp(6)
+2023-07-18 12:21:19.058 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists "user" alter column number set data type varchar(12)
+2023-07-18 12:21:19.078 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists "user" alter column tin_number set data type bigint
+2023-07-18 12:21:36.614 DEBUG SCY-LP-032 - [nio-8080-exec-1] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.number,u1_0.password,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.id=?
+2023-07-18 12:21:36.615 TRACE SCY-LP-032 - [nio-8080-exec-1] [o.h.o.j.bind                       ] : binding parameter [1] as [BIGINT] - [6]
+2023-07-18 12:21:36.658 DEBUG SCY-LP-032 - [nio-8080-exec-1] [o.h.SQL                            ] : delete from user_roles where user_id=?
+2023-07-18 12:21:36.659 TRACE SCY-LP-032 - [nio-8080-exec-1] [o.h.o.j.bind                       ] : binding parameter [1] as [BIGINT] - [6]
+2023-07-18 12:21:36.667 DEBUG SCY-LP-032 - [nio-8080-exec-1] [o.h.SQL                            ] : delete from "user" where id=?
+2023-07-18 12:21:36.667 TRACE SCY-LP-032 - [nio-8080-exec-1] [o.h.o.j.bind                       ] : binding parameter [1] as [BIGINT] - [6]
+2023-07-18 12:21:39.708 DEBUG SCY-LP-032 - [nio-8080-exec-2] [o.h.SQL                            ] : select u1_0.id from "user" u1_0 where u1_0.user_name=? fetch first ? rows only
+2023-07-18 12:21:39.710 TRACE SCY-LP-032 - [nio-8080-exec-2] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [Mike]
+2023-07-18 12:21:39.710 TRACE SCY-LP-032 - [nio-8080-exec-2] [o.h.o.j.bind                       ] : binding parameter [2] as [INTEGER] - [1]
+2023-07-18 12:21:39.713 DEBUG SCY-LP-032 - [nio-8080-exec-2] [o.h.SQL                            ] : select u1_0.id from "user" u1_0 where u1_0.email=? fetch first ? rows only
+2023-07-18 12:21:39.713 TRACE SCY-LP-032 - [nio-8080-exec-2] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [john@example.com]
+2023-07-18 12:21:39.713 TRACE SCY-LP-032 - [nio-8080-exec-2] [o.h.o.j.bind                       ] : binding parameter [2] as [INTEGER] - [1]
+2023-07-18 12:21:39.719 DEBUG SCY-LP-032 - [nio-8080-exec-2] [o.h.SQL                            ] : select nextval('user_seq')
+2023-07-18 12:21:39.727 DEBUG SCY-LP-032 - [nio-8080-exec-2] [o.h.SQL                            ] : insert into "user" (address,email,last_name,first_name,number,password,tin_number,user_name,id) values (?,?,?,?,?,?,?,?,?)
+2023-07-18 12:21:39.727 TRACE SCY-LP-032 - [nio-8080-exec-2] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [New York Street]
+2023-07-18 12:21:39.727 TRACE SCY-LP-032 - [nio-8080-exec-2] [o.h.o.j.bind                       ] : binding parameter [2] as [VARCHAR] - [john@example.com]
+2023-07-18 12:21:39.727 TRACE SCY-LP-032 - [nio-8080-exec-2] [o.h.o.j.bind                       ] : binding parameter [3] as [VARCHAR] - [Doe]
+2023-07-18 12:21:39.727 TRACE SCY-LP-032 - [nio-8080-exec-2] [o.h.o.j.bind                       ] : binding parameter [4] as [VARCHAR] - [John]
+2023-07-18 12:21:39.727 TRACE SCY-LP-032 - [nio-8080-exec-2] [o.h.o.j.bind                       ] : binding parameter [5] as [VARCHAR] - [null]
+2023-07-18 12:21:39.727 TRACE SCY-LP-032 - [nio-8080-exec-2] [o.h.o.j.bind                       ] : binding parameter [6] as [VARCHAR] - [john123]
+2023-07-18 12:21:39.727 TRACE SCY-LP-032 - [nio-8080-exec-2] [o.h.o.j.bind                       ] : binding parameter [7] as [BIGINT] - [555555555]
+2023-07-18 12:21:39.727 TRACE SCY-LP-032 - [nio-8080-exec-2] [o.h.o.j.bind                       ] : binding parameter [8] as [VARCHAR] - [Mike]
+2023-07-18 12:21:39.727 TRACE SCY-LP-032 - [nio-8080-exec-2] [o.h.o.j.bind                       ] : binding parameter [9] as [BIGINT] - [7]
+2023-07-18 12:22:20.862 DEBUG SCY-LP-032 - [nio-8080-exec-3] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.number,u1_0.password,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.id=?
+2023-07-18 12:22:20.862 TRACE SCY-LP-032 - [nio-8080-exec-3] [o.h.o.j.bind                       ] : binding parameter [1] as [BIGINT] - [7]
+2023-07-18 12:22:20.869 DEBUG SCY-LP-032 - [nio-8080-exec-3] [o.h.SQL                            ] : delete from user_roles where user_id=?
+2023-07-18 12:22:20.869 TRACE SCY-LP-032 - [nio-8080-exec-3] [o.h.o.j.bind                       ] : binding parameter [1] as [BIGINT] - [7]
+2023-07-18 12:22:20.871 DEBUG SCY-LP-032 - [nio-8080-exec-3] [o.h.SQL                            ] : delete from "user" where id=?
+2023-07-18 12:22:20.872 TRACE SCY-LP-032 - [nio-8080-exec-3] [o.h.o.j.bind                       ] : binding parameter [1] as [BIGINT] - [7]
+2023-07-18 12:22:55.914 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists repairs alter column repair_date set data type timestamp(6)
+2023-07-18 12:22:55.918 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists "user" alter column number set data type bigint
+2023-07-18 12:22:55.922 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists "user" alter column tin_number set data type bigint
+2023-07-18 12:23:43.473 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create table property (id bigint not null, active_state boolean, address varchar(255), pin bigint, map_location_lat bigint, map_location_long bigint, property_picture varchar(255), property_type varchar(255) check (property_type in ('DETACHED_HOUSE','MAISONETTE','APARTMENT_BUILDING')), year_of_construction integer, owner bigint, primary key (id))
+2023-07-18 12:23:43.485 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create table repairs (id bigint not null, cost numeric(38,2) not null, description varchar(1000) not null, repair_date timestamp(6) not null, repair_status varchar(11) not null check (repair_status in ('PENDING','SCHEDULED','IN_PROGRESS','COMPLETED')), repair_type varchar(15) not null check (repair_type in ('PAINTING','INSULATION','FRAMES','PLUMBING','ELECTRICAL_WORK')), property_id bigint, primary key (id))
+2023-07-18 12:23:43.494 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create table roles (id bigint not null, name varchar(45) not null, primary key (id))
+2023-07-18 12:23:43.504 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create table "user" (id bigint not null, address varchar(255), email varchar(50), last_name varchar(50), first_name varchar(50), password varchar(255), number bigint, tin_number bigint, user_name varchar(50), primary key (id))
+2023-07-18 12:23:43.512 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create table user_roles (user_id bigint not null, role_id bigint not null, primary key (user_id, role_id))
+2023-07-18 12:23:43.518 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists property add constraint FK85jx6f9v41j9prosux26p5y70 foreign key (owner) references "user"
+2023-07-18 12:23:43.521 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists repairs add constraint FK6i88fgqlrt72jjuky9k3xnull foreign key (property_id) references property
+2023-07-18 12:23:43.524 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists user_roles add constraint FKh8ciramu9cc9q3qcqiv4ue8a6 foreign key (role_id) references roles
+2023-07-18 12:23:43.527 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists user_roles add constraint FK7ivp84f52aa3vd7ndq0oh0279 foreign key (user_id) references "user"
+2023-07-18 12:24:01.025 DEBUG SCY-LP-032 - [nio-8080-exec-1] [o.h.SQL                            ] : select u1_0.id from "user" u1_0 where u1_0.user_name=? fetch first ? rows only
+2023-07-18 12:24:01.027 TRACE SCY-LP-032 - [nio-8080-exec-1] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [Mike]
+2023-07-18 12:24:01.027 TRACE SCY-LP-032 - [nio-8080-exec-1] [o.h.o.j.bind                       ] : binding parameter [2] as [INTEGER] - [1]
+2023-07-18 12:24:01.034 DEBUG SCY-LP-032 - [nio-8080-exec-1] [o.h.SQL                            ] : select u1_0.id from "user" u1_0 where u1_0.email=? fetch first ? rows only
+2023-07-18 12:24:01.034 TRACE SCY-LP-032 - [nio-8080-exec-1] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [john@example.com]
+2023-07-18 12:24:01.034 TRACE SCY-LP-032 - [nio-8080-exec-1] [o.h.o.j.bind                       ] : binding parameter [2] as [INTEGER] - [1]
+2023-07-18 12:24:01.045 DEBUG SCY-LP-032 - [nio-8080-exec-1] [o.h.SQL                            ] : select nextval('user_seq')
+2023-07-18 12:24:01.077 DEBUG SCY-LP-032 - [nio-8080-exec-1] [o.h.SQL                            ] : insert into "user" (address,email,last_name,first_name,password,number,tin_number,user_name,id) values (?,?,?,?,?,?,?,?,?)
+2023-07-18 12:24:01.078 TRACE SCY-LP-032 - [nio-8080-exec-1] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [New ork Street]
+2023-07-18 12:24:01.078 TRACE SCY-LP-032 - [nio-8080-exec-1] [o.h.o.j.bind                       ] : binding parameter [2] as [VARCHAR] - [john@example.com]
+2023-07-18 12:24:01.078 TRACE SCY-LP-032 - [nio-8080-exec-1] [o.h.o.j.bind                       ] : binding parameter [3] as [VARCHAR] - [Doe]
+2023-07-18 12:24:01.078 TRACE SCY-LP-032 - [nio-8080-exec-1] [o.h.o.j.bind                       ] : binding parameter [4] as [VARCHAR] - [John]
+2023-07-18 12:24:01.078 TRACE SCY-LP-032 - [nio-8080-exec-1] [o.h.o.j.bind                       ] : binding parameter [5] as [VARCHAR] - [john123]
+2023-07-18 12:24:01.078 TRACE SCY-LP-032 - [nio-8080-exec-1] [o.h.o.j.bind                       ] : binding parameter [6] as [BIGINT] - [234567]
+2023-07-18 12:24:01.078 TRACE SCY-LP-032 - [nio-8080-exec-1] [o.h.o.j.bind                       ] : binding parameter [7] as [BIGINT] - [555555555]
+2023-07-18 12:24:01.078 TRACE SCY-LP-032 - [nio-8080-exec-1] [o.h.o.j.bind                       ] : binding parameter [8] as [VARCHAR] - [Mike]
+2023-07-18 12:24:01.078 TRACE SCY-LP-032 - [nio-8080-exec-1] [o.h.o.j.bind                       ] : binding parameter [9] as [BIGINT] - [8]
+2023-07-18 12:27:46.094 DEBUG SCY-LP-032 - [nio-8080-exec-3] [o.h.SQL                            ] : select nextval('property_seq')
+2023-07-18 12:27:46.096 DEBUG SCY-LP-032 - [nio-8080-exec-3] [o.h.SQL                            ] : insert into property (active_state,address,pin,map_location_lat,map_location_long,property_picture,property_type,owner,year_of_construction,id) values (?,?,?,?,?,?,?,?,?,?)
+2023-07-18 12:27:46.096 TRACE SCY-LP-032 - [nio-8080-exec-3] [o.h.o.j.bind                       ] : binding parameter [1] as [BOOLEAN] - [true]
+2023-07-18 12:27:46.096 TRACE SCY-LP-032 - [nio-8080-exec-3] [o.h.o.j.bind                       ] : binding parameter [2] as [VARCHAR] - [Omirou 6-8]
+2023-07-18 12:27:46.096 TRACE SCY-LP-032 - [nio-8080-exec-3] [o.h.o.j.bind                       ] : binding parameter [3] as [BIGINT] - [12345634378]
+2023-07-18 12:27:46.096 TRACE SCY-LP-032 - [nio-8080-exec-3] [o.h.o.j.bind                       ] : binding parameter [4] as [BIGINT] - [23523]
+2023-07-18 12:27:46.096 TRACE SCY-LP-032 - [nio-8080-exec-3] [o.h.o.j.bind                       ] : binding parameter [5] as [BIGINT] - [75203]
+2023-07-18 12:27:46.096 TRACE SCY-LP-032 - [nio-8080-exec-3] [o.h.o.j.bind                       ] : binding parameter [6] as [VARCHAR] - [null]
+2023-07-18 12:27:46.096 TRACE SCY-LP-032 - [nio-8080-exec-3] [o.h.o.j.bind                       ] : binding parameter [7] as [VARCHAR] - [DETACHED_HOUSE]
+2023-07-18 12:27:46.096 TRACE SCY-LP-032 - [nio-8080-exec-3] [o.h.o.j.bind                       ] : binding parameter [8] as [BIGINT] - [null]
+2023-07-18 12:27:46.096 TRACE SCY-LP-032 - [nio-8080-exec-3] [o.h.o.j.bind                       ] : binding parameter [9] as [INTEGER] - [2015]
+2023-07-18 12:27:46.096 TRACE SCY-LP-032 - [nio-8080-exec-3] [o.h.o.j.bind                       ] : binding parameter [10] as [BIGINT] - [3]
+2023-07-18 12:40:06.611 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists repairs alter column repair_date set data type timestamp(6)
+2023-07-18 12:40:06.614 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists "user" alter column number set data type bigint
+2023-07-18 12:40:06.616 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists "user" alter column tin_number set data type bigint
+2023-07-18 12:40:24.617 DEBUG SCY-LP-032 - [nio-8080-exec-1] [o.h.SQL                            ] : select p1_0.id,p1_0.active_state,p1_0.address,p1_0.pin,p1_0.map_location_lat,p1_0.map_location_long,p1_0.property_picture,p1_0.property_type,p1_0.owner,p1_0.year_of_construction from property p1_0 where p1_0.owner=?
+2023-07-18 12:40:24.619 TRACE SCY-LP-032 - [nio-8080-exec-1] [o.h.o.j.bind                       ] : binding parameter [1] as [BIGINT] - [8]
+2023-07-18 12:42:03.093 DEBUG SCY-LP-032 - [nio-8080-exec-3] [o.h.SQL                            ] : select nextval('property_seq')
+2023-07-18 12:42:03.120 DEBUG SCY-LP-032 - [nio-8080-exec-3] [o.h.SQL                            ] : insert into property (active_state,address,pin,map_location_lat,map_location_long,property_picture,property_type,owner,year_of_construction,id) values (?,?,?,?,?,?,?,?,?,?)
+2023-07-18 12:42:03.121 TRACE SCY-LP-032 - [nio-8080-exec-3] [o.h.o.j.bind                       ] : binding parameter [1] as [BOOLEAN] - [true]
+2023-07-18 12:42:03.121 TRACE SCY-LP-032 - [nio-8080-exec-3] [o.h.o.j.bind                       ] : binding parameter [2] as [VARCHAR] - [Omirou 6-8]
+2023-07-18 12:42:03.121 TRACE SCY-LP-032 - [nio-8080-exec-3] [o.h.o.j.bind                       ] : binding parameter [3] as [BIGINT] - [12345634378]
+2023-07-18 12:42:03.121 TRACE SCY-LP-032 - [nio-8080-exec-3] [o.h.o.j.bind                       ] : binding parameter [4] as [BIGINT] - [23523]
+2023-07-18 12:42:03.121 TRACE SCY-LP-032 - [nio-8080-exec-3] [o.h.o.j.bind                       ] : binding parameter [5] as [BIGINT] - [75203]
+2023-07-18 12:42:03.121 TRACE SCY-LP-032 - [nio-8080-exec-3] [o.h.o.j.bind                       ] : binding parameter [6] as [VARCHAR] - [null]
+2023-07-18 12:42:03.121 TRACE SCY-LP-032 - [nio-8080-exec-3] [o.h.o.j.bind                       ] : binding parameter [7] as [VARCHAR] - [DETACHED_HOUSE]
+2023-07-18 12:42:03.121 TRACE SCY-LP-032 - [nio-8080-exec-3] [o.h.o.j.bind                       ] : binding parameter [8] as [BIGINT] - [null]
+2023-07-18 12:42:03.121 TRACE SCY-LP-032 - [nio-8080-exec-3] [o.h.o.j.bind                       ] : binding parameter [9] as [INTEGER] - [2015]
+2023-07-18 12:42:03.121 TRACE SCY-LP-032 - [nio-8080-exec-3] [o.h.o.j.bind                       ] : binding parameter [10] as [BIGINT] - [4]
+2023-07-18 12:42:39.598 DEBUG SCY-LP-032 - [nio-8080-exec-4] [o.h.SQL                            ] : select nextval('property_seq')
+2023-07-18 12:42:39.601 DEBUG SCY-LP-032 - [nio-8080-exec-4] [o.h.SQL                            ] : insert into property (active_state,address,pin,map_location_lat,map_location_long,property_picture,property_type,owner,year_of_construction,id) values (?,?,?,?,?,?,?,?,?,?)
+2023-07-18 12:42:39.601 TRACE SCY-LP-032 - [nio-8080-exec-4] [o.h.o.j.bind                       ] : binding parameter [1] as [BOOLEAN] - [true]
+2023-07-18 12:42:39.601 TRACE SCY-LP-032 - [nio-8080-exec-4] [o.h.o.j.bind                       ] : binding parameter [2] as [VARCHAR] - [Omirou 6-8]
+2023-07-18 12:42:39.601 TRACE SCY-LP-032 - [nio-8080-exec-4] [o.h.o.j.bind                       ] : binding parameter [3] as [BIGINT] - [12345634378]
+2023-07-18 12:42:39.601 TRACE SCY-LP-032 - [nio-8080-exec-4] [o.h.o.j.bind                       ] : binding parameter [4] as [BIGINT] - [23523]
+2023-07-18 12:42:39.601 TRACE SCY-LP-032 - [nio-8080-exec-4] [o.h.o.j.bind                       ] : binding parameter [5] as [BIGINT] - [75203]
+2023-07-18 12:42:39.601 TRACE SCY-LP-032 - [nio-8080-exec-4] [o.h.o.j.bind                       ] : binding parameter [6] as [VARCHAR] - [null]
+2023-07-18 12:42:39.601 TRACE SCY-LP-032 - [nio-8080-exec-4] [o.h.o.j.bind                       ] : binding parameter [7] as [VARCHAR] - [DETACHED_HOUSE]
+2023-07-18 12:42:39.601 TRACE SCY-LP-032 - [nio-8080-exec-4] [o.h.o.j.bind                       ] : binding parameter [8] as [BIGINT] - [null]
+2023-07-18 12:42:39.601 TRACE SCY-LP-032 - [nio-8080-exec-4] [o.h.o.j.bind                       ] : binding parameter [9] as [INTEGER] - [2015]
+2023-07-18 12:42:39.601 TRACE SCY-LP-032 - [nio-8080-exec-4] [o.h.o.j.bind                       ] : binding parameter [10] as [BIGINT] - [5]
