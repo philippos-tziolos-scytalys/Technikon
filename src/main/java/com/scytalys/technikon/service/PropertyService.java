@@ -13,8 +13,6 @@ public interface PropertyService {
 
     Property searchByPIN(Long pin);
 
-//    List<Property> searchByTIN(Long tin);
-
     List<Property> searchByPropertyType(String propertyType);
 
     List<Property> searchByMapLocationRadius(Long longitude, Long latitude);

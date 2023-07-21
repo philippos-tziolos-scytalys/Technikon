@@ -14,11 +14,13 @@ import java.util.List;
 public class RepairServiceImpl implements RepairService {
     private final RepairRepository repairRepository;
 
+    /** Create new repair */
     @Override
     public Repair create(final Repair repair) {
         return repairRepository.save(repair);
     }
 
+    /** Update repair */
     @Override
     public void update(final Repair repair) {
         Repair existingRepair = repairRepository.findById(repair.getId()).orElseThrow(
@@ -33,27 +35,29 @@ public class RepairServiceImpl implements RepairService {
         repairRepository.save(existingRepair);
     }
 
+    /** List all repairs by the user ID */
     @Override
     public List<Repair> findRepairByUserId(Long userId) {
         return repairRepository.findRepairByUserId(userId);
     }
 
+    /** List repairs by their repair date */
     @Override
     public List<Repair> findByRepairDate(final Date repairDate) {
         return repairRepository.findByRepairDate(repairDate);
     }
 
+    /** List repairs between dates given */
     @Override
     public List<Repair> findByRepairDateBetween(Date fromRepairDate, Date toRepairDate) {
         return repairRepository.findByRepairDateBetween(fromRepairDate, toRepairDate);
     }
-
     @Override
     public void delete(final Repair repair) {
         final Repair existingRepair = repairRepository.getReferenceById(repair.getId());
         repairRepository.delete(existingRepair);
     }
-
+    /** Delete repair with the specific ID */
     @Override
     public void delete(final Long repairId) {
         final Repair existingRepair = repairRepository.getReferenceById(repairId);

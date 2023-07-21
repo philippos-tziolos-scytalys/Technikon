@@ -8,6 +8,7 @@ import java.util.stream.IntStream;
 
 public class PasswordEncryption {
 
+    /** Password encryption */
     public static String getHashCode(String aCode) {
         char[] code = aCode.toCharArray();
         StringBuffer hashCode = new StringBuffer();

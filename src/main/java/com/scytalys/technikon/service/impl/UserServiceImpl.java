@@ -17,9 +17,7 @@ public class UserServiceImpl implements UserService {
 
     private final UserRepository userRepository;
 
-    /**
-     * Create user with validation
-     **/
+    /** Create user with validation*/
     @Override
     public User createUser(User user) {
         validateUniqueFields(user);
@@ -27,9 +25,7 @@ public class UserServiceImpl implements UserService {
         return userRepository.save(user);
     }
 
-    /**
-     * Update user
-     **/
+    /** Update user **/
     @Override
     public void updateUser(User user) {
         validateUniqueFields(user);
@@ -47,6 +43,7 @@ public class UserServiceImpl implements UserService {
         userRepository.save(existingUser);
     }
 
+    /** Validation if username, email, or tin number exists */
     private void validateUniqueFields(User user) {
         boolean isUsernameExists = userRepository.existsByUsername(user.getUsername());
         if (isUsernameExists) {
@@ -58,16 +55,14 @@ public class UserServiceImpl implements UserService {
             throw new ExistingUserException("Email already exists");
         }
 
-//        boolean isTinNumberExists = userRepository.existsByTinNumber(userDto.getTinNumber());
-//        if (isTinNumberExists) {
-//            throw new ExistingUserException("Tin number already exists");
-//        }
+        boolean isTinNumberExists = userRepository.existsByTinNumber(user.getTinNumber());
+        if (isTinNumberExists) {
+            throw new ExistingUserException("Tin number already exists");
+        }
     }
 
 
-    /**
-     * Delete user
-     **/
+    /** Delete user */
     public void deleteUser(Long id) {
         Optional<User> userOptional = userRepository.findById(id);
         if (userOptional.isEmpty()) {
@@ -78,26 +73,26 @@ public class UserServiceImpl implements UserService {
     }
 
 
-    /**
-     * Get all user
-     **/
+    /** Get all user */
     public List<User> getAllUsers() {
         return userRepository.findAll();
     }
 
-    /**
-     * Get user by ID
-     **/
+    /** Get user by ID */
     public User getUserById(Long id) {
         return (userRepository.findById(id)
                 .orElseThrow(() -> new UserNotFoundException(id)));
     }
 
+    /** Get user by Tin Number */
     public User getUserByTinNumber(Long tinNumber) {
         return (userRepository.findByTinNumber(tinNumber));
 //                .orElseThrow(()->new UserNotFoundException(tinNumber)));
     }
 
+    /** Get user by Email
+     * Could not resolve exception look at it whenever
+     * */
     public User getUserByEmail(String email) {
         return (userRepository.findByEmail(email));
 //                .orElseThrow(()->new UserNotFoundException(id)));

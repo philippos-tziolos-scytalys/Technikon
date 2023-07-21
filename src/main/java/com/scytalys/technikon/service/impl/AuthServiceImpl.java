@@ -22,6 +22,7 @@ public class AuthServiceImpl implements AuthService {
     private final UserRepository userRepository;
     private final RoleRepository roleRepository;
 
+    /** Register user with validation if username or email exists */
     @Override
     public String register(UserDto userDto) {
         // check if username exists
@@ -55,7 +56,7 @@ public class AuthServiceImpl implements AuthService {
         return "User Registered successfully";
     }
 
-
+    /** Authenticate (Login) user and returning with boolean for access */
     @Override
     public boolean authenticate(LoginDto loginDto) {
         User user = userRepository.findByEmail(loginDto.getUsername());

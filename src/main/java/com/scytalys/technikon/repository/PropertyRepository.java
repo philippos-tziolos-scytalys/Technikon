@@ -14,12 +14,6 @@ public interface PropertyRepository extends JpaRepository<Property, Long> {
             """)
     Property findByPin(Long pin);
 
-//    @Query("""
-//            select p from Property p
-//                    where p.user.tinNumber = :tin
-//            """)
-//    Optional<List<Property>> findByTin(Long tin);
-
     @Query("""
                 select p from Property p
                 join fetch User u

@@ -16,12 +16,14 @@ public class AuthController {
 
     private final AuthService authService;
 
+    /** Registering user */
     @PostMapping("/register")
     public ResponseEntity<String> register(@RequestBody UserDto userDto) {
         String response = authService.register(userDto);
         return new ResponseEntity<>(response, HttpStatus.CREATED);
     }
 
+    /** Logging in user (no valid authentication yet. Must fix.) */
     @PostMapping("/login")
     public ResponseEntity<String> login(@RequestBody LoginDto loginDto) {
         boolean isAuthenticated = authService.authenticate(loginDto);

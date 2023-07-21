@@ -11,8 +11,9 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin("*")
 @RestController
-@RequestMapping("/property")
+@RequestMapping("/api/property")
 @RequiredArgsConstructor
 public class PropertyController {
 
@@ -20,6 +21,7 @@ public class PropertyController {
 
     private final PropertyMapper propertyMapper;
 
+    /** Create property with this controller */
     @PostMapping("/create")
     public ResponseEntity<PropertyDto> createProperty(@RequestBody PropertyDto propertyDto) {
 
@@ -27,53 +29,57 @@ public class PropertyController {
                 propertyService.createProperty(propertyMapper.propertyDtoToProperty(propertyDto))), HttpStatus.CREATED);
     }
 
+    /** List all properties with this controller */
     @GetMapping
     public ResponseEntity<List<Property>> fetchPropertyList() {
         return ResponseEntity.ok(propertyService.fetchPropertyList());
     }
 
+    /** Update property controller */
     @PutMapping("/update")
     public void updateProperty(@RequestBody PropertyDto propertyDto) {
         propertyService.updateProperty(propertyMapper.propertyDtoToProperty(propertyDto));
     }
 
+    /** Finding and listing properties by their PIN */
     @GetMapping("/findPropertyByPin")
     public ResponseEntity<Property> findPropertyByPin(@RequestParam("pin") Long pin) {
         return ResponseEntity.ok(propertyService.searchByPIN(pin));
     }
 
-//    @GetMapping("/findPropertyByTin")
-//    public ResponseEntity<List<Property>> findPropertyByTin(@RequestParam("tin") Long tin) {
-//        return ResponseEntity.ok(propertyService.searchByTIN(tin));
-//    }
-
+    /** Listing properties by their type */
     @GetMapping("/searchByPropertyType")
     public ResponseEntity<List<Property>> searchByPropertyType(@RequestParam("propertyType") String propertyType) {
         return ResponseEntity.ok(propertyService.searchByPropertyType(propertyType));
     }
 
+    /** Listing properties by their map location (longitude & latitude) */
     @GetMapping("/searchByMapLocationRadius")
     public ResponseEntity<List<Property>> searchByMapLocationRadius(@RequestParam("propertyCoordinatesLong") Long propertyCoordinatesLong, @RequestParam("propertyCoordinatesLat") Long propertyCoordinatesLat) {
         return ResponseEntity.ok(propertyService.searchByMapLocationRadius(propertyCoordinatesLong, propertyCoordinatesLat));
     }
 
+    /** List property by the contruction year */
     @GetMapping("/searchByConstructionYearRange")
     public ResponseEntity<List<Property>> searchByConstructionYearRange(@RequestParam("yearFrom") int yearFrom, @RequestParam("yearTo") int yearTo) {
         return ResponseEntity.ok(propertyService.searchByConstructionYearRange(yearFrom, yearTo));
     }
 
+    /** Deactivate property by their ID */
     @PutMapping("/deactivate/{id}")
     public ResponseEntity<String> deactivateProperty(@PathVariable("id") Long propertyId) {
         propertyService.deactivatePropertyById(propertyId);
         return ResponseEntity.ok("Property set do deactivated");
     }
 
+    /** Delete property by their ID */
     @DeleteMapping("/delete/{id}")
     public ResponseEntity<String> deleteProperty(@PathVariable("id") Long propertyId) {
         propertyService.deletePropertyById(propertyId);
         return ResponseEntity.ok("Repair deleted successfully");
     }
 
+    /** List properties by the user ID's */
     @GetMapping(headers = "action=findPropertyByUser")
     public ResponseEntity<List<PropertyDto>> findPropertyByUser(Long userId) {
         return ResponseEntity.ok(propertyMapper.propertyListToPropertyDtoList(propertyService.findPropertyByUser(userId)));

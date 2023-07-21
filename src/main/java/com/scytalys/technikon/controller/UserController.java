@@ -8,14 +8,24 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
+@CrossOrigin("*")
 @RestController
-@RequestMapping("/users")
+@RequestMapping("/api/users")
 @RequiredArgsConstructor
 public class UserController {
 
     private final UserService userService;
     private final UserMapper userMapper;
 
+    /** List all users */
+    @GetMapping("/allusers")
+    public ResponseEntity<List<UserDto>> getAllUsers(){
+        return new ResponseEntity<>(userMapper.userListToUserDtoList(userService.getAllUsers()), HttpStatus.ACCEPTED);
+    }
+
+    /** Create new user */
     @PostMapping("/create")
     public ResponseEntity<UserDto> addUser(@RequestBody UserDto userDto) {
 
@@ -23,27 +33,32 @@ public class UserController {
                 userService.createUser(userMapper.userDtoToUser(userDto))), HttpStatus.CREATED);
     }
 
+    /** Search/Get user by ID */
     @GetMapping("/search/{id}")
     public ResponseEntity<UserDto> searchUser(@PathVariable("id") Long id) {
         return new ResponseEntity<>(userMapper.userToUserDto(userService.getUserById(id)), HttpStatus.ACCEPTED);
     }
 
+    /** Search/Get user by Tin Number */
     @GetMapping("/search/tin/{tinNumber}")
     public ResponseEntity<UserDto> searchUserByTin(@PathVariable("tinNumber") Long tinNumber) {
         return new ResponseEntity<>(userMapper.userToUserDto(userService.getUserByTinNumber(tinNumber)), HttpStatus.ACCEPTED);
     }
 
+    /** Search/Get user by email */
     @GetMapping("/search/email/{email}")
     public ResponseEntity<UserDto> searchUserByEmail(@PathVariable("email") String email) {
         return new ResponseEntity<>(userMapper.userToUserDto(userService.getUserByEmail(email)), HttpStatus.ACCEPTED);
     }
 
+    /** Delete user by their ID */
     @DeleteMapping("delete/{id}")
     public ResponseEntity<String> deleteUser(@PathVariable("id") final Long id) {
         userService.deleteUser(id);
         return ResponseEntity.ok("User deleted successfully");
     }
 
+    /** Update user's credentials (more in UserServiceImpl) */
     @PutMapping("/update")
     public void updateUser(@RequestBody UserDto userDto) {
         userService.updateUser(userMapper.userDtoToUser(userDto));

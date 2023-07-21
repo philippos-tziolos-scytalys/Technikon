@@ -6,7 +6,5 @@ import com.scytalys.technikon.dto.UserDto;
 public interface AuthService {
 
     String register(UserDto userDto);
-
-
     boolean authenticate(LoginDto loginDto);
 }
