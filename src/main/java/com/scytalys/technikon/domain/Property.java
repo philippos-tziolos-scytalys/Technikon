@@ -3,6 +3,7 @@ package com.scytalys.technikon.domain;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Pattern;
+import jakarta.validation.constraints.Size;
 import lombok.*;
 
 import java.util.List;
@@ -23,7 +24,8 @@ public class Property extends BaseModel {
     @Column(name = "pin")
     private Long pinNumber;
 
-    @Column(name = "address")
+    @Column(length = 50)
+    @Size(max = 50, message = "Address cannot be bigger than 50 characters.")
     private String address;
 
     @Column(name = "year_of_construction")
@@ -43,9 +45,9 @@ public class Property extends BaseModel {
     private Long propertyCoordinatesLat;
 
     @Column(name = "active_state")
-    private boolean activeState ;
+    private boolean activeState;
 
-    @OneToMany(mappedBy = "property",cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "property", cascade = CascadeType.ALL)
     private List<Repair> repairs;
 
     @ManyToOne()

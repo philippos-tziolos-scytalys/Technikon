@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Pattern;
+import jakarta.validation.constraints.Size;
 import lombok.*;
 
 import java.util.HashSet;
@@ -31,7 +32,10 @@ public class User extends BaseModel {
     private String name;
     @Column(name = "last_name", length = 50)
     private String lastname;
-    @Column(name = "address")
+
+
+    @Column(length = 50)
+    @Size(max = 50, message = "Address cannot be bigger than 50 characters.")
     private String address;
 
     @NotEmpty
@@ -49,11 +53,11 @@ public class User extends BaseModel {
 
     @NotEmpty
     @Pattern(regexp = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=!]).{8,}$", message = "Invalid password")
-    @Column(name = "password" )
+    @Column(name = "password")
     private String password;
 
 
-    @OneToMany(mappedBy = "user",cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
     private List<Property> properties;
 
     @ManyToMany
