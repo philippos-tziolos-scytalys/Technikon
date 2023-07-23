@@ -1,6 +1,8 @@
 package com.scytalys.technikon.domain;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.Pattern;
 import lombok.*;
 
 import java.util.List;
@@ -15,6 +17,9 @@ import java.util.List;
 @SequenceGenerator(name = "idGenerator", sequenceName = "property_seq", initialValue = 1, allocationSize = 1)
 public class Property extends BaseModel {
 
+
+    @NotEmpty
+    @Pattern(regexp = "^E9.*$", message = "Invalid Property Identification Number")
     @Column(name = "pin")
     private Long pinNumber;
 
@@ -38,9 +43,9 @@ public class Property extends BaseModel {
     private Long propertyCoordinatesLat;
 
     @Column(name = "active_state")
-    private boolean activeState = true;
+    private boolean activeState ;
 
-    @OneToMany(cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "property",cascade = CascadeType.ALL)
     private List<Repair> repairs;
 
     @ManyToOne()

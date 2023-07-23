@@ -1,6 +1,9 @@
 package com.scytalys.technikon.utils;
 
 import com.scytalys.technikon.domain.*;
+import com.scytalys.technikon.encryption.PasswordEncryption;
+import com.scytalys.technikon.repository.RoleRepository;
+import com.scytalys.technikon.repository.UserRepository;
 import com.scytalys.technikon.service.PropertyService;
 import com.scytalys.technikon.service.RepairService;
 import com.scytalys.technikon.service.UserService;
@@ -10,65 +13,42 @@ import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
 import java.time.Instant;
+import java.util.Collections;
 import java.util.Date;
+import java.util.List;
+import java.util.Set;
 
 @Component
 @RequiredArgsConstructor
 public class DataLoader implements CommandLineRunner {
 
-    private final UserService userService;
+    private final UserRepository userRepository;
     private final PropertyService propertyService;
     private final RepairService repairService;
+    private final RoleRepository roleRepository;
 
     @Override
     public void run(String... args) throws Exception {
-        Role role = new Role();
-        role.setName("ADMIN");
 
-        User user = User.builder()
+        Role adminRole = new Role();
+        adminRole.setName("ROLE_ADMIN");
+        roleRepository.save(adminRole);
+
+
+        User alex = User.builder()
+                .tinNumber(123456789L)
+                .name("Alex")
+                .lastname("Giounan")
+                .address("Omirou 6-8")
                 .phoneNumber(123456789L)
-                .name("Alex").tinNumber(55555555L).email("alex@example.com")
-                .address("Omirou 6-8").username("alex").password("alex123").build();
-
-
-        userService.createUser(user);
-
-
-        Property property = Property.builder()
-                .user(user)
-                .address(user.getAddress())
-                .activeState(true)
-                .pinNumber(24124512341L)
-                .propertyCoordinatesLong(124230L)
-                .propertyCoordinatesLat(235241L)
-                .propertyType(PropertyType.DETACHED_HOUSE)
+                .username("alexG")
+                .email("alex@example.com")
+                .password(PasswordEncryption.getHashCode("alex123"))
                 .build();
 
-        propertyService.createProperty(property);
+        alex.getRoles().add(adminRole);
+        userRepository.save(alex);
 
-        Repair repair = Repair.builder()
-                .property(property)
-                .description("Repairing done")
-                .cost(BigDecimal.valueOf(5000))
-                .repairDate(Date.from(Instant.now()))
-                .repairStatus(RepairStatus.COMPLETED)
-                .repairType(RepairType.INSULATION)
-                .build();
 
-        Repair repair2 = Repair.builder()
-                .property(property)
-                .description("Repairing soon")
-                .cost(BigDecimal.valueOf(789))
-                .repairDate(Date.from(Instant.now()))
-                .repairStatus(RepairStatus.SCHEDULED)
-                .repairType(RepairType.PAINTING)
-                .build();
-
-        repairService.create(repair);
-        repairService.create(repair2);
-
-        System.out.println(user.getId());
-        System.out.println(property.getId());
-        System.out.println(repair.getId());
     }
 }

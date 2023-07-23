@@ -18,7 +18,7 @@ import lombok.Setter;
 @Table(name = "roles")
 public class Role extends BaseModel {
 
-    @Column(nullable = false, length = 45)
+
     private String name;
 
 }
