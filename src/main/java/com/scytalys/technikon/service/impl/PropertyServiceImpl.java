@@ -1,22 +1,36 @@
 package com.scytalys.technikon.service.impl;
 
 import com.scytalys.technikon.domain.Property;
+import com.scytalys.technikon.dto.PropertyDto;
+import com.scytalys.technikon.mapper.PropertyMapper;
 import com.scytalys.technikon.repository.PropertyRepository;
 import com.scytalys.technikon.service.PropertyService;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
-public class PropertyServiceImpl implements PropertyService {
-
-    @Autowired
-    private PropertyRepository propertyRepository;
+@RequiredArgsConstructor
+public class PropertyServiceImpl extends BaseServiceImpl<Property>  implements PropertyService {
 
     @Override
-    public Property createProperty(Property property) {
-        return propertyRepository.save(property);
+    public JpaRepository<Property, Long> getRepository() {
+        return propertyRepository;
+    }
+
+    private final PropertyRepository propertyRepository;
+    private final PropertyMapper propertyMapper;
+
+    @Override
+    public PropertyDto createProperty(PropertyDto propertyDto) {
+
+        Property property = propertyMapper.propertyDtoToProperty(propertyDto);
+        Property savedProperty = propertyRepository.save(property);
+
+        return propertyMapper.propertyToPropertyDto(savedProperty);
     }
 
     @Override
@@ -25,47 +39,48 @@ public class PropertyServiceImpl implements PropertyService {
     }
 
     @Override
-    public void updateProperty(Property property, Long propertyId) {
+    public void updateProperty(PropertyDto propertyDto, Long propertyId) {
+
         Property proDB = propertyRepository.findById(propertyId).get();
 
-        proDB.setAddress(property.getAddress());
-        proDB.setPinNumber(property.getPinNumber());
-        proDB.setAddress(property.getAddress());
-        proDB.setYearOfConstruction(property.getYearOfConstruction());
-        proDB.setPropertyType(property.getPropertyType());
-        proDB.setUser(property.getUser());
-        proDB.setPropertyPictureUrl(property.getPropertyPictureUrl());
-        proDB.setPropertyCoordinatesLong(property.getPropertyCoordinatesLong());
-        proDB.setPropertyCoordinatesLat(property.getPropertyCoordinatesLat());
-        proDB.setActiveState(property.isActiveState());
+        proDB.setAddress(propertyDto.getAddress());
+        proDB.setPinNumber(propertyDto.getPinNumber());
+        proDB.setAddress(propertyDto.getAddress());
+        proDB.setYearOfConstruction(propertyDto.getYearOfConstruction());
+        proDB.setPropertyType(propertyDto.getPropertyType());
+        proDB.setUser(propertyDto.getUser());
+        proDB.setPropertyPictureUrl(propertyDto.getPropertyPictureUrl());
+        proDB.setPropertyCoordinatesLong(propertyDto.getPropertyCoordinatesLong());
+        proDB.setPropertyCoordinatesLat(propertyDto.getPropertyCoordinatesLat());
+        proDB.setActiveState(propertyDto.isActiveState());
 
-        propertyRepository.save(proDB);
+        propertyMapper.propertyToPropertyDto(proDB);
 
     }
 
     @Override
-    public Property searchByPIN(Long pin) {
+    public PropertyDto searchByPIN(Long pin) {
         return propertyRepository.findByPin(pin);
     }
 
     @Override
-    public List<Property> searchByTIN(Long tin) {
+    public List<PropertyDto> searchByTIN(Long tin) {
         return propertyRepository.findByTin(tin).orElse(null);
     }
 
     @Override
-    public List<Property> searchByPropertyType(String propertyType) {
+    public List<PropertyDto> searchByPropertyType(String propertyType) {
         return propertyRepository.findByPropertyType(propertyType).orElse(null);
     }
 
     @Override
-    public List<Property> searchByMapLocationRadius(Long longitude, Long latitude) {
+    public List<PropertyDto> searchByMapLocationRadius(Long longitude, Long latitude) {
         return null; //TODO
     }
 
 
     @Override
-    public List<Property> searchByConstructionYearRange(int yearFrom, int yearTo) {
+    public List<PropertyDto> searchByConstructionYearRange(int yearFrom, int yearTo) {
         return propertyRepository.findByConstructionYearRange(yearFrom, yearTo).orElse(null);
     }
 

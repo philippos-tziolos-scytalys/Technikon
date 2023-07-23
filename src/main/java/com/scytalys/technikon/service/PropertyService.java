@@ -1,25 +1,26 @@
 package com.scytalys.technikon.service;
 
 import com.scytalys.technikon.domain.Property;
+import com.scytalys.technikon.dto.PropertyDto;
 
 import java.util.List;
 
 public interface PropertyService {
-    Property createProperty(Property property);
+    PropertyDto createProperty(PropertyDto propertyDto);
 
     List<Property> fetchPropertyList();
 
-    void updateProperty(Property property, Long propertyId);
+    void updateProperty(PropertyDto propertyDto, Long propertyId);
 
-    Property searchByPIN(Long pin);
+    PropertyDto searchByPIN(Long pin);
 
-    List<Property> searchByTIN(Long tin);
+    List<PropertyDto> searchByTIN(Long tin);
 
-    List<Property> searchByPropertyType(String propertyType);
+    List<PropertyDto> searchByPropertyType(String propertyType);
 
-    List<Property> searchByMapLocationRadius(Long longitude, Long latitude);
+    List<PropertyDto> searchByMapLocationRadius(Long longitude, Long latitude);
 
-    List<Property> searchByConstructionYearRange(int yearFrom, int yearTo);
+    List<PropertyDto> searchByConstructionYearRange(int yearFrom, int yearTo);
 
     void deactivatePropertyById(Long propertyId);
 
