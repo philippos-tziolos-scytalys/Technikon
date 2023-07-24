@@ -1,0 +1,1314 @@
+2023-07-23 11:48:11.639  INFO alex-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 8.0.0.Final
+2023-07-23 11:48:11.685  INFO alex-PC - [           main] [c.s.t.TechnikonApplication         ] : Starting TechnikonApplication using Java 17.0.5 with PID 19172 (E:\Documents\Technikon\target\classes started by alex in E:\Documents\Technikon)
+2023-07-23 11:48:11.689 DEBUG alex-PC - [           main] [c.s.t.TechnikonApplication         ] : Running with Spring Boot v3.1.1, Spring v6.0.10
+2023-07-23 11:48:11.691  INFO alex-PC - [           main] [c.s.t.TechnikonApplication         ] : No active profile set, falling back to 1 default profile: "default"
+2023-07-23 11:48:12.885  INFO alex-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2023-07-23 11:48:12.893  INFO alex-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-23 11:48:12.895  INFO alex-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2023-07-23 11:48:12.895  INFO alex-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-23 11:48:12.972  INFO alex-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2023-07-23 11:48:12.973  INFO alex-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1243 ms
+2023-07-23 11:48:13.123  INFO alex-PC - [           main] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-23 11:48:13.182  INFO alex-PC - [           main] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-23 11:48:13.184  INFO alex-PC - [           main] [o.h.c.Environment                  ] : HHH000406: Using bytecode reflection optimizer
+2023-07-23 11:48:13.312  INFO alex-PC - [           main] [o.h.b.i.BytecodeProviderInitiator  ] : HHH000021: Bytecode provider name : bytebuddy
+2023-07-23 11:48:13.448  INFO alex-PC - [           main] [o.s.o.j.p.SpringPersistenceUnitInfo] : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-23 11:48:13.916  WARN alex-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-23 11:48:13.922  WARN alex-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-23 11:48:13.925  WARN alex-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-23 11:48:13.987  INFO alex-PC - [           main] [o.h.b.i.BytecodeProviderInitiator  ] : HHH000021: Bytecode provider name : bytebuddy
+2023-07-23 11:48:14.899  INFO alex-PC - [           main] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-23 11:48:15.624  WARN alex-PC - [           main] [gServletWebServerApplicationContext] : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'notificationController' defined in file [E:\Documents\Technikon\target\classes\com\scytalys\technikon\websocket\controller\NotificationController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'org.springframework.messaging.simp.SimpMessagingTemplate' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-07-23 11:48:15.625  INFO alex-PC - [           main] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-23 11:48:15.670  INFO alex-PC - [           main] [o.a.c.c.StandardService            ] : Stopping service [Tomcat]
+2023-07-23 11:48:15.682  INFO alex-PC - [           main] [a.l.ConditionEvaluationReportLogger] : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-07-23 11:48:15.701 ERROR alex-PC - [           main] [.b.d.LoggingFailureAnalysisReporter] : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.scytalys.technikon.websocket.controller.NotificationController required a bean of type 'org.springframework.messaging.simp.SimpMessagingTemplate' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.messaging.simp.SimpMessagingTemplate' in your configuration.
+
+2023-07-23 11:48:43.963  INFO alex-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 8.0.0.Final
+2023-07-23 11:48:43.999  INFO alex-PC - [           main] [c.s.t.TechnikonApplication         ] : Starting TechnikonApplication using Java 17.0.5 with PID 4880 (E:\Documents\Technikon\target\classes started by alex in E:\Documents\Technikon)
+2023-07-23 11:48:44.003 DEBUG alex-PC - [           main] [c.s.t.TechnikonApplication         ] : Running with Spring Boot v3.1.1, Spring v6.0.10
+2023-07-23 11:48:44.004  INFO alex-PC - [           main] [c.s.t.TechnikonApplication         ] : No active profile set, falling back to 1 default profile: "default"
+2023-07-23 11:48:45.078  INFO alex-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2023-07-23 11:48:45.086  INFO alex-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-23 11:48:45.088  INFO alex-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2023-07-23 11:48:45.088  INFO alex-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-23 11:48:45.165  INFO alex-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2023-07-23 11:48:45.166  INFO alex-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1125 ms
+2023-07-23 11:48:45.317  INFO alex-PC - [           main] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-23 11:48:45.378  INFO alex-PC - [           main] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-23 11:48:45.379  INFO alex-PC - [           main] [o.h.c.Environment                  ] : HHH000406: Using bytecode reflection optimizer
+2023-07-23 11:48:45.493  INFO alex-PC - [           main] [o.h.b.i.BytecodeProviderInitiator  ] : HHH000021: Bytecode provider name : bytebuddy
+2023-07-23 11:48:45.613  INFO alex-PC - [           main] [o.s.o.j.p.SpringPersistenceUnitInfo] : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-23 11:48:46.019  WARN alex-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-23 11:48:46.025  WARN alex-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-23 11:48:46.027  WARN alex-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-23 11:48:46.096  INFO alex-PC - [           main] [o.h.b.i.BytecodeProviderInitiator  ] : HHH000021: Bytecode provider name : bytebuddy
+2023-07-23 11:48:46.983  INFO alex-PC - [           main] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-23 11:48:47.761  WARN alex-PC - [           main] [seConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-23 11:48:47.875 DEBUG alex-PC - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-23 11:48:47.962 DEBUG alex-PC - [           main] [.m.m.a.RequestMappingHandlerMapping] : 26 mappings in 'requestMappingHandlerMapping'
+2023-07-23 11:48:47.983 DEBUG alex-PC - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-07-23 11:48:47.994 DEBUG alex-PC - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-23 11:48:48.080  INFO alex-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2023-07-23 11:48:48.097  INFO alex-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-23 11:48:48.106  INFO alex-PC - [           main] [c.s.t.TechnikonApplication         ] : Started TechnikonApplication in 4.496 seconds (process running for 5.417)
+2023-07-23 11:48:48.169  INFO alex-PC - [           main] [a.l.ConditionEvaluationReportLogger] : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-07-23 11:48:48.184 ERROR alex-PC - [           main] [o.s.b.SpringApplication            ] : Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:755)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:319)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.scytalys.technikon.TechnikonApplication.main(TechnikonApplication.java:10)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.util.Set.add(Object)" because the return value of "com.scytalys.technikon.domain.User.getRoles()" is null
+	at com.scytalys.technikon.utils.DataLoader.run(DataLoader.java:47)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771)
+	... 5 more
+2023-07-23 11:48:48.209  INFO alex-PC - [           main] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-23 11:51:43.773  INFO alex-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 8.0.0.Final
+2023-07-23 11:51:43.811  INFO alex-PC - [           main] [c.s.t.TechnikonApplication         ] : Starting TechnikonApplication using Java 17.0.5 with PID 4432 (E:\Documents\Technikon\target\classes started by alex in E:\Documents\Technikon)
+2023-07-23 11:51:43.815 DEBUG alex-PC - [           main] [c.s.t.TechnikonApplication         ] : Running with Spring Boot v3.1.1, Spring v6.0.10
+2023-07-23 11:51:43.816  INFO alex-PC - [           main] [c.s.t.TechnikonApplication         ] : No active profile set, falling back to 1 default profile: "default"
+2023-07-23 11:51:45.008  INFO alex-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2023-07-23 11:51:45.022  INFO alex-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-23 11:51:45.025  INFO alex-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2023-07-23 11:51:45.025  INFO alex-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-23 11:51:45.118  INFO alex-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2023-07-23 11:51:45.118  INFO alex-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1262 ms
+2023-07-23 11:51:45.278  INFO alex-PC - [           main] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-23 11:51:45.338  INFO alex-PC - [           main] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-23 11:51:45.340  INFO alex-PC - [           main] [o.h.c.Environment                  ] : HHH000406: Using bytecode reflection optimizer
+2023-07-23 11:51:45.466  INFO alex-PC - [           main] [o.h.b.i.BytecodeProviderInitiator  ] : HHH000021: Bytecode provider name : bytebuddy
+2023-07-23 11:51:45.597  INFO alex-PC - [           main] [o.s.o.j.p.SpringPersistenceUnitInfo] : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-23 11:51:46.029  WARN alex-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-23 11:51:46.035  WARN alex-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-23 11:51:46.036  WARN alex-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-23 11:51:46.107  INFO alex-PC - [           main] [o.h.b.i.BytecodeProviderInitiator  ] : HHH000021: Bytecode provider name : bytebuddy
+2023-07-23 11:51:46.982  INFO alex-PC - [           main] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-23 11:51:47.825  WARN alex-PC - [           main] [seConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-23 11:51:47.938 DEBUG alex-PC - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-23 11:51:48.030 DEBUG alex-PC - [           main] [.m.m.a.RequestMappingHandlerMapping] : 26 mappings in 'requestMappingHandlerMapping'
+2023-07-23 11:51:48.052 DEBUG alex-PC - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-07-23 11:51:48.064 DEBUG alex-PC - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-23 11:51:48.166  INFO alex-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2023-07-23 11:51:48.186  INFO alex-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-23 11:51:48.196  INFO alex-PC - [           main] [c.s.t.TechnikonApplication         ] : Started TechnikonApplication in 4.791 seconds (process running for 5.741)
+2023-07-23 11:51:48.263  INFO alex-PC - [           main] [a.l.ConditionEvaluationReportLogger] : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-07-23 11:51:48.282 ERROR alex-PC - [           main] [o.s.b.SpringApplication            ] : Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:755)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:319)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.scytalys.technikon.TechnikonApplication.main(TechnikonApplication.java:10)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.util.Set.add(Object)" because the return value of "com.scytalys.technikon.domain.User.getRoles()" is null
+	at com.scytalys.technikon.utils.DataLoader.run(DataLoader.java:47)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771)
+	... 5 more
+2023-07-23 11:51:48.306  INFO alex-PC - [           main] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-23 11:52:08.140  INFO alex-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 8.0.0.Final
+2023-07-23 11:52:08.175  INFO alex-PC - [           main] [c.s.t.TechnikonApplication         ] : Starting TechnikonApplication using Java 17.0.5 with PID 25080 (E:\Documents\Technikon\target\classes started by alex in E:\Documents\Technikon)
+2023-07-23 11:52:08.179 DEBUG alex-PC - [           main] [c.s.t.TechnikonApplication         ] : Running with Spring Boot v3.1.1, Spring v6.0.10
+2023-07-23 11:52:08.180  INFO alex-PC - [           main] [c.s.t.TechnikonApplication         ] : No active profile set, falling back to 1 default profile: "default"
+2023-07-23 11:52:09.251  INFO alex-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2023-07-23 11:52:09.260  INFO alex-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-23 11:52:09.261  INFO alex-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2023-07-23 11:52:09.262  INFO alex-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-23 11:52:09.339  INFO alex-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2023-07-23 11:52:09.339  INFO alex-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1121 ms
+2023-07-23 11:52:09.492  INFO alex-PC - [           main] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-23 11:52:09.550  INFO alex-PC - [           main] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-23 11:52:09.552  INFO alex-PC - [           main] [o.h.c.Environment                  ] : HHH000406: Using bytecode reflection optimizer
+2023-07-23 11:52:09.668  INFO alex-PC - [           main] [o.h.b.i.BytecodeProviderInitiator  ] : HHH000021: Bytecode provider name : bytebuddy
+2023-07-23 11:52:09.789  INFO alex-PC - [           main] [o.s.o.j.p.SpringPersistenceUnitInfo] : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-23 11:52:10.187  WARN alex-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-23 11:52:10.192  WARN alex-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-23 11:52:10.194  WARN alex-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-23 11:52:10.260  INFO alex-PC - [           main] [o.h.b.i.BytecodeProviderInitiator  ] : HHH000021: Bytecode provider name : bytebuddy
+2023-07-23 11:52:11.076  INFO alex-PC - [           main] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-23 11:52:11.807  WARN alex-PC - [           main] [seConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-23 11:52:11.914 DEBUG alex-PC - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-23 11:52:11.994 DEBUG alex-PC - [           main] [.m.m.a.RequestMappingHandlerMapping] : 26 mappings in 'requestMappingHandlerMapping'
+2023-07-23 11:52:12.014 DEBUG alex-PC - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-07-23 11:52:12.024 DEBUG alex-PC - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-23 11:52:12.111  INFO alex-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2023-07-23 11:52:12.129  INFO alex-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-23 11:52:12.138  INFO alex-PC - [           main] [c.s.t.TechnikonApplication         ] : Started TechnikonApplication in 4.349 seconds (process running for 5.298)
+2023-07-23 11:52:12.194  INFO alex-PC - [           main] [a.l.ConditionEvaluationReportLogger] : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-07-23 11:52:12.209 ERROR alex-PC - [           main] [o.s.b.SpringApplication            ] : Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:755)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:319)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.scytalys.technikon.TechnikonApplication.main(TechnikonApplication.java:10)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.util.Set.add(Object)" because "this.roles" is null
+	at com.scytalys.technikon.domain.User.addRole(User.java:48)
+	at com.scytalys.technikon.utils.DataLoader.run(DataLoader.java:47)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771)
+	... 5 more
+2023-07-23 11:52:12.228  INFO alex-PC - [           main] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-23 11:55:47.365  INFO alex-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 8.0.0.Final
+2023-07-23 11:55:47.402  INFO alex-PC - [           main] [c.s.t.TechnikonApplication         ] : Starting TechnikonApplication using Java 17.0.5 with PID 12452 (E:\Documents\Technikon\target\classes started by alex in E:\Documents\Technikon)
+2023-07-23 11:55:47.406 DEBUG alex-PC - [           main] [c.s.t.TechnikonApplication         ] : Running with Spring Boot v3.1.1, Spring v6.0.10
+2023-07-23 11:55:47.407  INFO alex-PC - [           main] [c.s.t.TechnikonApplication         ] : No active profile set, falling back to 1 default profile: "default"
+2023-07-23 11:55:48.609  INFO alex-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2023-07-23 11:55:48.619  INFO alex-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-23 11:55:48.621  INFO alex-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2023-07-23 11:55:48.621  INFO alex-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-23 11:55:48.705  INFO alex-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2023-07-23 11:55:48.706  INFO alex-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1257 ms
+2023-07-23 11:55:48.868  INFO alex-PC - [           main] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-23 11:55:48.928  INFO alex-PC - [           main] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-23 11:55:48.930  INFO alex-PC - [           main] [o.h.c.Environment                  ] : HHH000406: Using bytecode reflection optimizer
+2023-07-23 11:55:49.051  INFO alex-PC - [           main] [o.h.b.i.BytecodeProviderInitiator  ] : HHH000021: Bytecode provider name : bytebuddy
+2023-07-23 11:55:49.177  INFO alex-PC - [           main] [o.s.o.j.p.SpringPersistenceUnitInfo] : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-23 11:55:49.573  WARN alex-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-23 11:55:49.578  WARN alex-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-23 11:55:49.580  WARN alex-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-23 11:55:49.641  INFO alex-PC - [           main] [o.h.b.i.BytecodeProviderInitiator  ] : HHH000021: Bytecode provider name : bytebuddy
+2023-07-23 11:55:50.473  INFO alex-PC - [           main] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-23 11:55:51.208  WARN alex-PC - [           main] [seConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-23 11:55:51.310 DEBUG alex-PC - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-23 11:55:51.393 DEBUG alex-PC - [           main] [.m.m.a.RequestMappingHandlerMapping] : 26 mappings in 'requestMappingHandlerMapping'
+2023-07-23 11:55:51.412 DEBUG alex-PC - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-07-23 11:55:51.421 DEBUG alex-PC - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-23 11:55:51.522  INFO alex-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2023-07-23 11:55:51.539  INFO alex-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-23 11:55:51.548  INFO alex-PC - [           main] [c.s.t.TechnikonApplication         ] : Started TechnikonApplication in 4.595 seconds (process running for 5.637)
+2023-07-23 11:55:51.711  INFO alex-PC - [           main] [a.l.ConditionEvaluationReportLogger] : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-07-23 11:55:51.727 ERROR alex-PC - [           main] [o.s.b.SpringApplication            ] : Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:755)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:319)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.scytalys.technikon.TechnikonApplication.main(TechnikonApplication.java:10)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.util.Set.add(Object)" because "this.roles" is null
+	at com.scytalys.technikon.domain.User.addRole(User.java:48)
+	at com.scytalys.technikon.utils.DataLoader.run(DataLoader.java:53)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771)
+	... 5 more
+2023-07-23 11:55:51.744  INFO alex-PC - [           main] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-23 11:56:23.450  INFO alex-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 8.0.0.Final
+2023-07-23 11:56:23.487  INFO alex-PC - [           main] [c.s.t.TechnikonApplication         ] : Starting TechnikonApplication using Java 17.0.5 with PID 15788 (E:\Documents\Technikon\target\classes started by alex in E:\Documents\Technikon)
+2023-07-23 11:56:23.491 DEBUG alex-PC - [           main] [c.s.t.TechnikonApplication         ] : Running with Spring Boot v3.1.1, Spring v6.0.10
+2023-07-23 11:56:23.492  INFO alex-PC - [           main] [c.s.t.TechnikonApplication         ] : No active profile set, falling back to 1 default profile: "default"
+2023-07-23 11:56:24.656  INFO alex-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2023-07-23 11:56:24.665  INFO alex-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-23 11:56:24.666  INFO alex-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2023-07-23 11:56:24.667  INFO alex-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-23 11:56:24.746  INFO alex-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2023-07-23 11:56:24.747  INFO alex-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1215 ms
+2023-07-23 11:56:24.903  INFO alex-PC - [           main] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-23 11:56:24.966  INFO alex-PC - [           main] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-23 11:56:24.968  INFO alex-PC - [           main] [o.h.c.Environment                  ] : HHH000406: Using bytecode reflection optimizer
+2023-07-23 11:56:25.094  INFO alex-PC - [           main] [o.h.b.i.BytecodeProviderInitiator  ] : HHH000021: Bytecode provider name : bytebuddy
+2023-07-23 11:56:25.220  INFO alex-PC - [           main] [o.s.o.j.p.SpringPersistenceUnitInfo] : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-23 11:56:25.638  WARN alex-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-23 11:56:25.644  WARN alex-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-23 11:56:25.645  WARN alex-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-23 11:56:25.711  INFO alex-PC - [           main] [o.h.b.i.BytecodeProviderInitiator  ] : HHH000021: Bytecode provider name : bytebuddy
+2023-07-23 11:56:26.526  INFO alex-PC - [           main] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-23 11:56:27.252  WARN alex-PC - [           main] [seConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-23 11:56:27.352 DEBUG alex-PC - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-23 11:56:27.432 DEBUG alex-PC - [           main] [.m.m.a.RequestMappingHandlerMapping] : 26 mappings in 'requestMappingHandlerMapping'
+2023-07-23 11:56:27.451 DEBUG alex-PC - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-07-23 11:56:27.460 DEBUG alex-PC - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-23 11:56:27.546  INFO alex-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2023-07-23 11:56:27.564  INFO alex-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-23 11:56:27.573  INFO alex-PC - [           main] [c.s.t.TechnikonApplication         ] : Started TechnikonApplication in 4.507 seconds (process running for 5.395)
+2023-07-23 11:56:56.512  INFO alex-PC - [ionShutdownHook] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-23 11:56:58.986  INFO alex-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 8.0.0.Final
+2023-07-23 11:56:59.023  INFO alex-PC - [           main] [c.s.t.TechnikonApplication         ] : Starting TechnikonApplication using Java 17.0.5 with PID 11720 (E:\Documents\Technikon\target\classes started by alex in E:\Documents\Technikon)
+2023-07-23 11:56:59.027 DEBUG alex-PC - [           main] [c.s.t.TechnikonApplication         ] : Running with Spring Boot v3.1.1, Spring v6.0.10
+2023-07-23 11:56:59.028  INFO alex-PC - [           main] [c.s.t.TechnikonApplication         ] : No active profile set, falling back to 1 default profile: "default"
+2023-07-23 11:57:00.371  INFO alex-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2023-07-23 11:57:00.380  INFO alex-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-23 11:57:00.382  INFO alex-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2023-07-23 11:57:00.382  INFO alex-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-23 11:57:00.463  INFO alex-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2023-07-23 11:57:00.464  INFO alex-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1395 ms
+2023-07-23 11:57:00.619  INFO alex-PC - [           main] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-23 11:57:00.677  INFO alex-PC - [           main] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-23 11:57:00.679  INFO alex-PC - [           main] [o.h.c.Environment                  ] : HHH000406: Using bytecode reflection optimizer
+2023-07-23 11:57:00.802  INFO alex-PC - [           main] [o.h.b.i.BytecodeProviderInitiator  ] : HHH000021: Bytecode provider name : bytebuddy
+2023-07-23 11:57:00.928  INFO alex-PC - [           main] [o.s.o.j.p.SpringPersistenceUnitInfo] : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-23 11:57:01.333  WARN alex-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-23 11:57:01.339  WARN alex-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-23 11:57:01.340  WARN alex-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-23 11:57:01.410  INFO alex-PC - [           main] [o.h.b.i.BytecodeProviderInitiator  ] : HHH000021: Bytecode provider name : bytebuddy
+2023-07-23 11:57:02.290  INFO alex-PC - [           main] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-23 11:57:03.107  WARN alex-PC - [           main] [seConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-23 11:57:03.242 DEBUG alex-PC - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-23 11:57:03.325 DEBUG alex-PC - [           main] [.m.m.a.RequestMappingHandlerMapping] : 26 mappings in 'requestMappingHandlerMapping'
+2023-07-23 11:57:03.344 DEBUG alex-PC - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-07-23 11:57:03.353 DEBUG alex-PC - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-23 11:57:03.441  INFO alex-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2023-07-23 11:57:03.461  INFO alex-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-23 11:57:03.471  INFO alex-PC - [           main] [c.s.t.TechnikonApplication         ] : Started TechnikonApplication in 4.834 seconds (process running for 5.792)
+2023-07-23 11:57:10.989  INFO alex-PC - [ionShutdownHook] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-23 11:57:14.793  INFO alex-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 8.0.0.Final
+2023-07-23 11:57:14.828  INFO alex-PC - [           main] [c.s.t.TechnikonApplication         ] : Starting TechnikonApplication using Java 17.0.5 with PID 7400 (E:\Documents\Technikon\target\classes started by alex in E:\Documents\Technikon)
+2023-07-23 11:57:14.832 DEBUG alex-PC - [           main] [c.s.t.TechnikonApplication         ] : Running with Spring Boot v3.1.1, Spring v6.0.10
+2023-07-23 11:57:14.833  INFO alex-PC - [           main] [c.s.t.TechnikonApplication         ] : No active profile set, falling back to 1 default profile: "default"
+2023-07-23 11:57:15.891  INFO alex-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2023-07-23 11:57:15.899  INFO alex-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-23 11:57:15.901  INFO alex-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2023-07-23 11:57:15.902  INFO alex-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-23 11:57:15.986  INFO alex-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2023-07-23 11:57:15.986  INFO alex-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1115 ms
+2023-07-23 11:57:16.130  INFO alex-PC - [           main] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-23 11:57:16.190  INFO alex-PC - [           main] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-23 11:57:16.191  INFO alex-PC - [           main] [o.h.c.Environment                  ] : HHH000406: Using bytecode reflection optimizer
+2023-07-23 11:57:16.307  INFO alex-PC - [           main] [o.h.b.i.BytecodeProviderInitiator  ] : HHH000021: Bytecode provider name : bytebuddy
+2023-07-23 11:57:16.431  INFO alex-PC - [           main] [o.s.o.j.p.SpringPersistenceUnitInfo] : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-23 11:57:16.831  WARN alex-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-23 11:57:16.837  WARN alex-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-23 11:57:16.839  WARN alex-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-23 11:57:16.909  INFO alex-PC - [           main] [o.h.b.i.BytecodeProviderInitiator  ] : HHH000021: Bytecode provider name : bytebuddy
+2023-07-23 11:57:17.776  INFO alex-PC - [           main] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-23 11:57:18.570  WARN alex-PC - [           main] [seConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-23 11:57:18.667 DEBUG alex-PC - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-23 11:57:18.748 DEBUG alex-PC - [           main] [.m.m.a.RequestMappingHandlerMapping] : 26 mappings in 'requestMappingHandlerMapping'
+2023-07-23 11:57:18.767 DEBUG alex-PC - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-07-23 11:57:18.775 DEBUG alex-PC - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-23 11:57:18.863  INFO alex-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2023-07-23 11:57:18.881  INFO alex-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-23 11:57:18.891  INFO alex-PC - [           main] [c.s.t.TechnikonApplication         ] : Started TechnikonApplication in 4.44 seconds (process running for 5.333)
+2023-07-23 11:57:19.049  INFO alex-PC - [           main] [a.l.ConditionEvaluationReportLogger] : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-07-23 11:57:19.073 ERROR alex-PC - [           main] [o.s.b.SpringApplication            ] : Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:755)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:319)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.scytalys.technikon.TechnikonApplication.main(TechnikonApplication.java:10)
+Caused by: org.springframework.dao.IncorrectResultSizeDataAccessException: query did not return a unique result: 2
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:382)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:234)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:550)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:135)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:244)
+	at jdk.proxy2/jdk.proxy2.$Proxy138.findByName(Unknown Source)
+	at com.scytalys.technikon.utils.DataLoader.run(DataLoader.java:52)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771)
+	... 5 more
+Caused by: jakarta.persistence.NonUniqueResultException: query did not return a unique result: 2
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:128)
+	at org.hibernate.query.spi.AbstractSelectionQuery.getSingleResult(AbstractSelectionQuery.java:482)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$DeferredQueryInvocationHandler.invoke(SharedEntityManagerCreator.java:405)
+	at jdk.proxy2/jdk.proxy2.$Proxy149.getSingleResult(Unknown Source)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$SingleEntityExecution.doExecute(JpaQueryExecution.java:223)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:92)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:148)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:136)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:136)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:120)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:164)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:391)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	... 14 more
+2023-07-23 11:57:19.091  INFO alex-PC - [           main] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-23 11:58:14.252  INFO alex-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 8.0.0.Final
+2023-07-23 11:58:14.287  INFO alex-PC - [           main] [c.s.t.TechnikonApplication         ] : Starting TechnikonApplication using Java 17.0.5 with PID 12428 (E:\Documents\Technikon\target\classes started by alex in E:\Documents\Technikon)
+2023-07-23 11:58:14.291 DEBUG alex-PC - [           main] [c.s.t.TechnikonApplication         ] : Running with Spring Boot v3.1.1, Spring v6.0.10
+2023-07-23 11:58:14.292  INFO alex-PC - [           main] [c.s.t.TechnikonApplication         ] : No active profile set, falling back to 1 default profile: "default"
+2023-07-23 11:58:15.413  INFO alex-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2023-07-23 11:58:15.422  INFO alex-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-23 11:58:15.423  INFO alex-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2023-07-23 11:58:15.424  INFO alex-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-23 11:58:15.502  INFO alex-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2023-07-23 11:58:15.502  INFO alex-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1171 ms
+2023-07-23 11:58:15.654  INFO alex-PC - [           main] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-23 11:58:15.710  INFO alex-PC - [           main] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-23 11:58:15.711  INFO alex-PC - [           main] [o.h.c.Environment                  ] : HHH000406: Using bytecode reflection optimizer
+2023-07-23 11:58:15.827  INFO alex-PC - [           main] [o.h.b.i.BytecodeProviderInitiator  ] : HHH000021: Bytecode provider name : bytebuddy
+2023-07-23 11:58:15.949  INFO alex-PC - [           main] [o.s.o.j.p.SpringPersistenceUnitInfo] : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-23 11:58:16.353  WARN alex-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-23 11:58:16.358  WARN alex-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-23 11:58:16.360  WARN alex-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-23 11:58:16.424  INFO alex-PC - [           main] [o.h.b.i.BytecodeProviderInitiator  ] : HHH000021: Bytecode provider name : bytebuddy
+2023-07-23 11:58:17.298  INFO alex-PC - [           main] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-23 11:58:18.028  WARN alex-PC - [           main] [seConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-23 11:58:18.132 DEBUG alex-PC - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-23 11:58:18.217 DEBUG alex-PC - [           main] [.m.m.a.RequestMappingHandlerMapping] : 26 mappings in 'requestMappingHandlerMapping'
+2023-07-23 11:58:18.237 DEBUG alex-PC - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-07-23 11:58:18.246 DEBUG alex-PC - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-23 11:58:18.379  INFO alex-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2023-07-23 11:58:18.396  INFO alex-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-23 11:58:18.405  INFO alex-PC - [           main] [c.s.t.TechnikonApplication         ] : Started TechnikonApplication in 4.499 seconds (process running for 5.404)
+2023-07-23 11:58:18.410  INFO alex-PC - [           main] [a.l.ConditionEvaluationReportLogger] : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-07-23 11:58:18.425 ERROR alex-PC - [           main] [o.s.b.SpringApplication            ] : Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:755)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:319)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.scytalys.technikon.TechnikonApplication.main(TechnikonApplication.java:10)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.util.Set.add(Object)" because the return value of "com.scytalys.technikon.domain.User.getRoles()" is null
+	at com.scytalys.technikon.utils.DataLoader.run(DataLoader.java:50)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771)
+	... 5 more
+2023-07-23 11:58:18.443  INFO alex-PC - [           main] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-23 12:03:33.008  INFO alex-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 8.0.0.Final
+2023-07-23 12:03:33.042  INFO alex-PC - [           main] [c.s.t.TechnikonApplication         ] : Starting TechnikonApplication using Java 17.0.5 with PID 6584 (E:\Documents\Technikon\target\classes started by alex in E:\Documents\Technikon)
+2023-07-23 12:03:33.046 DEBUG alex-PC - [           main] [c.s.t.TechnikonApplication         ] : Running with Spring Boot v3.1.1, Spring v6.0.10
+2023-07-23 12:03:33.047  INFO alex-PC - [           main] [c.s.t.TechnikonApplication         ] : No active profile set, falling back to 1 default profile: "default"
+2023-07-23 12:03:34.172  INFO alex-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2023-07-23 12:03:34.181  INFO alex-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-23 12:03:34.183  INFO alex-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2023-07-23 12:03:34.183  INFO alex-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-23 12:03:34.273  INFO alex-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2023-07-23 12:03:34.273  INFO alex-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1189 ms
+2023-07-23 12:03:34.424  INFO alex-PC - [           main] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-23 12:03:34.482  INFO alex-PC - [           main] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-23 12:03:34.484  INFO alex-PC - [           main] [o.h.c.Environment                  ] : HHH000406: Using bytecode reflection optimizer
+2023-07-23 12:03:34.604  INFO alex-PC - [           main] [o.h.b.i.BytecodeProviderInitiator  ] : HHH000021: Bytecode provider name : bytebuddy
+2023-07-23 12:03:34.726  INFO alex-PC - [           main] [o.s.o.j.p.SpringPersistenceUnitInfo] : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-23 12:03:35.128  WARN alex-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-23 12:03:35.135  WARN alex-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-23 12:03:35.137  WARN alex-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-23 12:03:35.201  INFO alex-PC - [           main] [o.h.b.i.BytecodeProviderInitiator  ] : HHH000021: Bytecode provider name : bytebuddy
+2023-07-23 12:03:36.052  INFO alex-PC - [           main] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-23 12:03:36.776  WARN alex-PC - [           main] [seConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-23 12:03:36.875 DEBUG alex-PC - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-23 12:03:36.954 DEBUG alex-PC - [           main] [.m.m.a.RequestMappingHandlerMapping] : 26 mappings in 'requestMappingHandlerMapping'
+2023-07-23 12:03:36.972 DEBUG alex-PC - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-07-23 12:03:36.981 DEBUG alex-PC - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-23 12:03:37.069  INFO alex-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2023-07-23 12:03:37.086  INFO alex-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-23 12:03:37.095  INFO alex-PC - [           main] [c.s.t.TechnikonApplication         ] : Started TechnikonApplication in 4.439 seconds (process running for 5.376)
+2023-07-23 12:03:37.153  INFO alex-PC - [           main] [a.l.ConditionEvaluationReportLogger] : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-07-23 12:03:37.168 ERROR alex-PC - [           main] [o.s.b.SpringApplication            ] : Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:755)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:319)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.scytalys.technikon.TechnikonApplication.main(TechnikonApplication.java:10)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.util.Set.add(Object)" because the return value of "com.scytalys.technikon.domain.User.getRoles()" is null
+	at com.scytalys.technikon.utils.DataLoader.run(DataLoader.java:50)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771)
+	... 5 more
+2023-07-23 12:03:37.185  INFO alex-PC - [           main] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-23 12:10:16.813  INFO alex-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 8.0.0.Final
+2023-07-23 12:10:16.855  INFO alex-PC - [           main] [c.s.t.TechnikonApplication         ] : Starting TechnikonApplication using Java 17.0.5 with PID 8576 (E:\Documents\Technikon\target\classes started by alex in E:\Documents\Technikon)
+2023-07-23 12:10:16.860 DEBUG alex-PC - [           main] [c.s.t.TechnikonApplication         ] : Running with Spring Boot v3.1.1, Spring v6.0.10
+2023-07-23 12:10:16.862  INFO alex-PC - [           main] [c.s.t.TechnikonApplication         ] : No active profile set, falling back to 1 default profile: "default"
+2023-07-23 12:10:18.054  INFO alex-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2023-07-23 12:10:18.063  INFO alex-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-23 12:10:18.064  INFO alex-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2023-07-23 12:10:18.065  INFO alex-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-23 12:10:18.144  INFO alex-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2023-07-23 12:10:18.144  INFO alex-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1244 ms
+2023-07-23 12:10:18.294  INFO alex-PC - [           main] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-23 12:10:18.352  INFO alex-PC - [           main] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-23 12:10:18.354  INFO alex-PC - [           main] [o.h.c.Environment                  ] : HHH000406: Using bytecode reflection optimizer
+2023-07-23 12:10:18.478  INFO alex-PC - [           main] [o.h.b.i.BytecodeProviderInitiator  ] : HHH000021: Bytecode provider name : bytebuddy
+2023-07-23 12:10:18.603  INFO alex-PC - [           main] [o.s.o.j.p.SpringPersistenceUnitInfo] : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-23 12:10:19.013  WARN alex-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-23 12:10:19.019  WARN alex-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-23 12:10:19.021  WARN alex-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-23 12:10:19.084  INFO alex-PC - [           main] [o.h.b.i.BytecodeProviderInitiator  ] : HHH000021: Bytecode provider name : bytebuddy
+2023-07-23 12:10:19.954  INFO alex-PC - [           main] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-23 12:10:20.683  WARN alex-PC - [           main] [seConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-23 12:10:20.781 DEBUG alex-PC - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-23 12:10:20.864 DEBUG alex-PC - [           main] [.m.m.a.RequestMappingHandlerMapping] : 26 mappings in 'requestMappingHandlerMapping'
+2023-07-23 12:10:20.884 DEBUG alex-PC - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-07-23 12:10:20.894 DEBUG alex-PC - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-23 12:10:20.979  INFO alex-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2023-07-23 12:10:20.997  INFO alex-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-23 12:10:21.007  INFO alex-PC - [           main] [c.s.t.TechnikonApplication         ] : Started TechnikonApplication in 4.571 seconds (process running for 5.525)
+2023-07-23 12:10:21.059  INFO alex-PC - [           main] [a.l.ConditionEvaluationReportLogger] : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-07-23 12:10:21.074 ERROR alex-PC - [           main] [o.s.b.SpringApplication            ] : Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:755)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:319)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.scytalys.technikon.TechnikonApplication.main(TechnikonApplication.java:10)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.util.Set.add(Object)" because the return value of "com.scytalys.technikon.domain.User.getRoles()" is null
+	at com.scytalys.technikon.utils.DataLoader.run(DataLoader.java:49)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771)
+	... 5 more
+2023-07-23 12:10:21.092  INFO alex-PC - [           main] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-23 12:11:33.587  INFO alex-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 8.0.0.Final
+2023-07-23 12:11:33.626  INFO alex-PC - [           main] [c.s.t.TechnikonApplication         ] : Starting TechnikonApplication using Java 17.0.5 with PID 25100 (E:\Documents\Technikon\target\classes started by alex in E:\Documents\Technikon)
+2023-07-23 12:11:33.629 DEBUG alex-PC - [           main] [c.s.t.TechnikonApplication         ] : Running with Spring Boot v3.1.1, Spring v6.0.10
+2023-07-23 12:11:33.630  INFO alex-PC - [           main] [c.s.t.TechnikonApplication         ] : No active profile set, falling back to 1 default profile: "default"
+2023-07-23 12:11:34.729  INFO alex-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2023-07-23 12:11:34.738  INFO alex-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-23 12:11:34.740  INFO alex-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2023-07-23 12:11:34.740  INFO alex-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-23 12:11:34.827  INFO alex-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2023-07-23 12:11:34.827  INFO alex-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1156 ms
+2023-07-23 12:11:34.979  INFO alex-PC - [           main] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-23 12:11:35.038  INFO alex-PC - [           main] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-23 12:11:35.040  INFO alex-PC - [           main] [o.h.c.Environment                  ] : HHH000406: Using bytecode reflection optimizer
+2023-07-23 12:11:35.159  INFO alex-PC - [           main] [o.h.b.i.BytecodeProviderInitiator  ] : HHH000021: Bytecode provider name : bytebuddy
+2023-07-23 12:11:35.282  INFO alex-PC - [           main] [o.s.o.j.p.SpringPersistenceUnitInfo] : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-23 12:11:35.705  WARN alex-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-23 12:11:35.710  WARN alex-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-23 12:11:35.712  WARN alex-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-23 12:11:35.780  INFO alex-PC - [           main] [o.h.b.i.BytecodeProviderInitiator  ] : HHH000021: Bytecode provider name : bytebuddy
+2023-07-23 12:11:36.666  INFO alex-PC - [           main] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-23 12:11:37.413  WARN alex-PC - [           main] [seConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-23 12:11:37.515 DEBUG alex-PC - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-23 12:11:37.596 DEBUG alex-PC - [           main] [.m.m.a.RequestMappingHandlerMapping] : 26 mappings in 'requestMappingHandlerMapping'
+2023-07-23 12:11:37.616 DEBUG alex-PC - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-07-23 12:11:37.626 DEBUG alex-PC - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-23 12:11:37.712  INFO alex-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2023-07-23 12:11:37.729  INFO alex-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-23 12:11:37.738  INFO alex-PC - [           main] [c.s.t.TechnikonApplication         ] : Started TechnikonApplication in 4.518 seconds (process running for 5.459)
+2023-07-23 12:11:37.793  INFO alex-PC - [           main] [a.l.ConditionEvaluationReportLogger] : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-07-23 12:11:37.809 ERROR alex-PC - [           main] [o.s.b.SpringApplication            ] : Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:755)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:319)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.scytalys.technikon.TechnikonApplication.main(TechnikonApplication.java:10)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.util.Set.add(Object)" because the return value of "com.scytalys.technikon.domain.User.getRoles()" is null
+	at com.scytalys.technikon.utils.DataLoader.run(DataLoader.java:49)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771)
+	... 5 more
+2023-07-23 12:11:37.827  INFO alex-PC - [           main] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-23 12:12:36.194  INFO alex-PC - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 8.0.0.Final
+2023-07-23 12:12:36.232  INFO alex-PC - [           main] [c.s.t.TechnikonApplication         ] : Starting TechnikonApplication using Java 17.0.5 with PID 23400 (E:\Documents\Technikon\target\classes started by alex in E:\Documents\Technikon)
+2023-07-23 12:12:36.236 DEBUG alex-PC - [           main] [c.s.t.TechnikonApplication         ] : Running with Spring Boot v3.1.1, Spring v6.0.10
+2023-07-23 12:12:36.238  INFO alex-PC - [           main] [c.s.t.TechnikonApplication         ] : No active profile set, falling back to 1 default profile: "default"
+2023-07-23 12:12:37.361  INFO alex-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2023-07-23 12:12:37.369  INFO alex-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-23 12:12:37.371  INFO alex-PC - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2023-07-23 12:12:37.372  INFO alex-PC - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-23 12:12:37.452  INFO alex-PC - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2023-07-23 12:12:37.452  INFO alex-PC - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1173 ms
+2023-07-23 12:12:37.605  INFO alex-PC - [           main] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-23 12:12:37.662  INFO alex-PC - [           main] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-23 12:12:37.664  INFO alex-PC - [           main] [o.h.c.Environment                  ] : HHH000406: Using bytecode reflection optimizer
+2023-07-23 12:12:37.785  INFO alex-PC - [           main] [o.h.b.i.BytecodeProviderInitiator  ] : HHH000021: Bytecode provider name : bytebuddy
+2023-07-23 12:12:37.917  INFO alex-PC - [           main] [o.s.o.j.p.SpringPersistenceUnitInfo] : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-23 12:12:38.447  WARN alex-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-23 12:12:38.454  WARN alex-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-23 12:12:38.457  WARN alex-PC - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-23 12:12:38.529  INFO alex-PC - [           main] [o.h.b.i.BytecodeProviderInitiator  ] : HHH000021: Bytecode provider name : bytebuddy
+2023-07-23 12:12:39.446  INFO alex-PC - [           main] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-23 12:12:40.236  WARN alex-PC - [           main] [seConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-23 12:12:40.343 DEBUG alex-PC - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-23 12:12:40.425 DEBUG alex-PC - [           main] [.m.m.a.RequestMappingHandlerMapping] : 26 mappings in 'requestMappingHandlerMapping'
+2023-07-23 12:12:40.446 DEBUG alex-PC - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-07-23 12:12:40.456 DEBUG alex-PC - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-23 12:12:40.552  INFO alex-PC - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2023-07-23 12:12:40.571  INFO alex-PC - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-23 12:12:40.580  INFO alex-PC - [           main] [c.s.t.TechnikonApplication         ] : Started TechnikonApplication in 4.758 seconds (process running for 5.722)
+2023-07-23 12:12:40.640  INFO alex-PC - [           main] [a.l.ConditionEvaluationReportLogger] : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-07-23 12:12:40.656 ERROR alex-PC - [           main] [o.s.b.SpringApplication            ] : Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:755)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:319)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.scytalys.technikon.TechnikonApplication.main(TechnikonApplication.java:10)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.util.Set.add(Object)" because the return value of "com.scytalys.technikon.domain.User.getRoles()" is null
+	at com.scytalys.technikon.utils.DataLoader.run(DataLoader.java:49)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771)
+	... 5 more
+2023-07-23 12:12:40.676  INFO alex-PC - [           main] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-24 11:16:58.810  INFO SCY-LP-032 - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 8.0.0.Final
+2023-07-24 11:16:58.850  INFO SCY-LP-032 - [           main] [c.s.t.TechnikonApplication         ] : Starting TechnikonApplication using Java 17.0.7 with PID 23160 (C:\Users\alexandrosg\Desktop\Technikon\target\classes started by alexandrosg in C:\Users\alexandrosg\Desktop\Technikon)
+2023-07-24 11:16:58.855 DEBUG SCY-LP-032 - [           main] [c.s.t.TechnikonApplication         ] : Running with Spring Boot v3.1.1, Spring v6.0.10
+2023-07-24 11:16:58.856  INFO SCY-LP-032 - [           main] [c.s.t.TechnikonApplication         ] : No active profile set, falling back to 1 default profile: "default"
+2023-07-24 11:17:00.007  INFO SCY-LP-032 - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2023-07-24 11:17:00.015  INFO SCY-LP-032 - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-24 11:17:00.017  INFO SCY-LP-032 - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2023-07-24 11:17:00.017  INFO SCY-LP-032 - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-24 11:17:00.104  INFO SCY-LP-032 - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2023-07-24 11:17:00.105  INFO SCY-LP-032 - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1204 ms
+2023-07-24 11:17:00.251  INFO SCY-LP-032 - [           main] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-24 11:17:00.316  INFO SCY-LP-032 - [           main] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-24 11:17:00.318  INFO SCY-LP-032 - [           main] [o.h.c.Environment                  ] : HHH000406: Using bytecode reflection optimizer
+2023-07-24 11:17:00.454  INFO SCY-LP-032 - [           main] [o.h.b.i.BytecodeProviderInitiator  ] : HHH000021: Bytecode provider name : bytebuddy
+2023-07-24 11:17:00.581  INFO SCY-LP-032 - [           main] [o.s.o.j.p.SpringPersistenceUnitInfo] : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-24 11:17:01.639 ERROR SCY-LP-032 - [           main] [alContainerEntityManagerFactoryBean] : Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'javax.persistence.jdbc.url', 'hibernate.connection.url', or 'hibernate.dialect')
+2023-07-24 11:17:01.639  WARN SCY-LP-032 - [           main] [gServletWebServerApplicationContext] : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'javax.persistence.jdbc.url', 'hibernate.connection.url', or 'hibernate.dialect')
+2023-07-24 11:17:01.642  INFO SCY-LP-032 - [           main] [o.a.c.c.StandardService            ] : Stopping service [Tomcat]
+2023-07-24 11:17:01.652  INFO SCY-LP-032 - [           main] [a.l.ConditionEvaluationReportLogger] : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-07-24 11:17:01.668 ERROR SCY-LP-032 - [           main] [o.s.b.SpringApplication            ] : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'javax.persistence.jdbc.url', 'hibernate.connection.url', or 'hibernate.dialect')
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:931)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.scytalys.technikon.TechnikonApplication.main(TechnikonApplication.java:10)
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'javax.persistence.jdbc.url', 'hibernate.connection.url', or 'hibernate.dialect')
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:277)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:239)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:216)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:230)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:198)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:166)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1380)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1451)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	... 16 more
+Caused by: org.hibernate.HibernateException: Unable to determine Dialect without JDBC metadata (please set 'javax.persistence.jdbc.url', 'hibernate.connection.url', or 'hibernate.dialect')
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:188)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:87)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:274)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:34)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:119)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:264)
+	... 31 more
+2023-07-24 11:17:37.796  INFO SCY-LP-032 - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 8.0.0.Final
+2023-07-24 11:17:37.833  INFO SCY-LP-032 - [           main] [c.s.t.TechnikonApplication         ] : Starting TechnikonApplication using Java 17.0.7 with PID 25164 (C:\Users\alexandrosg\Desktop\Technikon\target\classes started by alexandrosg in C:\Users\alexandrosg\Desktop\Technikon)
+2023-07-24 11:17:37.838 DEBUG SCY-LP-032 - [           main] [c.s.t.TechnikonApplication         ] : Running with Spring Boot v3.1.1, Spring v6.0.10
+2023-07-24 11:17:37.839  INFO SCY-LP-032 - [           main] [c.s.t.TechnikonApplication         ] : No active profile set, falling back to 1 default profile: "default"
+2023-07-24 11:17:39.030  INFO SCY-LP-032 - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2023-07-24 11:17:39.040  INFO SCY-LP-032 - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-24 11:17:39.041  INFO SCY-LP-032 - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2023-07-24 11:17:39.042  INFO SCY-LP-032 - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-24 11:17:39.135  INFO SCY-LP-032 - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2023-07-24 11:17:39.135  INFO SCY-LP-032 - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1256 ms
+2023-07-24 11:17:39.280  INFO SCY-LP-032 - [           main] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-24 11:17:39.340  INFO SCY-LP-032 - [           main] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-24 11:17:39.341  INFO SCY-LP-032 - [           main] [o.h.c.Environment                  ] : HHH000406: Using bytecode reflection optimizer
+2023-07-24 11:17:39.475  INFO SCY-LP-032 - [           main] [o.h.b.i.BytecodeProviderInitiator  ] : HHH000021: Bytecode provider name : bytebuddy
+2023-07-24 11:17:39.597  INFO SCY-LP-032 - [           main] [o.s.o.j.p.SpringPersistenceUnitInfo] : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-24 11:17:40.661 ERROR SCY-LP-032 - [           main] [alContainerEntityManagerFactoryBean] : Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'javax.persistence.jdbc.url', 'hibernate.connection.url', or 'hibernate.dialect')
+2023-07-24 11:17:40.661  WARN SCY-LP-032 - [           main] [gServletWebServerApplicationContext] : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'javax.persistence.jdbc.url', 'hibernate.connection.url', or 'hibernate.dialect')
+2023-07-24 11:17:40.664  INFO SCY-LP-032 - [           main] [o.a.c.c.StandardService            ] : Stopping service [Tomcat]
+2023-07-24 11:17:40.673  INFO SCY-LP-032 - [           main] [a.l.ConditionEvaluationReportLogger] : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-07-24 11:17:40.687 ERROR SCY-LP-032 - [           main] [o.s.b.SpringApplication            ] : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'javax.persistence.jdbc.url', 'hibernate.connection.url', or 'hibernate.dialect')
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:931)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.scytalys.technikon.TechnikonApplication.main(TechnikonApplication.java:10)
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'javax.persistence.jdbc.url', 'hibernate.connection.url', or 'hibernate.dialect')
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:277)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:239)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:216)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:230)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:198)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:166)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1380)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1451)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	... 16 more
+Caused by: org.hibernate.HibernateException: Unable to determine Dialect without JDBC metadata (please set 'javax.persistence.jdbc.url', 'hibernate.connection.url', or 'hibernate.dialect')
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:188)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:87)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:274)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:34)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:119)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:264)
+	... 31 more
+2023-07-24 11:17:58.796  INFO SCY-LP-032 - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 8.0.0.Final
+2023-07-24 11:17:58.840  INFO SCY-LP-032 - [           main] [c.s.t.TechnikonApplication         ] : Starting TechnikonApplication using Java 17.0.7 with PID 10672 (C:\Users\alexandrosg\Desktop\Technikon\target\classes started by alexandrosg in C:\Users\alexandrosg\Desktop\Technikon)
+2023-07-24 11:17:58.845 DEBUG SCY-LP-032 - [           main] [c.s.t.TechnikonApplication         ] : Running with Spring Boot v3.1.1, Spring v6.0.10
+2023-07-24 11:17:58.847  INFO SCY-LP-032 - [           main] [c.s.t.TechnikonApplication         ] : No active profile set, falling back to 1 default profile: "default"
+2023-07-24 11:18:00.174  INFO SCY-LP-032 - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2023-07-24 11:18:00.187  INFO SCY-LP-032 - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-24 11:18:00.188  INFO SCY-LP-032 - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2023-07-24 11:18:00.188  INFO SCY-LP-032 - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-24 11:18:00.295  INFO SCY-LP-032 - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2023-07-24 11:18:00.295  INFO SCY-LP-032 - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1408 ms
+2023-07-24 11:18:00.473  INFO SCY-LP-032 - [           main] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-24 11:18:00.541  INFO SCY-LP-032 - [           main] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-24 11:18:00.543  INFO SCY-LP-032 - [           main] [o.h.c.Environment                  ] : HHH000406: Using bytecode reflection optimizer
+2023-07-24 11:18:00.715  INFO SCY-LP-032 - [           main] [o.h.b.i.BytecodeProviderInitiator  ] : HHH000021: Bytecode provider name : bytebuddy
+2023-07-24 11:18:00.892  INFO SCY-LP-032 - [           main] [o.s.o.j.p.SpringPersistenceUnitInfo] : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-24 11:18:02.011 ERROR SCY-LP-032 - [           main] [alContainerEntityManagerFactoryBean] : Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'javax.persistence.jdbc.url', 'hibernate.connection.url', or 'hibernate.dialect')
+2023-07-24 11:18:02.011  WARN SCY-LP-032 - [           main] [gServletWebServerApplicationContext] : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'javax.persistence.jdbc.url', 'hibernate.connection.url', or 'hibernate.dialect')
+2023-07-24 11:18:02.014  INFO SCY-LP-032 - [           main] [o.a.c.c.StandardService            ] : Stopping service [Tomcat]
+2023-07-24 11:18:02.024  INFO SCY-LP-032 - [           main] [a.l.ConditionEvaluationReportLogger] : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-07-24 11:18:02.038 ERROR SCY-LP-032 - [           main] [o.s.b.SpringApplication            ] : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'javax.persistence.jdbc.url', 'hibernate.connection.url', or 'hibernate.dialect')
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:931)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.scytalys.technikon.TechnikonApplication.main(TechnikonApplication.java:10)
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'javax.persistence.jdbc.url', 'hibernate.connection.url', or 'hibernate.dialect')
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:277)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:239)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:216)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:230)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:198)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:166)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1380)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1451)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	... 16 more
+Caused by: org.hibernate.HibernateException: Unable to determine Dialect without JDBC metadata (please set 'javax.persistence.jdbc.url', 'hibernate.connection.url', or 'hibernate.dialect')
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:188)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:87)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:274)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:34)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:119)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:264)
+	... 31 more
+2023-07-24 11:18:20.664  INFO SCY-LP-032 - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 8.0.0.Final
+2023-07-24 11:18:20.699  INFO SCY-LP-032 - [           main] [c.s.t.TechnikonApplication         ] : Starting TechnikonApplication using Java 17.0.7 with PID 5668 (C:\Users\alexandrosg\Desktop\Technikon\target\classes started by alexandrosg in C:\Users\alexandrosg\Desktop\Technikon)
+2023-07-24 11:18:20.703 DEBUG SCY-LP-032 - [           main] [c.s.t.TechnikonApplication         ] : Running with Spring Boot v3.1.1, Spring v6.0.10
+2023-07-24 11:18:20.705  INFO SCY-LP-032 - [           main] [c.s.t.TechnikonApplication         ] : No active profile set, falling back to 1 default profile: "default"
+2023-07-24 11:18:21.781  INFO SCY-LP-032 - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2023-07-24 11:18:21.790  INFO SCY-LP-032 - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-24 11:18:21.791  INFO SCY-LP-032 - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2023-07-24 11:18:21.791  INFO SCY-LP-032 - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-24 11:18:21.872  INFO SCY-LP-032 - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2023-07-24 11:18:21.872  INFO SCY-LP-032 - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1130 ms
+2023-07-24 11:18:22.013  INFO SCY-LP-032 - [           main] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-24 11:18:22.078  INFO SCY-LP-032 - [           main] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-24 11:18:22.080  INFO SCY-LP-032 - [           main] [o.h.c.Environment                  ] : HHH000406: Using bytecode reflection optimizer
+2023-07-24 11:18:22.207  INFO SCY-LP-032 - [           main] [o.h.b.i.BytecodeProviderInitiator  ] : HHH000021: Bytecode provider name : bytebuddy
+2023-07-24 11:18:22.335  INFO SCY-LP-032 - [           main] [o.s.o.j.p.SpringPersistenceUnitInfo] : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-24 11:18:22.709  WARN SCY-LP-032 - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-24 11:18:22.714  WARN SCY-LP-032 - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-24 11:18:22.718  WARN SCY-LP-032 - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-24 11:18:22.720  WARN SCY-LP-032 - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-24 11:18:22.780  INFO SCY-LP-032 - [           main] [o.h.b.i.BytecodeProviderInitiator  ] : HHH000021: Bytecode provider name : bytebuddy
+2023-07-24 11:18:23.581  WARN SCY-LP-032 - [           main] [.h.t.s.i.ExceptionHandlerLoggedImpl] : GenerationTarget encountered exception accepting command : Error executing DDL "create table report (date timestamp(6), id bigint not null, user bigint, description varchar(255), report_type varchar(255) check (report_type in ('user_registration','user_update','user_deletion','user_login','property_registration','property_update','property_deactivation','property_deletion','repair_info','user_logs')), primary key (id))" via JDBC [ERROR: syntax error at or near "user"
+  Position: 61]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "create table report (date timestamp(6), id bigint not null, user bigint, description varchar(255), report_type varchar(255) check (report_type in ('user_registration','user_update','user_deletion','user_login','property_registration','property_update','property_deactivation','property_deletion','repair_info','user_logs')), primary key (id))" via JDBC [ERROR: syntax error at or near "user"
+  Position: 61]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:92)
+	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:235)
+	at org.hibernate.tool.schema.internal.Helper.applySqlStrings(Helper.java:219)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createTables(SchemaCreatorImpl.java:419)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createSequencesTablesConstraints(SchemaCreatorImpl.java:340)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:239)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:172)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:142)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:118)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:254)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:143)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:140)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:292)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1455)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:931)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.scytalys.technikon.TechnikonApplication.main(TechnikonApplication.java:10)
+Caused by: org.postgresql.util.PSQLException: ERROR: syntax error at or near "user"
+  Position: 61
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:335)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:321)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:297)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:292)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:78)
+	... 40 more
+2023-07-24 11:18:23.622  WARN SCY-LP-032 - [           main] [.h.t.s.i.ExceptionHandlerLoggedImpl] : GenerationTarget encountered exception accepting command : Error executing DDL "alter table if exists report add constraint FK3og0mabbdypqrnh2ixvxekqyg foreign key (user) references "user"" via JDBC [ERROR: syntax error at or near "user"
+  Position: 86]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table if exists report add constraint FK3og0mabbdypqrnh2ixvxekqyg foreign key (user) references "user"" via JDBC [ERROR: syntax error at or near "user"
+  Position: 86]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:92)
+	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:235)
+	at org.hibernate.tool.schema.internal.Helper.applySqlStrings(Helper.java:219)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createForeignKeys(SchemaCreatorImpl.java:303)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:250)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:172)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:142)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:118)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:254)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:143)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:140)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:292)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1455)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:931)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.scytalys.technikon.TechnikonApplication.main(TechnikonApplication.java:10)
+Caused by: org.postgresql.util.PSQLException: ERROR: syntax error at or near "user"
+  Position: 86
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:335)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:321)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:297)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:292)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:78)
+	... 39 more
+2023-07-24 11:18:23.633  INFO SCY-LP-032 - [           main] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-24 11:18:24.353  WARN SCY-LP-032 - [           main] [seConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-24 11:18:24.456 DEBUG SCY-LP-032 - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-24 11:18:24.551 DEBUG SCY-LP-032 - [           main] [.m.m.a.RequestMappingHandlerMapping] : 26 mappings in 'requestMappingHandlerMapping'
+2023-07-24 11:18:24.570 DEBUG SCY-LP-032 - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-07-24 11:18:24.578 DEBUG SCY-LP-032 - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-24 11:18:24.661  INFO SCY-LP-032 - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2023-07-24 11:18:24.680  INFO SCY-LP-032 - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-24 11:18:24.688  INFO SCY-LP-032 - [           main] [c.s.t.TechnikonApplication         ] : Started TechnikonApplication in 4.417 seconds (process running for 5.682)
+2023-07-24 11:18:24.748  INFO SCY-LP-032 - [           main] [a.l.ConditionEvaluationReportLogger] : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-07-24 11:18:24.765 ERROR SCY-LP-032 - [           main] [o.s.b.SpringApplication            ] : Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:755)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:319)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.scytalys.technikon.TechnikonApplication.main(TechnikonApplication.java:10)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.util.Set.add(Object)" because the return value of "com.scytalys.technikon.domain.User.getRoles()" is null
+	at com.scytalys.technikon.utils.DataLoader.run(DataLoader.java:49)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771)
+	... 5 more
+2023-07-24 11:18:24.789  INFO SCY-LP-032 - [           main] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-24 11:19:44.933  INFO SCY-LP-032 - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 8.0.0.Final
+2023-07-24 11:19:44.970  INFO SCY-LP-032 - [           main] [c.s.t.TechnikonApplication         ] : Starting TechnikonApplication using Java 17.0.7 with PID 28896 (C:\Users\alexandrosg\Desktop\Technikon\target\classes started by alexandrosg in C:\Users\alexandrosg\Desktop\Technikon)
+2023-07-24 11:19:44.974 DEBUG SCY-LP-032 - [           main] [c.s.t.TechnikonApplication         ] : Running with Spring Boot v3.1.1, Spring v6.0.10
+2023-07-24 11:19:44.975  INFO SCY-LP-032 - [           main] [c.s.t.TechnikonApplication         ] : No active profile set, falling back to 1 default profile: "default"
+2023-07-24 11:19:46.077  INFO SCY-LP-032 - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2023-07-24 11:19:46.085  INFO SCY-LP-032 - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-24 11:19:46.086  INFO SCY-LP-032 - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2023-07-24 11:19:46.087  INFO SCY-LP-032 - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-24 11:19:46.178  INFO SCY-LP-032 - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2023-07-24 11:19:46.178  INFO SCY-LP-032 - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1167 ms
+2023-07-24 11:19:46.335  INFO SCY-LP-032 - [           main] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-24 11:19:46.395  INFO SCY-LP-032 - [           main] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-24 11:19:46.397  INFO SCY-LP-032 - [           main] [o.h.c.Environment                  ] : HHH000406: Using bytecode reflection optimizer
+2023-07-24 11:19:46.522  INFO SCY-LP-032 - [           main] [o.h.b.i.BytecodeProviderInitiator  ] : HHH000021: Bytecode provider name : bytebuddy
+2023-07-24 11:19:46.648  INFO SCY-LP-032 - [           main] [o.s.o.j.p.SpringPersistenceUnitInfo] : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-24 11:19:46.988  WARN SCY-LP-032 - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-24 11:19:46.993  WARN SCY-LP-032 - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-24 11:19:46.996  WARN SCY-LP-032 - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-24 11:19:46.997  WARN SCY-LP-032 - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-24 11:19:47.058  INFO SCY-LP-032 - [           main] [o.h.b.i.BytecodeProviderInitiator  ] : HHH000021: Bytecode provider name : bytebuddy
+2023-07-24 11:19:47.844  WARN SCY-LP-032 - [           main] [.h.t.s.i.ExceptionHandlerLoggedImpl] : GenerationTarget encountered exception accepting command : Error executing DDL "create table report (date timestamp(6), id bigint not null, user bigint, description varchar(255), report_type varchar(255) check (report_type in ('user_registration','user_update','user_deletion','user_login','property_registration','property_update','property_deactivation','property_deletion','repair_info','user_logs')), primary key (id))" via JDBC [ERROR: syntax error at or near "user"
+  Position: 61]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "create table report (date timestamp(6), id bigint not null, user bigint, description varchar(255), report_type varchar(255) check (report_type in ('user_registration','user_update','user_deletion','user_login','property_registration','property_update','property_deactivation','property_deletion','repair_info','user_logs')), primary key (id))" via JDBC [ERROR: syntax error at or near "user"
+  Position: 61]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:92)
+	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:235)
+	at org.hibernate.tool.schema.internal.Helper.applySqlStrings(Helper.java:219)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createTables(SchemaCreatorImpl.java:419)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createSequencesTablesConstraints(SchemaCreatorImpl.java:340)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:239)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:172)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:142)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:118)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:254)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:143)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:140)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:292)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1455)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:931)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.scytalys.technikon.TechnikonApplication.main(TechnikonApplication.java:10)
+Caused by: org.postgresql.util.PSQLException: ERROR: syntax error at or near "user"
+  Position: 61
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:335)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:321)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:297)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:292)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:78)
+	... 40 more
+2023-07-24 11:19:47.886  WARN SCY-LP-032 - [           main] [.h.t.s.i.ExceptionHandlerLoggedImpl] : GenerationTarget encountered exception accepting command : Error executing DDL "alter table if exists report add constraint FK3og0mabbdypqrnh2ixvxekqyg foreign key (user) references "user"" via JDBC [ERROR: syntax error at or near "user"
+  Position: 86]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table if exists report add constraint FK3og0mabbdypqrnh2ixvxekqyg foreign key (user) references "user"" via JDBC [ERROR: syntax error at or near "user"
+  Position: 86]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:92)
+	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:235)
+	at org.hibernate.tool.schema.internal.Helper.applySqlStrings(Helper.java:219)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createForeignKeys(SchemaCreatorImpl.java:303)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:250)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:172)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:142)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:118)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:254)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:143)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:140)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:292)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1455)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:931)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.scytalys.technikon.TechnikonApplication.main(TechnikonApplication.java:10)
+Caused by: org.postgresql.util.PSQLException: ERROR: syntax error at or near "user"
+  Position: 86
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:335)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:321)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:297)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:292)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:78)
+	... 39 more
+2023-07-24 11:19:47.894  INFO SCY-LP-032 - [           main] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-24 11:19:48.583  WARN SCY-LP-032 - [           main] [seConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-24 11:19:48.671 DEBUG SCY-LP-032 - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-24 11:19:48.742 DEBUG SCY-LP-032 - [           main] [.m.m.a.RequestMappingHandlerMapping] : 26 mappings in 'requestMappingHandlerMapping'
+2023-07-24 11:19:48.757 DEBUG SCY-LP-032 - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-07-24 11:19:48.763 DEBUG SCY-LP-032 - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-24 11:19:48.838  INFO SCY-LP-032 - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2023-07-24 11:19:48.856  INFO SCY-LP-032 - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-24 11:19:48.863  INFO SCY-LP-032 - [           main] [c.s.t.TechnikonApplication         ] : Started TechnikonApplication in 4.306 seconds (process running for 5.608)
+2023-07-24 11:19:48.918  INFO SCY-LP-032 - [           main] [a.l.ConditionEvaluationReportLogger] : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-07-24 11:19:48.932 ERROR SCY-LP-032 - [           main] [o.s.b.SpringApplication            ] : Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:755)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:319)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.scytalys.technikon.TechnikonApplication.main(TechnikonApplication.java:10)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.util.Set.add(Object)" because the return value of "com.scytalys.technikon.domain.User.getRoles()" is null
+	at com.scytalys.technikon.utils.DataLoader.run(DataLoader.java:49)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771)
+	... 5 more
+2023-07-24 11:19:48.957  INFO SCY-LP-032 - [           main] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-24 11:20:29.369  INFO SCY-LP-032 - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 8.0.0.Final
+2023-07-24 11:20:29.411  INFO SCY-LP-032 - [           main] [c.s.t.TechnikonApplication         ] : Starting TechnikonApplication using Java 17.0.7 with PID 26184 (C:\Users\alexandrosg\Desktop\Technikon\target\classes started by alexandrosg in C:\Users\alexandrosg\Desktop\Technikon)
+2023-07-24 11:20:29.416 DEBUG SCY-LP-032 - [           main] [c.s.t.TechnikonApplication         ] : Running with Spring Boot v3.1.1, Spring v6.0.10
+2023-07-24 11:20:29.417  INFO SCY-LP-032 - [           main] [c.s.t.TechnikonApplication         ] : No active profile set, falling back to 1 default profile: "default"
+2023-07-24 11:20:30.592  INFO SCY-LP-032 - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2023-07-24 11:20:30.601  INFO SCY-LP-032 - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-24 11:20:30.602  INFO SCY-LP-032 - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2023-07-24 11:20:30.603  INFO SCY-LP-032 - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-24 11:20:30.687  INFO SCY-LP-032 - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2023-07-24 11:20:30.688  INFO SCY-LP-032 - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1222 ms
+2023-07-24 11:20:30.843  INFO SCY-LP-032 - [           main] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-24 11:20:30.896  INFO SCY-LP-032 - [           main] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-24 11:20:30.898  INFO SCY-LP-032 - [           main] [o.h.c.Environment                  ] : HHH000406: Using bytecode reflection optimizer
+2023-07-24 11:20:31.021  INFO SCY-LP-032 - [           main] [o.h.b.i.BytecodeProviderInitiator  ] : HHH000021: Bytecode provider name : bytebuddy
+2023-07-24 11:20:31.144  INFO SCY-LP-032 - [           main] [o.s.o.j.p.SpringPersistenceUnitInfo] : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-24 11:20:31.492  WARN SCY-LP-032 - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-24 11:20:31.496  WARN SCY-LP-032 - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-24 11:20:31.499  WARN SCY-LP-032 - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-24 11:20:31.501  WARN SCY-LP-032 - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-24 11:20:31.571  INFO SCY-LP-032 - [           main] [o.h.b.i.BytecodeProviderInitiator  ] : HHH000021: Bytecode provider name : bytebuddy
+2023-07-24 11:20:32.369  WARN SCY-LP-032 - [           main] [.h.t.s.i.ExceptionHandlerLoggedImpl] : GenerationTarget encountered exception accepting command : Error executing DDL "create table report (date timestamp(6), id bigint not null, user bigint, description varchar(255), report_type varchar(255) check (report_type in ('user_registration','user_update','user_deletion','user_login','property_registration','property_update','property_deactivation','property_deletion','repair_info','user_logs')), primary key (id))" via JDBC [ERROR: syntax error at or near "user"
+  Position: 61]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "create table report (date timestamp(6), id bigint not null, user bigint, description varchar(255), report_type varchar(255) check (report_type in ('user_registration','user_update','user_deletion','user_login','property_registration','property_update','property_deactivation','property_deletion','repair_info','user_logs')), primary key (id))" via JDBC [ERROR: syntax error at or near "user"
+  Position: 61]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:92)
+	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:235)
+	at org.hibernate.tool.schema.internal.Helper.applySqlStrings(Helper.java:219)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createTables(SchemaCreatorImpl.java:419)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createSequencesTablesConstraints(SchemaCreatorImpl.java:340)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:239)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:172)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:142)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:118)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:254)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:143)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:140)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:292)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1455)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:931)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.scytalys.technikon.TechnikonApplication.main(TechnikonApplication.java:10)
+Caused by: org.postgresql.util.PSQLException: ERROR: syntax error at or near "user"
+  Position: 61
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:335)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:321)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:297)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:292)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:78)
+	... 40 more
+2023-07-24 11:20:32.406  WARN SCY-LP-032 - [           main] [.h.t.s.i.ExceptionHandlerLoggedImpl] : GenerationTarget encountered exception accepting command : Error executing DDL "alter table if exists report add constraint FK3og0mabbdypqrnh2ixvxekqyg foreign key (user) references "user"" via JDBC [ERROR: syntax error at or near "user"
+  Position: 86]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table if exists report add constraint FK3og0mabbdypqrnh2ixvxekqyg foreign key (user) references "user"" via JDBC [ERROR: syntax error at or near "user"
+  Position: 86]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:92)
+	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:235)
+	at org.hibernate.tool.schema.internal.Helper.applySqlStrings(Helper.java:219)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createForeignKeys(SchemaCreatorImpl.java:303)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:250)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:172)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:142)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:118)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:254)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:143)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:140)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:292)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1455)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:931)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.scytalys.technikon.TechnikonApplication.main(TechnikonApplication.java:10)
+Caused by: org.postgresql.util.PSQLException: ERROR: syntax error at or near "user"
+  Position: 86
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:335)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:321)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:297)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:292)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:78)
+	... 39 more
+2023-07-24 11:20:32.416  INFO SCY-LP-032 - [           main] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-24 11:20:33.137  WARN SCY-LP-032 - [           main] [seConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-24 11:20:33.230 DEBUG SCY-LP-032 - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-24 11:20:33.306 DEBUG SCY-LP-032 - [           main] [.m.m.a.RequestMappingHandlerMapping] : 26 mappings in 'requestMappingHandlerMapping'
+2023-07-24 11:20:33.322 DEBUG SCY-LP-032 - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-07-24 11:20:33.330 DEBUG SCY-LP-032 - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-24 11:20:33.413  INFO SCY-LP-032 - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2023-07-24 11:20:33.432  INFO SCY-LP-032 - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-24 11:20:33.440  INFO SCY-LP-032 - [           main] [c.s.t.TechnikonApplication         ] : Started TechnikonApplication in 4.479 seconds (process running for 5.795)
+2023-07-24 11:21:12.552  INFO SCY-LP-032 - [ionShutdownHook] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-24 11:21:18.095  INFO SCY-LP-032 - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 8.0.0.Final
+2023-07-24 11:21:18.136  INFO SCY-LP-032 - [           main] [c.s.t.TechnikonApplication         ] : Starting TechnikonApplication using Java 17.0.7 with PID 14772 (C:\Users\alexandrosg\Desktop\Technikon\target\classes started by alexandrosg in C:\Users\alexandrosg\Desktop\Technikon)
+2023-07-24 11:21:18.139 DEBUG SCY-LP-032 - [           main] [c.s.t.TechnikonApplication         ] : Running with Spring Boot v3.1.1, Spring v6.0.10
+2023-07-24 11:21:18.141  INFO SCY-LP-032 - [           main] [c.s.t.TechnikonApplication         ] : No active profile set, falling back to 1 default profile: "default"
+2023-07-24 11:21:19.231  INFO SCY-LP-032 - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2023-07-24 11:21:19.240  INFO SCY-LP-032 - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-24 11:21:19.241  INFO SCY-LP-032 - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2023-07-24 11:21:19.242  INFO SCY-LP-032 - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-24 11:21:19.326  INFO SCY-LP-032 - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2023-07-24 11:21:19.327  INFO SCY-LP-032 - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1144 ms
+2023-07-24 11:21:19.488  INFO SCY-LP-032 - [           main] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-24 11:21:19.551  INFO SCY-LP-032 - [           main] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-24 11:21:19.553  INFO SCY-LP-032 - [           main] [o.h.c.Environment                  ] : HHH000406: Using bytecode reflection optimizer
+2023-07-24 11:21:19.672  INFO SCY-LP-032 - [           main] [o.h.b.i.BytecodeProviderInitiator  ] : HHH000021: Bytecode provider name : bytebuddy
+2023-07-24 11:21:19.791  INFO SCY-LP-032 - [           main] [o.s.o.j.p.SpringPersistenceUnitInfo] : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-24 11:21:20.121  WARN SCY-LP-032 - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-24 11:21:20.127  WARN SCY-LP-032 - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-24 11:21:20.130  WARN SCY-LP-032 - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-24 11:21:20.131  WARN SCY-LP-032 - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-24 11:21:20.205  INFO SCY-LP-032 - [           main] [o.h.b.i.BytecodeProviderInitiator  ] : HHH000021: Bytecode provider name : bytebuddy
+2023-07-24 11:21:21.068  INFO SCY-LP-032 - [           main] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-24 11:21:21.862  WARN SCY-LP-032 - [           main] [seConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-24 11:21:21.960 DEBUG SCY-LP-032 - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-24 11:21:22.041 DEBUG SCY-LP-032 - [           main] [.m.m.a.RequestMappingHandlerMapping] : 26 mappings in 'requestMappingHandlerMapping'
+2023-07-24 11:21:22.057 DEBUG SCY-LP-032 - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-07-24 11:21:22.065 DEBUG SCY-LP-032 - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-24 11:21:22.158  INFO SCY-LP-032 - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2023-07-24 11:21:22.177  INFO SCY-LP-032 - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-24 11:21:22.185  INFO SCY-LP-032 - [           main] [c.s.t.TechnikonApplication         ] : Started TechnikonApplication in 4.55 seconds (process running for 6.08)
+2023-07-24 11:22:14.666  INFO SCY-LP-032 - [ionShutdownHook] [alContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-24 11:22:20.729  INFO SCY-LP-032 - [kground-preinit] [o.h.v.i.u.Version                  ] : HV000001: Hibernate Validator 8.0.0.Final
+2023-07-24 11:22:20.773  INFO SCY-LP-032 - [           main] [c.s.t.TechnikonApplication         ] : Starting TechnikonApplication using Java 17.0.7 with PID 1040 (C:\Users\alexandrosg\Desktop\Technikon\target\classes started by alexandrosg in C:\Users\alexandrosg\Desktop\Technikon)
+2023-07-24 11:22:20.778 DEBUG SCY-LP-032 - [           main] [c.s.t.TechnikonApplication         ] : Running with Spring Boot v3.1.1, Spring v6.0.10
+2023-07-24 11:22:20.779  INFO SCY-LP-032 - [           main] [c.s.t.TechnikonApplication         ] : No active profile set, falling back to 1 default profile: "default"
+2023-07-24 11:22:21.937  INFO SCY-LP-032 - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat initialized with port(s): 8080 (http)
+2023-07-24 11:22:21.945  INFO SCY-LP-032 - [           main] [o.a.c.h.Http11NioProtocol          ] : Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-24 11:22:21.946  INFO SCY-LP-032 - [           main] [o.a.c.c.StandardService            ] : Starting service [Tomcat]
+2023-07-24 11:22:21.947  INFO SCY-LP-032 - [           main] [o.a.c.c.StandardEngine             ] : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-24 11:22:22.036  INFO SCY-LP-032 - [           main] [o.a.c.c.C.[.[.[/]                  ] : Initializing Spring embedded WebApplicationContext
+2023-07-24 11:22:22.036  INFO SCY-LP-032 - [           main] [.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1210 ms
+2023-07-24 11:22:22.200  INFO SCY-LP-032 - [           main] [o.h.j.i.u.LogHelper                ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-24 11:22:22.268  INFO SCY-LP-032 - [           main] [o.h.Version                        ] : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-24 11:22:22.270  INFO SCY-LP-032 - [           main] [o.h.c.Environment                  ] : HHH000406: Using bytecode reflection optimizer
+2023-07-24 11:22:22.404  INFO SCY-LP-032 - [           main] [o.h.b.i.BytecodeProviderInitiator  ] : HHH000021: Bytecode provider name : bytebuddy
+2023-07-24 11:22:22.541  INFO SCY-LP-032 - [           main] [o.s.o.j.p.SpringPersistenceUnitInfo] : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-24 11:22:22.901  WARN SCY-LP-032 - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-24 11:22:22.906  WARN SCY-LP-032 - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-24 11:22:22.910  WARN SCY-LP-032 - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-24 11:22:22.912  WARN SCY-LP-032 - [           main] [h.b.i.InFlightMetadataCollectorImpl] : HHH000069: Duplicate generator name idGenerator
+2023-07-24 11:22:22.986  INFO SCY-LP-032 - [           main] [o.h.b.i.BytecodeProviderInitiator  ] : HHH000021: Bytecode provider name : bytebuddy
+2023-07-24 11:22:23.950  INFO SCY-LP-032 - [           main] [alContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-24 11:22:24.783  WARN SCY-LP-032 - [           main] [seConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-24 11:22:24.874 DEBUG SCY-LP-032 - [           main] [.m.m.a.RequestMappingHandlerAdapter] : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-24 11:22:24.950 DEBUG SCY-LP-032 - [           main] [.m.m.a.RequestMappingHandlerMapping] : 26 mappings in 'requestMappingHandlerMapping'
+2023-07-24 11:22:24.967 DEBUG SCY-LP-032 - [           main] [o.s.w.s.h.SimpleUrlHandlerMapping  ] : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-07-24 11:22:24.974 DEBUG SCY-LP-032 - [           main] [a.ExceptionHandlerExceptionResolver] : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-24 11:22:25.060  INFO SCY-LP-032 - [           main] [o.a.c.h.Http11NioProtocol          ] : Starting ProtocolHandler ["http-nio-8080"]
+2023-07-24 11:22:25.078  INFO SCY-LP-032 - [           main] [o.s.b.w.e.t.TomcatWebServer        ] : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-24 11:22:25.085  INFO SCY-LP-032 - [           main] [c.s.t.TechnikonApplication         ] : Started TechnikonApplication in 4.768 seconds (process running for 6.151)
