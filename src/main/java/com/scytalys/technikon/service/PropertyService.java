@@ -9,11 +9,11 @@ public interface PropertyService {
 
     List<Property> fetchPropertyList();
 
-    void updateProperty(Property property, Long propertyId);
+    void updateProperty(Property property);
 
     Property searchByPIN(Long pin);
 
-    List<Property> searchByTIN(Long tin);
+//    List<Property> searchByTIN(Long tin);
 
     List<Property> searchByPropertyType(String propertyType);
 
@@ -24,4 +24,6 @@ public interface PropertyService {
     void deactivatePropertyById(Long propertyId);
 
     void deletePropertyById(Long propertyId);
+
+    List<Property> findPropertyByUser(Long userId);
 }

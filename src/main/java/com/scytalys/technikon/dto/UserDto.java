@@ -1,20 +1,18 @@
 package com.scytalys.technikon.dto;
 
 
-import com.scytalys.technikon.domain.BaseModel;
-import lombok.*;
+import lombok.Builder;
+import lombok.Data;
 
-@AllArgsConstructor
-@NoArgsConstructor
-@Getter
-@Setter
-@ToString
+@Data
+@Builder
 public class UserDto {
+    private Long id;
     private Long tinNumber;
     private String name;
     private String lastname;
     private String address;
-    private Long number;
+    private Long phoneNumber;
     private String username;
     private String email;
     private String password;

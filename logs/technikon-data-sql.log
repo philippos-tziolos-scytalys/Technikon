@@ -1,0 +1,385 @@
+2023-07-23 11:48:14.751 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists property drop constraint if exists FKn9cdajshrebcritph05nuxxlv
+2023-07-23 11:48:14.756 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists repairs drop constraint if exists FK6i88fgqlrt72jjuky9k3xnull
+2023-07-23 11:48:14.756 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FKh8ciramu9cc9q3qcqiv4ue8a6
+2023-07-23 11:48:14.757 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FK7ivp84f52aa3vd7ndq0oh0279
+2023-07-23 11:48:14.757 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists property cascade
+2023-07-23 11:48:14.759 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists repairs cascade
+2023-07-23 11:48:14.759 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists roles cascade
+2023-07-23 11:48:14.759 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists "user" cascade
+2023-07-23 11:48:14.760 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists user_roles cascade
+2023-07-23 11:48:14.760 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists property_seq
+2023-07-23 11:48:14.760 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists repair_seq
+2023-07-23 11:48:14.761 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists roles_seq
+2023-07-23 11:48:14.761 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists user_seq
+2023-07-23 11:48:14.766 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create sequence property_seq start with 1 increment by 1
+2023-07-23 11:48:14.830 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create sequence repair_seq start with 1 increment by 1
+2023-07-23 11:48:14.832 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create sequence roles_seq start with 1 increment by 1
+2023-07-23 11:48:14.835 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create sequence user_seq start with 1 increment by 1
+2023-07-23 11:48:14.839 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create table property (active_state boolean, year_of_construction integer, id bigint not null, map_location_lat bigint, map_location_long bigint, pin bigint, user_id bigint, address varchar(255), property_picture varchar(255), property_type varchar(255) check (property_type in ('DETACHED_HOUSE','MAISONETTE','APARTMENT_BUILDING')), primary key (id))
+2023-07-23 11:48:14.854 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create table repairs (cost numeric(38,2) not null, id bigint not null, property_id bigint, repair_date timestamp(6) not null, repair_status varchar(11) not null check (repair_status in ('PENDING','SCHEDULED','IN_PROGRESS','COMPLETED')), repair_type varchar(15) not null check (repair_type in ('PAINTING','INSULATION','FRAMES','PLUMBING','ELECTRICAL_WORK')), description varchar(1000) not null, primary key (id))
+2023-07-23 11:48:14.862 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create table roles (id bigint not null, name varchar(45) not null, primary key (id))
+2023-07-23 11:48:14.865 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create table "user" (id bigint not null, number bigint, tin_number bigint, email varchar(50), first_name varchar(50), last_name varchar(50), user_name varchar(50), address varchar(255), password varchar(255), primary key (id))
+2023-07-23 11:48:14.870 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create table user_roles (role_id bigint not null, user_id bigint not null, primary key (role_id, user_id))
+2023-07-23 11:48:14.883 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists property add constraint FKn9cdajshrebcritph05nuxxlv foreign key (user_id) references "user"
+2023-07-23 11:48:14.890 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists repairs add constraint FK6i88fgqlrt72jjuky9k3xnull foreign key (property_id) references property
+2023-07-23 11:48:14.892 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists user_roles add constraint FKh8ciramu9cc9q3qcqiv4ue8a6 foreign key (role_id) references roles
+2023-07-23 11:48:14.894 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists user_roles add constraint FK7ivp84f52aa3vd7ndq0oh0279 foreign key (user_id) references "user"
+2023-07-23 11:48:15.625 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists property drop constraint if exists FKn9cdajshrebcritph05nuxxlv
+2023-07-23 11:48:15.643 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists repairs drop constraint if exists FK6i88fgqlrt72jjuky9k3xnull
+2023-07-23 11:48:15.644 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FKh8ciramu9cc9q3qcqiv4ue8a6
+2023-07-23 11:48:15.645 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FK7ivp84f52aa3vd7ndq0oh0279
+2023-07-23 11:48:15.645 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists property cascade
+2023-07-23 11:48:15.649 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists repairs cascade
+2023-07-23 11:48:15.651 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists roles cascade
+2023-07-23 11:48:15.653 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists "user" cascade
+2023-07-23 11:48:15.655 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists user_roles cascade
+2023-07-23 11:48:15.656 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists property_seq
+2023-07-23 11:48:15.658 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists repair_seq
+2023-07-23 11:48:15.660 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists roles_seq
+2023-07-23 11:48:15.661 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists user_seq
+2023-07-23 11:48:46.877 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists property drop constraint if exists FKn9cdajshrebcritph05nuxxlv
+2023-07-23 11:48:46.883 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists repairs drop constraint if exists FK6i88fgqlrt72jjuky9k3xnull
+2023-07-23 11:48:46.885 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FKh8ciramu9cc9q3qcqiv4ue8a6
+2023-07-23 11:48:46.887 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FK7ivp84f52aa3vd7ndq0oh0279
+2023-07-23 11:48:46.889 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists property cascade
+2023-07-23 11:48:46.891 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists repairs cascade
+2023-07-23 11:48:46.892 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists roles cascade
+2023-07-23 11:48:46.894 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists "user" cascade
+2023-07-23 11:48:46.896 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists user_roles cascade
+2023-07-23 11:48:46.897 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists property_seq
+2023-07-23 11:48:46.899 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists repair_seq
+2023-07-23 11:48:46.902 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists roles_seq
+2023-07-23 11:48:46.903 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists user_seq
+2023-07-23 11:48:46.912 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create sequence property_seq start with 1 increment by 1
+2023-07-23 11:48:46.924 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create sequence repair_seq start with 1 increment by 1
+2023-07-23 11:48:46.927 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create sequence roles_seq start with 1 increment by 1
+2023-07-23 11:48:46.931 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create sequence user_seq start with 1 increment by 1
+2023-07-23 11:48:46.939 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create table property (active_state boolean, year_of_construction integer, id bigint not null, map_location_lat bigint, map_location_long bigint, pin bigint, user_id bigint, address varchar(255), property_picture varchar(255), property_type varchar(255) check (property_type in ('DETACHED_HOUSE','MAISONETTE','APARTMENT_BUILDING')), primary key (id))
+2023-07-23 11:48:46.950 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create table repairs (cost numeric(38,2) not null, id bigint not null, property_id bigint, repair_date timestamp(6) not null, repair_status varchar(11) not null check (repair_status in ('PENDING','SCHEDULED','IN_PROGRESS','COMPLETED')), repair_type varchar(15) not null check (repair_type in ('PAINTING','INSULATION','FRAMES','PLUMBING','ELECTRICAL_WORK')), description varchar(1000) not null, primary key (id))
+2023-07-23 11:48:46.956 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create table roles (id bigint not null, name varchar(45) not null, primary key (id))
+2023-07-23 11:48:46.960 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create table "user" (id bigint not null, number bigint, tin_number bigint, email varchar(50), first_name varchar(50), last_name varchar(50), user_name varchar(50), address varchar(255), password varchar(255), primary key (id))
+2023-07-23 11:48:46.969 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create table user_roles (role_id bigint not null, user_id bigint not null, primary key (role_id, user_id))
+2023-07-23 11:48:46.972 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists property add constraint FKn9cdajshrebcritph05nuxxlv foreign key (user_id) references "user"
+2023-07-23 11:48:46.975 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists repairs add constraint FK6i88fgqlrt72jjuky9k3xnull foreign key (property_id) references property
+2023-07-23 11:48:46.977 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists user_roles add constraint FKh8ciramu9cc9q3qcqiv4ue8a6 foreign key (role_id) references roles
+2023-07-23 11:48:46.979 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists user_roles add constraint FK7ivp84f52aa3vd7ndq0oh0279 foreign key (user_id) references "user"
+2023-07-23 11:48:48.125 DEBUG alex-PC - [           main] [o.h.SQL                            ] : select nextval('roles_seq')
+2023-07-23 11:48:48.153 DEBUG alex-PC - [           main] [o.h.SQL                            ] : insert into roles (name,id) values (?,?)
+2023-07-23 11:48:48.155 TRACE alex-PC - [           main] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [ROLE_ADMIN]
+2023-07-23 11:48:48.155 TRACE alex-PC - [           main] [o.h.o.j.bind                       ] : binding parameter [2] as [BIGINT] - [1]
+2023-07-23 11:48:48.210 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists property drop constraint if exists FKn9cdajshrebcritph05nuxxlv
+2023-07-23 11:48:48.211 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists repairs drop constraint if exists FK6i88fgqlrt72jjuky9k3xnull
+2023-07-23 11:48:48.212 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FKh8ciramu9cc9q3qcqiv4ue8a6
+2023-07-23 11:48:48.213 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FK7ivp84f52aa3vd7ndq0oh0279
+2023-07-23 11:48:48.214 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists property cascade
+2023-07-23 11:48:48.217 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists repairs cascade
+2023-07-23 11:48:48.220 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists roles cascade
+2023-07-23 11:48:48.223 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists "user" cascade
+2023-07-23 11:48:48.226 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists user_roles cascade
+2023-07-23 11:48:48.228 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists property_seq
+2023-07-23 11:48:48.230 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists repair_seq
+2023-07-23 11:48:48.231 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists roles_seq
+2023-07-23 11:48:48.233 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists user_seq
+2023-07-23 11:51:46.912 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists property drop constraint if exists FKn9cdajshrebcritph05nuxxlv
+2023-07-23 11:51:46.915 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists repairs drop constraint if exists FK6i88fgqlrt72jjuky9k3xnull
+2023-07-23 11:51:46.915 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FKh8ciramu9cc9q3qcqiv4ue8a6
+2023-07-23 11:51:46.916 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FK7ivp84f52aa3vd7ndq0oh0279
+2023-07-23 11:51:46.916 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists property cascade
+2023-07-23 11:51:46.916 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists repairs cascade
+2023-07-23 11:51:46.917 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists roles cascade
+2023-07-23 11:51:46.917 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists "user" cascade
+2023-07-23 11:51:46.918 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists user_roles cascade
+2023-07-23 11:51:46.918 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists property_seq
+2023-07-23 11:51:46.918 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists repair_seq
+2023-07-23 11:51:46.919 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists roles_seq
+2023-07-23 11:51:46.919 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists user_seq
+2023-07-23 11:51:46.924 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create sequence property_seq start with 1 increment by 1
+2023-07-23 11:51:46.930 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create sequence repair_seq start with 1 increment by 1
+2023-07-23 11:51:46.932 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create sequence roles_seq start with 1 increment by 1
+2023-07-23 11:51:46.933 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create sequence user_seq start with 1 increment by 1
+2023-07-23 11:51:46.938 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create table property (active_state boolean, year_of_construction integer, id bigint not null, map_location_lat bigint, map_location_long bigint, pin bigint, user_id bigint, address varchar(255), property_picture varchar(255), property_type varchar(255) check (property_type in ('DETACHED_HOUSE','MAISONETTE','APARTMENT_BUILDING')), primary key (id))
+2023-07-23 11:51:46.948 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create table repairs (cost numeric(38,2) not null, id bigint not null, property_id bigint, repair_date timestamp(6) not null, repair_status varchar(11) not null check (repair_status in ('PENDING','SCHEDULED','IN_PROGRESS','COMPLETED')), repair_type varchar(15) not null check (repair_type in ('PAINTING','INSULATION','FRAMES','PLUMBING','ELECTRICAL_WORK')), description varchar(1000) not null, primary key (id))
+2023-07-23 11:51:46.955 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create table roles (id bigint not null, name varchar(45) not null, primary key (id))
+2023-07-23 11:51:46.959 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create table "user" (id bigint not null, number bigint, tin_number bigint, email varchar(50), first_name varchar(50), last_name varchar(50), user_name varchar(50), address varchar(255), password varchar(255), primary key (id))
+2023-07-23 11:51:46.965 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create table user_roles (role_id bigint not null, user_id bigint not null, primary key (role_id, user_id))
+2023-07-23 11:51:46.969 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists property add constraint FKn9cdajshrebcritph05nuxxlv foreign key (user_id) references "user"
+2023-07-23 11:51:46.972 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists repairs add constraint FK6i88fgqlrt72jjuky9k3xnull foreign key (property_id) references property
+2023-07-23 11:51:46.975 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists user_roles add constraint FKh8ciramu9cc9q3qcqiv4ue8a6 foreign key (role_id) references roles
+2023-07-23 11:51:46.977 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists user_roles add constraint FK7ivp84f52aa3vd7ndq0oh0279 foreign key (user_id) references "user"
+2023-07-23 11:51:48.217 DEBUG alex-PC - [           main] [o.h.SQL                            ] : select nextval('roles_seq')
+2023-07-23 11:51:48.248 DEBUG alex-PC - [           main] [o.h.SQL                            ] : insert into roles (name,id) values (?,?)
+2023-07-23 11:51:48.251 TRACE alex-PC - [           main] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [ROLE_ADMIN]
+2023-07-23 11:51:48.251 TRACE alex-PC - [           main] [o.h.o.j.bind                       ] : binding parameter [2] as [BIGINT] - [1]
+2023-07-23 11:51:48.307 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists property drop constraint if exists FKn9cdajshrebcritph05nuxxlv
+2023-07-23 11:51:48.309 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists repairs drop constraint if exists FK6i88fgqlrt72jjuky9k3xnull
+2023-07-23 11:51:48.310 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FKh8ciramu9cc9q3qcqiv4ue8a6
+2023-07-23 11:51:48.311 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FK7ivp84f52aa3vd7ndq0oh0279
+2023-07-23 11:51:48.312 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists property cascade
+2023-07-23 11:51:48.316 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists repairs cascade
+2023-07-23 11:51:48.320 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists roles cascade
+2023-07-23 11:51:48.323 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists "user" cascade
+2023-07-23 11:51:48.327 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists user_roles cascade
+2023-07-23 11:51:48.329 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists property_seq
+2023-07-23 11:51:48.331 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists repair_seq
+2023-07-23 11:51:48.333 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists roles_seq
+2023-07-23 11:51:48.334 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists user_seq
+2023-07-23 11:52:11.010 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists property drop constraint if exists FKn9cdajshrebcritph05nuxxlv
+2023-07-23 11:52:11.012 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists repairs drop constraint if exists FK6i88fgqlrt72jjuky9k3xnull
+2023-07-23 11:52:11.012 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FKh8ciramu9cc9q3qcqiv4ue8a6
+2023-07-23 11:52:11.013 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FK7ivp84f52aa3vd7ndq0oh0279
+2023-07-23 11:52:11.013 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists property cascade
+2023-07-23 11:52:11.014 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists repairs cascade
+2023-07-23 11:52:11.014 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists roles cascade
+2023-07-23 11:52:11.014 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists "user" cascade
+2023-07-23 11:52:11.015 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists user_roles cascade
+2023-07-23 11:52:11.015 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists property_seq
+2023-07-23 11:52:11.016 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists repair_seq
+2023-07-23 11:52:11.016 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists roles_seq
+2023-07-23 11:52:11.016 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists user_seq
+2023-07-23 11:52:11.021 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create sequence property_seq start with 1 increment by 1
+2023-07-23 11:52:11.027 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create sequence repair_seq start with 1 increment by 1
+2023-07-23 11:52:11.028 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create sequence roles_seq start with 1 increment by 1
+2023-07-23 11:52:11.029 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create sequence user_seq start with 1 increment by 1
+2023-07-23 11:52:11.033 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create table property (active_state boolean, year_of_construction integer, id bigint not null, map_location_lat bigint, map_location_long bigint, pin bigint, user_id bigint, address varchar(255), property_picture varchar(255), property_type varchar(255) check (property_type in ('DETACHED_HOUSE','MAISONETTE','APARTMENT_BUILDING')), primary key (id))
+2023-07-23 11:52:11.043 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create table repairs (cost numeric(38,2) not null, id bigint not null, property_id bigint, repair_date timestamp(6) not null, repair_status varchar(11) not null check (repair_status in ('PENDING','SCHEDULED','IN_PROGRESS','COMPLETED')), repair_type varchar(15) not null check (repair_type in ('PAINTING','INSULATION','FRAMES','PLUMBING','ELECTRICAL_WORK')), description varchar(1000) not null, primary key (id))
+2023-07-23 11:52:11.050 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create table roles (id bigint not null, name varchar(45) not null, primary key (id))
+2023-07-23 11:52:11.053 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create table "user" (id bigint not null, number bigint, tin_number bigint, email varchar(50), first_name varchar(50), last_name varchar(50), user_name varchar(50), address varchar(255), password varchar(255), primary key (id))
+2023-07-23 11:52:11.060 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create table user_roles (role_id bigint not null, user_id bigint not null, primary key (role_id, user_id))
+2023-07-23 11:52:11.063 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists property add constraint FKn9cdajshrebcritph05nuxxlv foreign key (user_id) references "user"
+2023-07-23 11:52:11.067 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists repairs add constraint FK6i88fgqlrt72jjuky9k3xnull foreign key (property_id) references property
+2023-07-23 11:52:11.069 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists user_roles add constraint FKh8ciramu9cc9q3qcqiv4ue8a6 foreign key (role_id) references roles
+2023-07-23 11:52:11.070 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists user_roles add constraint FK7ivp84f52aa3vd7ndq0oh0279 foreign key (user_id) references "user"
+2023-07-23 11:52:12.156 DEBUG alex-PC - [           main] [o.h.SQL                            ] : select nextval('roles_seq')
+2023-07-23 11:52:12.183 DEBUG alex-PC - [           main] [o.h.SQL                            ] : insert into roles (name,id) values (?,?)
+2023-07-23 11:52:12.185 TRACE alex-PC - [           main] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [ROLE_ADMIN]
+2023-07-23 11:52:12.185 TRACE alex-PC - [           main] [o.h.o.j.bind                       ] : binding parameter [2] as [BIGINT] - [1]
+2023-07-23 11:52:12.229 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists property drop constraint if exists FKn9cdajshrebcritph05nuxxlv
+2023-07-23 11:52:12.231 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists repairs drop constraint if exists FK6i88fgqlrt72jjuky9k3xnull
+2023-07-23 11:52:12.232 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FKh8ciramu9cc9q3qcqiv4ue8a6
+2023-07-23 11:52:12.233 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FK7ivp84f52aa3vd7ndq0oh0279
+2023-07-23 11:52:12.234 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists property cascade
+2023-07-23 11:52:12.237 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists repairs cascade
+2023-07-23 11:52:12.241 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists roles cascade
+2023-07-23 11:52:12.243 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists "user" cascade
+2023-07-23 11:52:12.247 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists user_roles cascade
+2023-07-23 11:52:12.249 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists property_seq
+2023-07-23 11:52:12.251 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists repair_seq
+2023-07-23 11:52:12.252 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists roles_seq
+2023-07-23 11:52:12.254 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists user_seq
+2023-07-23 11:55:50.409 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists property drop constraint if exists FKn9cdajshrebcritph05nuxxlv
+2023-07-23 11:55:50.411 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists repairs drop constraint if exists FK6i88fgqlrt72jjuky9k3xnull
+2023-07-23 11:55:50.412 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FKh8ciramu9cc9q3qcqiv4ue8a6
+2023-07-23 11:55:50.412 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FK7ivp84f52aa3vd7ndq0oh0279
+2023-07-23 11:55:50.412 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists property cascade
+2023-07-23 11:55:50.413 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists repairs cascade
+2023-07-23 11:55:50.413 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists roles cascade
+2023-07-23 11:55:50.413 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists "user" cascade
+2023-07-23 11:55:50.414 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists user_roles cascade
+2023-07-23 11:55:50.414 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists property_seq
+2023-07-23 11:55:50.415 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists repair_seq
+2023-07-23 11:55:50.415 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists roles_seq
+2023-07-23 11:55:50.415 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists user_seq
+2023-07-23 11:55:50.420 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create sequence property_seq start with 1 increment by 1
+2023-07-23 11:55:50.425 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create sequence repair_seq start with 1 increment by 1
+2023-07-23 11:55:50.426 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create sequence roles_seq start with 1 increment by 1
+2023-07-23 11:55:50.427 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create sequence user_seq start with 1 increment by 1
+2023-07-23 11:55:50.431 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create table property (active_state boolean, year_of_construction integer, id bigint not null, map_location_lat bigint, map_location_long bigint, pin bigint, user_id bigint, address varchar(255), property_picture varchar(255), property_type varchar(255) check (property_type in ('DETACHED_HOUSE','MAISONETTE','APARTMENT_BUILDING')), primary key (id))
+2023-07-23 11:55:50.441 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create table repairs (cost numeric(38,2) not null, id bigint not null, property_id bigint, repair_date timestamp(6) not null, repair_status varchar(11) not null check (repair_status in ('PENDING','SCHEDULED','IN_PROGRESS','COMPLETED')), repair_type varchar(15) not null check (repair_type in ('PAINTING','INSULATION','FRAMES','PLUMBING','ELECTRICAL_WORK')), description varchar(1000) not null, primary key (id))
+2023-07-23 11:55:50.448 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create table roles (id bigint not null, name varchar(45) not null, primary key (id))
+2023-07-23 11:55:50.452 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create table "user" (id bigint not null, number bigint, tin_number bigint, email varchar(50), first_name varchar(50), last_name varchar(50), user_name varchar(50), address varchar(255), password varchar(255), primary key (id))
+2023-07-23 11:55:50.457 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create table user_roles (role_id bigint not null, user_id bigint not null, primary key (role_id, user_id))
+2023-07-23 11:55:50.461 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists property add constraint FKn9cdajshrebcritph05nuxxlv foreign key (user_id) references "user"
+2023-07-23 11:55:50.464 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists repairs add constraint FK6i88fgqlrt72jjuky9k3xnull foreign key (property_id) references property
+2023-07-23 11:55:50.467 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists user_roles add constraint FKh8ciramu9cc9q3qcqiv4ue8a6 foreign key (role_id) references roles
+2023-07-23 11:55:50.469 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists user_roles add constraint FK7ivp84f52aa3vd7ndq0oh0279 foreign key (user_id) references "user"
+2023-07-23 11:55:51.565 DEBUG alex-PC - [           main] [o.h.SQL                            ] : select nextval('roles_seq')
+2023-07-23 11:55:51.579 DEBUG alex-PC - [           main] [o.h.SQL                            ] : select nextval('roles_seq')
+2023-07-23 11:55:51.579 DEBUG alex-PC - [           main] [o.h.SQL                            ] : select nextval('roles_seq')
+2023-07-23 11:55:51.594 DEBUG alex-PC - [           main] [o.h.SQL                            ] : insert into roles (name,id) values (?,?)
+2023-07-23 11:55:51.596 TRACE alex-PC - [           main] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [ROLE_ADMIN]
+2023-07-23 11:55:51.596 TRACE alex-PC - [           main] [o.h.o.j.bind                       ] : binding parameter [2] as [BIGINT] - [1]
+2023-07-23 11:55:51.600 DEBUG alex-PC - [           main] [o.h.SQL                            ] : insert into roles (name,id) values (?,?)
+2023-07-23 11:55:51.600 TRACE alex-PC - [           main] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [ROLE_USER]
+2023-07-23 11:55:51.600 TRACE alex-PC - [           main] [o.h.o.j.bind                       ] : binding parameter [2] as [BIGINT] - [2]
+2023-07-23 11:55:51.601 DEBUG alex-PC - [           main] [o.h.SQL                            ] : insert into roles (name,id) values (?,?)
+2023-07-23 11:55:51.601 TRACE alex-PC - [           main] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [ROLE_CUSTOMER]
+2023-07-23 11:55:51.601 TRACE alex-PC - [           main] [o.h.o.j.bind                       ] : binding parameter [2] as [BIGINT] - [3]
+2023-07-23 11:55:51.702 DEBUG alex-PC - [           main] [o.h.SQL                            ] : select r1_0.id,r1_0.name from roles r1_0 where r1_0.name=?
+2023-07-23 11:55:51.702 TRACE alex-PC - [           main] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [ROLE_ADMIN]
+2023-07-23 11:55:51.745 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists property drop constraint if exists FKn9cdajshrebcritph05nuxxlv
+2023-07-23 11:55:51.746 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists repairs drop constraint if exists FK6i88fgqlrt72jjuky9k3xnull
+2023-07-23 11:55:51.747 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FKh8ciramu9cc9q3qcqiv4ue8a6
+2023-07-23 11:55:51.748 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FK7ivp84f52aa3vd7ndq0oh0279
+2023-07-23 11:55:51.749 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists property cascade
+2023-07-23 11:55:51.752 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists repairs cascade
+2023-07-23 11:55:51.755 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists roles cascade
+2023-07-23 11:55:51.757 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists "user" cascade
+2023-07-23 11:55:51.759 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists user_roles cascade
+2023-07-23 11:55:51.761 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists property_seq
+2023-07-23 11:55:51.762 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists repair_seq
+2023-07-23 11:55:51.763 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists roles_seq
+2023-07-23 11:55:51.765 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists user_seq
+2023-07-23 11:56:26.459 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists property drop constraint if exists FKn9cdajshrebcritph05nuxxlv
+2023-07-23 11:56:26.461 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists repairs drop constraint if exists FK6i88fgqlrt72jjuky9k3xnull
+2023-07-23 11:56:26.462 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FKh8ciramu9cc9q3qcqiv4ue8a6
+2023-07-23 11:56:26.462 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FK7ivp84f52aa3vd7ndq0oh0279
+2023-07-23 11:56:26.462 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists property cascade
+2023-07-23 11:56:26.463 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists repairs cascade
+2023-07-23 11:56:26.463 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists roles cascade
+2023-07-23 11:56:26.463 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists "user" cascade
+2023-07-23 11:56:26.464 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists user_roles cascade
+2023-07-23 11:56:26.464 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists property_seq
+2023-07-23 11:56:26.465 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists repair_seq
+2023-07-23 11:56:26.465 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists roles_seq
+2023-07-23 11:56:26.465 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists user_seq
+2023-07-23 11:56:26.470 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create sequence property_seq start with 1 increment by 1
+2023-07-23 11:56:26.475 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create sequence repair_seq start with 1 increment by 1
+2023-07-23 11:56:26.476 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create sequence roles_seq start with 1 increment by 1
+2023-07-23 11:56:26.478 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create sequence user_seq start with 1 increment by 1
+2023-07-23 11:56:26.482 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create table property (active_state boolean, year_of_construction integer, id bigint not null, map_location_lat bigint, map_location_long bigint, pin bigint, user_id bigint, address varchar(255), property_picture varchar(255), property_type varchar(255) check (property_type in ('DETACHED_HOUSE','MAISONETTE','APARTMENT_BUILDING')), primary key (id))
+2023-07-23 11:56:26.491 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create table repairs (cost numeric(38,2) not null, id bigint not null, property_id bigint, repair_date timestamp(6) not null, repair_status varchar(11) not null check (repair_status in ('PENDING','SCHEDULED','IN_PROGRESS','COMPLETED')), repair_type varchar(15) not null check (repair_type in ('PAINTING','INSULATION','FRAMES','PLUMBING','ELECTRICAL_WORK')), description varchar(1000) not null, primary key (id))
+2023-07-23 11:56:26.497 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create table roles (id bigint not null, name varchar(45) not null, primary key (id))
+2023-07-23 11:56:26.501 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create table "user" (id bigint not null, number bigint, tin_number bigint, email varchar(50), first_name varchar(50), last_name varchar(50), user_name varchar(50), address varchar(255), password varchar(255), primary key (id))
+2023-07-23 11:56:26.510 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create table user_roles (role_id bigint not null, user_id bigint not null, primary key (role_id, user_id))
+2023-07-23 11:56:26.514 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists property add constraint FKn9cdajshrebcritph05nuxxlv foreign key (user_id) references "user"
+2023-07-23 11:56:26.517 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists repairs add constraint FK6i88fgqlrt72jjuky9k3xnull foreign key (property_id) references property
+2023-07-23 11:56:26.519 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists user_roles add constraint FKh8ciramu9cc9q3qcqiv4ue8a6 foreign key (role_id) references roles
+2023-07-23 11:56:26.521 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists user_roles add constraint FK7ivp84f52aa3vd7ndq0oh0279 foreign key (user_id) references "user"
+2023-07-23 11:56:27.591 DEBUG alex-PC - [           main] [o.h.SQL                            ] : select nextval('roles_seq')
+2023-07-23 11:56:27.604 DEBUG alex-PC - [           main] [o.h.SQL                            ] : select nextval('roles_seq')
+2023-07-23 11:56:27.605 DEBUG alex-PC - [           main] [o.h.SQL                            ] : select nextval('roles_seq')
+2023-07-23 11:56:27.618 DEBUG alex-PC - [           main] [o.h.SQL                            ] : insert into roles (name,id) values (?,?)
+2023-07-23 11:56:27.620 TRACE alex-PC - [           main] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [ROLE_ADMIN]
+2023-07-23 11:56:27.620 TRACE alex-PC - [           main] [o.h.o.j.bind                       ] : binding parameter [2] as [BIGINT] - [1]
+2023-07-23 11:56:27.624 DEBUG alex-PC - [           main] [o.h.SQL                            ] : insert into roles (name,id) values (?,?)
+2023-07-23 11:56:27.624 TRACE alex-PC - [           main] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [ROLE_USER]
+2023-07-23 11:56:27.624 TRACE alex-PC - [           main] [o.h.o.j.bind                       ] : binding parameter [2] as [BIGINT] - [2]
+2023-07-23 11:56:27.625 DEBUG alex-PC - [           main] [o.h.SQL                            ] : insert into roles (name,id) values (?,?)
+2023-07-23 11:56:27.625 TRACE alex-PC - [           main] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [ROLE_CUSTOMER]
+2023-07-23 11:56:27.625 TRACE alex-PC - [           main] [o.h.o.j.bind                       ] : binding parameter [2] as [BIGINT] - [3]
+2023-07-23 11:56:56.512 DEBUG alex-PC - [ionShutdownHook] [o.h.SQL                            ] : alter table if exists property drop constraint if exists FKn9cdajshrebcritph05nuxxlv
+2023-07-23 11:56:56.514 DEBUG alex-PC - [ionShutdownHook] [o.h.SQL                            ] : alter table if exists repairs drop constraint if exists FK6i88fgqlrt72jjuky9k3xnull
+2023-07-23 11:56:56.515 DEBUG alex-PC - [ionShutdownHook] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FKh8ciramu9cc9q3qcqiv4ue8a6
+2023-07-23 11:56:56.516 DEBUG alex-PC - [ionShutdownHook] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FK7ivp84f52aa3vd7ndq0oh0279
+2023-07-23 11:56:56.517 DEBUG alex-PC - [ionShutdownHook] [o.h.SQL                            ] : drop table if exists property cascade
+2023-07-23 11:56:56.520 DEBUG alex-PC - [ionShutdownHook] [o.h.SQL                            ] : drop table if exists repairs cascade
+2023-07-23 11:56:56.523 DEBUG alex-PC - [ionShutdownHook] [o.h.SQL                            ] : drop table if exists roles cascade
+2023-07-23 11:56:56.525 DEBUG alex-PC - [ionShutdownHook] [o.h.SQL                            ] : drop table if exists "user" cascade
+2023-07-23 11:56:56.528 DEBUG alex-PC - [ionShutdownHook] [o.h.SQL                            ] : drop table if exists user_roles cascade
+2023-07-23 11:56:56.530 DEBUG alex-PC - [ionShutdownHook] [o.h.SQL                            ] : drop sequence if exists property_seq
+2023-07-23 11:56:56.532 DEBUG alex-PC - [ionShutdownHook] [o.h.SQL                            ] : drop sequence if exists repair_seq
+2023-07-23 11:56:56.533 DEBUG alex-PC - [ionShutdownHook] [o.h.SQL                            ] : drop sequence if exists roles_seq
+2023-07-23 11:56:56.535 DEBUG alex-PC - [ionShutdownHook] [o.h.SQL                            ] : drop sequence if exists user_seq
+2023-07-23 11:57:02.237 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create table property (id bigint not null, active_state boolean, address varchar(255), pin bigint, map_location_lat bigint, map_location_long bigint, property_picture varchar(255), property_type varchar(255) check (property_type in ('DETACHED_HOUSE','MAISONETTE','APARTMENT_BUILDING')), year_of_construction integer, user_id bigint, primary key (id))
+2023-07-23 11:57:02.248 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create table repairs (id bigint not null, cost numeric(38,2) not null, description varchar(1000) not null, repair_date timestamp(6) not null, repair_status varchar(11) not null check (repair_status in ('PENDING','SCHEDULED','IN_PROGRESS','COMPLETED')), repair_type varchar(15) not null check (repair_type in ('PAINTING','INSULATION','FRAMES','PLUMBING','ELECTRICAL_WORK')), property_id bigint, primary key (id))
+2023-07-23 11:57:02.255 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create table roles (id bigint not null, name varchar(45) not null, primary key (id))
+2023-07-23 11:57:02.259 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create table "user" (id bigint not null, address varchar(255), email varchar(50), last_name varchar(50), first_name varchar(50), password varchar(255), number bigint, tin_number bigint, user_name varchar(50), primary key (id))
+2023-07-23 11:57:02.266 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create table user_roles (user_id bigint not null, role_id bigint not null, primary key (user_id, role_id))
+2023-07-23 11:57:02.274 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create sequence property_seq start with 1 increment by 1
+2023-07-23 11:57:02.276 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create sequence repair_seq start with 1 increment by 1
+2023-07-23 11:57:02.277 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create sequence roles_seq start with 1 increment by 1
+2023-07-23 11:57:02.278 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create sequence user_seq start with 1 increment by 1
+2023-07-23 11:57:02.280 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists property add constraint FKn9cdajshrebcritph05nuxxlv foreign key (user_id) references "user"
+2023-07-23 11:57:02.283 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists repairs add constraint FK6i88fgqlrt72jjuky9k3xnull foreign key (property_id) references property
+2023-07-23 11:57:02.285 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists user_roles add constraint FKh8ciramu9cc9q3qcqiv4ue8a6 foreign key (role_id) references roles
+2023-07-23 11:57:02.288 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists user_roles add constraint FK7ivp84f52aa3vd7ndq0oh0279 foreign key (user_id) references "user"
+2023-07-23 11:57:03.491 DEBUG alex-PC - [           main] [o.h.SQL                            ] : select nextval('roles_seq')
+2023-07-23 11:57:03.503 DEBUG alex-PC - [           main] [o.h.SQL                            ] : select nextval('roles_seq')
+2023-07-23 11:57:03.504 DEBUG alex-PC - [           main] [o.h.SQL                            ] : select nextval('roles_seq')
+2023-07-23 11:57:03.518 DEBUG alex-PC - [           main] [o.h.SQL                            ] : insert into roles (name,id) values (?,?)
+2023-07-23 11:57:03.519 TRACE alex-PC - [           main] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [ROLE_ADMIN]
+2023-07-23 11:57:03.519 TRACE alex-PC - [           main] [o.h.o.j.bind                       ] : binding parameter [2] as [BIGINT] - [1]
+2023-07-23 11:57:03.523 DEBUG alex-PC - [           main] [o.h.SQL                            ] : insert into roles (name,id) values (?,?)
+2023-07-23 11:57:03.523 TRACE alex-PC - [           main] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [ROLE_USER]
+2023-07-23 11:57:03.523 TRACE alex-PC - [           main] [o.h.o.j.bind                       ] : binding parameter [2] as [BIGINT] - [2]
+2023-07-23 11:57:03.523 DEBUG alex-PC - [           main] [o.h.SQL                            ] : insert into roles (name,id) values (?,?)
+2023-07-23 11:57:03.523 TRACE alex-PC - [           main] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [ROLE_CUSTOMER]
+2023-07-23 11:57:03.524 TRACE alex-PC - [           main] [o.h.o.j.bind                       ] : binding parameter [2] as [BIGINT] - [3]
+2023-07-23 11:57:17.701 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists repairs alter column repair_date set data type timestamp(6)
+2023-07-23 11:57:17.705 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists "user" alter column number set data type bigint
+2023-07-23 11:57:17.706 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists "user" alter column tin_number set data type bigint
+2023-07-23 11:57:18.909 DEBUG alex-PC - [           main] [o.h.SQL                            ] : select nextval('roles_seq')
+2023-07-23 11:57:18.921 DEBUG alex-PC - [           main] [o.h.SQL                            ] : select nextval('roles_seq')
+2023-07-23 11:57:18.922 DEBUG alex-PC - [           main] [o.h.SQL                            ] : select nextval('roles_seq')
+2023-07-23 11:57:18.938 DEBUG alex-PC - [           main] [o.h.SQL                            ] : insert into roles (name,id) values (?,?)
+2023-07-23 11:57:18.939 TRACE alex-PC - [           main] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [ROLE_ADMIN]
+2023-07-23 11:57:18.940 TRACE alex-PC - [           main] [o.h.o.j.bind                       ] : binding parameter [2] as [BIGINT] - [4]
+2023-07-23 11:57:18.943 DEBUG alex-PC - [           main] [o.h.SQL                            ] : insert into roles (name,id) values (?,?)
+2023-07-23 11:57:18.943 TRACE alex-PC - [           main] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [ROLE_USER]
+2023-07-23 11:57:18.943 TRACE alex-PC - [           main] [o.h.o.j.bind                       ] : binding parameter [2] as [BIGINT] - [5]
+2023-07-23 11:57:18.944 DEBUG alex-PC - [           main] [o.h.SQL                            ] : insert into roles (name,id) values (?,?)
+2023-07-23 11:57:18.944 TRACE alex-PC - [           main] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [ROLE_CUSTOMER]
+2023-07-23 11:57:18.944 TRACE alex-PC - [           main] [o.h.o.j.bind                       ] : binding parameter [2] as [BIGINT] - [6]
+2023-07-23 11:57:19.037 DEBUG alex-PC - [           main] [o.h.SQL                            ] : select r1_0.id,r1_0.name from roles r1_0 where r1_0.name=?
+2023-07-23 11:57:19.037 TRACE alex-PC - [           main] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [ROLE_ADMIN]
+2023-07-23 11:58:17.227 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists repairs alter column repair_date set data type timestamp(6)
+2023-07-23 11:58:17.230 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists "user" alter column number set data type bigint
+2023-07-23 11:58:17.231 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists "user" alter column tin_number set data type bigint
+2023-07-23 12:03:35.978 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists repairs alter column repair_date set data type timestamp(6)
+2023-07-23 12:03:35.980 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists roles alter column name set data type varchar(255)
+2023-07-23 12:03:35.981 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists "user" alter column user_name set data type varchar(255)
+2023-07-23 12:03:37.112 DEBUG alex-PC - [           main] [o.h.SQL                            ] : select nextval('roles_seq')
+2023-07-23 12:03:37.124 DEBUG alex-PC - [           main] [o.h.SQL                            ] : select nextval('roles_seq')
+2023-07-23 12:03:37.125 DEBUG alex-PC - [           main] [o.h.SQL                            ] : select nextval('roles_seq')
+2023-07-23 12:03:37.141 DEBUG alex-PC - [           main] [o.h.SQL                            ] : insert into roles (name,id) values (?,?)
+2023-07-23 12:03:37.142 TRACE alex-PC - [           main] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [ROLE_ADMIN]
+2023-07-23 12:03:37.142 TRACE alex-PC - [           main] [o.h.o.j.bind                       ] : binding parameter [2] as [BIGINT] - [7]
+2023-07-23 12:03:37.146 DEBUG alex-PC - [           main] [o.h.SQL                            ] : insert into roles (name,id) values (?,?)
+2023-07-23 12:03:37.147 TRACE alex-PC - [           main] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [ROLE_USER]
+2023-07-23 12:03:37.147 TRACE alex-PC - [           main] [o.h.o.j.bind                       ] : binding parameter [2] as [BIGINT] - [8]
+2023-07-23 12:03:37.147 DEBUG alex-PC - [           main] [o.h.SQL                            ] : insert into roles (name,id) values (?,?)
+2023-07-23 12:03:37.147 TRACE alex-PC - [           main] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [ROLE_CUSTOMER]
+2023-07-23 12:03:37.147 TRACE alex-PC - [           main] [o.h.o.j.bind                       ] : binding parameter [2] as [BIGINT] - [9]
+2023-07-23 12:10:19.883 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists repairs alter column repair_date set data type timestamp(6)
+2023-07-23 12:10:21.025 DEBUG alex-PC - [           main] [o.h.SQL                            ] : select nextval('roles_seq')
+2023-07-23 12:10:21.049 DEBUG alex-PC - [           main] [o.h.SQL                            ] : insert into roles (name,id) values (?,?)
+2023-07-23 12:10:21.050 TRACE alex-PC - [           main] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [ROLE_ADMIN]
+2023-07-23 12:10:21.050 TRACE alex-PC - [           main] [o.h.o.j.bind                       ] : binding parameter [2] as [BIGINT] - [10]
+2023-07-23 12:11:36.592 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists repairs alter column repair_date set data type timestamp(6)
+2023-07-23 12:11:37.757 DEBUG alex-PC - [           main] [o.h.SQL                            ] : select nextval('roles_seq')
+2023-07-23 12:11:37.782 DEBUG alex-PC - [           main] [o.h.SQL                            ] : insert into roles (name,id) values (?,?)
+2023-07-23 12:11:37.784 TRACE alex-PC - [           main] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [ROLE_ADMIN]
+2023-07-23 12:11:37.784 TRACE alex-PC - [           main] [o.h.o.j.bind                       ] : binding parameter [2] as [BIGINT] - [11]
+2023-07-23 12:12:39.305 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists property drop constraint if exists FKn9cdajshrebcritph05nuxxlv
+2023-07-23 12:12:39.308 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists repairs drop constraint if exists FK6i88fgqlrt72jjuky9k3xnull
+2023-07-23 12:12:39.309 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FKh8ciramu9cc9q3qcqiv4ue8a6
+2023-07-23 12:12:39.310 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FK7ivp84f52aa3vd7ndq0oh0279
+2023-07-23 12:12:39.311 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists property cascade
+2023-07-23 12:12:39.315 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists repairs cascade
+2023-07-23 12:12:39.318 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists roles cascade
+2023-07-23 12:12:39.321 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists "user" cascade
+2023-07-23 12:12:39.326 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists user_roles cascade
+2023-07-23 12:12:39.328 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists property_seq
+2023-07-23 12:12:39.330 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists repair_seq
+2023-07-23 12:12:39.333 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists roles_seq
+2023-07-23 12:12:39.337 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists user_seq
+2023-07-23 12:12:39.343 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create sequence property_seq start with 1 increment by 1
+2023-07-23 12:12:39.347 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create sequence repair_seq start with 1 increment by 1
+2023-07-23 12:12:39.349 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create sequence roles_seq start with 1 increment by 1
+2023-07-23 12:12:39.350 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create sequence user_seq start with 1 increment by 1
+2023-07-23 12:12:39.354 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create table property (active_state boolean, year_of_construction integer, id bigint not null, map_location_lat bigint, map_location_long bigint, pin bigint, user_id bigint, address varchar(255), property_picture varchar(255), property_type varchar(255) check (property_type in ('DETACHED_HOUSE','MAISONETTE','APARTMENT_BUILDING')), primary key (id))
+2023-07-23 12:12:39.373 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create table repairs (cost numeric(38,2) not null, id bigint not null, property_id bigint, repair_date timestamp(6) not null, repair_status varchar(11) not null check (repair_status in ('PENDING','SCHEDULED','IN_PROGRESS','COMPLETED')), repair_type varchar(15) not null check (repair_type in ('PAINTING','INSULATION','FRAMES','PLUMBING','ELECTRICAL_WORK')), description varchar(1000) not null, primary key (id))
+2023-07-23 12:12:39.389 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create table roles (id bigint not null, name varchar(255), primary key (id))
+2023-07-23 12:12:39.399 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create table "user" (id bigint not null, number bigint, tin_number bigint, email varchar(50), first_name varchar(50), last_name varchar(50), address varchar(255), password varchar(255), user_name varchar(255) unique, primary key (id))
+2023-07-23 12:12:39.424 DEBUG alex-PC - [           main] [o.h.SQL                            ] : create table user_roles (role_id bigint not null, user_id bigint not null, primary key (role_id, user_id))
+2023-07-23 12:12:39.434 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists property add constraint FKn9cdajshrebcritph05nuxxlv foreign key (user_id) references "user"
+2023-07-23 12:12:39.437 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists repairs add constraint FK6i88fgqlrt72jjuky9k3xnull foreign key (property_id) references property
+2023-07-23 12:12:39.439 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists user_roles add constraint FKh8ciramu9cc9q3qcqiv4ue8a6 foreign key (role_id) references roles
+2023-07-23 12:12:39.441 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists user_roles add constraint FK7ivp84f52aa3vd7ndq0oh0279 foreign key (user_id) references "user"
+2023-07-23 12:12:40.602 DEBUG alex-PC - [           main] [o.h.SQL                            ] : select nextval('roles_seq')
+2023-07-23 12:12:40.628 DEBUG alex-PC - [           main] [o.h.SQL                            ] : insert into roles (name,id) values (?,?)
+2023-07-23 12:12:40.630 TRACE alex-PC - [           main] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [ROLE_ADMIN]
+2023-07-23 12:12:40.630 TRACE alex-PC - [           main] [o.h.o.j.bind                       ] : binding parameter [2] as [BIGINT] - [1]
+2023-07-23 12:12:40.676 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists property drop constraint if exists FKn9cdajshrebcritph05nuxxlv
+2023-07-23 12:12:40.678 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists repairs drop constraint if exists FK6i88fgqlrt72jjuky9k3xnull
+2023-07-23 12:12:40.679 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FKh8ciramu9cc9q3qcqiv4ue8a6
+2023-07-23 12:12:40.680 DEBUG alex-PC - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FK7ivp84f52aa3vd7ndq0oh0279
+2023-07-23 12:12:40.681 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists property cascade
+2023-07-23 12:12:40.683 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists repairs cascade
+2023-07-23 12:12:40.687 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists roles cascade
+2023-07-23 12:12:40.690 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists "user" cascade
+2023-07-23 12:12:40.694 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop table if exists user_roles cascade
+2023-07-23 12:12:40.695 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists property_seq
+2023-07-23 12:12:40.697 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists repair_seq
+2023-07-23 12:12:40.699 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists roles_seq
+2023-07-23 12:12:40.701 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists user_seq

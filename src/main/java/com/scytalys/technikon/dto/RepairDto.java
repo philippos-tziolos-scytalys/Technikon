@@ -13,7 +13,9 @@ import java.util.Date;
 @Getter
 @Setter
 @ToString
+@Builder
 public class RepairDto {
+    private Long id;
     private RepairType repairType;
     private RepairStatus repairStatus;
     private String description;

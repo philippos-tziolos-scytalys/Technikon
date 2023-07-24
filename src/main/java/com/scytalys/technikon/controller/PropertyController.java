@@ -1,6 +1,8 @@
 package com.scytalys.technikon.controller;
 
 import com.scytalys.technikon.domain.Property;
+import com.scytalys.technikon.dto.PropertyDto;
+import com.scytalys.technikon.mapper.PropertyMapper;
 import com.scytalys.technikon.service.PropertyService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -16,10 +18,13 @@ public class PropertyController {
 
     private final PropertyService propertyService;
 
+    private final PropertyMapper propertyMapper;
+
     @PostMapping("/create")
-    public ResponseEntity<Property> createProperty(@RequestBody Property property) {
-        Property newProperty = propertyService.createProperty(property);
-        return new ResponseEntity<>(newProperty, HttpStatus.CREATED);
+    public ResponseEntity<PropertyDto> createProperty(@RequestBody PropertyDto propertyDto) {
+
+        return new ResponseEntity<>(propertyMapper.propertyToPropertyDto(
+                propertyService.createProperty(propertyMapper.propertyDtoToProperty(propertyDto))), HttpStatus.CREATED);
     }
 
     @GetMapping
@@ -28,8 +33,8 @@ public class PropertyController {
     }
 
     @PutMapping("/update")
-    public void updateProperty(@RequestBody Property property, @RequestParam("id") Long propertyId) {
-        propertyService.updateProperty(property, propertyId);
+    public void updateProperty(@RequestBody PropertyDto propertyDto) {
+        propertyService.updateProperty(propertyMapper.propertyDtoToProperty(propertyDto));
     }
 
     @GetMapping("/findPropertyByPin")
@@ -37,10 +42,10 @@ public class PropertyController {
         return ResponseEntity.ok(propertyService.searchByPIN(pin));
     }
 
-    @GetMapping("/findPropertyByTin")
-    public ResponseEntity<List<Property>> findPropertyByTin(@RequestParam("tin") Long tin) {
-        return ResponseEntity.ok(propertyService.searchByTIN(tin));
-    }
+//    @GetMapping("/findPropertyByTin")
+//    public ResponseEntity<List<Property>> findPropertyByTin(@RequestParam("tin") Long tin) {
+//        return ResponseEntity.ok(propertyService.searchByTIN(tin));
+//    }
 
     @GetMapping("/searchByPropertyType")
     public ResponseEntity<List<Property>> searchByPropertyType(@RequestParam("propertyType") String propertyType) {
@@ -67,6 +72,11 @@ public class PropertyController {
     public ResponseEntity<String> deleteProperty(@PathVariable("id") Long propertyId) {
         propertyService.deletePropertyById(propertyId);
         return ResponseEntity.ok("Repair deleted successfully");
+    }
+
+    @GetMapping(headers = "action=findPropertyByUser")
+    public ResponseEntity<List<PropertyDto>> findPropertyByUser(Long userId) {
+        return ResponseEntity.ok(propertyMapper.propertyListToPropertyDtoList(propertyService.findPropertyByUser(userId)));
     }
 
 }

@@ -1,0 +1,1068 @@
+2023-07-23 11:48:12.378  INFO alex-PC - [           main] [r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-23 11:48:12.443  INFO alex-PC - [           main] [r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 58 ms. Found 4 JPA repository interfaces.
+2023-07-23 11:48:13.040 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : Driver class org.postgresql.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@1d44bcfa
+2023-07-23 11:48:13.217 DEBUG alex-PC - [           main] [o.h.c.i.RegionFactoryInitiator     ] : Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2023-07-23 11:48:13.218 DEBUG alex-PC - [           main] [o.h.c.i.RegionFactoryInitiator     ] : Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2023-07-23 11:48:13.464 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : HikariPool-1 - configuration:
+2023-07-23 11:48:13.466 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : allowPoolSuspension.............false
+2023-07-23 11:48:13.467 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : autoCommit......................true
+2023-07-23 11:48:13.467 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : catalog.........................none
+2023-07-23 11:48:13.467 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : connectionInitSql...............none
+2023-07-23 11:48:13.467 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : connectionTestQuery.............none
+2023-07-23 11:48:13.467 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : connectionTimeout...............30000
+2023-07-23 11:48:13.467 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : dataSource......................none
+2023-07-23 11:48:13.467 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : dataSourceClassName.............none
+2023-07-23 11:48:13.467 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : dataSourceJNDI..................none
+2023-07-23 11:48:13.467 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : dataSourceProperties............{password=<masked>}
+2023-07-23 11:48:13.468 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : driverClassName................."org.postgresql.Driver"
+2023-07-23 11:48:13.468 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : exceptionOverrideClassName......none
+2023-07-23 11:48:13.468 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : healthCheckProperties...........{}
+2023-07-23 11:48:13.468 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : healthCheckRegistry.............none
+2023-07-23 11:48:13.468 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : idleTimeout.....................600000
+2023-07-23 11:48:13.468 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : initializationFailTimeout.......1
+2023-07-23 11:48:13.468 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : isolateInternalQueries..........false
+2023-07-23 11:48:13.468 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : jdbcUrl.........................jdbc:postgresql://localhost:5432/technikon
+2023-07-23 11:48:13.468 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : keepaliveTime...................0
+2023-07-23 11:48:13.468 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : leakDetectionThreshold..........0
+2023-07-23 11:48:13.468 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : maxLifetime.....................1800000
+2023-07-23 11:48:13.468 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : maximumPoolSize.................10
+2023-07-23 11:48:13.468 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : metricRegistry..................none
+2023-07-23 11:48:13.468 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : metricsTrackerFactory...........none
+2023-07-23 11:48:13.468 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : minimumIdle.....................10
+2023-07-23 11:48:13.468 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : password........................<masked>
+2023-07-23 11:48:13.469 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : poolName........................"HikariPool-1"
+2023-07-23 11:48:13.469 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : readOnly........................false
+2023-07-23 11:48:13.469 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : registerMbeans..................false
+2023-07-23 11:48:13.469 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : scheduledExecutor...............none
+2023-07-23 11:48:13.469 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : schema..........................none
+2023-07-23 11:48:13.469 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : threadFactory...................internal
+2023-07-23 11:48:13.469 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : transactionIsolation............default
+2023-07-23 11:48:13.469 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : username........................"postgres"
+2023-07-23 11:48:13.469 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : validationTimeout...............5000
+2023-07-23 11:48:13.469  INFO alex-PC - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Starting...
+2023-07-23 11:48:13.662  INFO alex-PC - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3feebf9c
+2023-07-23 11:48:13.663  INFO alex-PC - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Start completed.
+2023-07-23 11:48:13.777 DEBUG alex-PC - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2023-07-23 11:48:13.837 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4459e805
+2023-07-23 11:48:13.906 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@15b6eea
+2023-07-23 11:48:13.967 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3b828401
+2023-07-23 11:48:14.030 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@617491a5
+2023-07-23 11:48:14.094 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3d775513
+2023-07-23 11:48:14.270 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@f0b6700
+2023-07-23 11:48:14.340 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2086486c
+2023-07-23 11:48:14.408 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@653a0c60
+2023-07-23 11:48:14.468 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@62621219
+2023-07-23 11:48:14.482 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2023-07-23 11:48:14.756  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:48:14.756  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "property" does not exist, skipping
+2023-07-23 11:48:14.756  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:48:14.756  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "repairs" does not exist, skipping
+2023-07-23 11:48:14.757  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:48:14.757  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "user_roles" does not exist, skipping
+2023-07-23 11:48:14.757  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:48:14.757  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "user_roles" does not exist, skipping
+2023-07-23 11:48:14.759  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:48:14.759  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "property" does not exist, skipping
+2023-07-23 11:48:14.759  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:48:14.759  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "repairs" does not exist, skipping
+2023-07-23 11:48:14.759  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:48:14.759  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "roles" does not exist, skipping
+2023-07-23 11:48:14.760  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:48:14.760  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "user" does not exist, skipping
+2023-07-23 11:48:14.760  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:48:14.760  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "user_roles" does not exist, skipping
+2023-07-23 11:48:14.760  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:48:14.760  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : sequence "property_seq" does not exist, skipping
+2023-07-23 11:48:14.761  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:48:14.761  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : sequence "repair_seq" does not exist, skipping
+2023-07-23 11:48:14.761  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:48:14.761  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : sequence "roles_seq" does not exist, skipping
+2023-07-23 11:48:14.761  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:48:14.761  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : sequence "user_seq" does not exist, skipping
+2023-07-23 11:48:15.271  INFO alex-PC - [           main] [o.s.d.j.r.q.QueryEnhancerFactory   ] : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-07-23 11:48:15.664  INFO alex-PC - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Shutdown initiated...
+2023-07-23 11:48:15.664 DEBUG alex-PC - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+2023-07-23 11:48:15.665 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@3feebf9c: (connection evicted)
+2023-07-23 11:48:15.665 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@4459e805: (connection evicted)
+2023-07-23 11:48:15.665 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@15b6eea: (connection evicted)
+2023-07-23 11:48:15.666 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@3b828401: (connection evicted)
+2023-07-23 11:48:15.666 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@617491a5: (connection evicted)
+2023-07-23 11:48:15.666 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@3d775513: (connection evicted)
+2023-07-23 11:48:15.666 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@f0b6700: (connection evicted)
+2023-07-23 11:48:15.667 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@2086486c: (connection evicted)
+2023-07-23 11:48:15.667 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@653a0c60: (connection evicted)
+2023-07-23 11:48:15.667 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@62621219: (connection evicted)
+2023-07-23 11:48:15.668 DEBUG alex-PC - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2023-07-23 11:48:15.668  INFO alex-PC - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Shutdown completed.
+2023-07-23 11:48:44.578  INFO alex-PC - [           main] [r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-23 11:48:44.641  INFO alex-PC - [           main] [r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 56 ms. Found 4 JPA repository interfaces.
+2023-07-23 11:48:45.235 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : Driver class org.postgresql.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@1d44bcfa
+2023-07-23 11:48:45.408 DEBUG alex-PC - [           main] [o.h.c.i.RegionFactoryInitiator     ] : Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2023-07-23 11:48:45.409 DEBUG alex-PC - [           main] [o.h.c.i.RegionFactoryInitiator     ] : Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2023-07-23 11:48:45.628 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : HikariPool-1 - configuration:
+2023-07-23 11:48:45.630 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : allowPoolSuspension.............false
+2023-07-23 11:48:45.631 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : autoCommit......................true
+2023-07-23 11:48:45.631 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : catalog.........................none
+2023-07-23 11:48:45.631 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : connectionInitSql...............none
+2023-07-23 11:48:45.631 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : connectionTestQuery.............none
+2023-07-23 11:48:45.631 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : connectionTimeout...............30000
+2023-07-23 11:48:45.631 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : dataSource......................none
+2023-07-23 11:48:45.631 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : dataSourceClassName.............none
+2023-07-23 11:48:45.631 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : dataSourceJNDI..................none
+2023-07-23 11:48:45.632 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : dataSourceProperties............{password=<masked>}
+2023-07-23 11:48:45.632 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : driverClassName................."org.postgresql.Driver"
+2023-07-23 11:48:45.632 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : exceptionOverrideClassName......none
+2023-07-23 11:48:45.632 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : healthCheckProperties...........{}
+2023-07-23 11:48:45.632 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : healthCheckRegistry.............none
+2023-07-23 11:48:45.632 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : idleTimeout.....................600000
+2023-07-23 11:48:45.632 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : initializationFailTimeout.......1
+2023-07-23 11:48:45.632 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : isolateInternalQueries..........false
+2023-07-23 11:48:45.633 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : jdbcUrl.........................jdbc:postgresql://localhost:5432/technikon
+2023-07-23 11:48:45.633 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : keepaliveTime...................0
+2023-07-23 11:48:45.633 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : leakDetectionThreshold..........0
+2023-07-23 11:48:45.633 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : maxLifetime.....................1800000
+2023-07-23 11:48:45.633 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : maximumPoolSize.................10
+2023-07-23 11:48:45.633 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : metricRegistry..................none
+2023-07-23 11:48:45.633 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : metricsTrackerFactory...........none
+2023-07-23 11:48:45.633 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : minimumIdle.....................10
+2023-07-23 11:48:45.633 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : password........................<masked>
+2023-07-23 11:48:45.633 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : poolName........................"HikariPool-1"
+2023-07-23 11:48:45.633 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : readOnly........................false
+2023-07-23 11:48:45.633 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : registerMbeans..................false
+2023-07-23 11:48:45.633 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : scheduledExecutor...............none
+2023-07-23 11:48:45.633 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : schema..........................none
+2023-07-23 11:48:45.633 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : threadFactory...................internal
+2023-07-23 11:48:45.633 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : transactionIsolation............default
+2023-07-23 11:48:45.633 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : username........................"postgres"
+2023-07-23 11:48:45.634 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : validationTimeout...............5000
+2023-07-23 11:48:45.634  INFO alex-PC - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Starting...
+2023-07-23 11:48:45.793  INFO alex-PC - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@55e42684
+2023-07-23 11:48:45.794  INFO alex-PC - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Start completed.
+2023-07-23 11:48:45.907 DEBUG alex-PC - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2023-07-23 11:48:45.955 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6a46fe46
+2023-07-23 11:48:46.015 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2f447d6a
+2023-07-23 11:48:46.080 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@43c8181b
+2023-07-23 11:48:46.142 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4f6b8225
+2023-07-23 11:48:46.209 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4e794a9b
+2023-07-23 11:48:46.269 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5b4731ca
+2023-07-23 11:48:46.336 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@58ccf279
+2023-07-23 11:48:46.399 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4b2539ef
+2023-07-23 11:48:46.457 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4f0c8f82
+2023-07-23 11:48:46.475 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2023-07-23 11:48:46.882  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:48:46.882  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "property" does not exist, skipping
+2023-07-23 11:48:46.885  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:48:46.885  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "repairs" does not exist, skipping
+2023-07-23 11:48:46.886  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:48:46.887  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "user_roles" does not exist, skipping
+2023-07-23 11:48:46.889  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:48:46.889  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "user_roles" does not exist, skipping
+2023-07-23 11:48:46.891  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:48:46.891  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "property" does not exist, skipping
+2023-07-23 11:48:46.892  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:48:46.892  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "repairs" does not exist, skipping
+2023-07-23 11:48:46.893  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:48:46.893  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "roles" does not exist, skipping
+2023-07-23 11:48:46.896  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:48:46.896  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "user" does not exist, skipping
+2023-07-23 11:48:46.897  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:48:46.897  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "user_roles" does not exist, skipping
+2023-07-23 11:48:46.899  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:48:46.899  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : sequence "property_seq" does not exist, skipping
+2023-07-23 11:48:46.902  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:48:46.902  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : sequence "repair_seq" does not exist, skipping
+2023-07-23 11:48:46.903  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:48:46.903  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : sequence "roles_seq" does not exist, skipping
+2023-07-23 11:48:46.904  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:48:46.904  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : sequence "user_seq" does not exist, skipping
+2023-07-23 11:48:47.370  INFO alex-PC - [           main] [o.s.d.j.r.q.QueryEnhancerFactory   ] : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-07-23 11:48:48.236  INFO alex-PC - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Shutdown initiated...
+2023-07-23 11:48:48.236 DEBUG alex-PC - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+2023-07-23 11:48:48.237 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@55e42684: (connection evicted)
+2023-07-23 11:48:48.238 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@6a46fe46: (connection evicted)
+2023-07-23 11:48:48.238 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@2f447d6a: (connection evicted)
+2023-07-23 11:48:48.238 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@43c8181b: (connection evicted)
+2023-07-23 11:48:48.238 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@4f6b8225: (connection evicted)
+2023-07-23 11:48:48.239 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@4e794a9b: (connection evicted)
+2023-07-23 11:48:48.239 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@5b4731ca: (connection evicted)
+2023-07-23 11:48:48.239 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@58ccf279: (connection evicted)
+2023-07-23 11:48:48.239 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@4b2539ef: (connection evicted)
+2023-07-23 11:48:48.240 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@4f0c8f82: (connection evicted)
+2023-07-23 11:48:48.240 DEBUG alex-PC - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2023-07-23 11:48:48.240  INFO alex-PC - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Shutdown completed.
+2023-07-23 11:51:44.434  INFO alex-PC - [           main] [r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-23 11:51:44.501  INFO alex-PC - [           main] [r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 60 ms. Found 4 JPA repository interfaces.
+2023-07-23 11:51:45.193 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : Driver class org.postgresql.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@1d44bcfa
+2023-07-23 11:51:45.371 DEBUG alex-PC - [           main] [o.h.c.i.RegionFactoryInitiator     ] : Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2023-07-23 11:51:45.372 DEBUG alex-PC - [           main] [o.h.c.i.RegionFactoryInitiator     ] : Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2023-07-23 11:51:45.614 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : HikariPool-1 - configuration:
+2023-07-23 11:51:45.616 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : allowPoolSuspension.............false
+2023-07-23 11:51:45.616 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : autoCommit......................true
+2023-07-23 11:51:45.616 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : catalog.........................none
+2023-07-23 11:51:45.616 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : connectionInitSql...............none
+2023-07-23 11:51:45.617 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : connectionTestQuery.............none
+2023-07-23 11:51:45.617 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : connectionTimeout...............30000
+2023-07-23 11:51:45.617 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : dataSource......................none
+2023-07-23 11:51:45.617 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : dataSourceClassName.............none
+2023-07-23 11:51:45.617 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : dataSourceJNDI..................none
+2023-07-23 11:51:45.617 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : dataSourceProperties............{password=<masked>}
+2023-07-23 11:51:45.618 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : driverClassName................."org.postgresql.Driver"
+2023-07-23 11:51:45.618 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : exceptionOverrideClassName......none
+2023-07-23 11:51:45.618 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : healthCheckProperties...........{}
+2023-07-23 11:51:45.618 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : healthCheckRegistry.............none
+2023-07-23 11:51:45.618 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : idleTimeout.....................600000
+2023-07-23 11:51:45.618 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : initializationFailTimeout.......1
+2023-07-23 11:51:45.618 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : isolateInternalQueries..........false
+2023-07-23 11:51:45.618 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : jdbcUrl.........................jdbc:postgresql://localhost:5432/technikon
+2023-07-23 11:51:45.618 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : keepaliveTime...................0
+2023-07-23 11:51:45.619 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : leakDetectionThreshold..........0
+2023-07-23 11:51:45.619 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : maxLifetime.....................1800000
+2023-07-23 11:51:45.619 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : maximumPoolSize.................10
+2023-07-23 11:51:45.619 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : metricRegistry..................none
+2023-07-23 11:51:45.619 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : metricsTrackerFactory...........none
+2023-07-23 11:51:45.619 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : minimumIdle.....................10
+2023-07-23 11:51:45.619 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : password........................<masked>
+2023-07-23 11:51:45.619 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : poolName........................"HikariPool-1"
+2023-07-23 11:51:45.619 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : readOnly........................false
+2023-07-23 11:51:45.619 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : registerMbeans..................false
+2023-07-23 11:51:45.619 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : scheduledExecutor...............none
+2023-07-23 11:51:45.619 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : schema..........................none
+2023-07-23 11:51:45.619 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : threadFactory...................internal
+2023-07-23 11:51:45.619 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : transactionIsolation............default
+2023-07-23 11:51:45.619 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : username........................"postgres"
+2023-07-23 11:51:45.619 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : validationTimeout...............5000
+2023-07-23 11:51:45.619  INFO alex-PC - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Starting...
+2023-07-23 11:51:45.785  INFO alex-PC - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@528e5e38
+2023-07-23 11:51:45.786  INFO alex-PC - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Start completed.
+2023-07-23 11:51:45.899 DEBUG alex-PC - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2023-07-23 11:51:45.953 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4fe01748
+2023-07-23 11:51:46.024 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@ae280d0
+2023-07-23 11:51:46.091 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@74b785d9
+2023-07-23 11:51:46.159 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6acd7f9f
+2023-07-23 11:51:46.338 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@812db5a
+2023-07-23 11:51:46.405 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@27620a65
+2023-07-23 11:51:46.473 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6fb3ca1d
+2023-07-23 11:51:46.536 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6e8361f3
+2023-07-23 11:51:46.620 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7055bf72
+2023-07-23 11:51:46.641 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2023-07-23 11:51:46.915  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:51:46.915  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "property" does not exist, skipping
+2023-07-23 11:51:46.915  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:51:46.915  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "repairs" does not exist, skipping
+2023-07-23 11:51:46.916  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:51:46.916  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "user_roles" does not exist, skipping
+2023-07-23 11:51:46.916  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:51:46.916  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "user_roles" does not exist, skipping
+2023-07-23 11:51:46.916  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:51:46.916  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "property" does not exist, skipping
+2023-07-23 11:51:46.917  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:51:46.917  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "repairs" does not exist, skipping
+2023-07-23 11:51:46.917  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:51:46.917  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "roles" does not exist, skipping
+2023-07-23 11:51:46.917  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:51:46.917  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "user" does not exist, skipping
+2023-07-23 11:51:46.918  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:51:46.918  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "user_roles" does not exist, skipping
+2023-07-23 11:51:46.918  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:51:46.918  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : sequence "property_seq" does not exist, skipping
+2023-07-23 11:51:46.919  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:51:46.919  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : sequence "repair_seq" does not exist, skipping
+2023-07-23 11:51:46.919  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:51:46.919  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : sequence "roles_seq" does not exist, skipping
+2023-07-23 11:51:46.920  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:51:46.920  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : sequence "user_seq" does not exist, skipping
+2023-07-23 11:51:47.425  INFO alex-PC - [           main] [o.s.d.j.r.q.QueryEnhancerFactory   ] : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-07-23 11:51:48.338  INFO alex-PC - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Shutdown initiated...
+2023-07-23 11:51:48.338 DEBUG alex-PC - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+2023-07-23 11:51:48.340 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@528e5e38: (connection evicted)
+2023-07-23 11:51:48.340 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@4fe01748: (connection evicted)
+2023-07-23 11:51:48.340 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@ae280d0: (connection evicted)
+2023-07-23 11:51:48.340 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@74b785d9: (connection evicted)
+2023-07-23 11:51:48.341 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@6acd7f9f: (connection evicted)
+2023-07-23 11:51:48.341 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@812db5a: (connection evicted)
+2023-07-23 11:51:48.341 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@27620a65: (connection evicted)
+2023-07-23 11:51:48.341 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@6fb3ca1d: (connection evicted)
+2023-07-23 11:51:48.342 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@6e8361f3: (connection evicted)
+2023-07-23 11:51:48.342 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@7055bf72: (connection evicted)
+2023-07-23 11:51:48.345 DEBUG alex-PC - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2023-07-23 11:51:48.345  INFO alex-PC - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Shutdown completed.
+2023-07-23 11:52:08.750  INFO alex-PC - [           main] [r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-23 11:52:08.814  INFO alex-PC - [           main] [r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 57 ms. Found 4 JPA repository interfaces.
+2023-07-23 11:52:09.406 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : Driver class org.postgresql.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@1d44bcfa
+2023-07-23 11:52:09.582 DEBUG alex-PC - [           main] [o.h.c.i.RegionFactoryInitiator     ] : Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2023-07-23 11:52:09.583 DEBUG alex-PC - [           main] [o.h.c.i.RegionFactoryInitiator     ] : Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2023-07-23 11:52:09.804 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : HikariPool-1 - configuration:
+2023-07-23 11:52:09.806 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : allowPoolSuspension.............false
+2023-07-23 11:52:09.806 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : autoCommit......................true
+2023-07-23 11:52:09.806 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : catalog.........................none
+2023-07-23 11:52:09.806 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : connectionInitSql...............none
+2023-07-23 11:52:09.806 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : connectionTestQuery.............none
+2023-07-23 11:52:09.806 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : connectionTimeout...............30000
+2023-07-23 11:52:09.806 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : dataSource......................none
+2023-07-23 11:52:09.806 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : dataSourceClassName.............none
+2023-07-23 11:52:09.807 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : dataSourceJNDI..................none
+2023-07-23 11:52:09.807 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : dataSourceProperties............{password=<masked>}
+2023-07-23 11:52:09.807 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : driverClassName................."org.postgresql.Driver"
+2023-07-23 11:52:09.807 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : exceptionOverrideClassName......none
+2023-07-23 11:52:09.807 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : healthCheckProperties...........{}
+2023-07-23 11:52:09.807 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : healthCheckRegistry.............none
+2023-07-23 11:52:09.807 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : idleTimeout.....................600000
+2023-07-23 11:52:09.808 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : initializationFailTimeout.......1
+2023-07-23 11:52:09.808 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : isolateInternalQueries..........false
+2023-07-23 11:52:09.808 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : jdbcUrl.........................jdbc:postgresql://localhost:5432/technikon
+2023-07-23 11:52:09.808 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : keepaliveTime...................0
+2023-07-23 11:52:09.808 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : leakDetectionThreshold..........0
+2023-07-23 11:52:09.808 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : maxLifetime.....................1800000
+2023-07-23 11:52:09.808 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : maximumPoolSize.................10
+2023-07-23 11:52:09.808 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : metricRegistry..................none
+2023-07-23 11:52:09.808 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : metricsTrackerFactory...........none
+2023-07-23 11:52:09.808 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : minimumIdle.....................10
+2023-07-23 11:52:09.808 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : password........................<masked>
+2023-07-23 11:52:09.808 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : poolName........................"HikariPool-1"
+2023-07-23 11:52:09.808 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : readOnly........................false
+2023-07-23 11:52:09.809 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : registerMbeans..................false
+2023-07-23 11:52:09.809 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : scheduledExecutor...............none
+2023-07-23 11:52:09.809 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : schema..........................none
+2023-07-23 11:52:09.809 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : threadFactory...................internal
+2023-07-23 11:52:09.809 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : transactionIsolation............default
+2023-07-23 11:52:09.809 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : username........................"postgres"
+2023-07-23 11:52:09.809 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : validationTimeout...............5000
+2023-07-23 11:52:09.809  INFO alex-PC - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Starting...
+2023-07-23 11:52:09.964  INFO alex-PC - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2b5f8e61
+2023-07-23 11:52:09.965  INFO alex-PC - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Start completed.
+2023-07-23 11:52:10.068 DEBUG alex-PC - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2023-07-23 11:52:10.117 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@46ba7693
+2023-07-23 11:52:10.174 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3b8e020
+2023-07-23 11:52:10.243 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@276a4242
+2023-07-23 11:52:10.309 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@63971f6f
+2023-07-23 11:52:10.369 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@768e4f7c
+2023-07-23 11:52:10.437 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@49632ff0
+2023-07-23 11:52:10.493 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3c6e0ccc
+2023-07-23 11:52:10.560 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@67d90049
+2023-07-23 11:52:10.617 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@63a84661
+2023-07-23 11:52:10.638 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2023-07-23 11:52:11.012  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:52:11.012  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "property" does not exist, skipping
+2023-07-23 11:52:11.012  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:52:11.012  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "repairs" does not exist, skipping
+2023-07-23 11:52:11.013  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:52:11.013  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "user_roles" does not exist, skipping
+2023-07-23 11:52:11.013  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:52:11.013  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "user_roles" does not exist, skipping
+2023-07-23 11:52:11.013  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:52:11.014  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "property" does not exist, skipping
+2023-07-23 11:52:11.014  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:52:11.014  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "repairs" does not exist, skipping
+2023-07-23 11:52:11.014  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:52:11.014  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "roles" does not exist, skipping
+2023-07-23 11:52:11.015  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:52:11.015  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "user" does not exist, skipping
+2023-07-23 11:52:11.015  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:52:11.015  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "user_roles" does not exist, skipping
+2023-07-23 11:52:11.015  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:52:11.015  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : sequence "property_seq" does not exist, skipping
+2023-07-23 11:52:11.016  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:52:11.016  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : sequence "repair_seq" does not exist, skipping
+2023-07-23 11:52:11.016  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:52:11.016  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : sequence "roles_seq" does not exist, skipping
+2023-07-23 11:52:11.017  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:52:11.017  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : sequence "user_seq" does not exist, skipping
+2023-07-23 11:52:11.440  INFO alex-PC - [           main] [o.s.d.j.r.q.QueryEnhancerFactory   ] : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-07-23 11:52:12.258  INFO alex-PC - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Shutdown initiated...
+2023-07-23 11:52:12.258 DEBUG alex-PC - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+2023-07-23 11:52:12.259 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@2b5f8e61: (connection evicted)
+2023-07-23 11:52:12.260 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@46ba7693: (connection evicted)
+2023-07-23 11:52:12.260 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@3b8e020: (connection evicted)
+2023-07-23 11:52:12.261 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@276a4242: (connection evicted)
+2023-07-23 11:52:12.261 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@63971f6f: (connection evicted)
+2023-07-23 11:52:12.261 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@768e4f7c: (connection evicted)
+2023-07-23 11:52:12.261 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@49632ff0: (connection evicted)
+2023-07-23 11:52:12.262 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@3c6e0ccc: (connection evicted)
+2023-07-23 11:52:12.262 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@67d90049: (connection evicted)
+2023-07-23 11:52:12.262 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@63a84661: (connection evicted)
+2023-07-23 11:52:12.263 DEBUG alex-PC - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2023-07-23 11:52:12.263  INFO alex-PC - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Shutdown completed.
+2023-07-23 11:55:48.064  INFO alex-PC - [           main] [r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-23 11:55:48.134  INFO alex-PC - [           main] [r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 61 ms. Found 4 JPA repository interfaces.
+2023-07-23 11:55:48.784 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : Driver class org.postgresql.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@1d44bcfa
+2023-07-23 11:55:48.961 DEBUG alex-PC - [           main] [o.h.c.i.RegionFactoryInitiator     ] : Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2023-07-23 11:55:48.962 DEBUG alex-PC - [           main] [o.h.c.i.RegionFactoryInitiator     ] : Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2023-07-23 11:55:49.194 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : HikariPool-1 - configuration:
+2023-07-23 11:55:49.196 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : allowPoolSuspension.............false
+2023-07-23 11:55:49.196 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : autoCommit......................true
+2023-07-23 11:55:49.196 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : catalog.........................none
+2023-07-23 11:55:49.196 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : connectionInitSql...............none
+2023-07-23 11:55:49.196 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : connectionTestQuery.............none
+2023-07-23 11:55:49.196 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : connectionTimeout...............30000
+2023-07-23 11:55:49.196 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : dataSource......................none
+2023-07-23 11:55:49.196 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : dataSourceClassName.............none
+2023-07-23 11:55:49.196 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : dataSourceJNDI..................none
+2023-07-23 11:55:49.197 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : dataSourceProperties............{password=<masked>}
+2023-07-23 11:55:49.197 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : driverClassName................."org.postgresql.Driver"
+2023-07-23 11:55:49.197 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : exceptionOverrideClassName......none
+2023-07-23 11:55:49.197 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : healthCheckProperties...........{}
+2023-07-23 11:55:49.197 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : healthCheckRegistry.............none
+2023-07-23 11:55:49.197 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : idleTimeout.....................600000
+2023-07-23 11:55:49.197 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : initializationFailTimeout.......1
+2023-07-23 11:55:49.198 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : isolateInternalQueries..........false
+2023-07-23 11:55:49.198 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : jdbcUrl.........................jdbc:postgresql://localhost:5432/technikon
+2023-07-23 11:55:49.198 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : keepaliveTime...................0
+2023-07-23 11:55:49.198 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : leakDetectionThreshold..........0
+2023-07-23 11:55:49.198 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : maxLifetime.....................1800000
+2023-07-23 11:55:49.198 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : maximumPoolSize.................10
+2023-07-23 11:55:49.198 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : metricRegistry..................none
+2023-07-23 11:55:49.198 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : metricsTrackerFactory...........none
+2023-07-23 11:55:49.198 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : minimumIdle.....................10
+2023-07-23 11:55:49.198 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : password........................<masked>
+2023-07-23 11:55:49.198 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : poolName........................"HikariPool-1"
+2023-07-23 11:55:49.198 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : readOnly........................false
+2023-07-23 11:55:49.198 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : registerMbeans..................false
+2023-07-23 11:55:49.198 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : scheduledExecutor...............none
+2023-07-23 11:55:49.198 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : schema..........................none
+2023-07-23 11:55:49.198 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : threadFactory...................internal
+2023-07-23 11:55:49.198 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : transactionIsolation............default
+2023-07-23 11:55:49.198 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : username........................"postgres"
+2023-07-23 11:55:49.199 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : validationTimeout...............5000
+2023-07-23 11:55:49.199  INFO alex-PC - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Starting...
+2023-07-23 11:55:49.349  INFO alex-PC - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6ba0ee4a
+2023-07-23 11:55:49.350  INFO alex-PC - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Start completed.
+2023-07-23 11:55:49.459 DEBUG alex-PC - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2023-07-23 11:55:49.620 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7095398b
+2023-07-23 11:55:49.677 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3597a9fd
+2023-07-23 11:55:49.742 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5d68c4a3
+2023-07-23 11:55:49.812 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@55b856b2
+2023-07-23 11:55:49.869 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1ef76704
+2023-07-23 11:55:50.048 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5d3a36c2
+2023-07-23 11:55:50.107 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@466cac1a
+2023-07-23 11:55:50.171 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@51f66fa3
+2023-07-23 11:55:50.238 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@749cfdde
+2023-07-23 11:55:50.249 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2023-07-23 11:55:50.411  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:55:50.411  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "property" does not exist, skipping
+2023-07-23 11:55:50.412  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:55:50.412  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "repairs" does not exist, skipping
+2023-07-23 11:55:50.412  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:55:50.412  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "user_roles" does not exist, skipping
+2023-07-23 11:55:50.412  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:55:50.412  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "user_roles" does not exist, skipping
+2023-07-23 11:55:50.413  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:55:50.413  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "property" does not exist, skipping
+2023-07-23 11:55:50.413  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:55:50.413  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "repairs" does not exist, skipping
+2023-07-23 11:55:50.413  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:55:50.413  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "roles" does not exist, skipping
+2023-07-23 11:55:50.414  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:55:50.414  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "user" does not exist, skipping
+2023-07-23 11:55:50.414  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:55:50.414  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "user_roles" does not exist, skipping
+2023-07-23 11:55:50.415  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:55:50.415  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : sequence "property_seq" does not exist, skipping
+2023-07-23 11:55:50.415  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:55:50.415  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : sequence "repair_seq" does not exist, skipping
+2023-07-23 11:55:50.415  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:55:50.415  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : sequence "roles_seq" does not exist, skipping
+2023-07-23 11:55:50.416  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:55:50.416  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : sequence "user_seq" does not exist, skipping
+2023-07-23 11:55:50.848  INFO alex-PC - [           main] [o.s.d.j.r.q.QueryEnhancerFactory   ] : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-07-23 11:55:51.768  INFO alex-PC - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Shutdown initiated...
+2023-07-23 11:55:51.768 DEBUG alex-PC - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+2023-07-23 11:55:51.769 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@6ba0ee4a: (connection evicted)
+2023-07-23 11:55:51.770 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@7095398b: (connection evicted)
+2023-07-23 11:55:51.770 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@3597a9fd: (connection evicted)
+2023-07-23 11:55:51.770 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@5d68c4a3: (connection evicted)
+2023-07-23 11:55:51.770 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@55b856b2: (connection evicted)
+2023-07-23 11:55:51.770 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@1ef76704: (connection evicted)
+2023-07-23 11:55:51.770 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@5d3a36c2: (connection evicted)
+2023-07-23 11:55:51.771 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@466cac1a: (connection evicted)
+2023-07-23 11:55:51.771 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@51f66fa3: (connection evicted)
+2023-07-23 11:55:51.772 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@749cfdde: (connection evicted)
+2023-07-23 11:55:51.772 DEBUG alex-PC - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2023-07-23 11:55:51.772  INFO alex-PC - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Shutdown completed.
+2023-07-23 11:56:24.102  INFO alex-PC - [           main] [r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-23 11:56:24.179  INFO alex-PC - [           main] [r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 67 ms. Found 4 JPA repository interfaces.
+2023-07-23 11:56:24.824 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : Driver class org.postgresql.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@1d44bcfa
+2023-07-23 11:56:25.000 DEBUG alex-PC - [           main] [o.h.c.i.RegionFactoryInitiator     ] : Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2023-07-23 11:56:25.000 DEBUG alex-PC - [           main] [o.h.c.i.RegionFactoryInitiator     ] : Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2023-07-23 11:56:25.237 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : HikariPool-1 - configuration:
+2023-07-23 11:56:25.239 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : allowPoolSuspension.............false
+2023-07-23 11:56:25.240 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : autoCommit......................true
+2023-07-23 11:56:25.240 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : catalog.........................none
+2023-07-23 11:56:25.240 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : connectionInitSql...............none
+2023-07-23 11:56:25.240 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : connectionTestQuery.............none
+2023-07-23 11:56:25.240 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : connectionTimeout...............30000
+2023-07-23 11:56:25.240 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : dataSource......................none
+2023-07-23 11:56:25.240 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : dataSourceClassName.............none
+2023-07-23 11:56:25.240 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : dataSourceJNDI..................none
+2023-07-23 11:56:25.240 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : dataSourceProperties............{password=<masked>}
+2023-07-23 11:56:25.241 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : driverClassName................."org.postgresql.Driver"
+2023-07-23 11:56:25.241 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : exceptionOverrideClassName......none
+2023-07-23 11:56:25.241 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : healthCheckProperties...........{}
+2023-07-23 11:56:25.241 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : healthCheckRegistry.............none
+2023-07-23 11:56:25.241 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : idleTimeout.....................600000
+2023-07-23 11:56:25.241 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : initializationFailTimeout.......1
+2023-07-23 11:56:25.241 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : isolateInternalQueries..........false
+2023-07-23 11:56:25.241 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : jdbcUrl.........................jdbc:postgresql://localhost:5432/technikon
+2023-07-23 11:56:25.241 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : keepaliveTime...................0
+2023-07-23 11:56:25.241 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : leakDetectionThreshold..........0
+2023-07-23 11:56:25.242 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : maxLifetime.....................1800000
+2023-07-23 11:56:25.242 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : maximumPoolSize.................10
+2023-07-23 11:56:25.242 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : metricRegistry..................none
+2023-07-23 11:56:25.242 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : metricsTrackerFactory...........none
+2023-07-23 11:56:25.242 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : minimumIdle.....................10
+2023-07-23 11:56:25.242 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : password........................<masked>
+2023-07-23 11:56:25.242 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : poolName........................"HikariPool-1"
+2023-07-23 11:56:25.242 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : readOnly........................false
+2023-07-23 11:56:25.242 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : registerMbeans..................false
+2023-07-23 11:56:25.242 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : scheduledExecutor...............none
+2023-07-23 11:56:25.242 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : schema..........................none
+2023-07-23 11:56:25.242 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : threadFactory...................internal
+2023-07-23 11:56:25.242 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : transactionIsolation............default
+2023-07-23 11:56:25.242 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : username........................"postgres"
+2023-07-23 11:56:25.242 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : validationTimeout...............5000
+2023-07-23 11:56:25.242  INFO alex-PC - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Starting...
+2023-07-23 11:56:25.404  INFO alex-PC - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2b5f8e61
+2023-07-23 11:56:25.406  INFO alex-PC - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Start completed.
+2023-07-23 11:56:25.520 DEBUG alex-PC - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2023-07-23 11:56:25.572 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7d202bf2
+2023-07-23 11:56:25.628 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3822ba32
+2023-07-23 11:56:25.695 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@755382cf
+2023-07-23 11:56:25.762 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@580d457d
+2023-07-23 11:56:25.824 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@c1d0b99
+2023-07-23 11:56:25.884 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@77b4001
+2023-07-23 11:56:25.948 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6e57efdb
+2023-07-23 11:56:26.114 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5c4379c1
+2023-07-23 11:56:26.276 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@38e6e013
+2023-07-23 11:56:26.301 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2023-07-23 11:56:26.461  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:56:26.461  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "property" does not exist, skipping
+2023-07-23 11:56:26.462  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:56:26.462  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "repairs" does not exist, skipping
+2023-07-23 11:56:26.462  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:56:26.462  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "user_roles" does not exist, skipping
+2023-07-23 11:56:26.462  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:56:26.462  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "user_roles" does not exist, skipping
+2023-07-23 11:56:26.463  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:56:26.463  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "property" does not exist, skipping
+2023-07-23 11:56:26.463  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:56:26.463  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "repairs" does not exist, skipping
+2023-07-23 11:56:26.463  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:56:26.463  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "roles" does not exist, skipping
+2023-07-23 11:56:26.464  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:56:26.464  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "user" does not exist, skipping
+2023-07-23 11:56:26.464  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:56:26.464  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "user_roles" does not exist, skipping
+2023-07-23 11:56:26.465  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:56:26.465  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : sequence "property_seq" does not exist, skipping
+2023-07-23 11:56:26.465  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:56:26.465  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : sequence "repair_seq" does not exist, skipping
+2023-07-23 11:56:26.465  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:56:26.465  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : sequence "roles_seq" does not exist, skipping
+2023-07-23 11:56:26.466  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-23 11:56:26.466  WARN alex-PC - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : sequence "user_seq" does not exist, skipping
+2023-07-23 11:56:26.886  INFO alex-PC - [           main] [o.s.d.j.r.q.QueryEnhancerFactory   ] : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-07-23 11:56:55.524 DEBUG alex-PC - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-07-23 11:56:55.524 DEBUG alex-PC - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2023-07-23 11:56:56.538  INFO alex-PC - [ionShutdownHook] [c.z.h.HikariDataSource             ] : HikariPool-1 - Shutdown initiated...
+2023-07-23 11:56:56.538 DEBUG alex-PC - [ionShutdownHook] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+2023-07-23 11:56:56.539 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@2b5f8e61: (connection evicted)
+2023-07-23 11:56:56.540 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@7d202bf2: (connection evicted)
+2023-07-23 11:56:56.540 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@3822ba32: (connection evicted)
+2023-07-23 11:56:56.540 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@755382cf: (connection evicted)
+2023-07-23 11:56:56.540 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@580d457d: (connection evicted)
+2023-07-23 11:56:56.540 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@c1d0b99: (connection evicted)
+2023-07-23 11:56:56.541 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@77b4001: (connection evicted)
+2023-07-23 11:56:56.541 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@6e57efdb: (connection evicted)
+2023-07-23 11:56:56.541 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@5c4379c1: (connection evicted)
+2023-07-23 11:56:56.541 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@38e6e013: (connection evicted)
+2023-07-23 11:56:56.542 DEBUG alex-PC - [ionShutdownHook] [c.z.h.p.HikariPool                 ] : HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2023-07-23 11:56:56.542  INFO alex-PC - [ionShutdownHook] [c.z.h.HikariDataSource             ] : HikariPool-1 - Shutdown completed.
+2023-07-23 11:56:59.793  INFO alex-PC - [           main] [r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-23 11:56:59.863  INFO alex-PC - [           main] [r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 63 ms. Found 4 JPA repository interfaces.
+2023-07-23 11:57:00.536 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : Driver class org.postgresql.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@1d44bcfa
+2023-07-23 11:57:00.708 DEBUG alex-PC - [           main] [o.h.c.i.RegionFactoryInitiator     ] : Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2023-07-23 11:57:00.709 DEBUG alex-PC - [           main] [o.h.c.i.RegionFactoryInitiator     ] : Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2023-07-23 11:57:00.944 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : HikariPool-1 - configuration:
+2023-07-23 11:57:00.947 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : allowPoolSuspension.............false
+2023-07-23 11:57:00.947 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : autoCommit......................true
+2023-07-23 11:57:00.947 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : catalog.........................none
+2023-07-23 11:57:00.947 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : connectionInitSql...............none
+2023-07-23 11:57:00.947 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : connectionTestQuery.............none
+2023-07-23 11:57:00.947 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : connectionTimeout...............30000
+2023-07-23 11:57:00.947 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : dataSource......................none
+2023-07-23 11:57:00.947 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : dataSourceClassName.............none
+2023-07-23 11:57:00.947 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : dataSourceJNDI..................none
+2023-07-23 11:57:00.948 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : dataSourceProperties............{password=<masked>}
+2023-07-23 11:57:00.948 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : driverClassName................."org.postgresql.Driver"
+2023-07-23 11:57:00.948 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : exceptionOverrideClassName......none
+2023-07-23 11:57:00.948 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : healthCheckProperties...........{}
+2023-07-23 11:57:00.948 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : healthCheckRegistry.............none
+2023-07-23 11:57:00.948 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : idleTimeout.....................600000
+2023-07-23 11:57:00.948 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : initializationFailTimeout.......1
+2023-07-23 11:57:00.948 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : isolateInternalQueries..........false
+2023-07-23 11:57:00.949 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : jdbcUrl.........................jdbc:postgresql://localhost:5432/technikon
+2023-07-23 11:57:00.949 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : keepaliveTime...................0
+2023-07-23 11:57:00.949 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : leakDetectionThreshold..........0
+2023-07-23 11:57:00.949 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : maxLifetime.....................1800000
+2023-07-23 11:57:00.949 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : maximumPoolSize.................10
+2023-07-23 11:57:00.949 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : metricRegistry..................none
+2023-07-23 11:57:00.949 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : metricsTrackerFactory...........none
+2023-07-23 11:57:00.949 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : minimumIdle.....................10
+2023-07-23 11:57:00.949 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : password........................<masked>
+2023-07-23 11:57:00.949 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : poolName........................"HikariPool-1"
+2023-07-23 11:57:00.949 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : readOnly........................false
+2023-07-23 11:57:00.949 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : registerMbeans..................false
+2023-07-23 11:57:00.949 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : scheduledExecutor...............none
+2023-07-23 11:57:00.949 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : schema..........................none
+2023-07-23 11:57:00.949 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : threadFactory...................internal
+2023-07-23 11:57:00.949 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : transactionIsolation............default
+2023-07-23 11:57:00.950 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : username........................"postgres"
+2023-07-23 11:57:00.950 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : validationTimeout...............5000
+2023-07-23 11:57:00.950  INFO alex-PC - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Starting...
+2023-07-23 11:57:01.102  INFO alex-PC - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@16391278
+2023-07-23 11:57:01.103  INFO alex-PC - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Start completed.
+2023-07-23 11:57:01.214 DEBUG alex-PC - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2023-07-23 11:57:01.263 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@23250f01
+2023-07-23 11:57:01.321 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@66279501
+2023-07-23 11:57:01.487 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5c5d6359
+2023-07-23 11:57:01.557 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6086a4e
+2023-07-23 11:57:01.622 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7e31f08c
+2023-07-23 11:57:01.688 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7029baa7
+2023-07-23 11:57:01.757 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@47594850
+2023-07-23 11:57:01.829 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@24610ef
+2023-07-23 11:57:01.892 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@738225bb
+2023-07-23 11:57:01.909 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2023-07-23 11:57:02.658  INFO alex-PC - [           main] [o.s.d.j.r.q.QueryEnhancerFactory   ] : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-07-23 11:57:10.990  INFO alex-PC - [ionShutdownHook] [c.z.h.HikariDataSource             ] : HikariPool-1 - Shutdown initiated...
+2023-07-23 11:57:10.990 DEBUG alex-PC - [ionShutdownHook] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+2023-07-23 11:57:10.991 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@16391278: (connection evicted)
+2023-07-23 11:57:10.992 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@23250f01: (connection evicted)
+2023-07-23 11:57:10.992 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@66279501: (connection evicted)
+2023-07-23 11:57:10.992 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@5c5d6359: (connection evicted)
+2023-07-23 11:57:10.992 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@6086a4e: (connection evicted)
+2023-07-23 11:57:10.992 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@7e31f08c: (connection evicted)
+2023-07-23 11:57:10.993 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@7029baa7: (connection evicted)
+2023-07-23 11:57:10.993 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@47594850: (connection evicted)
+2023-07-23 11:57:10.994 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@24610ef: (connection evicted)
+2023-07-23 11:57:10.994 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@738225bb: (connection evicted)
+2023-07-23 11:57:10.994 DEBUG alex-PC - [ionShutdownHook] [c.z.h.p.HikariPool                 ] : HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2023-07-23 11:57:10.994  INFO alex-PC - [ionShutdownHook] [c.z.h.HikariDataSource             ] : HikariPool-1 - Shutdown completed.
+2023-07-23 11:57:15.398  INFO alex-PC - [           main] [r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-23 11:57:15.461  INFO alex-PC - [           main] [r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 56 ms. Found 4 JPA repository interfaces.
+2023-07-23 11:57:16.054 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : Driver class org.postgresql.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@1d44bcfa
+2023-07-23 11:57:16.220 DEBUG alex-PC - [           main] [o.h.c.i.RegionFactoryInitiator     ] : Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2023-07-23 11:57:16.222 DEBUG alex-PC - [           main] [o.h.c.i.RegionFactoryInitiator     ] : Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2023-07-23 11:57:16.446 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : HikariPool-1 - configuration:
+2023-07-23 11:57:16.449 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : allowPoolSuspension.............false
+2023-07-23 11:57:16.449 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : autoCommit......................true
+2023-07-23 11:57:16.449 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : catalog.........................none
+2023-07-23 11:57:16.449 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : connectionInitSql...............none
+2023-07-23 11:57:16.449 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : connectionTestQuery.............none
+2023-07-23 11:57:16.449 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : connectionTimeout...............30000
+2023-07-23 11:57:16.449 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : dataSource......................none
+2023-07-23 11:57:16.449 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : dataSourceClassName.............none
+2023-07-23 11:57:16.449 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : dataSourceJNDI..................none
+2023-07-23 11:57:16.450 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : dataSourceProperties............{password=<masked>}
+2023-07-23 11:57:16.450 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : driverClassName................."org.postgresql.Driver"
+2023-07-23 11:57:16.450 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : exceptionOverrideClassName......none
+2023-07-23 11:57:16.450 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : healthCheckProperties...........{}
+2023-07-23 11:57:16.450 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : healthCheckRegistry.............none
+2023-07-23 11:57:16.450 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : idleTimeout.....................600000
+2023-07-23 11:57:16.450 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : initializationFailTimeout.......1
+2023-07-23 11:57:16.450 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : isolateInternalQueries..........false
+2023-07-23 11:57:16.450 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : jdbcUrl.........................jdbc:postgresql://localhost:5432/technikon
+2023-07-23 11:57:16.450 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : keepaliveTime...................0
+2023-07-23 11:57:16.450 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : leakDetectionThreshold..........0
+2023-07-23 11:57:16.450 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : maxLifetime.....................1800000
+2023-07-23 11:57:16.451 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : maximumPoolSize.................10
+2023-07-23 11:57:16.451 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : metricRegistry..................none
+2023-07-23 11:57:16.451 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : metricsTrackerFactory...........none
+2023-07-23 11:57:16.451 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : minimumIdle.....................10
+2023-07-23 11:57:16.451 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : password........................<masked>
+2023-07-23 11:57:16.451 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : poolName........................"HikariPool-1"
+2023-07-23 11:57:16.451 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : readOnly........................false
+2023-07-23 11:57:16.451 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : registerMbeans..................false
+2023-07-23 11:57:16.451 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : scheduledExecutor...............none
+2023-07-23 11:57:16.451 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : schema..........................none
+2023-07-23 11:57:16.451 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : threadFactory...................internal
+2023-07-23 11:57:16.451 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : transactionIsolation............default
+2023-07-23 11:57:16.451 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : username........................"postgres"
+2023-07-23 11:57:16.451 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : validationTimeout...............5000
+2023-07-23 11:57:16.451  INFO alex-PC - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Starting...
+2023-07-23 11:57:16.602  INFO alex-PC - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@55e42684
+2023-07-23 11:57:16.603  INFO alex-PC - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Start completed.
+2023-07-23 11:57:16.718 DEBUG alex-PC - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2023-07-23 11:57:16.764 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@399be645
+2023-07-23 11:57:16.826 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7c997f12
+2023-07-23 11:57:16.897 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2be00bdc
+2023-07-23 11:57:16.956 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1cb6805d
+2023-07-23 11:57:17.132 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2d47849d
+2023-07-23 11:57:17.199 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1b717432
+2023-07-23 11:57:17.262 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@30e4226b
+2023-07-23 11:57:17.328 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@18f8f842
+2023-07-23 11:57:17.393 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@98ae4ac
+2023-07-23 11:57:17.410 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2023-07-23 11:57:18.203  INFO alex-PC - [           main] [o.s.d.j.r.q.QueryEnhancerFactory   ] : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-07-23 11:57:19.093  INFO alex-PC - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Shutdown initiated...
+2023-07-23 11:57:19.093 DEBUG alex-PC - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+2023-07-23 11:57:19.094 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@55e42684: (connection evicted)
+2023-07-23 11:57:19.095 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@399be645: (connection evicted)
+2023-07-23 11:57:19.095 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@7c997f12: (connection evicted)
+2023-07-23 11:57:19.095 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@2be00bdc: (connection evicted)
+2023-07-23 11:57:19.095 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@1cb6805d: (connection evicted)
+2023-07-23 11:57:19.096 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@2d47849d: (connection evicted)
+2023-07-23 11:57:19.096 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@1b717432: (connection evicted)
+2023-07-23 11:57:19.096 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@30e4226b: (connection evicted)
+2023-07-23 11:57:19.096 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@18f8f842: (connection evicted)
+2023-07-23 11:57:19.097 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@98ae4ac: (connection evicted)
+2023-07-23 11:57:19.098 DEBUG alex-PC - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2023-07-23 11:57:19.098  INFO alex-PC - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Shutdown completed.
+2023-07-23 11:58:14.916  INFO alex-PC - [           main] [r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-23 11:58:14.979  INFO alex-PC - [           main] [r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 56 ms. Found 4 JPA repository interfaces.
+2023-07-23 11:58:15.572 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : Driver class org.postgresql.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@1d44bcfa
+2023-07-23 11:58:15.741 DEBUG alex-PC - [           main] [o.h.c.i.RegionFactoryInitiator     ] : Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2023-07-23 11:58:15.741 DEBUG alex-PC - [           main] [o.h.c.i.RegionFactoryInitiator     ] : Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2023-07-23 11:58:15.965 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : HikariPool-1 - configuration:
+2023-07-23 11:58:15.968 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : allowPoolSuspension.............false
+2023-07-23 11:58:15.968 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : autoCommit......................true
+2023-07-23 11:58:15.968 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : catalog.........................none
+2023-07-23 11:58:15.968 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : connectionInitSql...............none
+2023-07-23 11:58:15.968 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : connectionTestQuery.............none
+2023-07-23 11:58:15.968 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : connectionTimeout...............30000
+2023-07-23 11:58:15.968 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : dataSource......................none
+2023-07-23 11:58:15.968 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : dataSourceClassName.............none
+2023-07-23 11:58:15.968 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : dataSourceJNDI..................none
+2023-07-23 11:58:15.969 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : dataSourceProperties............{password=<masked>}
+2023-07-23 11:58:15.969 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : driverClassName................."org.postgresql.Driver"
+2023-07-23 11:58:15.969 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : exceptionOverrideClassName......none
+2023-07-23 11:58:15.969 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : healthCheckProperties...........{}
+2023-07-23 11:58:15.969 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : healthCheckRegistry.............none
+2023-07-23 11:58:15.969 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : idleTimeout.....................600000
+2023-07-23 11:58:15.969 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : initializationFailTimeout.......1
+2023-07-23 11:58:15.969 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : isolateInternalQueries..........false
+2023-07-23 11:58:15.970 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : jdbcUrl.........................jdbc:postgresql://localhost:5432/technikon
+2023-07-23 11:58:15.970 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : keepaliveTime...................0
+2023-07-23 11:58:15.970 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : leakDetectionThreshold..........0
+2023-07-23 11:58:15.970 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : maxLifetime.....................1800000
+2023-07-23 11:58:15.970 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : maximumPoolSize.................10
+2023-07-23 11:58:15.970 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : metricRegistry..................none
+2023-07-23 11:58:15.970 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : metricsTrackerFactory...........none
+2023-07-23 11:58:15.970 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : minimumIdle.....................10
+2023-07-23 11:58:15.970 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : password........................<masked>
+2023-07-23 11:58:15.970 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : poolName........................"HikariPool-1"
+2023-07-23 11:58:15.970 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : readOnly........................false
+2023-07-23 11:58:15.970 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : registerMbeans..................false
+2023-07-23 11:58:15.970 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : scheduledExecutor...............none
+2023-07-23 11:58:15.970 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : schema..........................none
+2023-07-23 11:58:15.970 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : threadFactory...................internal
+2023-07-23 11:58:15.970 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : transactionIsolation............default
+2023-07-23 11:58:15.970 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : username........................"postgres"
+2023-07-23 11:58:15.971 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : validationTimeout...............5000
+2023-07-23 11:58:15.971  INFO alex-PC - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Starting...
+2023-07-23 11:58:16.129  INFO alex-PC - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6ba0ee4a
+2023-07-23 11:58:16.131  INFO alex-PC - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Start completed.
+2023-07-23 11:58:16.240 DEBUG alex-PC - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2023-07-23 11:58:16.286 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@96d72a8
+2023-07-23 11:58:16.348 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4c6ffde1
+2023-07-23 11:58:16.411 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1ff36444
+2023-07-23 11:58:16.474 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2c4002ae
+2023-07-23 11:58:16.540 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3070a555
+2023-07-23 11:58:16.599 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@226801
+2023-07-23 11:58:16.660 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4f7ed05
+2023-07-23 11:58:16.725 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@280eda47
+2023-07-23 11:58:16.785 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1de1881e
+2023-07-23 11:58:16.804 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2023-07-23 11:58:17.657  INFO alex-PC - [           main] [o.s.d.j.r.q.QueryEnhancerFactory   ] : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-07-23 11:58:18.445  INFO alex-PC - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Shutdown initiated...
+2023-07-23 11:58:18.445 DEBUG alex-PC - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+2023-07-23 11:58:18.446 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@6ba0ee4a: (connection evicted)
+2023-07-23 11:58:18.446 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@96d72a8: (connection evicted)
+2023-07-23 11:58:18.446 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@4c6ffde1: (connection evicted)
+2023-07-23 11:58:18.447 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@1ff36444: (connection evicted)
+2023-07-23 11:58:18.447 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@2c4002ae: (connection evicted)
+2023-07-23 11:58:18.448 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@3070a555: (connection evicted)
+2023-07-23 11:58:18.448 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@226801: (connection evicted)
+2023-07-23 11:58:18.448 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@4f7ed05: (connection evicted)
+2023-07-23 11:58:18.448 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@280eda47: (connection evicted)
+2023-07-23 11:58:18.450 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@1de1881e: (connection evicted)
+2023-07-23 11:58:18.452 DEBUG alex-PC - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2023-07-23 11:58:18.452  INFO alex-PC - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Shutdown completed.
+2023-07-23 12:03:33.668  INFO alex-PC - [           main] [r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-23 12:03:33.749  INFO alex-PC - [           main] [r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 71 ms. Found 4 JPA repository interfaces.
+2023-07-23 12:03:34.341 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : Driver class org.postgresql.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@1d44bcfa
+2023-07-23 12:03:34.515 DEBUG alex-PC - [           main] [o.h.c.i.RegionFactoryInitiator     ] : Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2023-07-23 12:03:34.516 DEBUG alex-PC - [           main] [o.h.c.i.RegionFactoryInitiator     ] : Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2023-07-23 12:03:34.742 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : HikariPool-1 - configuration:
+2023-07-23 12:03:34.744 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : allowPoolSuspension.............false
+2023-07-23 12:03:34.744 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : autoCommit......................true
+2023-07-23 12:03:34.744 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : catalog.........................none
+2023-07-23 12:03:34.744 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : connectionInitSql...............none
+2023-07-23 12:03:34.744 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : connectionTestQuery.............none
+2023-07-23 12:03:34.744 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : connectionTimeout...............30000
+2023-07-23 12:03:34.744 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : dataSource......................none
+2023-07-23 12:03:34.744 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : dataSourceClassName.............none
+2023-07-23 12:03:34.745 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : dataSourceJNDI..................none
+2023-07-23 12:03:34.745 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : dataSourceProperties............{password=<masked>}
+2023-07-23 12:03:34.745 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : driverClassName................."org.postgresql.Driver"
+2023-07-23 12:03:34.746 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : exceptionOverrideClassName......none
+2023-07-23 12:03:34.746 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : healthCheckProperties...........{}
+2023-07-23 12:03:34.746 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : healthCheckRegistry.............none
+2023-07-23 12:03:34.746 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : idleTimeout.....................600000
+2023-07-23 12:03:34.746 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : initializationFailTimeout.......1
+2023-07-23 12:03:34.746 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : isolateInternalQueries..........false
+2023-07-23 12:03:34.746 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : jdbcUrl.........................jdbc:postgresql://localhost:5432/technikon
+2023-07-23 12:03:34.746 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : keepaliveTime...................0
+2023-07-23 12:03:34.746 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : leakDetectionThreshold..........0
+2023-07-23 12:03:34.746 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : maxLifetime.....................1800000
+2023-07-23 12:03:34.747 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : maximumPoolSize.................10
+2023-07-23 12:03:34.747 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : metricRegistry..................none
+2023-07-23 12:03:34.747 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : metricsTrackerFactory...........none
+2023-07-23 12:03:34.747 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : minimumIdle.....................10
+2023-07-23 12:03:34.747 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : password........................<masked>
+2023-07-23 12:03:34.747 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : poolName........................"HikariPool-1"
+2023-07-23 12:03:34.747 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : readOnly........................false
+2023-07-23 12:03:34.747 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : registerMbeans..................false
+2023-07-23 12:03:34.747 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : scheduledExecutor...............none
+2023-07-23 12:03:34.747 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : schema..........................none
+2023-07-23 12:03:34.747 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : threadFactory...................internal
+2023-07-23 12:03:34.747 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : transactionIsolation............default
+2023-07-23 12:03:34.748 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : username........................"postgres"
+2023-07-23 12:03:34.748 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : validationTimeout...............5000
+2023-07-23 12:03:34.748  INFO alex-PC - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Starting...
+2023-07-23 12:03:34.902  INFO alex-PC - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@55061418
+2023-07-23 12:03:34.903  INFO alex-PC - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Start completed.
+2023-07-23 12:03:35.009 DEBUG alex-PC - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2023-07-23 12:03:35.055 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1ac3029f
+2023-07-23 12:03:35.116 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5fc19fa3
+2023-07-23 12:03:35.179 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6c01c648
+2023-07-23 12:03:35.244 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3fee60ec
+2023-07-23 12:03:35.309 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5c7edd7d
+2023-07-23 12:03:35.366 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@15d47bcb
+2023-07-23 12:03:35.426 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7705ccbf
+2023-07-23 12:03:35.498 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3ba03bb3
+2023-07-23 12:03:35.557 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@111f8c8f
+2023-07-23 12:03:35.573 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2023-07-23 12:03:36.418  INFO alex-PC - [           main] [o.s.d.j.r.q.QueryEnhancerFactory   ] : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-07-23 12:03:37.187  INFO alex-PC - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Shutdown initiated...
+2023-07-23 12:03:37.188 DEBUG alex-PC - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+2023-07-23 12:03:37.189 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@55061418: (connection evicted)
+2023-07-23 12:03:37.190 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@1ac3029f: (connection evicted)
+2023-07-23 12:03:37.190 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@5fc19fa3: (connection evicted)
+2023-07-23 12:03:37.190 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@6c01c648: (connection evicted)
+2023-07-23 12:03:37.190 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@3fee60ec: (connection evicted)
+2023-07-23 12:03:37.191 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@5c7edd7d: (connection evicted)
+2023-07-23 12:03:37.191 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@15d47bcb: (connection evicted)
+2023-07-23 12:03:37.191 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@7705ccbf: (connection evicted)
+2023-07-23 12:03:37.191 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@3ba03bb3: (connection evicted)
+2023-07-23 12:03:37.193 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@111f8c8f: (connection evicted)
+2023-07-23 12:03:37.193 DEBUG alex-PC - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2023-07-23 12:03:37.194  INFO alex-PC - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Shutdown completed.
+2023-07-23 12:10:17.534  INFO alex-PC - [           main] [r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-23 12:10:17.602  INFO alex-PC - [           main] [r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 60 ms. Found 4 JPA repository interfaces.
+2023-07-23 12:10:18.214 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : Driver class org.postgresql.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@1d44bcfa
+2023-07-23 12:10:18.390 DEBUG alex-PC - [           main] [o.h.c.i.RegionFactoryInitiator     ] : Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2023-07-23 12:10:18.390 DEBUG alex-PC - [           main] [o.h.c.i.RegionFactoryInitiator     ] : Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2023-07-23 12:10:18.620 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : HikariPool-1 - configuration:
+2023-07-23 12:10:18.622 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : allowPoolSuspension.............false
+2023-07-23 12:10:18.622 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : autoCommit......................true
+2023-07-23 12:10:18.622 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : catalog.........................none
+2023-07-23 12:10:18.622 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : connectionInitSql...............none
+2023-07-23 12:10:18.622 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : connectionTestQuery.............none
+2023-07-23 12:10:18.622 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : connectionTimeout...............30000
+2023-07-23 12:10:18.622 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : dataSource......................none
+2023-07-23 12:10:18.622 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : dataSourceClassName.............none
+2023-07-23 12:10:18.622 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : dataSourceJNDI..................none
+2023-07-23 12:10:18.623 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : dataSourceProperties............{password=<masked>}
+2023-07-23 12:10:18.623 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : driverClassName................."org.postgresql.Driver"
+2023-07-23 12:10:18.623 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : exceptionOverrideClassName......none
+2023-07-23 12:10:18.623 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : healthCheckProperties...........{}
+2023-07-23 12:10:18.623 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : healthCheckRegistry.............none
+2023-07-23 12:10:18.623 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : idleTimeout.....................600000
+2023-07-23 12:10:18.623 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : initializationFailTimeout.......1
+2023-07-23 12:10:18.623 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : isolateInternalQueries..........false
+2023-07-23 12:10:18.623 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : jdbcUrl.........................jdbc:postgresql://localhost:5432/technikon
+2023-07-23 12:10:18.623 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : keepaliveTime...................0
+2023-07-23 12:10:18.623 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : leakDetectionThreshold..........0
+2023-07-23 12:10:18.624 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : maxLifetime.....................1800000
+2023-07-23 12:10:18.624 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : maximumPoolSize.................10
+2023-07-23 12:10:18.624 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : metricRegistry..................none
+2023-07-23 12:10:18.624 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : metricsTrackerFactory...........none
+2023-07-23 12:10:18.624 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : minimumIdle.....................10
+2023-07-23 12:10:18.624 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : password........................<masked>
+2023-07-23 12:10:18.624 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : poolName........................"HikariPool-1"
+2023-07-23 12:10:18.624 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : readOnly........................false
+2023-07-23 12:10:18.624 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : registerMbeans..................false
+2023-07-23 12:10:18.624 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : scheduledExecutor...............none
+2023-07-23 12:10:18.624 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : schema..........................none
+2023-07-23 12:10:18.624 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : threadFactory...................internal
+2023-07-23 12:10:18.624 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : transactionIsolation............default
+2023-07-23 12:10:18.624 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : username........................"postgres"
+2023-07-23 12:10:18.624 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : validationTimeout...............5000
+2023-07-23 12:10:18.624  INFO alex-PC - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Starting...
+2023-07-23 12:10:18.779  INFO alex-PC - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@55061418
+2023-07-23 12:10:18.781  INFO alex-PC - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Start completed.
+2023-07-23 12:10:18.883 DEBUG alex-PC - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2023-07-23 12:10:18.930 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4d9f3f4b
+2023-07-23 12:10:18.993 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@89db89c
+2023-07-23 12:10:19.053 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@d0e47b6
+2023-07-23 12:10:19.119 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@68b247d3
+2023-07-23 12:10:19.186 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2a4f56ce
+2023-07-23 12:10:19.256 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6946437c
+2023-07-23 12:10:19.334 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@160a8a15
+2023-07-23 12:10:19.401 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6cfcdbd8
+2023-07-23 12:10:19.468 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3c5509af
+2023-07-23 12:10:19.484 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2023-07-23 12:10:20.312  INFO alex-PC - [           main] [o.s.d.j.r.q.QueryEnhancerFactory   ] : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-07-23 12:10:21.094  INFO alex-PC - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Shutdown initiated...
+2023-07-23 12:10:21.094 DEBUG alex-PC - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+2023-07-23 12:10:21.095 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@55061418: (connection evicted)
+2023-07-23 12:10:21.096 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@4d9f3f4b: (connection evicted)
+2023-07-23 12:10:21.096 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@89db89c: (connection evicted)
+2023-07-23 12:10:21.096 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@d0e47b6: (connection evicted)
+2023-07-23 12:10:21.096 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@68b247d3: (connection evicted)
+2023-07-23 12:10:21.096 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@2a4f56ce: (connection evicted)
+2023-07-23 12:10:21.097 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@6946437c: (connection evicted)
+2023-07-23 12:10:21.097 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@160a8a15: (connection evicted)
+2023-07-23 12:10:21.097 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@6cfcdbd8: (connection evicted)
+2023-07-23 12:10:21.097 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@3c5509af: (connection evicted)
+2023-07-23 12:10:21.098 DEBUG alex-PC - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2023-07-23 12:10:21.098  INFO alex-PC - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Shutdown completed.
+2023-07-23 12:11:34.222  INFO alex-PC - [           main] [r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-23 12:11:34.298  INFO alex-PC - [           main] [r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 68 ms. Found 4 JPA repository interfaces.
+2023-07-23 12:11:34.896 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : Driver class org.postgresql.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@1d44bcfa
+2023-07-23 12:11:35.070 DEBUG alex-PC - [           main] [o.h.c.i.RegionFactoryInitiator     ] : Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2023-07-23 12:11:35.071 DEBUG alex-PC - [           main] [o.h.c.i.RegionFactoryInitiator     ] : Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2023-07-23 12:11:35.298 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : HikariPool-1 - configuration:
+2023-07-23 12:11:35.300 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : allowPoolSuspension.............false
+2023-07-23 12:11:35.300 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : autoCommit......................true
+2023-07-23 12:11:35.300 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : catalog.........................none
+2023-07-23 12:11:35.300 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : connectionInitSql...............none
+2023-07-23 12:11:35.300 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : connectionTestQuery.............none
+2023-07-23 12:11:35.300 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : connectionTimeout...............30000
+2023-07-23 12:11:35.300 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : dataSource......................none
+2023-07-23 12:11:35.300 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : dataSourceClassName.............none
+2023-07-23 12:11:35.301 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : dataSourceJNDI..................none
+2023-07-23 12:11:35.301 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : dataSourceProperties............{password=<masked>}
+2023-07-23 12:11:35.301 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : driverClassName................."org.postgresql.Driver"
+2023-07-23 12:11:35.301 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : exceptionOverrideClassName......none
+2023-07-23 12:11:35.301 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : healthCheckProperties...........{}
+2023-07-23 12:11:35.301 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : healthCheckRegistry.............none
+2023-07-23 12:11:35.301 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : idleTimeout.....................600000
+2023-07-23 12:11:35.302 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : initializationFailTimeout.......1
+2023-07-23 12:11:35.302 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : isolateInternalQueries..........false
+2023-07-23 12:11:35.302 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : jdbcUrl.........................jdbc:postgresql://localhost:5432/technikon
+2023-07-23 12:11:35.302 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : keepaliveTime...................0
+2023-07-23 12:11:35.302 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : leakDetectionThreshold..........0
+2023-07-23 12:11:35.302 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : maxLifetime.....................1800000
+2023-07-23 12:11:35.302 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : maximumPoolSize.................10
+2023-07-23 12:11:35.302 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : metricRegistry..................none
+2023-07-23 12:11:35.302 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : metricsTrackerFactory...........none
+2023-07-23 12:11:35.302 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : minimumIdle.....................10
+2023-07-23 12:11:35.302 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : password........................<masked>
+2023-07-23 12:11:35.302 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : poolName........................"HikariPool-1"
+2023-07-23 12:11:35.302 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : readOnly........................false
+2023-07-23 12:11:35.302 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : registerMbeans..................false
+2023-07-23 12:11:35.303 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : scheduledExecutor...............none
+2023-07-23 12:11:35.303 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : schema..........................none
+2023-07-23 12:11:35.303 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : threadFactory...................internal
+2023-07-23 12:11:35.303 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : transactionIsolation............default
+2023-07-23 12:11:35.303 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : username........................"postgres"
+2023-07-23 12:11:35.303 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : validationTimeout...............5000
+2023-07-23 12:11:35.303  INFO alex-PC - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Starting...
+2023-07-23 12:11:35.460  INFO alex-PC - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@305e95a4
+2023-07-23 12:11:35.461  INFO alex-PC - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Start completed.
+2023-07-23 12:11:35.564 DEBUG alex-PC - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2023-07-23 12:11:35.617 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@51c43f74
+2023-07-23 12:11:35.680 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@14c6ab28
+2023-07-23 12:11:35.737 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@55d73a1e
+2023-07-23 12:11:35.808 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@74e95467
+2023-07-23 12:11:35.967 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@43b3666b
+2023-07-23 12:11:36.027 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@22b8aa65
+2023-07-23 12:11:36.087 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4ed373e6
+2023-07-23 12:11:36.148 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@70a74c37
+2023-07-23 12:11:36.214 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@28ffec76
+2023-07-23 12:11:36.232 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2023-07-23 12:11:37.032  INFO alex-PC - [           main] [o.s.d.j.r.q.QueryEnhancerFactory   ] : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-07-23 12:11:37.829  INFO alex-PC - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Shutdown initiated...
+2023-07-23 12:11:37.829 DEBUG alex-PC - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+2023-07-23 12:11:37.830 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@305e95a4: (connection evicted)
+2023-07-23 12:11:37.831 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@51c43f74: (connection evicted)
+2023-07-23 12:11:37.831 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@14c6ab28: (connection evicted)
+2023-07-23 12:11:37.831 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@55d73a1e: (connection evicted)
+2023-07-23 12:11:37.832 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@74e95467: (connection evicted)
+2023-07-23 12:11:37.832 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@43b3666b: (connection evicted)
+2023-07-23 12:11:37.832 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@22b8aa65: (connection evicted)
+2023-07-23 12:11:37.833 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@4ed373e6: (connection evicted)
+2023-07-23 12:11:37.833 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@70a74c37: (connection evicted)
+2023-07-23 12:11:37.833 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@28ffec76: (connection evicted)
+2023-07-23 12:11:37.834 DEBUG alex-PC - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2023-07-23 12:11:37.834  INFO alex-PC - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Shutdown completed.
+2023-07-23 12:12:36.837  INFO alex-PC - [           main] [r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-23 12:12:36.903  INFO alex-PC - [           main] [r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 58 ms. Found 4 JPA repository interfaces.
+2023-07-23 12:12:37.525 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : Driver class org.postgresql.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@1d44bcfa
+2023-07-23 12:12:37.694 DEBUG alex-PC - [           main] [o.h.c.i.RegionFactoryInitiator     ] : Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2023-07-23 12:12:37.694 DEBUG alex-PC - [           main] [o.h.c.i.RegionFactoryInitiator     ] : Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2023-07-23 12:12:37.935 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : HikariPool-1 - configuration:
+2023-07-23 12:12:37.939 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : allowPoolSuspension.............false
+2023-07-23 12:12:37.939 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : autoCommit......................true
+2023-07-23 12:12:37.939 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : catalog.........................none
+2023-07-23 12:12:37.939 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : connectionInitSql...............none
+2023-07-23 12:12:37.939 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : connectionTestQuery.............none
+2023-07-23 12:12:37.939 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : connectionTimeout...............30000
+2023-07-23 12:12:37.939 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : dataSource......................none
+2023-07-23 12:12:37.940 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : dataSourceClassName.............none
+2023-07-23 12:12:37.940 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : dataSourceJNDI..................none
+2023-07-23 12:12:37.940 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : dataSourceProperties............{password=<masked>}
+2023-07-23 12:12:37.940 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : driverClassName................."org.postgresql.Driver"
+2023-07-23 12:12:37.941 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : exceptionOverrideClassName......none
+2023-07-23 12:12:37.941 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : healthCheckProperties...........{}
+2023-07-23 12:12:37.941 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : healthCheckRegistry.............none
+2023-07-23 12:12:37.941 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : idleTimeout.....................600000
+2023-07-23 12:12:37.941 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : initializationFailTimeout.......1
+2023-07-23 12:12:37.941 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : isolateInternalQueries..........false
+2023-07-23 12:12:37.941 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : jdbcUrl.........................jdbc:postgresql://localhost:5432/technikon
+2023-07-23 12:12:37.941 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : keepaliveTime...................0
+2023-07-23 12:12:37.941 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : leakDetectionThreshold..........0
+2023-07-23 12:12:37.941 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : maxLifetime.....................1800000
+2023-07-23 12:12:37.941 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : maximumPoolSize.................10
+2023-07-23 12:12:37.941 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : metricRegistry..................none
+2023-07-23 12:12:37.942 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : metricsTrackerFactory...........none
+2023-07-23 12:12:37.942 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : minimumIdle.....................10
+2023-07-23 12:12:37.942 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : password........................<masked>
+2023-07-23 12:12:37.942 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : poolName........................"HikariPool-1"
+2023-07-23 12:12:37.942 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : readOnly........................false
+2023-07-23 12:12:37.942 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : registerMbeans..................false
+2023-07-23 12:12:37.942 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : scheduledExecutor...............none
+2023-07-23 12:12:37.942 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : schema..........................none
+2023-07-23 12:12:37.942 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : threadFactory...................internal
+2023-07-23 12:12:37.942 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : transactionIsolation............default
+2023-07-23 12:12:37.942 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : username........................"postgres"
+2023-07-23 12:12:37.942 DEBUG alex-PC - [           main] [c.z.h.HikariConfig                 ] : validationTimeout...............5000
+2023-07-23 12:12:37.943  INFO alex-PC - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Starting...
+2023-07-23 12:12:38.216  INFO alex-PC - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6728370a
+2023-07-23 12:12:38.217  INFO alex-PC - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Start completed.
+2023-07-23 12:12:38.321 DEBUG alex-PC - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2023-07-23 12:12:38.366 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3ee58f8e
+2023-07-23 12:12:38.435 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7be70636
+2023-07-23 12:12:38.497 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@585d82f2
+2023-07-23 12:12:38.556 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1bc8f979
+2023-07-23 12:12:38.619 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@a627687
+2023-07-23 12:12:38.685 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@77276a27
+2023-07-23 12:12:38.843 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@43592c23
+2023-07-23 12:12:38.908 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1f860600
+2023-07-23 12:12:38.975 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6c99d39
+2023-07-23 12:12:38.993 DEBUG alex-PC - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2023-07-23 12:12:39.828  INFO alex-PC - [           main] [o.s.d.j.r.q.QueryEnhancerFactory   ] : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-07-23 12:12:40.705  INFO alex-PC - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Shutdown initiated...
+2023-07-23 12:12:40.707 DEBUG alex-PC - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+2023-07-23 12:12:40.707 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@6728370a: (connection evicted)
+2023-07-23 12:12:40.708 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@3ee58f8e: (connection evicted)
+2023-07-23 12:12:40.708 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@7be70636: (connection evicted)
+2023-07-23 12:12:40.709 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@585d82f2: (connection evicted)
+2023-07-23 12:12:40.709 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@1bc8f979: (connection evicted)
+2023-07-23 12:12:40.709 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@a627687: (connection evicted)
+2023-07-23 12:12:40.709 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@77276a27: (connection evicted)
+2023-07-23 12:12:40.711 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@43592c23: (connection evicted)
+2023-07-23 12:12:40.711 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@1f860600: (connection evicted)
+2023-07-23 12:12:40.711 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@6c99d39: (connection evicted)
+2023-07-23 12:12:40.714 DEBUG alex-PC - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2023-07-23 12:12:40.716  INFO alex-PC - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Shutdown completed.

@@ -11,28 +11,31 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/users")
 @RequiredArgsConstructor
-public class UserController{
+public class UserController {
 
     private final UserService userService;
     private final UserMapper userMapper;
 
     @PostMapping("/create")
-    public ResponseEntity<UserDto> addUser(@RequestBody UserDto userDto){
-        UserDto newUser = userService.createUser(userDto);
-        return new ResponseEntity<>(newUser, HttpStatus.CREATED);
+    public ResponseEntity<UserDto> addUser(@RequestBody UserDto userDto) {
+
+        return new ResponseEntity<>(userMapper.userToUserDto(
+                userService.createUser(userMapper.userDtoToUser(userDto))), HttpStatus.CREATED);
     }
 
     @GetMapping("/search/{id}")
-    public ResponseEntity<UserDto> searchUser(@PathVariable("id") Long id){
-        return new ResponseEntity<>(userService.getUserById(id), HttpStatus.ACCEPTED);
+    public ResponseEntity<UserDto> searchUser(@PathVariable("id") Long id) {
+        return new ResponseEntity<>(userMapper.userToUserDto(userService.getUserById(id)), HttpStatus.ACCEPTED);
     }
+
     @GetMapping("/search/tin/{tinNumber}")
-    public ResponseEntity<UserDto> searchUserByTin(@PathVariable("tinNumber") Long tinNumber){
-        return new ResponseEntity<>(userService.getUserByTinNumber(tinNumber), HttpStatus.ACCEPTED);
+    public ResponseEntity<UserDto> searchUserByTin(@PathVariable("tinNumber") Long tinNumber) {
+        return new ResponseEntity<>(userMapper.userToUserDto(userService.getUserByTinNumber(tinNumber)), HttpStatus.ACCEPTED);
     }
+
     @GetMapping("/search/email/{email}")
-    public ResponseEntity<UserDto> searchUserByEmail(@PathVariable("email") String email){
-        return new ResponseEntity<>(userService.getUserByEmail(email), HttpStatus.ACCEPTED);
+    public ResponseEntity<UserDto> searchUserByEmail(@PathVariable("email") String email) {
+        return new ResponseEntity<>(userMapper.userToUserDto(userService.getUserByEmail(email)), HttpStatus.ACCEPTED);
     }
 
     @DeleteMapping("delete/{id}")
@@ -41,9 +44,8 @@ public class UserController{
         return ResponseEntity.ok("User deleted successfully");
     }
 
-    @PutMapping("/update/{id}")
-    public ResponseEntity<UserDto> updateUser(@PathVariable("id") Long id, @RequestBody UserDto userDto) {
-        UserDto updatedUser = userService.updateUser(userDto, id);
-        return ResponseEntity.ok(updatedUser);
+    @PutMapping("/update")
+    public void updateUser(@RequestBody UserDto userDto) {
+        userService.updateUser(userMapper.userDtoToUser(userDto));
     }
 }

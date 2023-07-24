@@ -1,22 +1,31 @@
 package com.scytalys.technikon.domain;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.Pattern;
+import jakarta.validation.constraints.Size;
 import lombok.*;
+
+import java.util.List;
 
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
-@ToString
+@Builder
 @Table(name = "property")
 @SequenceGenerator(name = "idGenerator", sequenceName = "property_seq", initialValue = 1, allocationSize = 1)
 public class Property extends BaseModel {
 
+
+    @NotEmpty
+    @Pattern(regexp = "^E9.*$", message = "Invalid Property Identification Number")
     @Column(name = "pin")
     private Long pinNumber;
 
-    @Column(name = "address")
+    @Column(length = 50)
+    @Size(max = 50, message = "Address cannot be bigger than 50 characters.")
     private String address;
 
     @Column(name = "year_of_construction")
@@ -36,9 +45,12 @@ public class Property extends BaseModel {
     private Long propertyCoordinatesLat;
 
     @Column(name = "active_state")
-    private boolean activeState = true;
+    private boolean activeState;
 
-    @ManyToOne
-    @JoinColumn(name = "owner")
+    @OneToMany(mappedBy = "property", cascade = CascadeType.ALL)
+    private List<Repair> repairs;
+
+    @ManyToOne()
+    @JoinColumn(name = "user_id")
     private User user;
 }
