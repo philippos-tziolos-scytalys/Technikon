@@ -1,9 +1,11 @@
 package com.scytalys.technikon.websocket.config;
 
+import org.springframework.context.annotation.Configuration;
 import org.springframework.messaging.simp.config.MessageBrokerRegistry;
 import org.springframework.web.socket.config.annotation.StompEndpointRegistry;
 import org.springframework.web.socket.config.annotation.WebSocketMessageBrokerConfigurer;
 
+@Configuration
 public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
 
 
@@ -17,9 +19,9 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
         // with sockjs
-        registry.addEndpoint("/ws-message").setAllowedOriginPatterns("*").withSockJS();
+        registry.addEndpoint("/ws-message").setAllowedOriginPatterns("http://localhost:3000").withSockJS();
         // without sockjs
-        registry.addEndpoint("/ws-message").setAllowedOriginPatterns("*");
+        registry.addEndpoint("/ws-message").setAllowedOriginPatterns("http://localhost:3000");
     }
 
 
