@@ -2205,3 +2205,9 @@ org.postgresql.util.PSQLException: FATAL: database "technikon" does not exist
 2023-07-24 11:23:52.770 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
 2023-07-24 11:24:22.771 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
 2023-07-24 11:24:22.771 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2023-07-24 11:24:52.771 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-07-24 11:24:52.771 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2023-07-24 11:24:52.771 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-07-24 11:24:52.771 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2023-07-24 11:25:52.774 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-07-24 11:25:52.774 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
