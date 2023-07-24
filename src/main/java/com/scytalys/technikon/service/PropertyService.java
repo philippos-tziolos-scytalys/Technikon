@@ -5,7 +5,7 @@ import com.scytalys.technikon.domain.Property;
 import java.util.List;
 
 public interface PropertyService {
-    Property createProperty(Property property);
+    Property saveProperty(Property property);
 
     List<Property> fetchPropertyList();
 
@@ -21,7 +21,7 @@ public interface PropertyService {
 
     List<Property> searchByConstructionYearRange(int yearFrom, int yearTo);
 
-    void deactivatePropertyById(Long propertyId);
+    void deactivatePropertyById(Property property, Long propertyId);
 
     void deletePropertyById(Long propertyId);
 

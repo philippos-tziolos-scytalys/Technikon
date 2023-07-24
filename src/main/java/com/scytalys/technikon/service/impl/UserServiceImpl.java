@@ -1,6 +1,7 @@
 package com.scytalys.technikon.service.impl;
 
 import com.scytalys.technikon.domain.User;
+import com.scytalys.technikon.encryption.PasswordEncryption;
 import com.scytalys.technikon.exception.ExistingUserException;
 import com.scytalys.technikon.exception.UserNotFoundException;
 import com.scytalys.technikon.repository.UserRepository;
@@ -43,6 +44,7 @@ public class UserServiceImpl implements UserService {
         existingUser.setAddress(user.getAddress());
         existingUser.setPhoneNumber(user.getPhoneNumber());
         existingUser.setEmail(user.getEmail());
+        existingUser.setPassword(PasswordEncryption.getHashCode(user.getPassword()));
 
         userRepository.save(existingUser);
     }
