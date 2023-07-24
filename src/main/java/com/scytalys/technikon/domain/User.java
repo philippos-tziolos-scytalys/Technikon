@@ -35,7 +35,7 @@ public class User extends BaseModel {
     private String password;
 
 
-    @OneToMany(cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
     private List<Property> properties;
 
     @ManyToMany
