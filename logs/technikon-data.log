@@ -1066,3 +1066,1142 @@
 2023-07-23 12:12:40.711 DEBUG alex-PC - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@6c99d39: (connection evicted)
 2023-07-23 12:12:40.714 DEBUG alex-PC - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
 2023-07-23 12:12:40.716  INFO alex-PC - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Shutdown completed.
+2023-07-24 11:16:59.506  INFO SCY-LP-032 - [           main] [r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-24 11:16:59.583  INFO SCY-LP-032 - [           main] [r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 70 ms. Found 5 JPA repository interfaces.
+2023-07-24 11:17:00.173 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : Driver class org.postgresql.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@1d44bcfa
+2023-07-24 11:17:00.351 DEBUG SCY-LP-032 - [           main] [o.h.c.i.RegionFactoryInitiator     ] : Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2023-07-24 11:17:00.352 DEBUG SCY-LP-032 - [           main] [o.h.c.i.RegionFactoryInitiator     ] : Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2023-07-24 11:17:00.597 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : HikariPool-1 - configuration:
+2023-07-24 11:17:00.599 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : allowPoolSuspension.............false
+2023-07-24 11:17:00.599 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : autoCommit......................true
+2023-07-24 11:17:00.599 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : catalog.........................none
+2023-07-24 11:17:00.599 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : connectionInitSql...............none
+2023-07-24 11:17:00.599 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : connectionTestQuery.............none
+2023-07-24 11:17:00.599 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : connectionTimeout...............30000
+2023-07-24 11:17:00.599 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : dataSource......................none
+2023-07-24 11:17:00.599 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : dataSourceClassName.............none
+2023-07-24 11:17:00.599 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : dataSourceJNDI..................none
+2023-07-24 11:17:00.601 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : dataSourceProperties............{password=<masked>}
+2023-07-24 11:17:00.601 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : driverClassName................."org.postgresql.Driver"
+2023-07-24 11:17:00.601 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : exceptionOverrideClassName......none
+2023-07-24 11:17:00.601 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : healthCheckProperties...........{}
+2023-07-24 11:17:00.601 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : healthCheckRegistry.............none
+2023-07-24 11:17:00.601 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : idleTimeout.....................600000
+2023-07-24 11:17:00.601 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : initializationFailTimeout.......1
+2023-07-24 11:17:00.601 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : isolateInternalQueries..........false
+2023-07-24 11:17:00.602 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : jdbcUrl.........................jdbc:postgresql://localhost:5432/technikon
+2023-07-24 11:17:00.602 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : keepaliveTime...................0
+2023-07-24 11:17:00.602 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : leakDetectionThreshold..........0
+2023-07-24 11:17:00.602 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : maxLifetime.....................1800000
+2023-07-24 11:17:00.602 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : maximumPoolSize.................10
+2023-07-24 11:17:00.602 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : metricRegistry..................none
+2023-07-24 11:17:00.602 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : metricsTrackerFactory...........none
+2023-07-24 11:17:00.602 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : minimumIdle.....................10
+2023-07-24 11:17:00.602 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : password........................<masked>
+2023-07-24 11:17:00.602 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : poolName........................"HikariPool-1"
+2023-07-24 11:17:00.602 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : readOnly........................false
+2023-07-24 11:17:00.602 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : registerMbeans..................false
+2023-07-24 11:17:00.602 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : scheduledExecutor...............none
+2023-07-24 11:17:00.602 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : schema..........................none
+2023-07-24 11:17:00.602 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : threadFactory...................internal
+2023-07-24 11:17:00.602 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : transactionIsolation............default
+2023-07-24 11:17:00.602 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : username........................"postgres"
+2023-07-24 11:17:00.602 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : validationTimeout...............5000
+2023-07-24 11:17:00.603  INFO SCY-LP-032 - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Starting...
+2023-07-24 11:17:00.638 DEBUG SCY-LP-032 - [           main] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Failed to create/setup connection: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+2023-07-24 11:17:00.638 DEBUG SCY-LP-032 - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Cannot acquire connection from data source
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:342)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263)
+	at org.postgresql.Driver.makeConnection(Driver.java:443)
+	at org.postgresql.Driver.connect(Driver.java:297)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:316)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:152)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:34)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:119)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:264)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:239)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:216)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:230)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:198)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:166)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1380)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1451)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:931)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.scytalys.technikon.TechnikonApplication.main(TechnikonApplication.java:10)
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:243)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:98)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:132)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258)
+	... 48 more
+2023-07-24 11:17:01.639 ERROR SCY-LP-032 - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Exception during pool initialization.
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:342)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263)
+	at org.postgresql.Driver.makeConnection(Driver.java:443)
+	at org.postgresql.Driver.connect(Driver.java:297)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:316)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:152)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:34)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:119)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:264)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:239)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:216)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:230)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:198)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:166)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1380)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1451)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:931)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.scytalys.technikon.TechnikonApplication.main(TechnikonApplication.java:10)
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:243)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:98)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:132)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258)
+	... 48 more
+2023-07-24 11:17:01.639  WARN SCY-LP-032 - [           main] [.h.e.j.e.i.JdbcEnvironmentInitiator] : HHH000342: Could not obtain connection to query metadata
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:342)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263)
+	at org.postgresql.Driver.makeConnection(Driver.java:443)
+	at org.postgresql.Driver.connect(Driver.java:297)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:316)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:152)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:34)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:119)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:264)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:239)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:216)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:230)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:198)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:166)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1380)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1451)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:931)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.scytalys.technikon.TechnikonApplication.main(TechnikonApplication.java:10)
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:243)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:98)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:132)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258)
+	... 48 more
+2023-07-24 11:17:38.487  INFO SCY-LP-032 - [           main] [r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-24 11:17:38.569  INFO SCY-LP-032 - [           main] [r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 76 ms. Found 5 JPA repository interfaces.
+2023-07-24 11:17:39.205 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : Driver class org.postgresql.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@1d44bcfa
+2023-07-24 11:17:39.372 DEBUG SCY-LP-032 - [           main] [o.h.c.i.RegionFactoryInitiator     ] : Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2023-07-24 11:17:39.372 DEBUG SCY-LP-032 - [           main] [o.h.c.i.RegionFactoryInitiator     ] : Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2023-07-24 11:17:39.612 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : HikariPool-1 - configuration:
+2023-07-24 11:17:39.613 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : allowPoolSuspension.............false
+2023-07-24 11:17:39.613 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : autoCommit......................true
+2023-07-24 11:17:39.613 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : catalog.........................none
+2023-07-24 11:17:39.613 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : connectionInitSql...............none
+2023-07-24 11:17:39.613 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : connectionTestQuery.............none
+2023-07-24 11:17:39.613 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : connectionTimeout...............30000
+2023-07-24 11:17:39.613 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : dataSource......................none
+2023-07-24 11:17:39.613 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : dataSourceClassName.............none
+2023-07-24 11:17:39.614 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : dataSourceJNDI..................none
+2023-07-24 11:17:39.614 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : dataSourceProperties............{password=<masked>}
+2023-07-24 11:17:39.614 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : driverClassName................."org.postgresql.Driver"
+2023-07-24 11:17:39.614 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : exceptionOverrideClassName......none
+2023-07-24 11:17:39.615 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : healthCheckProperties...........{}
+2023-07-24 11:17:39.615 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : healthCheckRegistry.............none
+2023-07-24 11:17:39.615 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : idleTimeout.....................600000
+2023-07-24 11:17:39.615 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : initializationFailTimeout.......1
+2023-07-24 11:17:39.615 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : isolateInternalQueries..........false
+2023-07-24 11:17:39.615 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : jdbcUrl.........................jdbc:postgresql://192.168.56.10:5432/technikon
+2023-07-24 11:17:39.615 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : keepaliveTime...................0
+2023-07-24 11:17:39.615 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : leakDetectionThreshold..........0
+2023-07-24 11:17:39.615 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : maxLifetime.....................1800000
+2023-07-24 11:17:39.615 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : maximumPoolSize.................10
+2023-07-24 11:17:39.615 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : metricRegistry..................none
+2023-07-24 11:17:39.615 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : metricsTrackerFactory...........none
+2023-07-24 11:17:39.615 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : minimumIdle.....................10
+2023-07-24 11:17:39.615 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : password........................<masked>
+2023-07-24 11:17:39.615 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : poolName........................"HikariPool-1"
+2023-07-24 11:17:39.615 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : readOnly........................false
+2023-07-24 11:17:39.616 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : registerMbeans..................false
+2023-07-24 11:17:39.616 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : scheduledExecutor...............none
+2023-07-24 11:17:39.616 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : schema..........................none
+2023-07-24 11:17:39.616 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : threadFactory...................internal
+2023-07-24 11:17:39.616 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : transactionIsolation............default
+2023-07-24 11:17:39.616 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : username........................"postgres"
+2023-07-24 11:17:39.616 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : validationTimeout...............5000
+2023-07-24 11:17:39.616  INFO SCY-LP-032 - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Starting...
+2023-07-24 11:17:39.659 DEBUG SCY-LP-032 - [           main] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Failed to create/setup connection: FATAL: password authentication failed for user "postgres"
+2023-07-24 11:17:39.659 DEBUG SCY-LP-032 - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Cannot acquire connection from data source
+org.postgresql.util.PSQLException: FATAL: password authentication failed for user "postgres"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:693)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:203)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263)
+	at org.postgresql.Driver.makeConnection(Driver.java:443)
+	at org.postgresql.Driver.connect(Driver.java:297)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:316)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:152)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:34)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:119)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:264)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:239)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:216)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:230)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:198)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:166)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1380)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1451)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:931)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.scytalys.technikon.TechnikonApplication.main(TechnikonApplication.java:10)
+2023-07-24 11:17:40.661 ERROR SCY-LP-032 - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Exception during pool initialization.
+org.postgresql.util.PSQLException: FATAL: password authentication failed for user "postgres"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:693)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:203)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263)
+	at org.postgresql.Driver.makeConnection(Driver.java:443)
+	at org.postgresql.Driver.connect(Driver.java:297)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:316)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:152)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:34)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:119)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:264)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:239)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:216)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:230)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:198)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:166)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1380)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1451)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:931)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.scytalys.technikon.TechnikonApplication.main(TechnikonApplication.java:10)
+2023-07-24 11:17:40.661  WARN SCY-LP-032 - [           main] [.h.e.j.e.i.JdbcEnvironmentInitiator] : HHH000342: Could not obtain connection to query metadata
+org.postgresql.util.PSQLException: FATAL: password authentication failed for user "postgres"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:693)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:203)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263)
+	at org.postgresql.Driver.makeConnection(Driver.java:443)
+	at org.postgresql.Driver.connect(Driver.java:297)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:316)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:152)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:34)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:119)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:264)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:239)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:216)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:230)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:198)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:166)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1380)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1451)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:931)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.scytalys.technikon.TechnikonApplication.main(TechnikonApplication.java:10)
+2023-07-24 11:17:59.530  INFO SCY-LP-032 - [           main] [r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-24 11:17:59.650  INFO SCY-LP-032 - [           main] [r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 109 ms. Found 5 JPA repository interfaces.
+2023-07-24 11:18:00.374 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : Driver class org.postgresql.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@1d44bcfa
+2023-07-24 11:18:00.581 DEBUG SCY-LP-032 - [           main] [o.h.c.i.RegionFactoryInitiator     ] : Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2023-07-24 11:18:00.581 DEBUG SCY-LP-032 - [           main] [o.h.c.i.RegionFactoryInitiator     ] : Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2023-07-24 11:18:00.916 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : HikariPool-1 - configuration:
+2023-07-24 11:18:00.918 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : allowPoolSuspension.............false
+2023-07-24 11:18:00.918 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : autoCommit......................true
+2023-07-24 11:18:00.918 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : catalog.........................none
+2023-07-24 11:18:00.918 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : connectionInitSql...............none
+2023-07-24 11:18:00.918 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : connectionTestQuery.............none
+2023-07-24 11:18:00.918 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : connectionTimeout...............30000
+2023-07-24 11:18:00.918 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : dataSource......................none
+2023-07-24 11:18:00.919 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : dataSourceClassName.............none
+2023-07-24 11:18:00.919 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : dataSourceJNDI..................none
+2023-07-24 11:18:00.919 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : dataSourceProperties............{password=<masked>}
+2023-07-24 11:18:00.920 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : driverClassName................."org.postgresql.Driver"
+2023-07-24 11:18:00.920 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : exceptionOverrideClassName......none
+2023-07-24 11:18:00.920 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : healthCheckProperties...........{}
+2023-07-24 11:18:00.920 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : healthCheckRegistry.............none
+2023-07-24 11:18:00.920 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : idleTimeout.....................600000
+2023-07-24 11:18:00.920 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : initializationFailTimeout.......1
+2023-07-24 11:18:00.920 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : isolateInternalQueries..........false
+2023-07-24 11:18:00.920 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : jdbcUrl.........................jdbc:postgresql://192.168.56.10:5432/technikon
+2023-07-24 11:18:00.920 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : keepaliveTime...................0
+2023-07-24 11:18:00.920 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : leakDetectionThreshold..........0
+2023-07-24 11:18:00.920 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : maxLifetime.....................1800000
+2023-07-24 11:18:00.920 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : maximumPoolSize.................10
+2023-07-24 11:18:00.920 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : metricRegistry..................none
+2023-07-24 11:18:00.920 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : metricsTrackerFactory...........none
+2023-07-24 11:18:00.921 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : minimumIdle.....................10
+2023-07-24 11:18:00.921 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : password........................<masked>
+2023-07-24 11:18:00.921 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : poolName........................"HikariPool-1"
+2023-07-24 11:18:00.921 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : readOnly........................false
+2023-07-24 11:18:00.921 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : registerMbeans..................false
+2023-07-24 11:18:00.921 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : scheduledExecutor...............none
+2023-07-24 11:18:00.921 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : schema..........................none
+2023-07-24 11:18:00.921 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : threadFactory...................internal
+2023-07-24 11:18:00.921 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : transactionIsolation............default
+2023-07-24 11:18:00.921 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : username........................"scytalys"
+2023-07-24 11:18:00.922 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : validationTimeout...............5000
+2023-07-24 11:18:00.922  INFO SCY-LP-032 - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Starting...
+2023-07-24 11:18:01.008 DEBUG SCY-LP-032 - [           main] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Failed to create/setup connection: FATAL: database "technikon" does not exist
+2023-07-24 11:18:01.008 DEBUG SCY-LP-032 - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Cannot acquire connection from data source
+org.postgresql.util.PSQLException: FATAL: database "technikon" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.readStartupMessages(QueryExecutorImpl.java:2825)
+	at org.postgresql.core.v3.QueryExecutorImpl.<init>(QueryExecutorImpl.java:175)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:313)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263)
+	at org.postgresql.Driver.makeConnection(Driver.java:443)
+	at org.postgresql.Driver.connect(Driver.java:297)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:316)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:152)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:34)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:119)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:264)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:239)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:216)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:230)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:198)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:166)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1380)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1451)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:931)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.scytalys.technikon.TechnikonApplication.main(TechnikonApplication.java:10)
+2023-07-24 11:18:02.011 ERROR SCY-LP-032 - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Exception during pool initialization.
+org.postgresql.util.PSQLException: FATAL: database "technikon" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.readStartupMessages(QueryExecutorImpl.java:2825)
+	at org.postgresql.core.v3.QueryExecutorImpl.<init>(QueryExecutorImpl.java:175)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:313)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263)
+	at org.postgresql.Driver.makeConnection(Driver.java:443)
+	at org.postgresql.Driver.connect(Driver.java:297)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:316)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:152)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:34)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:119)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:264)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:239)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:216)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:230)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:198)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:166)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1380)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1451)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:931)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.scytalys.technikon.TechnikonApplication.main(TechnikonApplication.java:10)
+2023-07-24 11:18:02.011  WARN SCY-LP-032 - [           main] [.h.e.j.e.i.JdbcEnvironmentInitiator] : HHH000342: Could not obtain connection to query metadata
+org.postgresql.util.PSQLException: FATAL: database "technikon" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.readStartupMessages(QueryExecutorImpl.java:2825)
+	at org.postgresql.core.v3.QueryExecutorImpl.<init>(QueryExecutorImpl.java:175)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:313)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263)
+	at org.postgresql.Driver.makeConnection(Driver.java:443)
+	at org.postgresql.Driver.connect(Driver.java:297)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:316)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:152)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:34)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:119)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:264)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:239)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:216)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:230)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:198)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:166)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1380)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1451)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:931)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.scytalys.technikon.TechnikonApplication.main(TechnikonApplication.java:10)
+2023-07-24 11:18:21.300  INFO SCY-LP-032 - [           main] [r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-24 11:18:21.377  INFO SCY-LP-032 - [           main] [r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 70 ms. Found 5 JPA repository interfaces.
+2023-07-24 11:18:21.934 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : Driver class org.postgresql.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@1d44bcfa
+2023-07-24 11:18:22.109 DEBUG SCY-LP-032 - [           main] [o.h.c.i.RegionFactoryInitiator     ] : Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2023-07-24 11:18:22.110 DEBUG SCY-LP-032 - [           main] [o.h.c.i.RegionFactoryInitiator     ] : Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2023-07-24 11:18:22.350 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : HikariPool-1 - configuration:
+2023-07-24 11:18:22.352 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : allowPoolSuspension.............false
+2023-07-24 11:18:22.352 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : autoCommit......................true
+2023-07-24 11:18:22.353 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : catalog.........................none
+2023-07-24 11:18:22.353 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : connectionInitSql...............none
+2023-07-24 11:18:22.353 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : connectionTestQuery.............none
+2023-07-24 11:18:22.353 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : connectionTimeout...............30000
+2023-07-24 11:18:22.353 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : dataSource......................none
+2023-07-24 11:18:22.353 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : dataSourceClassName.............none
+2023-07-24 11:18:22.353 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : dataSourceJNDI..................none
+2023-07-24 11:18:22.353 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : dataSourceProperties............{password=<masked>}
+2023-07-24 11:18:22.353 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : driverClassName................."org.postgresql.Driver"
+2023-07-24 11:18:22.353 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : exceptionOverrideClassName......none
+2023-07-24 11:18:22.353 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : healthCheckProperties...........{}
+2023-07-24 11:18:22.353 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : healthCheckRegistry.............none
+2023-07-24 11:18:22.354 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : idleTimeout.....................600000
+2023-07-24 11:18:22.354 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : initializationFailTimeout.......1
+2023-07-24 11:18:22.354 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : isolateInternalQueries..........false
+2023-07-24 11:18:22.354 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : jdbcUrl.........................jdbc:postgresql://192.168.56.10:5432/bootcamp
+2023-07-24 11:18:22.354 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : keepaliveTime...................0
+2023-07-24 11:18:22.354 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : leakDetectionThreshold..........0
+2023-07-24 11:18:22.354 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : maxLifetime.....................1800000
+2023-07-24 11:18:22.354 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : maximumPoolSize.................10
+2023-07-24 11:18:22.354 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : metricRegistry..................none
+2023-07-24 11:18:22.354 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : metricsTrackerFactory...........none
+2023-07-24 11:18:22.354 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : minimumIdle.....................10
+2023-07-24 11:18:22.354 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : password........................<masked>
+2023-07-24 11:18:22.354 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : poolName........................"HikariPool-1"
+2023-07-24 11:18:22.354 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : readOnly........................false
+2023-07-24 11:18:22.354 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : registerMbeans..................false
+2023-07-24 11:18:22.354 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : scheduledExecutor...............none
+2023-07-24 11:18:22.354 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : schema..........................none
+2023-07-24 11:18:22.355 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : threadFactory...................internal
+2023-07-24 11:18:22.355 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : transactionIsolation............default
+2023-07-24 11:18:22.355 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : username........................"scytalys"
+2023-07-24 11:18:22.355 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : validationTimeout...............5000
+2023-07-24 11:18:22.355  INFO SCY-LP-032 - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Starting...
+2023-07-24 11:18:22.460  INFO SCY-LP-032 - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@45c90a05
+2023-07-24 11:18:22.462  INFO SCY-LP-032 - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Start completed.
+2023-07-24 11:18:22.563 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2023-07-24 11:18:22.575 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@56b7a0b5
+2023-07-24 11:18:22.597 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@58704413
+2023-07-24 11:18:22.618 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5c4fcbc5
+2023-07-24 11:18:22.638 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@194d4e28
+2023-07-24 11:18:22.660 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7294f7bc
+2023-07-24 11:18:22.682 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@281e7521
+2023-07-24 11:18:22.703 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@a2d9204
+2023-07-24 11:18:22.723 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7962b167
+2023-07-24 11:18:22.743 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2c9e90e0
+2023-07-24 11:18:22.757 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2023-07-24 11:18:23.482  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:18:23.482  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "report" does not exist, skipping
+2023-07-24 11:18:23.493  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:18:23.493  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : drop cascades to 2 other objects
+2023-07-24 11:18:23.497  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:18:23.497  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : drop cascades to constraint fk7q80fy3d9rp67vcyrp7hn9l6y on table property_repairs
+2023-07-24 11:18:23.498  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:18:23.498  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "report" does not exist, skipping
+2023-07-24 11:18:23.504  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:18:23.504  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : drop cascades to constraint fkja0lj3yf01p8eup6mxxo309do on table user_properties
+2023-07-24 11:18:23.513  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:18:23.513  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : sequence "report_seq" does not exist, skipping
+2023-07-24 11:18:23.992  INFO SCY-LP-032 - [           main] [o.s.d.j.r.q.QueryEnhancerFactory   ] : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-07-24 11:18:24.799  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:18:24.799  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "report" does not exist, skipping
+2023-07-24 11:18:24.812  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:18:24.812  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "report" does not exist, skipping
+2023-07-24 11:18:24.839  INFO SCY-LP-032 - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Shutdown initiated...
+2023-07-24 11:18:24.839 DEBUG SCY-LP-032 - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+2023-07-24 11:18:24.840 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@45c90a05: (connection evicted)
+2023-07-24 11:18:24.840 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@56b7a0b5: (connection evicted)
+2023-07-24 11:18:24.841 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@58704413: (connection evicted)
+2023-07-24 11:18:24.841 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@5c4fcbc5: (connection evicted)
+2023-07-24 11:18:24.841 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@194d4e28: (connection evicted)
+2023-07-24 11:18:24.841 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@7294f7bc: (connection evicted)
+2023-07-24 11:18:24.841 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@281e7521: (connection evicted)
+2023-07-24 11:18:24.842 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@a2d9204: (connection evicted)
+2023-07-24 11:18:24.842 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@7962b167: (connection evicted)
+2023-07-24 11:18:24.842 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@2c9e90e0: (connection evicted)
+2023-07-24 11:18:24.842 DEBUG SCY-LP-032 - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2023-07-24 11:18:24.842  INFO SCY-LP-032 - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Shutdown completed.
+2023-07-24 11:19:45.573  INFO SCY-LP-032 - [           main] [r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-24 11:19:45.652  INFO SCY-LP-032 - [           main] [r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 65 ms. Found 5 JPA repository interfaces.
+2023-07-24 11:19:46.253 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : Driver class org.postgresql.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@1d44bcfa
+2023-07-24 11:19:46.428 DEBUG SCY-LP-032 - [           main] [o.h.c.i.RegionFactoryInitiator     ] : Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2023-07-24 11:19:46.429 DEBUG SCY-LP-032 - [           main] [o.h.c.i.RegionFactoryInitiator     ] : Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2023-07-24 11:19:46.664 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : HikariPool-1 - configuration:
+2023-07-24 11:19:46.666 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : allowPoolSuspension.............false
+2023-07-24 11:19:46.666 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : autoCommit......................true
+2023-07-24 11:19:46.666 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : catalog.........................none
+2023-07-24 11:19:46.666 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : connectionInitSql...............none
+2023-07-24 11:19:46.666 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : connectionTestQuery.............none
+2023-07-24 11:19:46.666 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : connectionTimeout...............30000
+2023-07-24 11:19:46.666 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : dataSource......................none
+2023-07-24 11:19:46.666 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : dataSourceClassName.............none
+2023-07-24 11:19:46.666 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : dataSourceJNDI..................none
+2023-07-24 11:19:46.667 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : dataSourceProperties............{password=<masked>}
+2023-07-24 11:19:46.667 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : driverClassName................."org.postgresql.Driver"
+2023-07-24 11:19:46.667 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : exceptionOverrideClassName......none
+2023-07-24 11:19:46.667 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : healthCheckProperties...........{}
+2023-07-24 11:19:46.667 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : healthCheckRegistry.............none
+2023-07-24 11:19:46.668 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : idleTimeout.....................600000
+2023-07-24 11:19:46.668 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : initializationFailTimeout.......1
+2023-07-24 11:19:46.668 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : isolateInternalQueries..........false
+2023-07-24 11:19:46.668 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : jdbcUrl.........................jdbc:postgresql://192.168.56.10:5432/bootcamp
+2023-07-24 11:19:46.668 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : keepaliveTime...................0
+2023-07-24 11:19:46.668 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : leakDetectionThreshold..........0
+2023-07-24 11:19:46.668 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : maxLifetime.....................1800000
+2023-07-24 11:19:46.668 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : maximumPoolSize.................10
+2023-07-24 11:19:46.668 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : metricRegistry..................none
+2023-07-24 11:19:46.668 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : metricsTrackerFactory...........none
+2023-07-24 11:19:46.668 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : minimumIdle.....................10
+2023-07-24 11:19:46.668 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : password........................<masked>
+2023-07-24 11:19:46.668 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : poolName........................"HikariPool-1"
+2023-07-24 11:19:46.668 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : readOnly........................false
+2023-07-24 11:19:46.668 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : registerMbeans..................false
+2023-07-24 11:19:46.668 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : scheduledExecutor...............none
+2023-07-24 11:19:46.668 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : schema..........................none
+2023-07-24 11:19:46.668 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : threadFactory...................internal
+2023-07-24 11:19:46.668 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : transactionIsolation............default
+2023-07-24 11:19:46.668 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : username........................"scytalys"
+2023-07-24 11:19:46.668 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : validationTimeout...............5000
+2023-07-24 11:19:46.668  INFO SCY-LP-032 - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Starting...
+2023-07-24 11:19:46.756  INFO SCY-LP-032 - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6248cfab
+2023-07-24 11:19:46.757  INFO SCY-LP-032 - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Start completed.
+2023-07-24 11:19:46.859 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2023-07-24 11:19:46.869 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3bdacaf6
+2023-07-24 11:19:46.890 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@351d33fd
+2023-07-24 11:19:46.914 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3122a186
+2023-07-24 11:19:46.937 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@742039c6
+2023-07-24 11:19:46.959 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1940d0ce
+2023-07-24 11:19:46.982 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@459e8ac0
+2023-07-24 11:19:47.002 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@61143d64
+2023-07-24 11:19:47.022 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@140fc689
+2023-07-24 11:19:47.045 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@bd6a266
+2023-07-24 11:19:47.057 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2023-07-24 11:19:47.778  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:19:47.778  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "property" does not exist, skipping
+2023-07-24 11:19:47.779  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:19:47.779  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "repairs" does not exist, skipping
+2023-07-24 11:19:47.780  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:19:47.780  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "report" does not exist, skipping
+2023-07-24 11:19:47.781  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:19:47.781  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "user_roles" does not exist, skipping
+2023-07-24 11:19:47.783  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:19:47.783  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "user_roles" does not exist, skipping
+2023-07-24 11:19:47.784  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:19:47.784  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "property" does not exist, skipping
+2023-07-24 11:19:47.785  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:19:47.785  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "repairs" does not exist, skipping
+2023-07-24 11:19:47.786  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:19:47.786  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "report" does not exist, skipping
+2023-07-24 11:19:47.787  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:19:47.787  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "roles" does not exist, skipping
+2023-07-24 11:19:47.788  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:19:47.788  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "user" does not exist, skipping
+2023-07-24 11:19:47.790  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:19:47.790  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "user_roles" does not exist, skipping
+2023-07-24 11:19:47.791  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:19:47.791  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : sequence "property_seq" does not exist, skipping
+2023-07-24 11:19:47.792  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:19:47.792  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : sequence "repair_seq" does not exist, skipping
+2023-07-24 11:19:47.793  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:19:47.793  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : sequence "report_seq" does not exist, skipping
+2023-07-24 11:19:47.794  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:19:47.794  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : sequence "roles_seq" does not exist, skipping
+2023-07-24 11:19:47.796  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:19:47.796  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : sequence "user_seq" does not exist, skipping
+2023-07-24 11:19:48.237  INFO SCY-LP-032 - [           main] [o.s.d.j.r.q.QueryEnhancerFactory   ] : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-07-24 11:19:48.963  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:19:48.963  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "report" does not exist, skipping
+2023-07-24 11:19:48.972  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:19:48.973  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "report" does not exist, skipping
+2023-07-24 11:19:48.992  INFO SCY-LP-032 - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Shutdown initiated...
+2023-07-24 11:19:48.992 DEBUG SCY-LP-032 - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+2023-07-24 11:19:48.993 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@6248cfab: (connection evicted)
+2023-07-24 11:19:48.994 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@3bdacaf6: (connection evicted)
+2023-07-24 11:19:48.994 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@351d33fd: (connection evicted)
+2023-07-24 11:19:48.994 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@3122a186: (connection evicted)
+2023-07-24 11:19:48.994 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@742039c6: (connection evicted)
+2023-07-24 11:19:48.995 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@1940d0ce: (connection evicted)
+2023-07-24 11:19:48.995 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@459e8ac0: (connection evicted)
+2023-07-24 11:19:48.995 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@61143d64: (connection evicted)
+2023-07-24 11:19:48.995 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@140fc689: (connection evicted)
+2023-07-24 11:19:48.995 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@bd6a266: (connection evicted)
+2023-07-24 11:19:48.995 DEBUG SCY-LP-032 - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2023-07-24 11:19:48.995  INFO SCY-LP-032 - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Shutdown completed.
+2023-07-24 11:20:30.110  INFO SCY-LP-032 - [           main] [r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-24 11:20:30.191  INFO SCY-LP-032 - [           main] [r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 74 ms. Found 5 JPA repository interfaces.
+2023-07-24 11:20:30.758 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : Driver class org.postgresql.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@1d44bcfa
+2023-07-24 11:20:30.929 DEBUG SCY-LP-032 - [           main] [o.h.c.i.RegionFactoryInitiator     ] : Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2023-07-24 11:20:30.930 DEBUG SCY-LP-032 - [           main] [o.h.c.i.RegionFactoryInitiator     ] : Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2023-07-24 11:20:31.162 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : HikariPool-1 - configuration:
+2023-07-24 11:20:31.165 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : allowPoolSuspension.............false
+2023-07-24 11:20:31.165 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : autoCommit......................true
+2023-07-24 11:20:31.165 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : catalog.........................none
+2023-07-24 11:20:31.165 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : connectionInitSql...............none
+2023-07-24 11:20:31.165 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : connectionTestQuery.............none
+2023-07-24 11:20:31.165 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : connectionTimeout...............30000
+2023-07-24 11:20:31.165 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : dataSource......................none
+2023-07-24 11:20:31.165 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : dataSourceClassName.............none
+2023-07-24 11:20:31.165 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : dataSourceJNDI..................none
+2023-07-24 11:20:31.167 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : dataSourceProperties............{password=<masked>}
+2023-07-24 11:20:31.167 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : driverClassName................."org.postgresql.Driver"
+2023-07-24 11:20:31.167 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : exceptionOverrideClassName......none
+2023-07-24 11:20:31.167 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : healthCheckProperties...........{}
+2023-07-24 11:20:31.167 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : healthCheckRegistry.............none
+2023-07-24 11:20:31.167 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : idleTimeout.....................600000
+2023-07-24 11:20:31.167 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : initializationFailTimeout.......1
+2023-07-24 11:20:31.167 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : isolateInternalQueries..........false
+2023-07-24 11:20:31.167 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : jdbcUrl.........................jdbc:postgresql://192.168.56.10:5432/bootcamp
+2023-07-24 11:20:31.167 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : keepaliveTime...................0
+2023-07-24 11:20:31.167 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : leakDetectionThreshold..........0
+2023-07-24 11:20:31.167 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : maxLifetime.....................1800000
+2023-07-24 11:20:31.167 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : maximumPoolSize.................10
+2023-07-24 11:20:31.168 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : metricRegistry..................none
+2023-07-24 11:20:31.168 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : metricsTrackerFactory...........none
+2023-07-24 11:20:31.168 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : minimumIdle.....................10
+2023-07-24 11:20:31.168 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : password........................<masked>
+2023-07-24 11:20:31.168 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : poolName........................"HikariPool-1"
+2023-07-24 11:20:31.168 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : readOnly........................false
+2023-07-24 11:20:31.168 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : registerMbeans..................false
+2023-07-24 11:20:31.168 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : scheduledExecutor...............none
+2023-07-24 11:20:31.168 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : schema..........................none
+2023-07-24 11:20:31.168 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : threadFactory...................internal
+2023-07-24 11:20:31.168 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : transactionIsolation............default
+2023-07-24 11:20:31.168 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : username........................"scytalys"
+2023-07-24 11:20:31.168 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : validationTimeout...............5000
+2023-07-24 11:20:31.168  INFO SCY-LP-032 - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Starting...
+2023-07-24 11:20:31.259  INFO SCY-LP-032 - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@278de2b2
+2023-07-24 11:20:31.260  INFO SCY-LP-032 - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Start completed.
+2023-07-24 11:20:31.361 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2023-07-24 11:20:31.369 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@31f45e02
+2023-07-24 11:20:31.393 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3f33a64c
+2023-07-24 11:20:31.415 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3b0c3572
+2023-07-24 11:20:31.439 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7e0eac77
+2023-07-24 11:20:31.464 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6d99f9fa
+2023-07-24 11:20:31.485 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4fba33c3
+2023-07-24 11:20:31.507 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@15c738e3
+2023-07-24 11:20:31.533 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1e215338
+2023-07-24 11:20:31.558 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3cd52f2f
+2023-07-24 11:20:31.570 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2023-07-24 11:20:32.299  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:20:32.299  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "property" does not exist, skipping
+2023-07-24 11:20:32.300  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:20:32.300  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "repairs" does not exist, skipping
+2023-07-24 11:20:32.301  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:20:32.301  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "report" does not exist, skipping
+2023-07-24 11:20:32.302  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:20:32.302  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "user_roles" does not exist, skipping
+2023-07-24 11:20:32.302  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:20:32.302  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "user_roles" does not exist, skipping
+2023-07-24 11:20:32.303  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:20:32.303  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "property" does not exist, skipping
+2023-07-24 11:20:32.304  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:20:32.304  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "repairs" does not exist, skipping
+2023-07-24 11:20:32.305  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:20:32.305  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "report" does not exist, skipping
+2023-07-24 11:20:32.306  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:20:32.306  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "roles" does not exist, skipping
+2023-07-24 11:20:32.307  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:20:32.307  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "user" does not exist, skipping
+2023-07-24 11:20:32.309  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:20:32.309  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "user_roles" does not exist, skipping
+2023-07-24 11:20:32.310  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:20:32.310  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : sequence "property_seq" does not exist, skipping
+2023-07-24 11:20:32.311  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:20:32.311  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : sequence "repair_seq" does not exist, skipping
+2023-07-24 11:20:32.312  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:20:32.312  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : sequence "report_seq" does not exist, skipping
+2023-07-24 11:20:32.317  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:20:32.317  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : sequence "roles_seq" does not exist, skipping
+2023-07-24 11:20:32.318  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:20:32.318  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : sequence "user_seq" does not exist, skipping
+2023-07-24 11:20:32.763  INFO SCY-LP-032 - [           main] [o.s.d.j.r.q.QueryEnhancerFactory   ] : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-07-24 11:21:01.363 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-07-24 11:21:01.363 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2023-07-24 11:21:12.560  WARN SCY-LP-032 - [ionShutdownHook] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:21:12.560  WARN SCY-LP-032 - [ionShutdownHook] [o.h.e.j.s.SqlExceptionHelper       ] : relation "report" does not exist, skipping
+2023-07-24 11:21:12.573  WARN SCY-LP-032 - [ionShutdownHook] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:21:12.573  WARN SCY-LP-032 - [ionShutdownHook] [o.h.e.j.s.SqlExceptionHelper       ] : table "report" does not exist, skipping
+2023-07-24 11:21:12.596  INFO SCY-LP-032 - [ionShutdownHook] [c.z.h.HikariDataSource             ] : HikariPool-1 - Shutdown initiated...
+2023-07-24 11:21:12.596 DEBUG SCY-LP-032 - [ionShutdownHook] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+2023-07-24 11:21:12.598 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@278de2b2: (connection evicted)
+2023-07-24 11:21:12.598 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@31f45e02: (connection evicted)
+2023-07-24 11:21:12.598 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@3f33a64c: (connection evicted)
+2023-07-24 11:21:12.598 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@3b0c3572: (connection evicted)
+2023-07-24 11:21:12.599 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@7e0eac77: (connection evicted)
+2023-07-24 11:21:12.599 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@6d99f9fa: (connection evicted)
+2023-07-24 11:21:12.599 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@4fba33c3: (connection evicted)
+2023-07-24 11:21:12.599 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@15c738e3: (connection evicted)
+2023-07-24 11:21:12.599 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@1e215338: (connection evicted)
+2023-07-24 11:21:12.599 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@3cd52f2f: (connection evicted)
+2023-07-24 11:21:12.599 DEBUG SCY-LP-032 - [ionShutdownHook] [c.z.h.p.HikariPool                 ] : HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2023-07-24 11:21:12.599  INFO SCY-LP-032 - [ionShutdownHook] [c.z.h.HikariDataSource             ] : HikariPool-1 - Shutdown completed.
+2023-07-24 11:21:18.751  INFO SCY-LP-032 - [           main] [r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-24 11:21:18.823  INFO SCY-LP-032 - [           main] [r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 65 ms. Found 5 JPA repository interfaces.
+2023-07-24 11:21:19.398 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : Driver class org.postgresql.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@1d44bcfa
+2023-07-24 11:21:19.582 DEBUG SCY-LP-032 - [           main] [o.h.c.i.RegionFactoryInitiator     ] : Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2023-07-24 11:21:19.583 DEBUG SCY-LP-032 - [           main] [o.h.c.i.RegionFactoryInitiator     ] : Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2023-07-24 11:21:19.805 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : HikariPool-1 - configuration:
+2023-07-24 11:21:19.806 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : allowPoolSuspension.............false
+2023-07-24 11:21:19.806 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : autoCommit......................true
+2023-07-24 11:21:19.806 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : catalog.........................none
+2023-07-24 11:21:19.807 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : connectionInitSql...............none
+2023-07-24 11:21:19.807 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : connectionTestQuery.............none
+2023-07-24 11:21:19.807 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : connectionTimeout...............30000
+2023-07-24 11:21:19.807 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : dataSource......................none
+2023-07-24 11:21:19.807 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : dataSourceClassName.............none
+2023-07-24 11:21:19.807 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : dataSourceJNDI..................none
+2023-07-24 11:21:19.807 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : dataSourceProperties............{password=<masked>}
+2023-07-24 11:21:19.807 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : driverClassName................."org.postgresql.Driver"
+2023-07-24 11:21:19.807 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : exceptionOverrideClassName......none
+2023-07-24 11:21:19.807 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : healthCheckProperties...........{}
+2023-07-24 11:21:19.807 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : healthCheckRegistry.............none
+2023-07-24 11:21:19.807 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : idleTimeout.....................600000
+2023-07-24 11:21:19.807 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : initializationFailTimeout.......1
+2023-07-24 11:21:19.807 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : isolateInternalQueries..........false
+2023-07-24 11:21:19.808 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : jdbcUrl.........................jdbc:postgresql://192.168.56.10:5432/bootcamp
+2023-07-24 11:21:19.808 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : keepaliveTime...................0
+2023-07-24 11:21:19.808 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : leakDetectionThreshold..........0
+2023-07-24 11:21:19.808 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : maxLifetime.....................1800000
+2023-07-24 11:21:19.808 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : maximumPoolSize.................10
+2023-07-24 11:21:19.808 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : metricRegistry..................none
+2023-07-24 11:21:19.808 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : metricsTrackerFactory...........none
+2023-07-24 11:21:19.808 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : minimumIdle.....................10
+2023-07-24 11:21:19.808 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : password........................<masked>
+2023-07-24 11:21:19.808 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : poolName........................"HikariPool-1"
+2023-07-24 11:21:19.808 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : readOnly........................false
+2023-07-24 11:21:19.808 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : registerMbeans..................false
+2023-07-24 11:21:19.808 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : scheduledExecutor...............none
+2023-07-24 11:21:19.808 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : schema..........................none
+2023-07-24 11:21:19.808 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : threadFactory...................internal
+2023-07-24 11:21:19.808 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : transactionIsolation............default
+2023-07-24 11:21:19.808 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : username........................"scytalys"
+2023-07-24 11:21:19.808 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : validationTimeout...............5000
+2023-07-24 11:21:19.808  INFO SCY-LP-032 - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Starting...
+2023-07-24 11:21:19.895  INFO SCY-LP-032 - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1a6dc5ea
+2023-07-24 11:21:19.896  INFO SCY-LP-032 - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Start completed.
+2023-07-24 11:21:19.997 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2023-07-24 11:21:20.008 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1d90eb31
+2023-07-24 11:21:20.031 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@135716f3
+2023-07-24 11:21:20.056 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@17688041
+2023-07-24 11:21:20.078 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@526a1cc8
+2023-07-24 11:21:20.103 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4839acd7
+2023-07-24 11:21:20.128 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@63f2cbad
+2023-07-24 11:21:20.154 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@304b251a
+2023-07-24 11:21:20.181 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3245e387
+2023-07-24 11:21:20.207 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@379fae0c
+2023-07-24 11:21:20.218 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2023-07-24 11:21:20.961  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:21:20.961  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "property" does not exist, skipping
+2023-07-24 11:21:20.962  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:21:20.962  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "repairs" does not exist, skipping
+2023-07-24 11:21:20.963  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:21:20.963  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "report" does not exist, skipping
+2023-07-24 11:21:20.964  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:21:20.964  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "user_roles" does not exist, skipping
+2023-07-24 11:21:20.965  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:21:20.965  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "user_roles" does not exist, skipping
+2023-07-24 11:21:20.967  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:21:20.967  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "property" does not exist, skipping
+2023-07-24 11:21:20.968  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:21:20.968  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "repairs" does not exist, skipping
+2023-07-24 11:21:20.969  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:21:20.969  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "report" does not exist, skipping
+2023-07-24 11:21:20.970  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:21:20.970  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "roles" does not exist, skipping
+2023-07-24 11:21:20.972  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:21:20.972  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "user" does not exist, skipping
+2023-07-24 11:21:20.973  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:21:20.973  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "user_roles" does not exist, skipping
+2023-07-24 11:21:20.974  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:21:20.974  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : sequence "property_seq" does not exist, skipping
+2023-07-24 11:21:20.974  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:21:20.974  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : sequence "repair_seq" does not exist, skipping
+2023-07-24 11:21:20.974  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:21:20.974  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : sequence "report_seq" does not exist, skipping
+2023-07-24 11:21:20.975  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:21:20.975  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : sequence "roles_seq" does not exist, skipping
+2023-07-24 11:21:20.977  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:21:20.977  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : sequence "user_seq" does not exist, skipping
+2023-07-24 11:21:21.465  INFO SCY-LP-032 - [           main] [o.s.d.j.r.q.QueryEnhancerFactory   ] : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-07-24 11:21:49.999 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-07-24 11:21:49.999 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2023-07-24 11:22:14.722  INFO SCY-LP-032 - [ionShutdownHook] [c.z.h.HikariDataSource             ] : HikariPool-1 - Shutdown initiated...
+2023-07-24 11:22:14.722 DEBUG SCY-LP-032 - [ionShutdownHook] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+2023-07-24 11:22:14.723 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@1a6dc5ea: (connection evicted)
+2023-07-24 11:22:14.723 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@1d90eb31: (connection evicted)
+2023-07-24 11:22:14.723 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@135716f3: (connection evicted)
+2023-07-24 11:22:14.724 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@17688041: (connection evicted)
+2023-07-24 11:22:14.724 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@526a1cc8: (connection evicted)
+2023-07-24 11:22:14.724 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@4839acd7: (connection evicted)
+2023-07-24 11:22:14.724 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@63f2cbad: (connection evicted)
+2023-07-24 11:22:14.724 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@304b251a: (connection evicted)
+2023-07-24 11:22:14.725 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@3245e387: (connection evicted)
+2023-07-24 11:22:14.725 DEBUG SCY-LP-032 - [nnection closer] [c.z.h.p.PoolBase                   ] : HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@379fae0c: (connection evicted)
+2023-07-24 11:22:14.725 DEBUG SCY-LP-032 - [ionShutdownHook] [c.z.h.p.HikariPool                 ] : HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2023-07-24 11:22:14.725  INFO SCY-LP-032 - [ionShutdownHook] [c.z.h.HikariDataSource             ] : HikariPool-1 - Shutdown completed.
+2023-07-24 11:22:21.437  INFO SCY-LP-032 - [           main] [r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-24 11:22:21.521  INFO SCY-LP-032 - [           main] [r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 75 ms. Found 5 JPA repository interfaces.
+2023-07-24 11:22:22.107 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : Driver class org.postgresql.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@1d44bcfa
+2023-07-24 11:22:22.304 DEBUG SCY-LP-032 - [           main] [o.h.c.i.RegionFactoryInitiator     ] : Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2023-07-24 11:22:22.304 DEBUG SCY-LP-032 - [           main] [o.h.c.i.RegionFactoryInitiator     ] : Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2023-07-24 11:22:22.556 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : HikariPool-1 - configuration:
+2023-07-24 11:22:22.558 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : allowPoolSuspension.............false
+2023-07-24 11:22:22.558 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : autoCommit......................true
+2023-07-24 11:22:22.558 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : catalog.........................none
+2023-07-24 11:22:22.558 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : connectionInitSql...............none
+2023-07-24 11:22:22.558 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : connectionTestQuery.............none
+2023-07-24 11:22:22.558 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : connectionTimeout...............30000
+2023-07-24 11:22:22.558 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : dataSource......................none
+2023-07-24 11:22:22.558 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : dataSourceClassName.............none
+2023-07-24 11:22:22.558 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : dataSourceJNDI..................none
+2023-07-24 11:22:22.559 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : dataSourceProperties............{password=<masked>}
+2023-07-24 11:22:22.559 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : driverClassName................."org.postgresql.Driver"
+2023-07-24 11:22:22.559 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : exceptionOverrideClassName......none
+2023-07-24 11:22:22.559 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : healthCheckProperties...........{}
+2023-07-24 11:22:22.559 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : healthCheckRegistry.............none
+2023-07-24 11:22:22.559 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : idleTimeout.....................600000
+2023-07-24 11:22:22.559 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : initializationFailTimeout.......1
+2023-07-24 11:22:22.559 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : isolateInternalQueries..........false
+2023-07-24 11:22:22.559 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : jdbcUrl.........................jdbc:postgresql://192.168.56.10:5432/bootcamp
+2023-07-24 11:22:22.560 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : keepaliveTime...................0
+2023-07-24 11:22:22.560 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : leakDetectionThreshold..........0
+2023-07-24 11:22:22.560 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : maxLifetime.....................1800000
+2023-07-24 11:22:22.560 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : maximumPoolSize.................10
+2023-07-24 11:22:22.560 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : metricRegistry..................none
+2023-07-24 11:22:22.560 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : metricsTrackerFactory...........none
+2023-07-24 11:22:22.560 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : minimumIdle.....................10
+2023-07-24 11:22:22.560 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : password........................<masked>
+2023-07-24 11:22:22.560 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : poolName........................"HikariPool-1"
+2023-07-24 11:22:22.560 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : readOnly........................false
+2023-07-24 11:22:22.560 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : registerMbeans..................false
+2023-07-24 11:22:22.560 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : scheduledExecutor...............none
+2023-07-24 11:22:22.560 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : schema..........................none
+2023-07-24 11:22:22.560 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : threadFactory...................internal
+2023-07-24 11:22:22.560 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : transactionIsolation............default
+2023-07-24 11:22:22.560 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : username........................"scytalys"
+2023-07-24 11:22:22.560 DEBUG SCY-LP-032 - [           main] [c.z.h.HikariConfig                 ] : validationTimeout...............5000
+2023-07-24 11:22:22.560  INFO SCY-LP-032 - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Starting...
+2023-07-24 11:22:22.663  INFO SCY-LP-032 - [           main] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2bdcfcf
+2023-07-24 11:22:22.665  INFO SCY-LP-032 - [           main] [c.z.h.HikariDataSource             ] : HikariPool-1 - Start completed.
+2023-07-24 11:22:22.766 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2023-07-24 11:22:22.777 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@56b7a0b5
+2023-07-24 11:22:22.800 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@58704413
+2023-07-24 11:22:22.819 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5c4fcbc5
+2023-07-24 11:22:22.840 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@194d4e28
+2023-07-24 11:22:22.862 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7294f7bc
+2023-07-24 11:22:22.885 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@281e7521
+2023-07-24 11:22:22.913 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@a2d9204
+2023-07-24 11:22:22.938 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7962b167
+2023-07-24 11:22:22.962 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2c9e90e0
+2023-07-24 11:22:22.974 DEBUG SCY-LP-032 - [onnection adder] [c.z.h.p.HikariPool                 ] : HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2023-07-24 11:22:23.805  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:22:23.806  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "property" does not exist, skipping
+2023-07-24 11:22:23.808  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:22:23.808  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "repairs" does not exist, skipping
+2023-07-24 11:22:23.809  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:22:23.809  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "report" does not exist, skipping
+2023-07-24 11:22:23.811  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:22:23.811  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "user_roles" does not exist, skipping
+2023-07-24 11:22:23.812  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:22:23.812  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : relation "user_roles" does not exist, skipping
+2023-07-24 11:22:23.814  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:22:23.814  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "property" does not exist, skipping
+2023-07-24 11:22:23.815  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:22:23.815  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "repairs" does not exist, skipping
+2023-07-24 11:22:23.815  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:22:23.815  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "report" does not exist, skipping
+2023-07-24 11:22:23.817  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:22:23.817  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "roles" does not exist, skipping
+2023-07-24 11:22:23.818  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:22:23.818  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "user" does not exist, skipping
+2023-07-24 11:22:23.819  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:22:23.819  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : table "user_roles" does not exist, skipping
+2023-07-24 11:22:23.820  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:22:23.821  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : sequence "property_seq" does not exist, skipping
+2023-07-24 11:22:23.822  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:22:23.822  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : sequence "repair_seq" does not exist, skipping
+2023-07-24 11:22:23.824  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:22:23.824  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : sequence "report_seq" does not exist, skipping
+2023-07-24 11:22:23.826  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:22:23.826  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : sequence "roles_seq" does not exist, skipping
+2023-07-24 11:22:23.828  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : SQL Warning Code: 0, SQLState: 00000
+2023-07-24 11:22:23.828  WARN SCY-LP-032 - [           main] [o.h.e.j.s.SqlExceptionHelper       ] : sequence "user_seq" does not exist, skipping
+2023-07-24 11:22:24.376  INFO SCY-LP-032 - [           main] [o.s.d.j.r.q.QueryEnhancerFactory   ] : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-07-24 11:22:52.767 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-07-24 11:22:52.767 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2023-07-24 11:23:22.768 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-07-24 11:23:22.768 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2023-07-24 11:23:52.770 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-07-24 11:23:52.770 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2023-07-24 11:24:22.771 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-07-24 11:24:22.771 DEBUG SCY-LP-032 - [l-1 housekeeper] [c.z.h.p.HikariPool                 ] : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).

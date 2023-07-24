@@ -24,7 +24,7 @@ public class PropertyController {
     public ResponseEntity<PropertyDto> createProperty(@RequestBody PropertyDto propertyDto) {
 
         return new ResponseEntity<>(propertyMapper.propertyToPropertyDto(
-                propertyService.createProperty(propertyMapper.propertyDtoToProperty(propertyDto))), HttpStatus.CREATED);
+                propertyService.saveProperty(propertyMapper.propertyDtoToProperty(propertyDto))), HttpStatus.CREATED);
     }
 
     @GetMapping

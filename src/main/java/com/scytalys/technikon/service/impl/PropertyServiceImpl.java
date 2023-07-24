@@ -16,7 +16,7 @@ public class PropertyServiceImpl implements PropertyService {
     private final PropertyRepository propertyRepository;
 
     @Override
-    public Property createProperty(Property property) {
+    public Property saveProperty(Property property) {
         return propertyRepository.save(property);
     }
 

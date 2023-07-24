@@ -383,3 +383,235 @@
 2023-07-23 12:12:40.697 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists repair_seq
 2023-07-23 12:12:40.699 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists roles_seq
 2023-07-23 12:12:40.701 DEBUG alex-PC - [           main] [o.h.SQL                            ] : drop sequence if exists user_seq
+2023-07-24 11:18:23.466 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists property drop constraint if exists FKn9cdajshrebcritph05nuxxlv
+2023-07-24 11:18:23.477 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists repairs drop constraint if exists FK6i88fgqlrt72jjuky9k3xnull
+2023-07-24 11:18:23.480 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists report drop constraint if exists FK3og0mabbdypqrnh2ixvxekqyg
+2023-07-24 11:18:23.482 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FKh8ciramu9cc9q3qcqiv4ue8a6
+2023-07-24 11:18:23.484 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FK7ivp84f52aa3vd7ndq0oh0279
+2023-07-24 11:18:23.487 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop table if exists property cascade
+2023-07-24 11:18:23.493 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop table if exists repairs cascade
+2023-07-24 11:18:23.497 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop table if exists report cascade
+2023-07-24 11:18:23.498 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop table if exists roles cascade
+2023-07-24 11:18:23.501 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop table if exists "user" cascade
+2023-07-24 11:18:23.504 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop table if exists user_roles cascade
+2023-07-24 11:18:23.506 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop sequence if exists property_seq
+2023-07-24 11:18:23.510 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop sequence if exists repair_seq
+2023-07-24 11:18:23.512 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop sequence if exists report_seq
+2023-07-24 11:18:23.513 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop sequence if exists roles_seq
+2023-07-24 11:18:23.515 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop sequence if exists user_seq
+2023-07-24 11:18:23.522 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create sequence property_seq start with 1 increment by 1
+2023-07-24 11:18:23.535 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create sequence repair_seq start with 1 increment by 1
+2023-07-24 11:18:23.538 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create sequence report_seq start with 1 increment by 1
+2023-07-24 11:18:23.541 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create sequence roles_seq start with 1 increment by 1
+2023-07-24 11:18:23.543 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create sequence user_seq start with 1 increment by 1
+2023-07-24 11:18:23.548 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create table property (active_state boolean, year_of_construction integer, id bigint not null, map_location_lat bigint, map_location_long bigint, pin bigint, user_id bigint, address varchar(50), property_picture varchar(255), property_type varchar(255) check (property_type in ('DETACHED_HOUSE','MAISONETTE','APARTMENT_BUILDING')), primary key (id))
+2023-07-24 11:18:23.568 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create table repairs (cost numeric(38,2) not null, id bigint not null, property_id bigint, repair_date timestamp(6) not null, repair_status varchar(11) not null check (repair_status in ('PENDING','SCHEDULED','IN_PROGRESS','COMPLETED')), repair_type varchar(15) not null check (repair_type in ('PAINTING','INSULATION','FRAMES','PLUMBING','ELECTRICAL_WORK')), description varchar(1000) not null, primary key (id))
+2023-07-24 11:18:23.578 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create table report (date timestamp(6), id bigint not null, user bigint, description varchar(255), report_type varchar(255) check (report_type in ('user_registration','user_update','user_deletion','user_login','property_registration','property_update','property_deactivation','property_deletion','repair_info','user_logs')), primary key (id))
+2023-07-24 11:18:23.582 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create table roles (id bigint not null, name varchar(255), primary key (id))
+2023-07-24 11:18:23.590 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create table "user" (id bigint not null, number bigint, tin_number bigint, address varchar(50), email varchar(50), first_name varchar(50), last_name varchar(50), password varchar(255), user_name varchar(255) unique, primary key (id))
+2023-07-24 11:18:23.605 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create table user_roles (role_id bigint not null, user_id bigint not null, primary key (role_id, user_id))
+2023-07-24 11:18:23.611 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists property add constraint FKn9cdajshrebcritph05nuxxlv foreign key (user_id) references "user"
+2023-07-24 11:18:23.618 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists repairs add constraint FK6i88fgqlrt72jjuky9k3xnull foreign key (property_id) references property
+2023-07-24 11:18:23.620 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists report add constraint FK3og0mabbdypqrnh2ixvxekqyg foreign key (user) references "user"
+2023-07-24 11:18:23.623 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists user_roles add constraint FKh8ciramu9cc9q3qcqiv4ue8a6 foreign key (role_id) references roles
+2023-07-24 11:18:23.625 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists user_roles add constraint FK7ivp84f52aa3vd7ndq0oh0279 foreign key (user_id) references "user"
+2023-07-24 11:18:24.706 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : select nextval('roles_seq')
+2023-07-24 11:18:24.735 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : insert into roles (name,id) values (?,?)
+2023-07-24 11:18:24.737 TRACE SCY-LP-032 - [           main] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [ROLE_ADMIN]
+2023-07-24 11:18:24.737 TRACE SCY-LP-032 - [           main] [o.h.o.j.bind                       ] : binding parameter [2] as [BIGINT] - [1]
+2023-07-24 11:18:24.790 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists property drop constraint if exists FKn9cdajshrebcritph05nuxxlv
+2023-07-24 11:18:24.793 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists repairs drop constraint if exists FK6i88fgqlrt72jjuky9k3xnull
+2023-07-24 11:18:24.797 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists report drop constraint if exists FK3og0mabbdypqrnh2ixvxekqyg
+2023-07-24 11:18:24.799 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FKh8ciramu9cc9q3qcqiv4ue8a6
+2023-07-24 11:18:24.801 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FK7ivp84f52aa3vd7ndq0oh0279
+2023-07-24 11:18:24.804 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop table if exists property cascade
+2023-07-24 11:18:24.807 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop table if exists repairs cascade
+2023-07-24 11:18:24.811 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop table if exists report cascade
+2023-07-24 11:18:24.812 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop table if exists roles cascade
+2023-07-24 11:18:24.815 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop table if exists "user" cascade
+2023-07-24 11:18:24.819 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop table if exists user_roles cascade
+2023-07-24 11:18:24.822 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop sequence if exists property_seq
+2023-07-24 11:18:24.825 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop sequence if exists repair_seq
+2023-07-24 11:18:24.828 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop sequence if exists report_seq
+2023-07-24 11:18:24.831 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop sequence if exists roles_seq
+2023-07-24 11:18:24.834 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop sequence if exists user_seq
+2023-07-24 11:19:47.774 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists property drop constraint if exists FKn9cdajshrebcritph05nuxxlv
+2023-07-24 11:19:47.778 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists repairs drop constraint if exists FK6i88fgqlrt72jjuky9k3xnull
+2023-07-24 11:19:47.779 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists report drop constraint if exists FK3og0mabbdypqrnh2ixvxekqyg
+2023-07-24 11:19:47.780 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FKh8ciramu9cc9q3qcqiv4ue8a6
+2023-07-24 11:19:47.781 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FK7ivp84f52aa3vd7ndq0oh0279
+2023-07-24 11:19:47.783 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop table if exists property cascade
+2023-07-24 11:19:47.784 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop table if exists repairs cascade
+2023-07-24 11:19:47.785 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop table if exists report cascade
+2023-07-24 11:19:47.786 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop table if exists roles cascade
+2023-07-24 11:19:47.787 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop table if exists "user" cascade
+2023-07-24 11:19:47.788 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop table if exists user_roles cascade
+2023-07-24 11:19:47.790 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop sequence if exists property_seq
+2023-07-24 11:19:47.791 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop sequence if exists repair_seq
+2023-07-24 11:19:47.792 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop sequence if exists report_seq
+2023-07-24 11:19:47.793 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop sequence if exists roles_seq
+2023-07-24 11:19:47.794 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop sequence if exists user_seq
+2023-07-24 11:19:47.800 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create sequence property_seq start with 1 increment by 1
+2023-07-24 11:19:47.805 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create sequence repair_seq start with 1 increment by 1
+2023-07-24 11:19:47.807 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create sequence report_seq start with 1 increment by 1
+2023-07-24 11:19:47.810 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create sequence roles_seq start with 1 increment by 1
+2023-07-24 11:19:47.812 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create sequence user_seq start with 1 increment by 1
+2023-07-24 11:19:47.818 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create table property (active_state boolean, year_of_construction integer, id bigint not null, map_location_lat bigint, map_location_long bigint, pin bigint, user_id bigint, address varchar(50), property_picture varchar(255), property_type varchar(255) check (property_type in ('DETACHED_HOUSE','MAISONETTE','APARTMENT_BUILDING')), primary key (id))
+2023-07-24 11:19:47.831 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create table repairs (cost numeric(38,2) not null, id bigint not null, property_id bigint, repair_date timestamp(6) not null, repair_status varchar(11) not null check (repair_status in ('PENDING','SCHEDULED','IN_PROGRESS','COMPLETED')), repair_type varchar(15) not null check (repair_type in ('PAINTING','INSULATION','FRAMES','PLUMBING','ELECTRICAL_WORK')), description varchar(1000) not null, primary key (id))
+2023-07-24 11:19:47.841 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create table report (date timestamp(6), id bigint not null, user bigint, description varchar(255), report_type varchar(255) check (report_type in ('user_registration','user_update','user_deletion','user_login','property_registration','property_update','property_deactivation','property_deletion','repair_info','user_logs')), primary key (id))
+2023-07-24 11:19:47.845 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create table roles (id bigint not null, name varchar(255), primary key (id))
+2023-07-24 11:19:47.855 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create table "user" (id bigint not null, number bigint, tin_number bigint, address varchar(50), email varchar(50), first_name varchar(50), last_name varchar(50), password varchar(255), user_name varchar(255) unique, primary key (id))
+2023-07-24 11:19:47.869 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create table user_roles (role_id bigint not null, user_id bigint not null, primary key (role_id, user_id))
+2023-07-24 11:19:47.875 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists property add constraint FKn9cdajshrebcritph05nuxxlv foreign key (user_id) references "user"
+2023-07-24 11:19:47.878 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists repairs add constraint FK6i88fgqlrt72jjuky9k3xnull foreign key (property_id) references property
+2023-07-24 11:19:47.884 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists report add constraint FK3og0mabbdypqrnh2ixvxekqyg foreign key (user) references "user"
+2023-07-24 11:19:47.887 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists user_roles add constraint FKh8ciramu9cc9q3qcqiv4ue8a6 foreign key (role_id) references roles
+2023-07-24 11:19:47.889 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists user_roles add constraint FK7ivp84f52aa3vd7ndq0oh0279 foreign key (user_id) references "user"
+2023-07-24 11:19:48.879 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : select nextval('roles_seq')
+2023-07-24 11:19:48.905 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : insert into roles (name,id) values (?,?)
+2023-07-24 11:19:48.906 TRACE SCY-LP-032 - [           main] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [ROLE_ADMIN]
+2023-07-24 11:19:48.906 TRACE SCY-LP-032 - [           main] [o.h.o.j.bind                       ] : binding parameter [2] as [BIGINT] - [1]
+2023-07-24 11:19:48.957 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists property drop constraint if exists FKn9cdajshrebcritph05nuxxlv
+2023-07-24 11:19:48.960 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists repairs drop constraint if exists FK6i88fgqlrt72jjuky9k3xnull
+2023-07-24 11:19:48.962 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists report drop constraint if exists FK3og0mabbdypqrnh2ixvxekqyg
+2023-07-24 11:19:48.963 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FKh8ciramu9cc9q3qcqiv4ue8a6
+2023-07-24 11:19:48.965 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FK7ivp84f52aa3vd7ndq0oh0279
+2023-07-24 11:19:48.967 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop table if exists property cascade
+2023-07-24 11:19:48.969 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop table if exists repairs cascade
+2023-07-24 11:19:48.972 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop table if exists report cascade
+2023-07-24 11:19:48.973 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop table if exists roles cascade
+2023-07-24 11:19:48.975 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop table if exists "user" cascade
+2023-07-24 11:19:48.977 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop table if exists user_roles cascade
+2023-07-24 11:19:48.980 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop sequence if exists property_seq
+2023-07-24 11:19:48.983 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop sequence if exists repair_seq
+2023-07-24 11:19:48.984 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop sequence if exists report_seq
+2023-07-24 11:19:48.986 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop sequence if exists roles_seq
+2023-07-24 11:19:48.987 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop sequence if exists user_seq
+2023-07-24 11:20:32.295 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists property drop constraint if exists FKn9cdajshrebcritph05nuxxlv
+2023-07-24 11:20:32.299 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists repairs drop constraint if exists FK6i88fgqlrt72jjuky9k3xnull
+2023-07-24 11:20:32.300 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists report drop constraint if exists FK3og0mabbdypqrnh2ixvxekqyg
+2023-07-24 11:20:32.301 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FKh8ciramu9cc9q3qcqiv4ue8a6
+2023-07-24 11:20:32.302 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FK7ivp84f52aa3vd7ndq0oh0279
+2023-07-24 11:20:32.302 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop table if exists property cascade
+2023-07-24 11:20:32.303 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop table if exists repairs cascade
+2023-07-24 11:20:32.304 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop table if exists report cascade
+2023-07-24 11:20:32.305 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop table if exists roles cascade
+2023-07-24 11:20:32.306 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop table if exists "user" cascade
+2023-07-24 11:20:32.307 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop table if exists user_roles cascade
+2023-07-24 11:20:32.309 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop sequence if exists property_seq
+2023-07-24 11:20:32.310 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop sequence if exists repair_seq
+2023-07-24 11:20:32.311 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop sequence if exists report_seq
+2023-07-24 11:20:32.312 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop sequence if exists roles_seq
+2023-07-24 11:20:32.317 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop sequence if exists user_seq
+2023-07-24 11:20:32.322 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create sequence property_seq start with 1 increment by 1
+2023-07-24 11:20:32.328 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create sequence repair_seq start with 1 increment by 1
+2023-07-24 11:20:32.330 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create sequence report_seq start with 1 increment by 1
+2023-07-24 11:20:32.333 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create sequence roles_seq start with 1 increment by 1
+2023-07-24 11:20:32.337 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create sequence user_seq start with 1 increment by 1
+2023-07-24 11:20:32.343 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create table property (active_state boolean, year_of_construction integer, id bigint not null, map_location_lat bigint, map_location_long bigint, pin bigint, user_id bigint, address varchar(50), property_picture varchar(255), property_type varchar(255) check (property_type in ('DETACHED_HOUSE','MAISONETTE','APARTMENT_BUILDING')), primary key (id))
+2023-07-24 11:20:32.355 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create table repairs (cost numeric(38,2) not null, id bigint not null, property_id bigint, repair_date timestamp(6) not null, repair_status varchar(11) not null check (repair_status in ('PENDING','SCHEDULED','IN_PROGRESS','COMPLETED')), repair_type varchar(15) not null check (repair_type in ('PAINTING','INSULATION','FRAMES','PLUMBING','ELECTRICAL_WORK')), description varchar(1000) not null, primary key (id))
+2023-07-24 11:20:32.366 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create table report (date timestamp(6), id bigint not null, user bigint, description varchar(255), report_type varchar(255) check (report_type in ('user_registration','user_update','user_deletion','user_login','property_registration','property_update','property_deactivation','property_deletion','repair_info','user_logs')), primary key (id))
+2023-07-24 11:20:32.370 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create table roles (id bigint not null, name varchar(255), primary key (id))
+2023-07-24 11:20:32.378 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create table "user" (id bigint not null, number bigint, tin_number bigint, address varchar(50), email varchar(50), first_name varchar(50), last_name varchar(50), password varchar(255), user_name varchar(255) unique, primary key (id))
+2023-07-24 11:20:32.392 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create table user_roles (role_id bigint not null, user_id bigint not null, primary key (role_id, user_id))
+2023-07-24 11:20:32.399 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists property add constraint FKn9cdajshrebcritph05nuxxlv foreign key (user_id) references "user"
+2023-07-24 11:20:32.401 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists repairs add constraint FK6i88fgqlrt72jjuky9k3xnull foreign key (property_id) references property
+2023-07-24 11:20:32.404 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists report add constraint FK3og0mabbdypqrnh2ixvxekqyg foreign key (user) references "user"
+2023-07-24 11:20:32.407 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists user_roles add constraint FKh8ciramu9cc9q3qcqiv4ue8a6 foreign key (role_id) references roles
+2023-07-24 11:20:32.409 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists user_roles add constraint FK7ivp84f52aa3vd7ndq0oh0279 foreign key (user_id) references "user"
+2023-07-24 11:21:12.552 DEBUG SCY-LP-032 - [ionShutdownHook] [o.h.SQL                            ] : alter table if exists property drop constraint if exists FKn9cdajshrebcritph05nuxxlv
+2023-07-24 11:21:12.556 DEBUG SCY-LP-032 - [ionShutdownHook] [o.h.SQL                            ] : alter table if exists repairs drop constraint if exists FK6i88fgqlrt72jjuky9k3xnull
+2023-07-24 11:21:12.559 DEBUG SCY-LP-032 - [ionShutdownHook] [o.h.SQL                            ] : alter table if exists report drop constraint if exists FK3og0mabbdypqrnh2ixvxekqyg
+2023-07-24 11:21:12.560 DEBUG SCY-LP-032 - [ionShutdownHook] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FKh8ciramu9cc9q3qcqiv4ue8a6
+2023-07-24 11:21:12.563 DEBUG SCY-LP-032 - [ionShutdownHook] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FK7ivp84f52aa3vd7ndq0oh0279
+2023-07-24 11:21:12.565 DEBUG SCY-LP-032 - [ionShutdownHook] [o.h.SQL                            ] : drop table if exists property cascade
+2023-07-24 11:21:12.568 DEBUG SCY-LP-032 - [ionShutdownHook] [o.h.SQL                            ] : drop table if exists repairs cascade
+2023-07-24 11:21:12.572 DEBUG SCY-LP-032 - [ionShutdownHook] [o.h.SQL                            ] : drop table if exists report cascade
+2023-07-24 11:21:12.573 DEBUG SCY-LP-032 - [ionShutdownHook] [o.h.SQL                            ] : drop table if exists roles cascade
+2023-07-24 11:21:12.576 DEBUG SCY-LP-032 - [ionShutdownHook] [o.h.SQL                            ] : drop table if exists "user" cascade
+2023-07-24 11:21:12.579 DEBUG SCY-LP-032 - [ionShutdownHook] [o.h.SQL                            ] : drop table if exists user_roles cascade
+2023-07-24 11:21:12.581 DEBUG SCY-LP-032 - [ionShutdownHook] [o.h.SQL                            ] : drop sequence if exists property_seq
+2023-07-24 11:21:12.584 DEBUG SCY-LP-032 - [ionShutdownHook] [o.h.SQL                            ] : drop sequence if exists repair_seq
+2023-07-24 11:21:12.586 DEBUG SCY-LP-032 - [ionShutdownHook] [o.h.SQL                            ] : drop sequence if exists report_seq
+2023-07-24 11:21:12.588 DEBUG SCY-LP-032 - [ionShutdownHook] [o.h.SQL                            ] : drop sequence if exists roles_seq
+2023-07-24 11:21:12.592 DEBUG SCY-LP-032 - [ionShutdownHook] [o.h.SQL                            ] : drop sequence if exists user_seq
+2023-07-24 11:21:20.958 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists property drop constraint if exists FKn9cdajshrebcritph05nuxxlv
+2023-07-24 11:21:20.961 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists repairs drop constraint if exists FK6i88fgqlrt72jjuky9k3xnull
+2023-07-24 11:21:20.962 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists report drop constraint if exists FKpurblvvr6uf6jh3esd51udt8l
+2023-07-24 11:21:20.963 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FKh8ciramu9cc9q3qcqiv4ue8a6
+2023-07-24 11:21:20.964 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FK7ivp84f52aa3vd7ndq0oh0279
+2023-07-24 11:21:20.965 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop table if exists property cascade
+2023-07-24 11:21:20.967 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop table if exists repairs cascade
+2023-07-24 11:21:20.968 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop table if exists report cascade
+2023-07-24 11:21:20.969 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop table if exists roles cascade
+2023-07-24 11:21:20.971 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop table if exists "user" cascade
+2023-07-24 11:21:20.972 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop table if exists user_roles cascade
+2023-07-24 11:21:20.973 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop sequence if exists property_seq
+2023-07-24 11:21:20.974 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop sequence if exists repair_seq
+2023-07-24 11:21:20.974 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop sequence if exists report_seq
+2023-07-24 11:21:20.974 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop sequence if exists roles_seq
+2023-07-24 11:21:20.975 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop sequence if exists user_seq
+2023-07-24 11:21:20.981 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create sequence property_seq start with 1 increment by 1
+2023-07-24 11:21:20.984 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create sequence repair_seq start with 1 increment by 1
+2023-07-24 11:21:20.986 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create sequence report_seq start with 1 increment by 1
+2023-07-24 11:21:20.989 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create sequence roles_seq start with 1 increment by 1
+2023-07-24 11:21:20.991 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create sequence user_seq start with 1 increment by 1
+2023-07-24 11:21:20.996 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create table property (active_state boolean, year_of_construction integer, id bigint not null, map_location_lat bigint, map_location_long bigint, pin bigint, user_id bigint, address varchar(50), property_picture varchar(255), property_type varchar(255) check (property_type in ('DETACHED_HOUSE','MAISONETTE','APARTMENT_BUILDING')), primary key (id))
+2023-07-24 11:21:21.006 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create table repairs (cost numeric(38,2) not null, id bigint not null, property_id bigint, repair_date timestamp(6) not null, repair_status varchar(11) not null check (repair_status in ('PENDING','SCHEDULED','IN_PROGRESS','COMPLETED')), repair_type varchar(15) not null check (repair_type in ('PAINTING','INSULATION','FRAMES','PLUMBING','ELECTRICAL_WORK')), description varchar(1000) not null, primary key (id))
+2023-07-24 11:21:21.015 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create table report (date timestamp(6), id bigint not null, user_id bigint, description varchar(255), report_type varchar(255) check (report_type in ('user_registration','user_update','user_deletion','user_login','property_registration','property_update','property_deactivation','property_deletion','repair_info','user_logs')), primary key (id))
+2023-07-24 11:21:21.026 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create table roles (id bigint not null, name varchar(255), primary key (id))
+2023-07-24 11:21:21.033 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create table "user" (id bigint not null, number bigint, tin_number bigint, address varchar(50), email varchar(50), first_name varchar(50), last_name varchar(50), password varchar(255), user_name varchar(255) unique, primary key (id))
+2023-07-24 11:21:21.045 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create table user_roles (role_id bigint not null, user_id bigint not null, primary key (role_id, user_id))
+2023-07-24 11:21:21.051 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists property add constraint FKn9cdajshrebcritph05nuxxlv foreign key (user_id) references "user"
+2023-07-24 11:21:21.054 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists repairs add constraint FK6i88fgqlrt72jjuky9k3xnull foreign key (property_id) references property
+2023-07-24 11:21:21.058 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists report add constraint FKpurblvvr6uf6jh3esd51udt8l foreign key (user_id) references "user"
+2023-07-24 11:21:21.061 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists user_roles add constraint FKh8ciramu9cc9q3qcqiv4ue8a6 foreign key (role_id) references roles
+2023-07-24 11:21:21.063 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists user_roles add constraint FK7ivp84f52aa3vd7ndq0oh0279 foreign key (user_id) references "user"
+2023-07-24 11:22:14.666 DEBUG SCY-LP-032 - [ionShutdownHook] [o.h.SQL                            ] : alter table if exists property drop constraint if exists FKn9cdajshrebcritph05nuxxlv
+2023-07-24 11:22:14.671 DEBUG SCY-LP-032 - [ionShutdownHook] [o.h.SQL                            ] : alter table if exists repairs drop constraint if exists FK6i88fgqlrt72jjuky9k3xnull
+2023-07-24 11:22:14.674 DEBUG SCY-LP-032 - [ionShutdownHook] [o.h.SQL                            ] : alter table if exists report drop constraint if exists FKpurblvvr6uf6jh3esd51udt8l
+2023-07-24 11:22:14.677 DEBUG SCY-LP-032 - [ionShutdownHook] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FKh8ciramu9cc9q3qcqiv4ue8a6
+2023-07-24 11:22:14.680 DEBUG SCY-LP-032 - [ionShutdownHook] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FK7ivp84f52aa3vd7ndq0oh0279
+2023-07-24 11:22:14.682 DEBUG SCY-LP-032 - [ionShutdownHook] [o.h.SQL                            ] : drop table if exists property cascade
+2023-07-24 11:22:14.686 DEBUG SCY-LP-032 - [ionShutdownHook] [o.h.SQL                            ] : drop table if exists repairs cascade
+2023-07-24 11:22:14.689 DEBUG SCY-LP-032 - [ionShutdownHook] [o.h.SQL                            ] : drop table if exists report cascade
+2023-07-24 11:22:14.694 DEBUG SCY-LP-032 - [ionShutdownHook] [o.h.SQL                            ] : drop table if exists roles cascade
+2023-07-24 11:22:14.696 DEBUG SCY-LP-032 - [ionShutdownHook] [o.h.SQL                            ] : drop table if exists "user" cascade
+2023-07-24 11:22:14.700 DEBUG SCY-LP-032 - [ionShutdownHook] [o.h.SQL                            ] : drop table if exists user_roles cascade
+2023-07-24 11:22:14.704 DEBUG SCY-LP-032 - [ionShutdownHook] [o.h.SQL                            ] : drop sequence if exists property_seq
+2023-07-24 11:22:14.707 DEBUG SCY-LP-032 - [ionShutdownHook] [o.h.SQL                            ] : drop sequence if exists repair_seq
+2023-07-24 11:22:14.711 DEBUG SCY-LP-032 - [ionShutdownHook] [o.h.SQL                            ] : drop sequence if exists report_seq
+2023-07-24 11:22:14.713 DEBUG SCY-LP-032 - [ionShutdownHook] [o.h.SQL                            ] : drop sequence if exists roles_seq
+2023-07-24 11:22:14.717 DEBUG SCY-LP-032 - [ionShutdownHook] [o.h.SQL                            ] : drop sequence if exists user_seq
+2023-07-24 11:22:23.801 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists property drop constraint if exists FKlue2sjtujjfq5ukbg4ibbjs5w
+2023-07-24 11:22:23.806 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists repairs drop constraint if exists FK6i88fgqlrt72jjuky9k3xnull
+2023-07-24 11:22:23.808 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists report drop constraint if exists FKdoglh6l5tru2i6rwho12ja3hr
+2023-07-24 11:22:23.809 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FKh8ciramu9cc9q3qcqiv4ue8a6
+2023-07-24 11:22:23.811 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FK7ivp84f52aa3vd7ndq0oh0279
+2023-07-24 11:22:23.812 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop table if exists property cascade
+2023-07-24 11:22:23.814 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop table if exists repairs cascade
+2023-07-24 11:22:23.815 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop table if exists report cascade
+2023-07-24 11:22:23.815 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop table if exists roles cascade
+2023-07-24 11:22:23.817 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop table if exists "user" cascade
+2023-07-24 11:22:23.818 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop table if exists user_roles cascade
+2023-07-24 11:22:23.819 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop sequence if exists property_seq
+2023-07-24 11:22:23.821 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop sequence if exists repair_seq
+2023-07-24 11:22:23.822 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop sequence if exists report_seq
+2023-07-24 11:22:23.824 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop sequence if exists roles_seq
+2023-07-24 11:22:23.826 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : drop sequence if exists user_seq
+2023-07-24 11:22:23.834 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create sequence property_seq start with 1 increment by 1
+2023-07-24 11:22:23.838 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create sequence repair_seq start with 1 increment by 1
+2023-07-24 11:22:23.841 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create sequence report_seq start with 1 increment by 1
+2023-07-24 11:22:23.844 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create sequence roles_seq start with 1 increment by 1
+2023-07-24 11:22:23.847 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create sequence user_seq start with 1 increment by 1
+2023-07-24 11:22:23.855 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create table property (active_state boolean, year_of_construction integer, id bigint not null, map_location_lat bigint, map_location_long bigint, pin bigint, "user_id" bigint, address varchar(50), property_picture varchar(255), property_type varchar(255) check (property_type in ('DETACHED_HOUSE','MAISONETTE','APARTMENT_BUILDING')), primary key (id))
+2023-07-24 11:22:23.868 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create table repairs (cost numeric(38,2) not null, id bigint not null, property_id bigint, repair_date timestamp(6) not null, repair_status varchar(11) not null check (repair_status in ('PENDING','SCHEDULED','IN_PROGRESS','COMPLETED')), repair_type varchar(15) not null check (repair_type in ('PAINTING','INSULATION','FRAMES','PLUMBING','ELECTRICAL_WORK')), description varchar(1000) not null, primary key (id))
+2023-07-24 11:22:23.882 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create table report (date timestamp(6), id bigint not null, "user_id" bigint, description varchar(255), report_type varchar(255) check (report_type in ('user_registration','user_update','user_deletion','user_login','property_registration','property_update','property_deactivation','property_deletion','repair_info','user_logs')), primary key (id))
+2023-07-24 11:22:23.896 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create table roles (id bigint not null, name varchar(255), primary key (id))
+2023-07-24 11:22:23.903 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create table "user" (id bigint not null, number bigint, tin_number bigint, address varchar(50), email varchar(50), first_name varchar(50), last_name varchar(50), password varchar(255), user_name varchar(255) unique, primary key (id))
+2023-07-24 11:22:23.920 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : create table user_roles (role_id bigint not null, user_id bigint not null, primary key (role_id, user_id))
+2023-07-24 11:22:23.928 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists property add constraint FKlue2sjtujjfq5ukbg4ibbjs5w foreign key ("user_id") references "user"
+2023-07-24 11:22:23.932 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists repairs add constraint FK6i88fgqlrt72jjuky9k3xnull foreign key (property_id) references property
+2023-07-24 11:22:23.935 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists report add constraint FKdoglh6l5tru2i6rwho12ja3hr foreign key ("user_id") references "user"
+2023-07-24 11:22:23.939 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists user_roles add constraint FKh8ciramu9cc9q3qcqiv4ue8a6 foreign key (role_id) references roles
+2023-07-24 11:22:23.944 DEBUG SCY-LP-032 - [           main] [o.h.SQL                            ] : alter table if exists user_roles add constraint FK7ivp84f52aa3vd7ndq0oh0279 foreign key (user_id) references "user"

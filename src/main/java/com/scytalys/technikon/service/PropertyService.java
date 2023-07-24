@@ -21,7 +21,7 @@ public interface PropertyService {
 
     List<Property> searchByConstructionYearRange(int yearFrom, int yearTo);
 
-    void deactivatePropertyById(Property property, Long propertyId);
+    void deactivatePropertyById(Long propertyId);
 
     void deletePropertyById(Long propertyId);
 

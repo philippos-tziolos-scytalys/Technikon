@@ -26,6 +26,5 @@ public class Report extends BaseModel {
     private String reportDescription;
 
     @ManyToOne
-    @JoinColumn(name = "user")
     private User user;
 }
