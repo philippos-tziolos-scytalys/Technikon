@@ -1,6 +1,7 @@
 package com.scytalys.technikon.controller;
 
-import com.scytalys.technikon.domain.Repair;
+import com.scytalys.technikon.dto.RepairDto;
+import com.scytalys.technikon.mapper.RepairMapper;
 import com.scytalys.technikon.service.RepairService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.format.annotation.DateTimeFormat;
@@ -17,30 +18,35 @@ import java.util.List;
 public class RepairController {
 
     private final RepairService repairService;
+    private final RepairMapper repairMapper;
 
     @PutMapping("/update")
-    public void updateRepair(@RequestBody Repair repair) {
-        repairService.update(repair);
+    public void updateRepair(@RequestBody RepairDto repairDto) {
+        repairService.update(repairMapper.repairDtoToRepair(repairDto));
     }
 
     @PostMapping("/create")
-    public ResponseEntity<Repair> createRepair(@RequestBody Repair repair) {
-        Repair newRepair = repairService.create(repair);
-        return new ResponseEntity<>(newRepair, HttpStatus.CREATED);
+    public ResponseEntity<RepairDto> createRepair(@RequestBody RepairDto repairDto) {
+        return new ResponseEntity<>(repairMapper.repairToRepairDto(repairService.create(repairMapper.repairDtoToRepair(repairDto))), HttpStatus.CREATED);
     }
 
-    @GetMapping
-    public ResponseEntity<List<Repair>> findByRepairDate(@RequestParam("repairDate")
-                                                         @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
-                                                         Date repairDate) {
-        return ResponseEntity.ok(repairService.findByRepairDate(repairDate));
+    @GetMapping("/user/{id}/repairs")
+    public ResponseEntity<List<RepairDto>> findRepairByUserId(@PathVariable("id") Long Id) {
+        return ResponseEntity.ok(repairMapper.repairListToRepairDtoList(repairService.findRepairByUserId(Id)));
     }
 
-    //    @GetMapping
-    public ResponseEntity<List<Repair>> findByRepairDateBetween(
+    @GetMapping("/repairs/{repairDate}")
+    public ResponseEntity<List<RepairDto>> findByRepairDate(@PathVariable("repairDate")
+                                                            @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
+                                                            Date repairDate) {
+        return ResponseEntity.ok(repairMapper.repairListToRepairDtoList(repairService.findByRepairDate(repairDate)));
+    }
+
+    @GetMapping("/repairs")
+    public ResponseEntity<List<RepairDto>> findByRepairDateBetween(
             @RequestParam("fromRepairDate") Date fromRepairDate,
             @RequestParam("toRepairDate") Date toRepairDate) {
-        return ResponseEntity.ok(repairService.findByRepairDateBetween(fromRepairDate, toRepairDate));
+        return ResponseEntity.ok(repairMapper.repairListToRepairDtoList(repairService.findByRepairDateBetween(fromRepairDate, toRepairDate)));
     }
 
     @DeleteMapping("/delete/{id}")

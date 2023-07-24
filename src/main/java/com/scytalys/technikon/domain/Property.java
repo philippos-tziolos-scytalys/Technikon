@@ -9,7 +9,8 @@ import lombok.*;
 @Getter
 @Setter
 @ToString
-@Table(name = "\"property\"")
+@Table(name = "property")
+@SequenceGenerator(name = "idGenerator", sequenceName = "property_seq", initialValue = 1, allocationSize = 1)
 public class Property extends BaseModel {
 
     @Column(name = "pin")
@@ -39,5 +40,5 @@ public class Property extends BaseModel {
 
     @ManyToOne
     @JoinColumn(name = "owner")
-    private User owner;
+    private User user;
 }

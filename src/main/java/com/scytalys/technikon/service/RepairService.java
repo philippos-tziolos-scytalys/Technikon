@@ -6,9 +6,12 @@ import java.util.Date;
 import java.util.List;
 
 public interface RepairService {
-    void update(Repair repair);
 
     Repair create(Repair repair);
+
+    void update(Repair repair);
+
+    List<Repair> findRepairByUserId(Long userId);
 
     List<Repair> findByRepairDate(Date repairDate);
 

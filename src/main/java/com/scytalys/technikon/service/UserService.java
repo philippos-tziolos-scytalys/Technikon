@@ -7,8 +7,10 @@ import java.util.List;
 
 public interface UserService extends BaseService<User, Long> {
     UserDto createUser(UserDto userDto);
-    User updateUser(UserDto userDto, Long id);
-    String deleteUser(Long id);
+    UserDto updateUser(UserDto userDto, Long id);
+    void deleteUser(Long id);
     List<User> getAllUsers();
-    User getUserById(Long id);
+    UserDto getUserById(Long id);
+    UserDto getUserByTinNumber(Long tinNumber);
+    UserDto getUserByEmail(String email);
 }
