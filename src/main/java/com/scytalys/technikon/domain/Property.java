@@ -40,7 +40,7 @@ public class Property extends BaseModel {
     @Column(name = "active_state")
     private boolean activeState = true;
 
-    @OneToMany(cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "property", cascade = CascadeType.ALL)
     private List<Repair> repairs;
 
     @ManyToOne()
