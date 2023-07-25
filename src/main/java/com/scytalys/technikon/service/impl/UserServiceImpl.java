@@ -128,4 +128,8 @@ public class UserServiceImpl implements UserService {
         return (userRepository.findByEmail(email));
 //                .orElseThrow(()->new UserNotFoundException(id)));
     }
+
+    public User getUserByUsername(String username) {
+        return (userRepository.findByUsername(username));
+    }
 }

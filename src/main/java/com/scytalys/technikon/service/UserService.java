@@ -20,4 +20,6 @@ public interface UserService {
     User getUserByTinNumber(Long tinNumber);
 
     User getUserByEmail(String email);
+
+    User getUserByUsername(String username);
 }

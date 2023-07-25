@@ -53,6 +53,12 @@ public class UserController {
         return new ResponseEntity<>(userMapper.userToUserDto(userService.getUserByEmail(email)), HttpStatus.ACCEPTED);
     }
 
+    /** Search/Get user by username */
+    @GetMapping("/search/email/{username}")
+    public ResponseEntity<UserDto> searchUserByUsername(@PathVariable("username") String username) {
+        return new ResponseEntity<>(userMapper.userToUserDto(userService.getUserByUsername(username)), HttpStatus.ACCEPTED);
+    }
+
     /** Delete user by their ID */
     @DeleteMapping("delete/{userID}")
     public ResponseEntity<String> deleteUser(@PathVariable("userID") final Long userID) {

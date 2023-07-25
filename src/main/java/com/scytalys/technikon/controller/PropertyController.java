@@ -1,7 +1,9 @@
 package com.scytalys.technikon.controller;
 
 import com.scytalys.technikon.domain.Property;
+import com.scytalys.technikon.domain.User;
 import com.scytalys.technikon.dto.PropertyDto;
+import com.scytalys.technikon.dto.UserDto;
 import com.scytalys.technikon.mapper.PropertyMapper;
 import com.scytalys.technikon.service.PropertyService;
 import lombok.RequiredArgsConstructor;
@@ -30,15 +32,22 @@ public class PropertyController {
     }
 
     /** List all properties with this controller */
-    @GetMapping
-    public ResponseEntity<List<Property>> fetchPropertyList() {
-        return ResponseEntity.ok(propertyService.fetchPropertyList());
+    @GetMapping("/allproperties")
+    public ResponseEntity<List<PropertyDto>> fetchPropertyList() {
+        return new  ResponseEntity<>(propertyMapper.propertyListToPropertyDtoList(propertyService.fetchPropertyList()), HttpStatus.ACCEPTED);
     }
 
     /** Update property controller */
     @PutMapping("/update")
     public void updateProperty(@RequestBody PropertyDto propertyDto) {
         propertyService.updateProperty(propertyMapper.propertyDtoToProperty(propertyDto));
+    }
+
+    @PutMapping("/update/{propertyId}")
+    public ResponseEntity<PropertyDto> updatePropertyById(@RequestBody PropertyDto propertyDto, @PathVariable("propertyId") Long propertyId) {
+        Property updatedProperty = propertyService.updatePropertyById(propertyMapper.propertyDtoToProperty(propertyDto), propertyId);
+        PropertyDto updatedpropertyDto = propertyMapper.propertyToPropertyDto(updatedProperty);
+        return ResponseEntity.ok(updatedpropertyDto);
     }
 
     /** Finding and listing properties by their PIN */

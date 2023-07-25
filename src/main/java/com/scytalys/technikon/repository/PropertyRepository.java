@@ -33,4 +33,5 @@ public interface PropertyRepository extends JpaRepository<Property, Long> {
                     where p.yearOfConstruction >= :yearFrom and p.yearOfConstruction <= :yearTo
             """)
     Optional<List<Property>> findByConstructionYearRange(int yearFrom, int yearTo);
+
 }

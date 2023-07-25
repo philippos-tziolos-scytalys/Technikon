@@ -35,8 +35,8 @@ public class User extends BaseModel {
     private String password;
 
 
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
-    private List<Property> properties;
+//    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+//    private List<Property> properties;
 
     @ManyToMany
     @JoinTable(name = "user_roles", joinColumns = @JoinColumn(name = "user_id"),

@@ -5,13 +5,17 @@ import com.scytalys.technikon.domain.Property;
 import java.util.List;
 
 public interface PropertyService {
-    Property createProperty(Property property);
+//    Property saveProperty(Property property);
 
     List<Property> fetchPropertyList();
 
     void updateProperty(Property property);
 
+    Property updatePropertyById(Property property, Long id);
+
     Property searchByPIN(Long pin);
+
+// List<Property> searchByTIN(Long tin);
 
     List<Property> searchByPropertyType(String propertyType);
 
@@ -24,4 +28,6 @@ public interface PropertyService {
     void deletePropertyById(Long propertyId);
 
     List<Property> findPropertyByUser(Long userId);
+
+    Property createProperty(Property property);
 }
