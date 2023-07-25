@@ -1,5 +1,6 @@
 package com.scytalys.technikon.controller;
 
+import com.scytalys.technikon.domain.User;
 import com.scytalys.technikon.dto.UserDto;
 import com.scytalys.technikon.mapper.UserMapper;
 import com.scytalys.technikon.service.UserService;
@@ -34,10 +35,11 @@ public class UserController {
     }
 
     /** Search/Get user by ID */
-    @GetMapping("/search/{id}")
-    public ResponseEntity<UserDto> searchUser(@PathVariable("id") Long id) {
-        return new ResponseEntity<>(userMapper.userToUserDto(userService.getUserById(id)), HttpStatus.ACCEPTED);
+    @GetMapping("/search/{userID}")
+    public ResponseEntity<UserDto> searchUser(@PathVariable("userID") Long userID) {
+        return new ResponseEntity<>(userMapper.userToUserDto(userService.getUserById(userID)), HttpStatus.ACCEPTED);
     }
+
 
     /** Search/Get user by Tin Number */
     @GetMapping("/search/tin/{tinNumber}")
@@ -52,9 +54,9 @@ public class UserController {
     }
 
     /** Delete user by their ID */
-    @DeleteMapping("delete/{id}")
-    public ResponseEntity<String> deleteUser(@PathVariable("id") final Long id) {
-        userService.deleteUser(id);
+    @DeleteMapping("delete/{userID}")
+    public ResponseEntity<String> deleteUser(@PathVariable("userID") final Long userID) {
+        userService.deleteUser(userID);
         return ResponseEntity.ok("User deleted successfully");
     }
 
@@ -63,4 +65,12 @@ public class UserController {
     public void updateUser(@RequestBody UserDto userDto) {
         userService.updateUser(userMapper.userDtoToUser(userDto));
     }
+
+    @PutMapping("/update/{userID}")
+    public ResponseEntity<UserDto> updateUserById(@RequestBody UserDto userDto, @PathVariable("userID") Long userID) {
+        User updatedUser = userService.updateUserById(userMapper.userDtoToUser(userDto), userID);
+        UserDto updatedUserDto = userMapper.userToUserDto(updatedUser);
+        return ResponseEntity.ok(updatedUserDto);
+    }
+
 }

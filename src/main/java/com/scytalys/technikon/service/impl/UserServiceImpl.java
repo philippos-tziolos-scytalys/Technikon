@@ -43,6 +43,37 @@ public class UserServiceImpl implements UserService {
         userRepository.save(existingUser);
     }
 
+
+    /** Update user by ID**/
+    public User updateUserById(User user, Long id) {
+        validateUpdateUniqueFields(user);
+
+        User existingUser = userRepository.findById(id)
+                .orElseThrow(() -> new UserNotFoundException(id));
+
+        existingUser.setUsername(user.getUsername());
+        existingUser.setTinNumber(user.getTinNumber());
+        existingUser.setName(user.getName());
+        existingUser.setLastname(user.getLastname());
+        existingUser.setAddress(user.getAddress());
+        existingUser.setPhoneNumber(user.getPhoneNumber());
+        existingUser.setEmail(user.getEmail());
+
+        return userRepository.save(existingUser);
+    }
+
+    private void validateUpdateUniqueFields(User user) {
+        boolean isUsernameExists = userRepository.existsByUsername(user.getUsername());
+        if (isUsernameExists) {
+            throw new ExistingUserException("Username already exists");
+        }
+
+        boolean isEmailExists = userRepository.existsByEmail(user.getEmail());
+        if (isEmailExists) {
+            throw new ExistingUserException("Email already exists");
+        }
+    }
+
     /** Validation if username, email, or tin number exists */
     private void validateUniqueFields(User user) {
         boolean isUsernameExists = userRepository.existsByUsername(user.getUsername());

@@ -1,129 +1,258 @@
-2023-07-21 09:13:50.266 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists repairs alter column repair_date set data type timestamp(6)
-2023-07-21 09:13:50.281 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists "user" alter column number set data type bigint
-2023-07-21 09:13:50.287 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists "user" alter column tin_number set data type bigint
-2023-07-21 09:13:52.292 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : select u1_0.id from "user" u1_0 where u1_0.user_name=? fetch first ? rows only
-2023-07-21 09:13:52.294 TRACE SCY-LP-005 - [           main] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [alex]
-2023-07-21 09:13:52.294 TRACE SCY-LP-005 - [           main] [o.h.o.j.bind                       ] : binding parameter [2] as [INTEGER] - [1]
-2023-07-21 09:16:42.301 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists repairs alter column repair_date set data type timestamp(6)
-2023-07-21 09:16:42.305 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists "user" alter column number set data type bigint
-2023-07-21 09:16:42.307 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists "user" alter column tin_number set data type bigint
-2023-07-21 09:17:45.224 DEBUG SCY-LP-005 - [nio-8080-exec-2] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 09:17:45.225 TRACE SCY-LP-005 - [nio-8080-exec-2] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - []
-2023-07-21 09:17:47.776 DEBUG SCY-LP-005 - [nio-8080-exec-3] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 09:17:47.777 TRACE SCY-LP-005 - [nio-8080-exec-3] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - []
-2023-07-21 10:21:21.205 DEBUG SCY-LP-005 - [nio-8080-exec-6] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:21:21.206 TRACE SCY-LP-005 - [nio-8080-exec-6] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:21:29.840 DEBUG SCY-LP-005 - [nio-8080-exec-7] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:21:29.841 TRACE SCY-LP-005 - [nio-8080-exec-7] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:24:46.497 DEBUG SCY-LP-005 - [nio-8080-exec-9] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:24:46.499 TRACE SCY-LP-005 - [nio-8080-exec-9] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:25:00.512 DEBUG SCY-LP-005 - [io-8080-exec-10] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:25:00.513 TRACE SCY-LP-005 - [io-8080-exec-10] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:25:01.462 DEBUG SCY-LP-005 - [nio-8080-exec-1] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:25:01.464 TRACE SCY-LP-005 - [nio-8080-exec-1] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:25:01.647 DEBUG SCY-LP-005 - [nio-8080-exec-2] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:25:01.647 TRACE SCY-LP-005 - [nio-8080-exec-2] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:25:01.815 DEBUG SCY-LP-005 - [nio-8080-exec-3] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:25:01.815 TRACE SCY-LP-005 - [nio-8080-exec-3] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:25:02.015 DEBUG SCY-LP-005 - [nio-8080-exec-4] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:25:02.015 TRACE SCY-LP-005 - [nio-8080-exec-4] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:25:02.182 DEBUG SCY-LP-005 - [nio-8080-exec-5] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:25:02.182 TRACE SCY-LP-005 - [nio-8080-exec-5] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:26:26.585 DEBUG SCY-LP-005 - [nio-8080-exec-7] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:26:26.586 TRACE SCY-LP-005 - [nio-8080-exec-7] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:26:30.510 DEBUG SCY-LP-005 - [nio-8080-exec-8] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:26:30.512 TRACE SCY-LP-005 - [nio-8080-exec-8] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:26:31.047 DEBUG SCY-LP-005 - [nio-8080-exec-9] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:26:31.047 TRACE SCY-LP-005 - [nio-8080-exec-9] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:26:31.623 DEBUG SCY-LP-005 - [io-8080-exec-10] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:26:31.624 TRACE SCY-LP-005 - [io-8080-exec-10] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:26:32.040 DEBUG SCY-LP-005 - [nio-8080-exec-1] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:26:32.040 TRACE SCY-LP-005 - [nio-8080-exec-1] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:29:05.160 DEBUG SCY-LP-005 - [nio-8080-exec-3] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:29:05.161 TRACE SCY-LP-005 - [nio-8080-exec-3] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:29:46.119 DEBUG SCY-LP-005 - [nio-8080-exec-4] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:29:46.121 TRACE SCY-LP-005 - [nio-8080-exec-4] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:29:47.222 DEBUG SCY-LP-005 - [nio-8080-exec-5] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:29:47.224 TRACE SCY-LP-005 - [nio-8080-exec-5] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:29:47.582 DEBUG SCY-LP-005 - [nio-8080-exec-6] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:29:47.582 TRACE SCY-LP-005 - [nio-8080-exec-6] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:29:47.973 DEBUG SCY-LP-005 - [nio-8080-exec-7] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:29:47.973 TRACE SCY-LP-005 - [nio-8080-exec-7] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:29:48.165 DEBUG SCY-LP-005 - [nio-8080-exec-8] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:29:48.165 TRACE SCY-LP-005 - [nio-8080-exec-8] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:29:48.325 DEBUG SCY-LP-005 - [nio-8080-exec-9] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:29:48.325 TRACE SCY-LP-005 - [nio-8080-exec-9] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:29:48.485 DEBUG SCY-LP-005 - [io-8080-exec-10] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:29:48.485 TRACE SCY-LP-005 - [io-8080-exec-10] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:29:48.646 DEBUG SCY-LP-005 - [nio-8080-exec-1] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:29:48.646 TRACE SCY-LP-005 - [nio-8080-exec-1] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:29:48.780 DEBUG SCY-LP-005 - [nio-8080-exec-2] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:29:48.780 TRACE SCY-LP-005 - [nio-8080-exec-2] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:30:59.487 DEBUG SCY-LP-005 - [nio-8080-exec-4] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:30:59.488 TRACE SCY-LP-005 - [nio-8080-exec-4] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:31:02.405 DEBUG SCY-LP-005 - [nio-8080-exec-5] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:31:02.407 TRACE SCY-LP-005 - [nio-8080-exec-5] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:31:05.478 DEBUG SCY-LP-005 - [nio-8080-exec-6] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:31:05.479 TRACE SCY-LP-005 - [nio-8080-exec-6] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:31:13.574 DEBUG SCY-LP-005 - [nio-8080-exec-7] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:31:13.575 TRACE SCY-LP-005 - [nio-8080-exec-7] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:33:04.246 DEBUG SCY-LP-005 - [nio-8080-exec-9] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:33:04.247 TRACE SCY-LP-005 - [nio-8080-exec-9] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:40:43.422 DEBUG SCY-LP-005 - [nio-8080-exec-1] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:40:43.423 TRACE SCY-LP-005 - [nio-8080-exec-1] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:40:50.627 DEBUG SCY-LP-005 - [nio-8080-exec-2] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:40:50.628 TRACE SCY-LP-005 - [nio-8080-exec-2] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:40:59.106 DEBUG SCY-LP-005 - [nio-8080-exec-3] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:40:59.107 TRACE SCY-LP-005 - [nio-8080-exec-3] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:43:05.964 DEBUG SCY-LP-005 - [nio-8080-exec-5] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:43:05.965 TRACE SCY-LP-005 - [nio-8080-exec-5] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:43:06.858 DEBUG SCY-LP-005 - [nio-8080-exec-6] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:43:06.858 TRACE SCY-LP-005 - [nio-8080-exec-6] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:43:07.009 DEBUG SCY-LP-005 - [nio-8080-exec-7] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:43:07.009 TRACE SCY-LP-005 - [nio-8080-exec-7] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:43:07.153 DEBUG SCY-LP-005 - [nio-8080-exec-8] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:43:07.154 TRACE SCY-LP-005 - [nio-8080-exec-8] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:43:07.322 DEBUG SCY-LP-005 - [nio-8080-exec-9] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:43:07.322 TRACE SCY-LP-005 - [nio-8080-exec-9] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:43:22.489 DEBUG SCY-LP-005 - [io-8080-exec-10] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:43:22.490 TRACE SCY-LP-005 - [io-8080-exec-10] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:43:22.665 DEBUG SCY-LP-005 - [nio-8080-exec-1] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:43:22.665 TRACE SCY-LP-005 - [nio-8080-exec-1] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:43:22.808 DEBUG SCY-LP-005 - [nio-8080-exec-2] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:43:22.809 TRACE SCY-LP-005 - [nio-8080-exec-2] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:43:22.952 DEBUG SCY-LP-005 - [nio-8080-exec-3] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:43:22.952 TRACE SCY-LP-005 - [nio-8080-exec-3] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:43:23.121 DEBUG SCY-LP-005 - [nio-8080-exec-4] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:43:23.121 TRACE SCY-LP-005 - [nio-8080-exec-4] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:43:23.273 DEBUG SCY-LP-005 - [nio-8080-exec-5] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:43:23.273 TRACE SCY-LP-005 - [nio-8080-exec-5] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:43:23.433 DEBUG SCY-LP-005 - [nio-8080-exec-6] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:43:23.433 TRACE SCY-LP-005 - [nio-8080-exec-6] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:43:23.601 DEBUG SCY-LP-005 - [nio-8080-exec-7] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:43:23.601 TRACE SCY-LP-005 - [nio-8080-exec-7] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:43:23.753 DEBUG SCY-LP-005 - [nio-8080-exec-8] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:43:23.753 TRACE SCY-LP-005 - [nio-8080-exec-8] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:43:23.914 DEBUG SCY-LP-005 - [nio-8080-exec-9] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:43:23.914 TRACE SCY-LP-005 - [nio-8080-exec-9] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:43:24.082 DEBUG SCY-LP-005 - [io-8080-exec-10] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:43:24.082 TRACE SCY-LP-005 - [io-8080-exec-10] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:43:24.250 DEBUG SCY-LP-005 - [nio-8080-exec-1] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:43:24.250 TRACE SCY-LP-005 - [nio-8080-exec-1] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:43:24.667 DEBUG SCY-LP-005 - [nio-8080-exec-2] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:43:24.667 TRACE SCY-LP-005 - [nio-8080-exec-2] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:44:22.026 DEBUG SCY-LP-005 - [nio-8080-exec-3] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:44:22.027 TRACE SCY-LP-005 - [nio-8080-exec-3] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:44:30.241 DEBUG SCY-LP-005 - [nio-8080-exec-4] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:44:30.241 TRACE SCY-LP-005 - [nio-8080-exec-4] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:44:48.883 DEBUG SCY-LP-005 - [nio-8080-exec-5] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:44:48.884 TRACE SCY-LP-005 - [nio-8080-exec-5] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:45:14.617 DEBUG SCY-LP-005 - [nio-8080-exec-6] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:45:14.618 TRACE SCY-LP-005 - [nio-8080-exec-6] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:45:42.364 DEBUG SCY-LP-005 - [nio-8080-exec-7] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:45:42.366 TRACE SCY-LP-005 - [nio-8080-exec-7] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:52:19.085 DEBUG SCY-LP-005 - [io-8080-exec-10] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:52:19.086 TRACE SCY-LP-005 - [io-8080-exec-10] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:53:24.497 DEBUG SCY-LP-005 - [nio-8080-exec-2] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:53:24.497 TRACE SCY-LP-005 - [nio-8080-exec-2] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
-2023-07-21 10:53:50.736 DEBUG SCY-LP-005 - [nio-8080-exec-3] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
-2023-07-21 10:53:50.737 TRACE SCY-LP-005 - [nio-8080-exec-3] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [pavlos@gmail.com]
+2023-07-25 09:43:23.577 DEBUG SCY-LP-005 - [nio-8080-exec-6] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0
+2023-07-25 09:43:23.587 DEBUG SCY-LP-005 - [nio-8080-exec-7] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0
+2023-07-25 09:43:24.554 DEBUG SCY-LP-005 - [nio-8080-exec-8] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0
+2023-07-25 09:43:24.563 DEBUG SCY-LP-005 - [nio-8080-exec-9] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0
+2023-07-25 09:43:25.658 DEBUG SCY-LP-005 - [io-8080-exec-10] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0
+2023-07-25 09:43:25.665 DEBUG SCY-LP-005 - [nio-8080-exec-1] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0
+2023-07-25 09:43:26.524 DEBUG SCY-LP-005 - [nio-8080-exec-2] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0
+2023-07-25 09:43:26.529 DEBUG SCY-LP-005 - [nio-8080-exec-3] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0
+2023-07-25 09:43:26.982 DEBUG SCY-LP-005 - [nio-8080-exec-4] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0
+2023-07-25 09:43:26.988 DEBUG SCY-LP-005 - [nio-8080-exec-5] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0
+2023-07-25 09:43:27.146 DEBUG SCY-LP-005 - [nio-8080-exec-6] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0
+2023-07-25 09:43:27.152 DEBUG SCY-LP-005 - [nio-8080-exec-7] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0
+2023-07-25 09:43:27.332 DEBUG SCY-LP-005 - [nio-8080-exec-8] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0
+2023-07-25 09:43:27.339 DEBUG SCY-LP-005 - [nio-8080-exec-9] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0
+2023-07-25 09:43:27.656 DEBUG SCY-LP-005 - [io-8080-exec-10] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0
+2023-07-25 09:43:27.663 DEBUG SCY-LP-005 - [nio-8080-exec-1] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0
+2023-07-25 09:43:27.833 DEBUG SCY-LP-005 - [nio-8080-exec-2] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0
+2023-07-25 09:43:27.841 DEBUG SCY-LP-005 - [nio-8080-exec-3] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0
+2023-07-25 09:43:28.036 DEBUG SCY-LP-005 - [nio-8080-exec-4] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0
+2023-07-25 09:43:28.042 DEBUG SCY-LP-005 - [nio-8080-exec-5] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0
+2023-07-25 09:43:28.220 DEBUG SCY-LP-005 - [nio-8080-exec-6] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0
+2023-07-25 09:43:28.226 DEBUG SCY-LP-005 - [nio-8080-exec-7] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0
+2023-07-25 09:52:48.461 DEBUG SCY-LP-005 - [nio-8080-exec-9] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.id=?
+2023-07-25 09:52:48.461 TRACE SCY-LP-005 - [nio-8080-exec-9] [o.h.o.j.bind                       ] : binding parameter [1] as [BIGINT] - [1]
+2023-07-25 09:52:48.468 DEBUG SCY-LP-005 - [io-8080-exec-10] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.id=?
+2023-07-25 09:52:48.468 TRACE SCY-LP-005 - [io-8080-exec-10] [o.h.o.j.bind                       ] : binding parameter [1] as [BIGINT] - [1]
+2023-07-25 09:52:48.472 DEBUG SCY-LP-005 - [nio-8080-exec-1] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.id=?
+2023-07-25 09:52:48.472 TRACE SCY-LP-005 - [nio-8080-exec-1] [o.h.o.j.bind                       ] : binding parameter [1] as [BIGINT] - [1]
+2023-07-25 09:52:48.478 DEBUG SCY-LP-005 - [nio-8080-exec-2] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.id=?
+2023-07-25 09:52:48.478 TRACE SCY-LP-005 - [nio-8080-exec-2] [o.h.o.j.bind                       ] : binding parameter [1] as [BIGINT] - [1]
+2023-07-25 10:00:25.994 DEBUG SCY-LP-005 - [nio-8080-exec-4] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0
+2023-07-25 10:00:26.001 DEBUG SCY-LP-005 - [nio-8080-exec-5] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0
+2023-07-25 10:41:16.400 DEBUG SCY-LP-005 - [nio-8080-exec-8] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
+2023-07-25 10:41:16.401 TRACE SCY-LP-005 - [nio-8080-exec-8] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [kevinrosalessss@gmail.com]
+2023-07-25 10:41:16.418 DEBUG SCY-LP-005 - [nio-8080-exec-9] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0
+2023-07-25 10:41:16.426 DEBUG SCY-LP-005 - [io-8080-exec-10] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0
+2023-07-25 10:41:16.548 DEBUG SCY-LP-005 - [nio-8080-exec-1] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0
+2023-07-25 10:41:16.556 DEBUG SCY-LP-005 - [nio-8080-exec-2] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0
+2023-07-25 10:52:08.727 DEBUG SCY-LP-005 - [nio-8080-exec-5] [o.h.SQL                            ] : select u1_0.id from "user" u1_0 where u1_0.user_name=? fetch first ? rows only
+2023-07-25 10:52:08.728 TRACE SCY-LP-005 - [nio-8080-exec-5] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [Seven]
+2023-07-25 10:52:08.728 TRACE SCY-LP-005 - [nio-8080-exec-5] [o.h.o.j.bind                       ] : binding parameter [2] as [INTEGER] - [1]
+2023-07-25 10:52:08.730 DEBUG SCY-LP-005 - [nio-8080-exec-5] [o.h.SQL                            ] : select u1_0.id from "user" u1_0 where u1_0.email=? fetch first ? rows only
+2023-07-25 10:52:08.730 TRACE SCY-LP-005 - [nio-8080-exec-5] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [rosaleskevinklein@gmail.com]
+2023-07-25 10:52:08.730 TRACE SCY-LP-005 - [nio-8080-exec-5] [o.h.o.j.bind                       ] : binding parameter [2] as [INTEGER] - [1]
+2023-07-25 10:52:08.731 DEBUG SCY-LP-005 - [nio-8080-exec-5] [o.h.SQL                            ] : select r1_0.id,r1_0.name from roles r1_0 where r1_0.name=?
+2023-07-25 10:52:08.731 TRACE SCY-LP-005 - [nio-8080-exec-5] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [ROLE_USER]
+2023-07-25 10:52:08.732 DEBUG SCY-LP-005 - [nio-8080-exec-5] [o.h.SQL                            ] : select nextval('user_seq')
+2023-07-25 10:52:08.735 DEBUG SCY-LP-005 - [nio-8080-exec-5] [o.h.SQL                            ] : insert into "user" (address,email,last_name,first_name,password,number,tin_number,user_name,id) values (?,?,?,?,?,?,?,?,?)
+2023-07-25 10:52:08.735 TRACE SCY-LP-005 - [nio-8080-exec-5] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [Zografou papagou 23]
+2023-07-25 10:52:08.735 TRACE SCY-LP-005 - [nio-8080-exec-5] [o.h.o.j.bind                       ] : binding parameter [2] as [VARCHAR] - [rosaleskevinklein@gmail.com]
+2023-07-25 10:52:08.735 TRACE SCY-LP-005 - [nio-8080-exec-5] [o.h.o.j.bind                       ] : binding parameter [3] as [VARCHAR] - [Rosales]
+2023-07-25 10:52:08.735 TRACE SCY-LP-005 - [nio-8080-exec-5] [o.h.o.j.bind                       ] : binding parameter [4] as [VARCHAR] - [Kevin]
+2023-07-25 10:52:08.735 TRACE SCY-LP-005 - [nio-8080-exec-5] [o.h.o.j.bind                       ] : binding parameter [5] as [VARCHAR] - [admin1234]
+2023-07-25 10:52:08.735 TRACE SCY-LP-005 - [nio-8080-exec-5] [o.h.o.j.bind                       ] : binding parameter [6] as [BIGINT] - [306993565664]
+2023-07-25 10:52:08.735 TRACE SCY-LP-005 - [nio-8080-exec-5] [o.h.o.j.bind                       ] : binding parameter [7] as [BIGINT] - [19990911]
+2023-07-25 10:52:08.735 TRACE SCY-LP-005 - [nio-8080-exec-5] [o.h.o.j.bind                       ] : binding parameter [8] as [VARCHAR] - [Seven]
+2023-07-25 10:52:08.735 TRACE SCY-LP-005 - [nio-8080-exec-5] [o.h.o.j.bind                       ] : binding parameter [9] as [BIGINT] - [2]
+2023-07-25 10:52:23.151 DEBUG SCY-LP-005 - [nio-8080-exec-6] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
+2023-07-25 10:52:23.152 TRACE SCY-LP-005 - [nio-8080-exec-6] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [rosaleskevinklein@gmail.com]
+2023-07-25 10:52:23.165 DEBUG SCY-LP-005 - [nio-8080-exec-7] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0
+2023-07-25 10:52:23.171 DEBUG SCY-LP-005 - [nio-8080-exec-8] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0
+2023-07-25 10:52:23.551 DEBUG SCY-LP-005 - [nio-8080-exec-9] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0
+2023-07-25 10:52:23.558 DEBUG SCY-LP-005 - [io-8080-exec-10] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0
+2023-07-25 10:54:03.609 DEBUG SCY-LP-005 - [nio-8080-exec-2] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
+2023-07-25 10:54:03.609 TRACE SCY-LP-005 - [nio-8080-exec-2] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - []
+2023-07-25 10:54:05.655 DEBUG SCY-LP-005 - [nio-8080-exec-3] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
+2023-07-25 10:54:05.656 TRACE SCY-LP-005 - [nio-8080-exec-3] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - []
+2023-07-25 11:02:58.251 DEBUG SCY-LP-005 - [nio-8080-exec-5] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.email=?
+2023-07-25 11:02:58.253 TRACE SCY-LP-005 - [nio-8080-exec-5] [o.h.o.j.bind                       ] : binding parameter [1] as [VARCHAR] - [rosaleskevinklein@gmail.com]
+2023-07-25 11:02:58.267 DEBUG SCY-LP-005 - [nio-8080-exec-6] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0
+2023-07-25 11:02:58.273 DEBUG SCY-LP-005 - [nio-8080-exec-7] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0
+2023-07-25 11:02:58.652 DEBUG SCY-LP-005 - [nio-8080-exec-8] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0
+2023-07-25 11:02:58.661 DEBUG SCY-LP-005 - [nio-8080-exec-9] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0
+2023-07-25 11:07:00.748 DEBUG SCY-LP-005 - [nio-8080-exec-1] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0
+2023-07-25 11:07:00.755 DEBUG SCY-LP-005 - [nio-8080-exec-2] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0
+2023-07-25 11:09:55.639 DEBUG SCY-LP-005 - [nio-8080-exec-4] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0
+2023-07-25 11:09:55.644 DEBUG SCY-LP-005 - [nio-8080-exec-5] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0
+2023-07-25 11:10:29.974 DEBUG SCY-LP-005 - [nio-8080-exec-6] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0
+2023-07-25 11:10:29.980 DEBUG SCY-LP-005 - [nio-8080-exec-7] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0
+2023-07-25 11:17:39.721 DEBUG SCY-LP-005 - [nio-8080-exec-9] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.id=?
+2023-07-25 11:17:39.722 TRACE SCY-LP-005 - [nio-8080-exec-9] [o.h.o.j.bind                       ] : binding parameter [1] as [BIGINT] - [1]
+2023-07-25 11:17:39.729 DEBUG SCY-LP-005 - [io-8080-exec-10] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.id=?
+2023-07-25 11:17:39.729 TRACE SCY-LP-005 - [io-8080-exec-10] [o.h.o.j.bind                       ] : binding parameter [1] as [BIGINT] - [1]
+2023-07-25 11:17:39.735 DEBUG SCY-LP-005 - [nio-8080-exec-1] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.id=?
+2023-07-25 11:17:39.735 TRACE SCY-LP-005 - [nio-8080-exec-1] [o.h.o.j.bind                       ] : binding parameter [1] as [BIGINT] - [1]
+2023-07-25 11:17:39.741 DEBUG SCY-LP-005 - [nio-8080-exec-2] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.id=?
+2023-07-25 11:17:39.741 TRACE SCY-LP-005 - [nio-8080-exec-2] [o.h.o.j.bind                       ] : binding parameter [1] as [BIGINT] - [1]
+2023-07-25 11:18:05.584 DEBUG SCY-LP-005 - [nio-8080-exec-3] [o.h.SQL                            ] : select u1_0.id,u1_0.address,u1_0.email,u1_0.last_name,u1_0.first_name,u1_0.password,u1_0.number,u1_0.tin_number,u1_0.user_name from "user" u1_0 where u1_0.id=?
+2023-07-25 11:18:05.585 TRACE SCY-LP-005 - [nio-8080-exec-3] [o.h.o.j.bind                       ] : binding parameter [1] as [BIGINT] - [1]
+2023-07-25 11:21:19.386 DEBUG SCY-LP-005 - [ionShutdownHook] [o.h.SQL                            ] : alter table if exists property drop constraint if exists FKlue2sjtujjfq5ukbg4ibbjs5w
+2023-07-25 11:21:19.398 DEBUG SCY-LP-005 - [ionShutdownHook] [o.h.SQL                            ] : alter table if exists repairs drop constraint if exists FK6i88fgqlrt72jjuky9k3xnull
+2023-07-25 11:21:19.402 DEBUG SCY-LP-005 - [ionShutdownHook] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FKh8ciramu9cc9q3qcqiv4ue8a6
+2023-07-25 11:21:19.404 DEBUG SCY-LP-005 - [ionShutdownHook] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FK7ivp84f52aa3vd7ndq0oh0279
+2023-07-25 11:21:19.406 DEBUG SCY-LP-005 - [ionShutdownHook] [o.h.SQL                            ] : drop table if exists property cascade
+2023-07-25 11:21:19.411 DEBUG SCY-LP-005 - [ionShutdownHook] [o.h.SQL                            ] : drop table if exists repairs cascade
+2023-07-25 11:21:19.415 DEBUG SCY-LP-005 - [ionShutdownHook] [o.h.SQL                            ] : drop table if exists roles cascade
+2023-07-25 11:21:19.417 DEBUG SCY-LP-005 - [ionShutdownHook] [o.h.SQL                            ] : drop table if exists "user" cascade
+2023-07-25 11:21:19.421 DEBUG SCY-LP-005 - [ionShutdownHook] [o.h.SQL                            ] : drop table if exists user_roles cascade
+2023-07-25 11:21:19.424 DEBUG SCY-LP-005 - [ionShutdownHook] [o.h.SQL                            ] : drop sequence if exists property_seq
+2023-07-25 11:21:19.427 DEBUG SCY-LP-005 - [ionShutdownHook] [o.h.SQL                            ] : drop sequence if exists repair_seq
+2023-07-25 11:21:19.431 DEBUG SCY-LP-005 - [ionShutdownHook] [o.h.SQL                            ] : drop sequence if exists roles_seq
+2023-07-25 11:21:19.434 DEBUG SCY-LP-005 - [ionShutdownHook] [o.h.SQL                            ] : drop sequence if exists user_seq
+2023-07-25 11:27:18.650 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists property drop constraint if exists FKn9cdajshrebcritph05nuxxlv
+2023-07-25 11:27:18.653 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists repairs drop constraint if exists FK6i88fgqlrt72jjuky9k3xnull
+2023-07-25 11:27:18.654 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FKh8ciramu9cc9q3qcqiv4ue8a6
+2023-07-25 11:27:18.655 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FK7ivp84f52aa3vd7ndq0oh0279
+2023-07-25 11:27:18.657 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop table if exists property cascade
+2023-07-25 11:27:18.658 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop table if exists repairs cascade
+2023-07-25 11:27:18.659 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop table if exists roles cascade
+2023-07-25 11:27:18.660 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop table if exists "user" cascade
+2023-07-25 11:27:18.662 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop table if exists user_roles cascade
+2023-07-25 11:27:18.663 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop sequence if exists property_seq
+2023-07-25 11:27:18.664 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop sequence if exists repair_seq
+2023-07-25 11:27:18.665 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop sequence if exists roles_seq
+2023-07-25 11:27:18.665 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop sequence if exists user_seq
+2023-07-25 11:27:18.671 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : create sequence property_seq start with 1 increment by 1
+2023-07-25 11:27:18.675 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : create sequence repair_seq start with 1 increment by 1
+2023-07-25 11:27:18.678 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : create sequence roles_seq start with 1 increment by 1
+2023-07-25 11:27:18.680 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : create sequence user_seq start with 1 increment by 1
+2023-07-25 11:27:18.685 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : create table property (active_state boolean, year_of_construction integer, id bigint not null, map_location_lat bigint, map_location_long bigint, pin bigint, user_id bigint, address varchar(255), property_picture varchar(255), property_type varchar(255) check (property_type in ('DETACHED_HOUSE','MAISONETTE','APARTMENT_BUILDING')), primary key (id))
+2023-07-25 11:27:18.698 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : create table repairs (cost numeric(38,2) not null, id bigint not null, property_id bigint, repair_date timestamp(6) not null, repair_status varchar(11) not null check (repair_status in ('PENDING','SCHEDULED','IN_PROGRESS','COMPLETED')), repair_type varchar(15) not null check (repair_type in ('PAINTING','INSULATION','FRAMES','PLUMBING','ELECTRICAL_WORK')), description varchar(1000) not null, primary key (id))
+2023-07-25 11:27:18.708 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : create table roles (id bigint not null, name varchar(45) not null, primary key (id))
+2023-07-25 11:27:18.714 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : create table "user" (id bigint not null, number bigint, tin_number bigint, email varchar(50), first_name varchar(50), last_name varchar(50), user_name varchar(50), address varchar(255), password varchar(255), primary key (id))
+2023-07-25 11:27:18.723 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : create table user_roles (role_id bigint not null, user_id bigint not null, primary key (role_id, user_id))
+2023-07-25 11:27:18.729 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists property add constraint FKn9cdajshrebcritph05nuxxlv foreign key (user_id) references "user"
+2023-07-25 11:27:18.732 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists repairs add constraint FK6i88fgqlrt72jjuky9k3xnull foreign key (property_id) references property
+2023-07-25 11:27:18.735 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists user_roles add constraint FKh8ciramu9cc9q3qcqiv4ue8a6 foreign key (role_id) references roles
+2023-07-25 11:27:18.737 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists user_roles add constraint FK7ivp84f52aa3vd7ndq0oh0279 foreign key (user_id) references "user"
+2023-07-25 11:27:19.100 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists property drop constraint if exists FKn9cdajshrebcritph05nuxxlv
+2023-07-25 11:27:19.103 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists repairs drop constraint if exists FK6i88fgqlrt72jjuky9k3xnull
+2023-07-25 11:27:19.105 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FKh8ciramu9cc9q3qcqiv4ue8a6
+2023-07-25 11:27:19.108 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FK7ivp84f52aa3vd7ndq0oh0279
+2023-07-25 11:27:19.110 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop table if exists property cascade
+2023-07-25 11:27:19.112 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop table if exists repairs cascade
+2023-07-25 11:27:19.116 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop table if exists roles cascade
+2023-07-25 11:27:19.118 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop table if exists "user" cascade
+2023-07-25 11:27:19.120 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop table if exists user_roles cascade
+2023-07-25 11:27:19.123 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop sequence if exists property_seq
+2023-07-25 11:27:19.125 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop sequence if exists repair_seq
+2023-07-25 11:27:19.127 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop sequence if exists roles_seq
+2023-07-25 11:27:19.129 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop sequence if exists user_seq
+2023-07-25 11:28:24.165 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists property drop constraint if exists FKn9cdajshrebcritph05nuxxlv
+2023-07-25 11:28:24.169 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists repairs drop constraint if exists FK6i88fgqlrt72jjuky9k3xnull
+2023-07-25 11:28:24.170 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FKh8ciramu9cc9q3qcqiv4ue8a6
+2023-07-25 11:28:24.170 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FK7ivp84f52aa3vd7ndq0oh0279
+2023-07-25 11:28:24.171 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop table if exists property cascade
+2023-07-25 11:28:24.172 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop table if exists repairs cascade
+2023-07-25 11:28:24.173 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop table if exists roles cascade
+2023-07-25 11:28:24.174 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop table if exists "user" cascade
+2023-07-25 11:28:24.175 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop table if exists user_roles cascade
+2023-07-25 11:28:24.175 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop sequence if exists property_seq
+2023-07-25 11:28:24.176 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop sequence if exists repair_seq
+2023-07-25 11:28:24.177 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop sequence if exists roles_seq
+2023-07-25 11:28:24.178 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop sequence if exists user_seq
+2023-07-25 11:28:24.182 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : create sequence property_seq start with 1 increment by 1
+2023-07-25 11:28:24.185 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : create sequence repair_seq start with 1 increment by 1
+2023-07-25 11:28:24.188 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : create sequence roles_seq start with 1 increment by 1
+2023-07-25 11:28:24.190 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : create sequence user_seq start with 1 increment by 1
+2023-07-25 11:28:24.194 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : create table property (active_state boolean, year_of_construction integer, id bigint not null, map_location_lat bigint, map_location_long bigint, pin bigint, user_id bigint, address varchar(255), property_picture varchar(255), property_type varchar(255) check (property_type in ('DETACHED_HOUSE','MAISONETTE','APARTMENT_BUILDING')), primary key (id))
+2023-07-25 11:28:24.203 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : create table repairs (cost numeric(38,2) not null, id bigint not null, property_id bigint, repair_date timestamp(6) not null, repair_status varchar(11) not null check (repair_status in ('PENDING','SCHEDULED','IN_PROGRESS','COMPLETED')), repair_type varchar(15) not null check (repair_type in ('PAINTING','INSULATION','FRAMES','PLUMBING','ELECTRICAL_WORK')), description varchar(1000) not null, primary key (id))
+2023-07-25 11:28:24.211 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : create table roles (id bigint not null, name varchar(45) not null, primary key (id))
+2023-07-25 11:28:24.215 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : create table "user" (id bigint not null, number bigint, tin_number bigint, email varchar(50), first_name varchar(50), last_name varchar(50), user_name varchar(50), address varchar(255), password varchar(255), primary key (id))
+2023-07-25 11:28:24.224 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : create table user_roles (role_id bigint not null, user_id bigint not null, primary key (role_id, user_id))
+2023-07-25 11:28:24.229 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists property add constraint FKn9cdajshrebcritph05nuxxlv foreign key (user_id) references "user"
+2023-07-25 11:28:24.231 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists repairs add constraint FK6i88fgqlrt72jjuky9k3xnull foreign key (property_id) references property
+2023-07-25 11:28:24.234 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists user_roles add constraint FKh8ciramu9cc9q3qcqiv4ue8a6 foreign key (role_id) references roles
+2023-07-25 11:28:24.236 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists user_roles add constraint FK7ivp84f52aa3vd7ndq0oh0279 foreign key (user_id) references "user"
+2023-07-25 11:28:24.491 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists property drop constraint if exists FKn9cdajshrebcritph05nuxxlv
+2023-07-25 11:28:24.494 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists repairs drop constraint if exists FK6i88fgqlrt72jjuky9k3xnull
+2023-07-25 11:28:24.496 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FKh8ciramu9cc9q3qcqiv4ue8a6
+2023-07-25 11:28:24.498 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FK7ivp84f52aa3vd7ndq0oh0279
+2023-07-25 11:28:24.500 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop table if exists property cascade
+2023-07-25 11:28:24.502 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop table if exists repairs cascade
+2023-07-25 11:28:24.505 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop table if exists roles cascade
+2023-07-25 11:28:24.508 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop table if exists "user" cascade
+2023-07-25 11:28:24.510 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop table if exists user_roles cascade
+2023-07-25 11:28:24.512 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop sequence if exists property_seq
+2023-07-25 11:28:24.514 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop sequence if exists repair_seq
+2023-07-25 11:28:24.515 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop sequence if exists roles_seq
+2023-07-25 11:28:24.518 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop sequence if exists user_seq
+2023-07-25 11:29:03.981 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists property drop constraint if exists FKn9cdajshrebcritph05nuxxlv
+2023-07-25 11:29:03.984 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists repairs drop constraint if exists FK6i88fgqlrt72jjuky9k3xnull
+2023-07-25 11:29:03.985 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FKh8ciramu9cc9q3qcqiv4ue8a6
+2023-07-25 11:29:03.986 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FK7ivp84f52aa3vd7ndq0oh0279
+2023-07-25 11:29:03.987 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop table if exists property cascade
+2023-07-25 11:29:03.989 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop table if exists repairs cascade
+2023-07-25 11:29:03.990 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop table if exists roles cascade
+2023-07-25 11:29:03.991 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop table if exists "user" cascade
+2023-07-25 11:29:03.991 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop table if exists user_roles cascade
+2023-07-25 11:29:03.993 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop sequence if exists property_seq
+2023-07-25 11:29:03.993 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop sequence if exists repair_seq
+2023-07-25 11:29:03.994 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop sequence if exists roles_seq
+2023-07-25 11:29:03.995 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop sequence if exists user_seq
+2023-07-25 11:29:03.999 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : create sequence property_seq start with 1 increment by 1
+2023-07-25 11:29:04.004 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : create sequence repair_seq start with 1 increment by 1
+2023-07-25 11:29:04.005 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : create sequence roles_seq start with 1 increment by 1
+2023-07-25 11:29:04.008 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : create sequence user_seq start with 1 increment by 1
+2023-07-25 11:29:04.014 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : create table property (active_state boolean, year_of_construction integer, id bigint not null, map_location_lat bigint, map_location_long bigint, pin bigint, user_id bigint, address varchar(255), property_picture varchar(255), property_type varchar(255) check (property_type in ('DETACHED_HOUSE','MAISONETTE','APARTMENT_BUILDING')), primary key (id))
+2023-07-25 11:29:04.024 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : create table repairs (cost numeric(38,2) not null, id bigint not null, property_id bigint, repair_date timestamp(6) not null, repair_status varchar(11) not null check (repair_status in ('PENDING','SCHEDULED','IN_PROGRESS','COMPLETED')), repair_type varchar(15) not null check (repair_type in ('PAINTING','INSULATION','FRAMES','PLUMBING','ELECTRICAL_WORK')), description varchar(1000) not null, primary key (id))
+2023-07-25 11:29:04.032 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : create table roles (id bigint not null, name varchar(45) not null, primary key (id))
+2023-07-25 11:29:04.038 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : create table "user" (id bigint not null, number bigint, tin_number bigint, email varchar(50), first_name varchar(50), last_name varchar(50), user_name varchar(50), address varchar(255), password varchar(255), primary key (id))
+2023-07-25 11:29:04.046 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : create table user_roles (role_id bigint not null, user_id bigint not null, primary key (role_id, user_id))
+2023-07-25 11:29:04.051 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists property add constraint FKn9cdajshrebcritph05nuxxlv foreign key (user_id) references "user"
+2023-07-25 11:29:04.054 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists repairs add constraint FK6i88fgqlrt72jjuky9k3xnull foreign key (property_id) references property
+2023-07-25 11:29:04.056 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists user_roles add constraint FKh8ciramu9cc9q3qcqiv4ue8a6 foreign key (role_id) references roles
+2023-07-25 11:29:04.059 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists user_roles add constraint FK7ivp84f52aa3vd7ndq0oh0279 foreign key (user_id) references "user"
+2023-07-25 11:29:04.335 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists property drop constraint if exists FKn9cdajshrebcritph05nuxxlv
+2023-07-25 11:29:04.338 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists repairs drop constraint if exists FK6i88fgqlrt72jjuky9k3xnull
+2023-07-25 11:29:04.339 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FKh8ciramu9cc9q3qcqiv4ue8a6
+2023-07-25 11:29:04.342 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FK7ivp84f52aa3vd7ndq0oh0279
+2023-07-25 11:29:04.344 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop table if exists property cascade
+2023-07-25 11:29:04.347 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop table if exists repairs cascade
+2023-07-25 11:29:04.348 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop table if exists roles cascade
+2023-07-25 11:29:04.351 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop table if exists "user" cascade
+2023-07-25 11:29:04.353 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop table if exists user_roles cascade
+2023-07-25 11:29:04.355 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop sequence if exists property_seq
+2023-07-25 11:29:04.358 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop sequence if exists repair_seq
+2023-07-25 11:29:04.360 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop sequence if exists roles_seq
+2023-07-25 11:29:04.362 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop sequence if exists user_seq
+2023-07-25 11:29:28.416 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists property drop constraint if exists FKn9cdajshrebcritph05nuxxlv
+2023-07-25 11:29:28.419 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists repairs drop constraint if exists FK6i88fgqlrt72jjuky9k3xnull
+2023-07-25 11:29:28.420 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FKh8ciramu9cc9q3qcqiv4ue8a6
+2023-07-25 11:29:28.421 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FK7ivp84f52aa3vd7ndq0oh0279
+2023-07-25 11:29:28.422 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop table if exists property cascade
+2023-07-25 11:29:28.423 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop table if exists repairs cascade
+2023-07-25 11:29:28.424 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop table if exists roles cascade
+2023-07-25 11:29:28.425 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop table if exists "user" cascade
+2023-07-25 11:29:28.426 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop table if exists user_roles cascade
+2023-07-25 11:29:28.427 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop sequence if exists property_seq
+2023-07-25 11:29:28.428 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop sequence if exists repair_seq
+2023-07-25 11:29:28.429 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop sequence if exists roles_seq
+2023-07-25 11:29:28.430 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop sequence if exists user_seq
+2023-07-25 11:29:28.435 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : create sequence property_seq start with 1 increment by 1
+2023-07-25 11:29:28.439 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : create sequence repair_seq start with 1 increment by 1
+2023-07-25 11:29:28.441 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : create sequence roles_seq start with 1 increment by 1
+2023-07-25 11:29:28.443 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : create sequence user_seq start with 1 increment by 1
+2023-07-25 11:29:28.447 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : create table property (active_state boolean, year_of_construction integer, id bigint not null, map_location_lat bigint, map_location_long bigint, pin bigint, user_id bigint, address varchar(255), property_picture varchar(255), property_type varchar(255) check (property_type in ('DETACHED_HOUSE','MAISONETTE','APARTMENT_BUILDING')), primary key (id))
+2023-07-25 11:29:28.456 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : create table repairs (cost numeric(38,2) not null, id bigint not null, property_id bigint, repair_date timestamp(6) not null, repair_status varchar(11) not null check (repair_status in ('PENDING','SCHEDULED','IN_PROGRESS','COMPLETED')), repair_type varchar(15) not null check (repair_type in ('PAINTING','INSULATION','FRAMES','PLUMBING','ELECTRICAL_WORK')), description varchar(1000) not null, primary key (id))
+2023-07-25 11:29:28.464 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : create table roles (id bigint not null, name varchar(45) not null, primary key (id))
+2023-07-25 11:29:28.468 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : create table "user" (id bigint not null, number bigint, tin_number bigint, email varchar(50), first_name varchar(50), last_name varchar(50), user_name varchar(50), address varchar(255), password varchar(255), primary key (id))
+2023-07-25 11:29:28.476 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : create table user_roles (role_id bigint not null, user_id bigint not null, primary key (role_id, user_id))
+2023-07-25 11:29:28.480 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists property add constraint FKn9cdajshrebcritph05nuxxlv foreign key (user_id) references "user"
+2023-07-25 11:29:28.482 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists repairs add constraint FK6i88fgqlrt72jjuky9k3xnull foreign key (property_id) references property
+2023-07-25 11:29:28.485 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists user_roles add constraint FKh8ciramu9cc9q3qcqiv4ue8a6 foreign key (role_id) references roles
+2023-07-25 11:29:28.488 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists user_roles add constraint FK7ivp84f52aa3vd7ndq0oh0279 foreign key (user_id) references "user"
+2023-07-25 11:29:28.755 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists property drop constraint if exists FKn9cdajshrebcritph05nuxxlv
+2023-07-25 11:29:28.758 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists repairs drop constraint if exists FK6i88fgqlrt72jjuky9k3xnull
+2023-07-25 11:29:28.760 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FKh8ciramu9cc9q3qcqiv4ue8a6
+2023-07-25 11:29:28.761 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : alter table if exists user_roles drop constraint if exists FK7ivp84f52aa3vd7ndq0oh0279
+2023-07-25 11:29:28.764 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop table if exists property cascade
+2023-07-25 11:29:28.767 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop table if exists repairs cascade
+2023-07-25 11:29:28.770 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop table if exists roles cascade
+2023-07-25 11:29:28.771 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop table if exists "user" cascade
+2023-07-25 11:29:28.773 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop table if exists user_roles cascade
+2023-07-25 11:29:28.775 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop sequence if exists property_seq
+2023-07-25 11:29:28.776 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop sequence if exists repair_seq
+2023-07-25 11:29:28.778 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop sequence if exists roles_seq
+2023-07-25 11:29:28.780 DEBUG SCY-LP-005 - [           main] [o.h.SQL                            ] : drop sequence if exists user_seq
