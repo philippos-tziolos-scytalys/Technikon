@@ -1,5 +1,6 @@
 package com.scytalys.technikon.service;
 
+import com.scytalys.technikon.domain.Property;
 import com.scytalys.technikon.domain.Repair;
 
 import java.util.Date;
@@ -9,7 +10,13 @@ public interface RepairService {
 
     Repair create(Repair repair);
 
+    List<Repair> fetchRepairList();
+
+    void deleteRepairById(Long repairId);
+
     void update(Repair repair);
+
+    Repair getRepairById(Long repairId);
 
     List<Repair> findRepairByUserId(Long userId);
 
@@ -17,7 +24,12 @@ public interface RepairService {
 
     List<Repair> findByRepairDateBetween(Date fromRepairDate, Date toRepairDate);
 
+
+    Repair updateRepairById(Repair repair, Long repairId);
+
     void delete(Long repairId);
 
-    void delete(Repair repair);
+
 }
+
+

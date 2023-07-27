@@ -2,6 +2,7 @@ package com.scytalys.technikon.service.impl;
 
 import com.scytalys.technikon.domain.Property;
 import com.scytalys.technikon.domain.User;
+import com.scytalys.technikon.exception.ExistingUserException;
 import com.scytalys.technikon.exception.UserNotFoundException;
 import com.scytalys.technikon.repository.PropertyRepository;
 import com.scytalys.technikon.repository.UserRepository;
@@ -10,6 +11,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -21,14 +23,32 @@ public class PropertyServiceImpl implements PropertyService {
 
     @Override
     public Property createProperty(Property newProperty) {
+        validateUniqueFields(newProperty);
         User user = newProperty.getUser();
-        User existingUser = userRepository.findById(user.getId())
-                .orElseThrow(() -> new UserNotFoundException(user.getId()));
+//        User existingUser = userRepository.findById(user.getId())
+        User existingUser = userRepository.findByTinNumber(user.getTinNumber());
         newProperty.setUser(existingUser);
         return propertyRepository.save(newProperty);
     }
 
-    @Override
+    private void validateUniqueFields(Property property) {
+        boolean isPinNumberExists = propertyRepository.existsByPinNumber(property.getPinNumber());
+        if (isPinNumberExists) {
+            throw new ExistingUserException("Property Identification number already exists");
+        }
+
+        boolean isAddressExists = propertyRepository.existsByAddress(property.getAddress());
+        if (isAddressExists) {
+            throw new ExistingUserException("Address already exists");
+        }
+    }
+
+
+    public Property getPropertyById(Long id) {
+        return propertyRepository.findById(id).orElseThrow(
+                () -> new RuntimeException("Id not found" + id));
+    }
+
     public List<Property> fetchPropertyList() {
         return propertyRepository.findAll();
     }
@@ -73,14 +93,9 @@ public class PropertyServiceImpl implements PropertyService {
     }
 
     @Override
-    public Property searchByPIN(Long pin) {
-        return propertyRepository.findByPin(pin);
+    public Property searchByPIN(Long pinNumber) {
+        return propertyRepository.findByPin(pinNumber);
     }
-
-// @Override
-// public List<Property> searchByTIN(Long tin) {
-// return propertyRepository.findByTin(tin).orElse(null);
-// }
 
     @Override
     public List<Property> searchByPropertyType(String propertyType) {
@@ -115,6 +130,7 @@ public class PropertyServiceImpl implements PropertyService {
     public List<Property> findPropertyByUser(Long userId) {
         return null;
     }
+
 }
 
 

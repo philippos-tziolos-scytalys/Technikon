@@ -1,6 +1,7 @@
 package com.scytalys.technikon.dto;
 
 import com.scytalys.technikon.domain.PropertyType;
+import com.scytalys.technikon.domain.Repair;
 import com.scytalys.technikon.domain.User;
 import lombok.Builder;
 import lombok.Data;

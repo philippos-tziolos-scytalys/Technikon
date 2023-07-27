@@ -3,11 +3,10 @@ package com.scytalys.technikon.service;
 import com.scytalys.technikon.domain.Property;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface PropertyService {
 //    Property saveProperty(Property property);
-
-    List<Property> fetchPropertyList();
 
     void updateProperty(Property property);
 
@@ -30,4 +29,9 @@ public interface PropertyService {
     List<Property> findPropertyByUser(Long userId);
 
     Property createProperty(Property property);
+
+
+    Property getPropertyById(Long id);
+
+    List<Property> fetchPropertyList();
 }

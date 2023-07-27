@@ -34,4 +34,10 @@ public interface PropertyRepository extends JpaRepository<Property, Long> {
             """)
     Optional<List<Property>> findByConstructionYearRange(int yearFrom, int yearTo);
 
+
+    Property findByPinNumber(Long id);
+
+    boolean existsByPinNumber(Long pinNumber);
+
+    boolean existsByAddress(String address);
 }
