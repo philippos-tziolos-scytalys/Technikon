@@ -4,7 +4,6 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -33,16 +32,17 @@ public class User extends BaseModel {
     private String email;
     @Column(name = "password", length = 255)
     private String password;
-
+    @Enumerated(EnumType.STRING)
+    private Role role;
 
 //    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
 //    private List<Property> properties;
 
-    @ManyToMany
-    @JoinTable(name = "user_roles", joinColumns = @JoinColumn(name = "user_id"),
-            inverseJoinColumns = @JoinColumn(name = "role_id")
-    )
-    private Set<Role> roles = new HashSet<>();
+//    @ManyToMany
+//    @JoinTable(name = "user_roles", joinColumns = @JoinColumn(name = "user_id"),
+//            inverseJoinColumns = @JoinColumn(name = "role_id")
+//    )
+//    private Set<Roles> roles = new HashSet<>();
 
 
 }

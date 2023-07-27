@@ -46,7 +46,6 @@ public class UserServiceImpl implements UserService {
 
     /** Update user by ID**/
     public User updateUserById(User user, Long id) {
-        validateUpdateUniqueFields(user);
 
         User existingUser = userRepository.findById(id)
                 .orElseThrow(() -> new UserNotFoundException(id));
@@ -62,17 +61,6 @@ public class UserServiceImpl implements UserService {
         return userRepository.save(existingUser);
     }
 
-    private void validateUpdateUniqueFields(User user) {
-        boolean isUsernameExists = userRepository.existsByUsername(user.getUsername());
-        if (isUsernameExists) {
-            throw new ExistingUserException("Username already exists");
-        }
-
-        boolean isEmailExists = userRepository.existsByEmail(user.getEmail());
-        if (isEmailExists) {
-            throw new ExistingUserException("Email already exists");
-        }
-    }
 
     /** Validation if username, email, or tin number exists */
     private void validateUniqueFields(User user) {
@@ -91,6 +79,20 @@ public class UserServiceImpl implements UserService {
             throw new ExistingUserException("Tin number already exists");
         }
     }
+
+    private void validateUpdateUniqueFields(User user) {
+        boolean isUsernameExists = userRepository.existsByUsernameAndIdNot(user.getUsername(), user.getId());
+        if (isUsernameExists) {
+            throw new ExistingUserException("Username already exists");
+        }
+
+        boolean isEmailExists = userRepository.existsByEmailAndIdNot(user.getEmail(), user.getId());
+        if (isEmailExists) {
+            throw new ExistingUserException("Email already exists");
+        }
+    }
+
+
 
 
     /** Delete user */

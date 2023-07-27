@@ -1,6 +1,8 @@
 package com.scytalys.technikon.service.impl;
 
+import com.scytalys.technikon.domain.Property;
 import com.scytalys.technikon.domain.Repair;
+import com.scytalys.technikon.repository.PropertyRepository;
 import com.scytalys.technikon.repository.RepairRepository;
 import com.scytalys.technikon.service.RepairService;
 import lombok.RequiredArgsConstructor;
@@ -13,12 +15,25 @@ import java.util.List;
 @RequiredArgsConstructor
 public class RepairServiceImpl implements RepairService {
     private final RepairRepository repairRepository;
+    private final PropertyRepository propertyRepository;
 
     /** Create new repair */
     @Override
     public Repair create(final Repair repair) {
+        Property property = repair.getProperty();
+        Property existingProperty = propertyRepository.findByPinNumber(property.getPinNumber());
+        repair.setProperty(existingProperty);
         return repairRepository.save(repair);
     }
+
+
+    /** Find all repairs **/
+    @Override
+    public List<Repair> fetchRepairList() {
+        return repairRepository.findAll();
+    }
+
+
 
     /** Update repair */
     @Override
@@ -33,6 +48,13 @@ public class RepairServiceImpl implements RepairService {
         existingRepair.setCost(repair.getCost());
         existingRepair.setProperty(repair.getProperty());
         repairRepository.save(existingRepair);
+    }
+
+    /**Find repair by id **/
+    @Override
+    public Repair getRepairById(Long repairId) {
+        return repairRepository.findById(repairId).orElseThrow(
+                () -> new RuntimeException("Id not found" + repairId));
     }
 
     /** List all repairs by the user ID */
@@ -52,11 +74,27 @@ public class RepairServiceImpl implements RepairService {
     public List<Repair> findByRepairDateBetween(Date fromRepairDate, Date toRepairDate) {
         return repairRepository.findByRepairDateBetween(fromRepairDate, toRepairDate);
     }
+
     @Override
-    public void delete(final Repair repair) {
-        final Repair existingRepair = repairRepository.getReferenceById(repair.getId());
-        repairRepository.delete(existingRepair);
+    public Repair updateRepairById(Repair repair, Long repairId) {
+        return repairRepository.findById(repairId)
+        .map(existingRepair -> {
+            existingRepair.setRepairType(repair.getRepairType());
+            existingRepair.setRepairStatus(repair.getRepairStatus());
+            existingRepair.setDescription(repair.getDescription());
+            existingRepair.setRepairDate(repair.getRepairDate());
+            existingRepair.setCost(repair.getCost());
+//            existingRepair.setProperty(repair.getProperty());
+            return repairRepository.save(existingRepair);
+        }).orElseThrow(() -> new RuntimeException("Id not found" + repairId));
     }
+
+
+    @Override
+    public void deleteRepairById(Long repairId) {
+        repairRepository.deleteById(repairId);
+    }
+
     /** Delete repair with the specific ID */
     @Override
     public void delete(final Long repairId) {

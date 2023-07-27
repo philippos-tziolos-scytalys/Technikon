@@ -1,5 +1,7 @@
 package com.scytalys.technikon.domain;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
@@ -31,6 +33,7 @@ public class Repair extends BaseModel {
     @Column(length = 1000, nullable = false)
     private String description;
 
+    @JsonFormat(pattern = "DD-MM-YYYY")
     @Column(nullable = false)
     private Date repairDate;
 
@@ -38,5 +41,6 @@ public class Repair extends BaseModel {
     private BigDecimal cost;
 
     @ManyToOne
+    @JsonIgnore
     private Property property;
 }

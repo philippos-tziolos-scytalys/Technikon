@@ -31,6 +31,8 @@ public class PropertyController {
                 propertyService.createProperty(propertyMapper.propertyDtoToProperty(propertyDto))), HttpStatus.CREATED);
     }
 
+
+
     /** List all properties with this controller */
     @GetMapping("/allproperties")
     public ResponseEntity<List<PropertyDto>> fetchPropertyList() {
@@ -50,10 +52,15 @@ public class PropertyController {
         return ResponseEntity.ok(updatedpropertyDto);
     }
 
+    @GetMapping("/search/{propertyId}")
+    public ResponseEntity<PropertyDto> findPropertyById(@PathVariable("propertyId") Long propertyId) {
+        return new ResponseEntity<>(propertyMapper.propertyToPropertyDto(propertyService.getPropertyById(propertyId)), HttpStatus.ACCEPTED);
+    }
+
     /** Finding and listing properties by their PIN */
-    @GetMapping("/findPropertyByPin")
-    public ResponseEntity<Property> findPropertyByPin(@RequestParam("pin") Long pin) {
-        return ResponseEntity.ok(propertyService.searchByPIN(pin));
+    @GetMapping("/findPropertyByPin/{pin}")
+    public ResponseEntity<PropertyDto> findPropertyByPin(@RequestParam("pin") Long pin) {
+        return new ResponseEntity<>(propertyMapper.propertyToPropertyDto(propertyService.searchByPIN(pin)), HttpStatus.ACCEPTED);
     }
 
     /** Listing properties by their type */
@@ -75,17 +82,17 @@ public class PropertyController {
     }
 
     /** Deactivate property by their ID */
-    @PutMapping("/deactivate/{id}")
-    public ResponseEntity<String> deactivateProperty(@PathVariable("id") Long propertyId) {
+    @PutMapping("/deactivate/{propertyId}")
+    public ResponseEntity<String> deactivateProperty(@PathVariable("propertyId") Long propertyId) {
         propertyService.deactivatePropertyById(propertyId);
         return ResponseEntity.ok("Property set do deactivated");
     }
 
     /** Delete property by their ID */
-    @DeleteMapping("/delete/{id}")
-    public ResponseEntity<String> deleteProperty(@PathVariable("id") Long propertyId) {
+    @DeleteMapping("/delete/{propertyId}")
+    public ResponseEntity<String> deleteProperty(@PathVariable("propertyId") Long propertyId) {
         propertyService.deletePropertyById(propertyId);
-        return ResponseEntity.ok("Repair deleted successfully");
+        return ResponseEntity.ok("Property deleted successfully");
     }
 
     /** List properties by the user ID's */
