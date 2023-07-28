@@ -1,0 +1,22 @@
+.tupleBar {
+    padding-top: 16px;
+}
+
+.tuple {
+    display: flex;
+    align-items: center;
+    padding-left: 32px;
+    background-color: white;
+    height: 80px;
+    gap: 8px;
+}
+
+.actions {
+    display: flex;
+    align-items: center; 
+    gap: 16px;
+}
+
+.actions img {
+    cursor: pointer;
+}

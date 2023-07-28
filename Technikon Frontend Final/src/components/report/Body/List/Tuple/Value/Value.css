@@ -1,0 +1,10 @@
+.value{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    width: 284px;
+    height: 80px;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+}

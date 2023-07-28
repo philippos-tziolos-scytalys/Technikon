@@ -1,0 +1,40 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.tabMenu {
+  display: flex;
+  align-items: center;
+  /* padding-left: 74px; */
+  background-color: white;
+  height: 56px;
+  gap: 8px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background-color: white;
+  width: 180px;
+  height: 56px;
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+  /* border-radius: 4px; */
+  gap: 5px;
+  font-size: 21px;
+  font-weight:500;
+  }
+  
+  .content:hover {
+      background-color: hsl(223, 86%, 43%);
+      color: white;
+      cursor: pointer;
+  } 
+  
+  .content #label{
+      font-size: 20px;
+  }
+  
+  

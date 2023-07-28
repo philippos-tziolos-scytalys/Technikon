@@ -1,0 +1,72 @@
+.centerVision {
+    padding-top: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: #778CA2;
+}
+
+.centerImg {
+    padding-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centerImg img{
+    max-width: 1706px;
+}
+
+.centerText {
+    position: absolute;
+    display: inline-flex;
+    text-align: center;
+    color: #778CA2;
+    text-shadow: 1px 1px black;
+    padding: 0px;
+    width: 70%;
+    gap: 20px;
+    font-family: Inter;
+    font-style: oblique;
+}
+
+.left:hover {
+    background-color:  rgba(255, 255, 255, 0.32);
+    color: #0F46CE;
+}
+
+.middle:hover {
+    background-color: rgba(255, 255, 255, 0.32);
+    color: #0F46CE;
+}
+
+.right:hover {
+    background-color: rgba(255, 255, 255, 0.32);
+    color: #0F46CE;
+}
+
+.centerPageText {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 200px;
+}
+
+.centerPagelogo #favicon{
+    width: 100px;
+}
+
+.centerPagelogo #logo{
+    height: 60px;
+}
+
+.quote{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: #778CA2;
+    padding-top: 50px;
+}

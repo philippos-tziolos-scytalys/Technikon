@@ -1,0 +1,81 @@
+.filterBar {
+    display: flex;
+    align-items: center;
+    padding-top: 28px;
+    gap: 12px;
+}
+
+.filter {
+    position: relative;
+    display: inline-block;
+}
+
+.filter button {
+    border: none;
+    background-color: inherit;
+}
+
+.filter img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: inherit;
+    border-radius: 12px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.filterBy {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 12px;
+}
+
+.filterBy a {
+    color: hsl(223, 86%, 43%);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.filterBy #up:hover {
+    background-color: hsl(223, 86%, 43%);
+    color: white;
+    border-radius: 12px 12px 0 0;
+    cursor: pointer;
+}
+
+.filterBy #middle:hover {
+    background-color: hsl(223, 86%, 43%);
+    color: white;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.filterBy #down:hover {
+    background-color: hsl(223, 86%, 43%);
+    color: white;
+    border-radius: 0 0 12px 12px;
+    cursor: pointer;
+}
+
+.filter:hover .filterBy {
+    display: block;
+}
+
+.filter:hover .filterBy {
+    background-color: rgba(255, 255, 255, 0.32);
+}
+
+.filterLabel {
+    color: #778CA2;
+    text-align: right;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+}

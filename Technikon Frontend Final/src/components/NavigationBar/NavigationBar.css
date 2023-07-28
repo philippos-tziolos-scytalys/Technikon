@@ -1,0 +1,20 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbar {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color:   #0F46CE;
+  height: 72px;
+}
+
+.rightSideNavbar {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  gap: 25px;
+}

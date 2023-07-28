@@ -1,0 +1,99 @@
+.loginpage {
+    background-image: url("./img/loginbackground.png");
+    background-size: cover; 
+    background-repeat:no-repeat;
+    background-color: #215c92a6;
+    background-blend-mode: overlay;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.logo {
+    margin-right: 87%;
+    margin-top: 1%;
+}
+
+.loginpage .container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    margin-bottom: auto;
+    width: 690px; /* Adjusted width */
+    height: 679px; /* Adjusted height */
+    border-radius: 40px;
+    background: rgba(115, 152, 207, 0.45);
+    backdrop-filter: blur(36px);
+}
+
+.loginpage form {
+    margin-left: 94px;
+    margin-right: 94px;  
+    padding-top: 85px;
+}
+
+
+.loginpage .form-title {
+    color: #FFF;
+    font-size: 40px;
+    font-weight: 400;
+    text-align: left;
+    padding-bottom: 30px;
+}
+
+.loginpage .container .form-label {
+    width: 100%;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.loginpage .form-control{
+    padding: 10px 20px;
+    height: 50px;
+}
+
+.loginpage .link {
+    margin-right: 70%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.fgt {
+    color: #2DCDFF
+}
+    
+.loginpage .container .btn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.hr-display {
+    display: flex; 
+    flex-direction: row; 
+    align-items: center;
+}
+
+.hr-design {
+    flex: 1;
+    height: 1px; 
+    background-color: white
+}
+
+p {
+    font-size: 70%;
+    width: 70px; 
+    margin-top: 15px;
+    text-align: center;
+    color: white;
+}
+
+.password-icon {
+    padding: 10px, 50px, 50px, 50px;
+    margin-top: 10%;
+    margin-right: 90%;
+}

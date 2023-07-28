@@ -1,0 +1,25 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+#navbar {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(223, 86%, 43%);
+  height: 72px;
+}
+
+.rightSideNavbar {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  gap: 25px;
+}
+
+#navbar .login {
+  font-size: large;
+  width: 130%;
+}

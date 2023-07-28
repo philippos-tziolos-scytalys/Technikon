@@ -1,0 +1,35 @@
+.footerBar {
+    padding-top: 200px;
+    padding-bottom: 100px;
+    color:#778CA2;
+    font-family: Inter;
+    font-style: normal;
+}
+
+.footerText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 350px;
+    padding-top: 50px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.iconBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    gap: 10px;
+}
+
+.iconBar img{
+    width: 24px;
+    height: 24px;
+}

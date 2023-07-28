@@ -1,0 +1,8 @@
+body {
+    background: linear-gradient(0deg, rgba(9, 30, 66, 0.13) 0%, rgba(9, 30, 66, 0.13) 100%), #FFF;
+}
+
+.body {
+    padding-left: 72px;
+    padding-right: 72px;
+}

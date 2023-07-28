@@ -1,0 +1,17 @@
+.utilities {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.leftSideUtilities {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.rightSideUtilities {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}

@@ -1,0 +1,20 @@
+.createItemLabel {
+    display: flex;
+    align-items: center;
+    padding-top: 28px;
+    color: #0a26a5d3;
+    text-align: right;
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    gap: 7px;
+}
+
+.createItemLabel img {
+    cursor: pointer;
+}
+
+.createItem {
+    cursor: pointer;
+}

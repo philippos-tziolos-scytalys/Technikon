@@ -1,0 +1,16 @@
+.downloadLabel {
+    display: flex;
+    align-items: center;
+    padding-top: 28px;
+    color: #778CA2;
+    text-align: right;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    gap: 7px;
+}
+
+.downloadLabel img{
+    cursor: pointer;
+}
