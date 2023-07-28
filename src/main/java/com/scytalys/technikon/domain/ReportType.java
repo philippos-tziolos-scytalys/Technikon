@@ -1,0 +1,14 @@
+package com.scytalys.technikon.domain;
+
+public enum ReportType {
+    USER_REGISTRATION,
+    USER_UPDATE,
+    USER_DELETION,
+    USER_LOGIN,
+    PROPERTY_REGISTRATION,
+    PROPERTY_UPDATE,
+    PROPERTY_DELETION,
+    REPAIR_REGISTRATION,
+    REPAIR_UPDATE,
+    REPAIR_DELETION
+}
