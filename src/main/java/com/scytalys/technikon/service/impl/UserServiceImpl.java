@@ -120,7 +120,6 @@ public class UserServiceImpl implements UserService {
     /** Get user by Tin Number */
     public User getUserByTinNumber(Long tinNumber) {
         return (userRepository.findByTinNumber(tinNumber));
-//                .orElseThrow(()->new UserNotFoundException(tinNumber)));
     }
 
     /** Get user by Email
@@ -128,7 +127,6 @@ public class UserServiceImpl implements UserService {
      * */
     public User getUserByEmail(String email) {
         return (userRepository.findByEmail(email));
-//                .orElseThrow(()->new UserNotFoundException(id)));
     }
 
     public User getUserByUsername(String username) {

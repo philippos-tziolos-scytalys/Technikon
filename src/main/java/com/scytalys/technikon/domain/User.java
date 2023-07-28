@@ -35,14 +35,5 @@ public class User extends BaseModel {
     @Enumerated(EnumType.STRING)
     private Role role;
 
-//    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
-//    private List<Property> properties;
-
-//    @ManyToMany
-//    @JoinTable(name = "user_roles", joinColumns = @JoinColumn(name = "user_id"),
-//            inverseJoinColumns = @JoinColumn(name = "role_id")
-//    )
-//    private Set<Roles> roles = new HashSet<>();
-
 
 }

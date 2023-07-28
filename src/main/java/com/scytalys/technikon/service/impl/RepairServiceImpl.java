@@ -84,7 +84,6 @@ public class RepairServiceImpl implements RepairService {
             existingRepair.setDescription(repair.getDescription());
             existingRepair.setRepairDate(repair.getRepairDate());
             existingRepair.setCost(repair.getCost());
-//            existingRepair.setProperty(repair.getProperty());
             return repairRepository.save(existingRepair);
         }).orElseThrow(() -> new RuntimeException("Id not found" + repairId));
     }

@@ -3,7 +3,6 @@ package com.scytalys.technikon.service.impl;
 import com.scytalys.technikon.domain.Property;
 import com.scytalys.technikon.domain.User;
 import com.scytalys.technikon.exception.ExistingUserException;
-import com.scytalys.technikon.exception.UserNotFoundException;
 import com.scytalys.technikon.repository.PropertyRepository;
 import com.scytalys.technikon.repository.UserRepository;
 import com.scytalys.technikon.service.PropertyService;
@@ -11,7 +10,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -25,7 +23,6 @@ public class PropertyServiceImpl implements PropertyService {
     public Property createProperty(Property newProperty) {
         validateUniqueFields(newProperty);
         User user = newProperty.getUser();
-//        User existingUser = userRepository.findById(user.getId())
         User existingUser = userRepository.findByTinNumber(user.getTinNumber());
         newProperty.setUser(existingUser);
         return propertyRepository.save(newProperty);
@@ -65,7 +62,6 @@ public class PropertyServiceImpl implements PropertyService {
         proDB.setAddress(property.getAddress());
         proDB.setYearOfConstruction(property.getYearOfConstruction());
         proDB.setPropertyType(property.getPropertyType());
-// proDB.setUser(property.getUser());
         proDB.setPropertyPictureUrl(property.getPropertyPictureUrl());
         proDB.setPropertyCoordinatesLong(property.getPropertyCoordinatesLong());
         proDB.setPropertyCoordinatesLat(property.getPropertyCoordinatesLat());
@@ -87,7 +83,6 @@ public class PropertyServiceImpl implements PropertyService {
                     proDB.setPropertyCoordinatesLong(property.getPropertyCoordinatesLong());
                     proDB.setPropertyCoordinatesLat(property.getPropertyCoordinatesLat());
                     proDB.setActiveState(property.isActiveState());
-                    // proDB.setUser(property.getUser());
                     return propertyRepository.save(proDB);
                 }).orElseThrow(() -> new RuntimeException("Id not found" + id));
     }
@@ -133,8 +128,4 @@ public class PropertyServiceImpl implements PropertyService {
 
 }
 
-
-//    public List<Property> fyByUser(Long userId) {
-//        return propertyRepository.findPropertyByUser(userId).orElse(null);
-//    }
 
